@@ -1,0 +1,1818 @@
+{
+  "kernel": "ajayasaithambi/loopedwsp-loop-comparisons",
+  "version": 1,
+  "status": "COMPLETE",
+  "device": "Tesla T4",
+  "cuda": "13.0",
+  "pytorch": "2.11.0+cu130",
+  "server_private": true,
+  "server_internet_enabled": false,
+  "script_sha256": "f5b5928c3510c9a051710098dec999dd9c8157c6f156ec5940a5700a3a7671f3",
+  "input_files_verified": 16,
+  "output_sha256": {
+    "comparison-results.json": "709b5b754b3c017d1cc5fb03bbe071c257b8fb1dd8a51977695ea282fa30094d",
+    "comparison-predictions.npz": "aea6bfea843c2329a516088d32baacf80e90b49f5f209481f6571a021af1ccde"
+  },
+  "prediction_arrays": {
+    "inventory_8_float64_original_1": [
+      96,
+      8
+    ],
+    "inventory_8_float64_original_1_raw": [
+      96,
+      8
+    ],
+    "inventory_8_float64_local_w8": [
+      96,
+      8
+    ],
+    "inventory_8_float64_original_full": [
+      96,
+      8
+    ],
+    "inventory_8_float64_original_full_raw": [
+      96,
+      8
+    ],
+    "inventory_8_float64_local_w32": [
+      96,
+      8
+    ],
+    "inventory_8_float64_local_w2": [
+      96,
+      8
+    ],
+    "inventory_8_float64_original_4": [
+      96,
+      8
+    ],
+    "inventory_8_float64_original_4_raw": [
+      96,
+      8
+    ],
+    "inventory_8_float64_full_feedforward": [
+      96,
+      8
+    ],
+    "inventory_8_float32_original_1": [
+      96,
+      8
+    ],
+    "inventory_8_float32_original_1_raw": [
+      96,
+      8
+    ],
+    "inventory_8_float32_local_w2": [
+      96,
+      8
+    ],
+    "inventory_8_float32_original_4": [
+      96,
+      8
+    ],
+    "inventory_8_float32_original_4_raw": [
+      96,
+      8
+    ],
+    "inventory_8_float32_local_w32": [
+      96,
+      8
+    ],
+    "inventory_8_float32_original_full": [
+      96,
+      8
+    ],
+    "inventory_8_float32_original_full_raw": [
+      96,
+      8
+    ],
+    "inventory_8_float32_local_w8": [
+      96,
+      8
+    ],
+    "inventory_8_float32_full_feedforward": [
+      96,
+      8
+    ],
+    "inventory_8_float16_full_feedforward": [
+      96,
+      8
+    ],
+    "inventory_8_float16_original_full": [
+      96,
+      8
+    ],
+    "inventory_8_float16_original_full_raw": [
+      96,
+      8
+    ],
+    "inventory_8_float16_local_w8": [
+      96,
+      8
+    ],
+    "inventory_8_float16_local_w2": [
+      96,
+      8
+    ],
+    "inventory_8_float16_original_4": [
+      96,
+      8
+    ],
+    "inventory_8_float16_original_4_raw": [
+      96,
+      8
+    ],
+    "inventory_8_float16_local_w32": [
+      96,
+      8
+    ],
+    "inventory_8_float16_original_1": [
+      96,
+      8
+    ],
+    "inventory_8_float16_original_1_raw": [
+      96,
+      8
+    ],
+    "inventory_16_float64_local_w2": [
+      96,
+      16
+    ],
+    "inventory_16_float64_original_1": [
+      96,
+      16
+    ],
+    "inventory_16_float64_original_1_raw": [
+      96,
+      16
+    ],
+    "inventory_16_float64_original_full": [
+      96,
+      16
+    ],
+    "inventory_16_float64_original_full_raw": [
+      96,
+      16
+    ],
+    "inventory_16_float64_original_4": [
+      96,
+      16
+    ],
+    "inventory_16_float64_original_4_raw": [
+      96,
+      16
+    ],
+    "inventory_16_float64_local_w8": [
+      96,
+      16
+    ],
+    "inventory_16_float64_local_w32": [
+      96,
+      16
+    ],
+    "inventory_16_float64_full_feedforward": [
+      96,
+      16
+    ],
+    "inventory_16_float32_original_full": [
+      96,
+      16
+    ],
+    "inventory_16_float32_original_full_raw": [
+      96,
+      16
+    ],
+    "inventory_16_float32_original_1": [
+      96,
+      16
+    ],
+    "inventory_16_float32_original_1_raw": [
+      96,
+      16
+    ],
+    "inventory_16_float32_original_4": [
+      96,
+      16
+    ],
+    "inventory_16_float32_original_4_raw": [
+      96,
+      16
+    ],
+    "inventory_16_float32_local_w2": [
+      96,
+      16
+    ],
+    "inventory_16_float32_full_feedforward": [
+      96,
+      16
+    ],
+    "inventory_16_float32_local_w32": [
+      96,
+      16
+    ],
+    "inventory_16_float32_local_w8": [
+      96,
+      16
+    ],
+    "inventory_16_float16_local_w8": [
+      96,
+      16
+    ],
+    "inventory_16_float16_local_w32": [
+      96,
+      16
+    ],
+    "inventory_16_float16_full_feedforward": [
+      96,
+      16
+    ],
+    "inventory_16_float16_local_w2": [
+      96,
+      16
+    ],
+    "inventory_16_float16_original_1": [
+      96,
+      16
+    ],
+    "inventory_16_float16_original_1_raw": [
+      96,
+      16
+    ],
+    "inventory_16_float16_original_4": [
+      96,
+      16
+    ],
+    "inventory_16_float16_original_4_raw": [
+      96,
+      16
+    ],
+    "inventory_16_float16_original_full": [
+      96,
+      16
+    ],
+    "inventory_16_float16_original_full_raw": [
+      96,
+      16
+    ],
+    "inventory_32_float64_original_1": [
+      96,
+      32
+    ],
+    "inventory_32_float64_original_1_raw": [
+      96,
+      32
+    ],
+    "inventory_32_float64_full_feedforward": [
+      96,
+      32
+    ],
+    "inventory_32_float64_local_w8": [
+      96,
+      32
+    ],
+    "inventory_32_float64_original_full": [
+      96,
+      32
+    ],
+    "inventory_32_float64_original_full_raw": [
+      96,
+      32
+    ],
+    "inventory_32_float64_original_4": [
+      96,
+      32
+    ],
+    "inventory_32_float64_original_4_raw": [
+      96,
+      32
+    ],
+    "inventory_32_float64_local_w2": [
+      96,
+      32
+    ],
+    "inventory_32_float64_local_w32": [
+      96,
+      32
+    ],
+    "inventory_32_float32_original_4": [
+      96,
+      32
+    ],
+    "inventory_32_float32_original_4_raw": [
+      96,
+      32
+    ],
+    "inventory_32_float32_local_w8": [
+      96,
+      32
+    ],
+    "inventory_32_float32_original_1": [
+      96,
+      32
+    ],
+    "inventory_32_float32_original_1_raw": [
+      96,
+      32
+    ],
+    "inventory_32_float32_local_w2": [
+      96,
+      32
+    ],
+    "inventory_32_float32_full_feedforward": [
+      96,
+      32
+    ],
+    "inventory_32_float32_original_full": [
+      96,
+      32
+    ],
+    "inventory_32_float32_original_full_raw": [
+      96,
+      32
+    ],
+    "inventory_32_float32_local_w32": [
+      96,
+      32
+    ],
+    "inventory_32_float16_original_1": [
+      96,
+      32
+    ],
+    "inventory_32_float16_original_1_raw": [
+      96,
+      32
+    ],
+    "inventory_32_float16_local_w32": [
+      96,
+      32
+    ],
+    "inventory_32_float16_local_w2": [
+      96,
+      32
+    ],
+    "inventory_32_float16_original_full": [
+      96,
+      32
+    ],
+    "inventory_32_float16_original_full_raw": [
+      96,
+      32
+    ],
+    "inventory_32_float16_local_w8": [
+      96,
+      32
+    ],
+    "inventory_32_float16_original_4": [
+      96,
+      32
+    ],
+    "inventory_32_float16_original_4_raw": [
+      96,
+      32
+    ],
+    "inventory_32_float16_full_feedforward": [
+      96,
+      32
+    ],
+    "inventory_64_float64_original_full": [
+      96,
+      64
+    ],
+    "inventory_64_float64_original_full_raw": [
+      96,
+      64
+    ],
+    "inventory_64_float64_local_w32": [
+      96,
+      64
+    ],
+    "inventory_64_float64_local_w8": [
+      96,
+      64
+    ],
+    "inventory_64_float64_local_w2": [
+      96,
+      64
+    ],
+    "inventory_64_float64_full_feedforward": [
+      96,
+      64
+    ],
+    "inventory_64_float64_original_1": [
+      96,
+      64
+    ],
+    "inventory_64_float64_original_1_raw": [
+      96,
+      64
+    ],
+    "inventory_64_float64_original_4": [
+      96,
+      64
+    ],
+    "inventory_64_float64_original_4_raw": [
+      96,
+      64
+    ],
+    "inventory_64_float32_local_w8": [
+      96,
+      64
+    ],
+    "inventory_64_float32_original_1": [
+      96,
+      64
+    ],
+    "inventory_64_float32_original_1_raw": [
+      96,
+      64
+    ],
+    "inventory_64_float32_local_w2": [
+      96,
+      64
+    ],
+    "inventory_64_float32_original_full": [
+      96,
+      64
+    ],
+    "inventory_64_float32_original_full_raw": [
+      96,
+      64
+    ],
+    "inventory_64_float32_original_4": [
+      96,
+      64
+    ],
+    "inventory_64_float32_original_4_raw": [
+      96,
+      64
+    ],
+    "inventory_64_float32_local_w32": [
+      96,
+      64
+    ],
+    "inventory_64_float32_full_feedforward": [
+      96,
+      64
+    ],
+    "inventory_64_float16_original_4": [
+      96,
+      64
+    ],
+    "inventory_64_float16_original_4_raw": [
+      96,
+      64
+    ],
+    "inventory_64_float16_local_w2": [
+      96,
+      64
+    ],
+    "inventory_64_float16_local_w32": [
+      96,
+      64
+    ],
+    "inventory_64_float16_local_w8": [
+      96,
+      64
+    ],
+    "inventory_64_float16_full_feedforward": [
+      96,
+      64
+    ],
+    "inventory_64_float16_original_full": [
+      96,
+      64
+    ],
+    "inventory_64_float16_original_full_raw": [
+      96,
+      64
+    ],
+    "inventory_64_float16_original_1": [
+      96,
+      64
+    ],
+    "inventory_64_float16_original_1_raw": [
+      96,
+      64
+    ],
+    "inventory_128_float64_full_feedforward": [
+      96,
+      128
+    ],
+    "inventory_128_float64_local_w8": [
+      96,
+      128
+    ],
+    "inventory_128_float64_local_w2": [
+      96,
+      128
+    ],
+    "inventory_128_float64_original_full": [
+      96,
+      128
+    ],
+    "inventory_128_float64_original_full_raw": [
+      96,
+      128
+    ],
+    "inventory_128_float64_original_4": [
+      96,
+      128
+    ],
+    "inventory_128_float64_original_4_raw": [
+      96,
+      128
+    ],
+    "inventory_128_float64_local_w32": [
+      96,
+      128
+    ],
+    "inventory_128_float64_original_1": [
+      96,
+      128
+    ],
+    "inventory_128_float64_original_1_raw": [
+      96,
+      128
+    ],
+    "inventory_128_float32_original_4": [
+      96,
+      128
+    ],
+    "inventory_128_float32_original_4_raw": [
+      96,
+      128
+    ],
+    "inventory_128_float32_original_full": [
+      96,
+      128
+    ],
+    "inventory_128_float32_original_full_raw": [
+      96,
+      128
+    ],
+    "inventory_128_float32_full_feedforward": [
+      96,
+      128
+    ],
+    "inventory_128_float32_local_w8": [
+      96,
+      128
+    ],
+    "inventory_128_float32_original_1": [
+      96,
+      128
+    ],
+    "inventory_128_float32_original_1_raw": [
+      96,
+      128
+    ],
+    "inventory_128_float32_local_w2": [
+      96,
+      128
+    ],
+    "inventory_128_float32_local_w32": [
+      96,
+      128
+    ],
+    "inventory_128_float16_original_4": [
+      96,
+      128
+    ],
+    "inventory_128_float16_original_4_raw": [
+      96,
+      128
+    ],
+    "inventory_128_float16_full_feedforward": [
+      96,
+      128
+    ],
+    "inventory_128_float16_local_w32": [
+      96,
+      128
+    ],
+    "inventory_128_float16_local_w8": [
+      96,
+      128
+    ],
+    "inventory_128_float16_original_full": [
+      96,
+      128
+    ],
+    "inventory_128_float16_original_full_raw": [
+      96,
+      128
+    ],
+    "inventory_128_float16_local_w2": [
+      96,
+      128
+    ],
+    "inventory_128_float16_original_1": [
+      96,
+      128
+    ],
+    "inventory_128_float16_original_1_raw": [
+      96,
+      128
+    ],
+    "scheduling_8_float64_local_w32": [
+      96,
+      8
+    ],
+    "scheduling_8_float64_original_full": [
+      96,
+      8
+    ],
+    "scheduling_8_float64_original_full_raw": [
+      96,
+      8
+    ],
+    "scheduling_8_float64_local_w2": [
+      96,
+      8
+    ],
+    "scheduling_8_float64_full_feedforward": [
+      96,
+      8
+    ],
+    "scheduling_8_float64_original_4": [
+      96,
+      8
+    ],
+    "scheduling_8_float64_original_4_raw": [
+      96,
+      8
+    ],
+    "scheduling_8_float64_local_w8": [
+      96,
+      8
+    ],
+    "scheduling_8_float64_original_1": [
+      96,
+      8
+    ],
+    "scheduling_8_float64_original_1_raw": [
+      96,
+      8
+    ],
+    "scheduling_8_float32_local_w8": [
+      96,
+      8
+    ],
+    "scheduling_8_float32_original_4": [
+      96,
+      8
+    ],
+    "scheduling_8_float32_original_4_raw": [
+      96,
+      8
+    ],
+    "scheduling_8_float32_original_1": [
+      96,
+      8
+    ],
+    "scheduling_8_float32_original_1_raw": [
+      96,
+      8
+    ],
+    "scheduling_8_float32_full_feedforward": [
+      96,
+      8
+    ],
+    "scheduling_8_float32_local_w2": [
+      96,
+      8
+    ],
+    "scheduling_8_float32_local_w32": [
+      96,
+      8
+    ],
+    "scheduling_8_float32_original_full": [
+      96,
+      8
+    ],
+    "scheduling_8_float32_original_full_raw": [
+      96,
+      8
+    ],
+    "scheduling_8_float16_local_w32": [
+      96,
+      8
+    ],
+    "scheduling_8_float16_local_w2": [
+      96,
+      8
+    ],
+    "scheduling_8_float16_original_4": [
+      96,
+      8
+    ],
+    "scheduling_8_float16_original_4_raw": [
+      96,
+      8
+    ],
+    "scheduling_8_float16_original_1": [
+      96,
+      8
+    ],
+    "scheduling_8_float16_original_1_raw": [
+      96,
+      8
+    ],
+    "scheduling_8_float16_full_feedforward": [
+      96,
+      8
+    ],
+    "scheduling_8_float16_local_w8": [
+      96,
+      8
+    ],
+    "scheduling_8_float16_original_full": [
+      96,
+      8
+    ],
+    "scheduling_8_float16_original_full_raw": [
+      96,
+      8
+    ],
+    "scheduling_16_float64_original_full": [
+      96,
+      16
+    ],
+    "scheduling_16_float64_original_full_raw": [
+      96,
+      16
+    ],
+    "scheduling_16_float64_local_w32": [
+      96,
+      16
+    ],
+    "scheduling_16_float64_original_4": [
+      96,
+      16
+    ],
+    "scheduling_16_float64_original_4_raw": [
+      96,
+      16
+    ],
+    "scheduling_16_float64_full_feedforward": [
+      96,
+      16
+    ],
+    "scheduling_16_float64_original_1": [
+      96,
+      16
+    ],
+    "scheduling_16_float64_original_1_raw": [
+      96,
+      16
+    ],
+    "scheduling_16_float64_local_w2": [
+      96,
+      16
+    ],
+    "scheduling_16_float64_local_w8": [
+      96,
+      16
+    ],
+    "scheduling_16_float32_full_feedforward": [
+      96,
+      16
+    ],
+    "scheduling_16_float32_local_w8": [
+      96,
+      16
+    ],
+    "scheduling_16_float32_local_w2": [
+      96,
+      16
+    ],
+    "scheduling_16_float32_original_full": [
+      96,
+      16
+    ],
+    "scheduling_16_float32_original_full_raw": [
+      96,
+      16
+    ],
+    "scheduling_16_float32_original_4": [
+      96,
+      16
+    ],
+    "scheduling_16_float32_original_4_raw": [
+      96,
+      16
+    ],
+    "scheduling_16_float32_local_w32": [
+      96,
+      16
+    ],
+    "scheduling_16_float32_original_1": [
+      96,
+      16
+    ],
+    "scheduling_16_float32_original_1_raw": [
+      96,
+      16
+    ],
+    "scheduling_16_float16_original_full": [
+      96,
+      16
+    ],
+    "scheduling_16_float16_original_full_raw": [
+      96,
+      16
+    ],
+    "scheduling_16_float16_full_feedforward": [
+      96,
+      16
+    ],
+    "scheduling_16_float16_local_w2": [
+      96,
+      16
+    ],
+    "scheduling_16_float16_original_4": [
+      96,
+      16
+    ],
+    "scheduling_16_float16_original_4_raw": [
+      96,
+      16
+    ],
+    "scheduling_16_float16_original_1": [
+      96,
+      16
+    ],
+    "scheduling_16_float16_original_1_raw": [
+      96,
+      16
+    ],
+    "scheduling_16_float16_local_w32": [
+      96,
+      16
+    ],
+    "scheduling_16_float16_local_w8": [
+      96,
+      16
+    ],
+    "scheduling_32_float64_local_w8": [
+      96,
+      32
+    ],
+    "scheduling_32_float64_full_feedforward": [
+      96,
+      32
+    ],
+    "scheduling_32_float64_local_w32": [
+      96,
+      32
+    ],
+    "scheduling_32_float64_original_full": [
+      96,
+      32
+    ],
+    "scheduling_32_float64_original_full_raw": [
+      96,
+      32
+    ],
+    "scheduling_32_float64_original_1": [
+      96,
+      32
+    ],
+    "scheduling_32_float64_original_1_raw": [
+      96,
+      32
+    ],
+    "scheduling_32_float64_original_4": [
+      96,
+      32
+    ],
+    "scheduling_32_float64_original_4_raw": [
+      96,
+      32
+    ],
+    "scheduling_32_float64_local_w2": [
+      96,
+      32
+    ],
+    "scheduling_32_float32_original_full": [
+      96,
+      32
+    ],
+    "scheduling_32_float32_original_full_raw": [
+      96,
+      32
+    ],
+    "scheduling_32_float32_local_w32": [
+      96,
+      32
+    ],
+    "scheduling_32_float32_original_4": [
+      96,
+      32
+    ],
+    "scheduling_32_float32_original_4_raw": [
+      96,
+      32
+    ],
+    "scheduling_32_float32_full_feedforward": [
+      96,
+      32
+    ],
+    "scheduling_32_float32_original_1": [
+      96,
+      32
+    ],
+    "scheduling_32_float32_original_1_raw": [
+      96,
+      32
+    ],
+    "scheduling_32_float32_local_w2": [
+      96,
+      32
+    ],
+    "scheduling_32_float32_local_w8": [
+      96,
+      32
+    ],
+    "scheduling_32_float16_full_feedforward": [
+      96,
+      32
+    ],
+    "scheduling_32_float16_original_1": [
+      96,
+      32
+    ],
+    "scheduling_32_float16_original_1_raw": [
+      96,
+      32
+    ],
+    "scheduling_32_float16_local_w32": [
+      96,
+      32
+    ],
+    "scheduling_32_float16_original_full": [
+      96,
+      32
+    ],
+    "scheduling_32_float16_original_full_raw": [
+      96,
+      32
+    ],
+    "scheduling_32_float16_local_w8": [
+      96,
+      32
+    ],
+    "scheduling_32_float16_original_4": [
+      96,
+      32
+    ],
+    "scheduling_32_float16_original_4_raw": [
+      96,
+      32
+    ],
+    "scheduling_32_float16_local_w2": [
+      96,
+      32
+    ],
+    "scheduling_64_float64_original_full": [
+      96,
+      64
+    ],
+    "scheduling_64_float64_original_full_raw": [
+      96,
+      64
+    ],
+    "scheduling_64_float64_original_4": [
+      96,
+      64
+    ],
+    "scheduling_64_float64_original_4_raw": [
+      96,
+      64
+    ],
+    "scheduling_64_float64_local_w2": [
+      96,
+      64
+    ],
+    "scheduling_64_float64_local_w8": [
+      96,
+      64
+    ],
+    "scheduling_64_float64_original_1": [
+      96,
+      64
+    ],
+    "scheduling_64_float64_original_1_raw": [
+      96,
+      64
+    ],
+    "scheduling_64_float64_full_feedforward": [
+      96,
+      64
+    ],
+    "scheduling_64_float64_local_w32": [
+      96,
+      64
+    ],
+    "scheduling_64_float32_local_w2": [
+      96,
+      64
+    ],
+    "scheduling_64_float32_full_feedforward": [
+      96,
+      64
+    ],
+    "scheduling_64_float32_local_w8": [
+      96,
+      64
+    ],
+    "scheduling_64_float32_original_full": [
+      96,
+      64
+    ],
+    "scheduling_64_float32_original_full_raw": [
+      96,
+      64
+    ],
+    "scheduling_64_float32_local_w32": [
+      96,
+      64
+    ],
+    "scheduling_64_float32_original_1": [
+      96,
+      64
+    ],
+    "scheduling_64_float32_original_1_raw": [
+      96,
+      64
+    ],
+    "scheduling_64_float32_original_4": [
+      96,
+      64
+    ],
+    "scheduling_64_float32_original_4_raw": [
+      96,
+      64
+    ],
+    "scheduling_64_float16_local_w2": [
+      96,
+      64
+    ],
+    "scheduling_64_float16_original_full": [
+      96,
+      64
+    ],
+    "scheduling_64_float16_original_full_raw": [
+      96,
+      64
+    ],
+    "scheduling_64_float16_original_4": [
+      96,
+      64
+    ],
+    "scheduling_64_float16_original_4_raw": [
+      96,
+      64
+    ],
+    "scheduling_64_float16_original_1": [
+      96,
+      64
+    ],
+    "scheduling_64_float16_original_1_raw": [
+      96,
+      64
+    ],
+    "scheduling_64_float16_local_w32": [
+      96,
+      64
+    ],
+    "scheduling_64_float16_full_feedforward": [
+      96,
+      64
+    ],
+    "scheduling_64_float16_local_w8": [
+      96,
+      64
+    ],
+    "scheduling_128_float64_original_4": [
+      96,
+      128
+    ],
+    "scheduling_128_float64_original_4_raw": [
+      96,
+      128
+    ],
+    "scheduling_128_float64_original_full": [
+      96,
+      128
+    ],
+    "scheduling_128_float64_original_full_raw": [
+      96,
+      128
+    ],
+    "scheduling_128_float64_local_w8": [
+      96,
+      128
+    ],
+    "scheduling_128_float64_local_w2": [
+      96,
+      128
+    ],
+    "scheduling_128_float64_original_1": [
+      96,
+      128
+    ],
+    "scheduling_128_float64_original_1_raw": [
+      96,
+      128
+    ],
+    "scheduling_128_float64_full_feedforward": [
+      96,
+      128
+    ],
+    "scheduling_128_float64_local_w32": [
+      96,
+      128
+    ],
+    "scheduling_128_float32_original_1": [
+      96,
+      128
+    ],
+    "scheduling_128_float32_original_1_raw": [
+      96,
+      128
+    ],
+    "scheduling_128_float32_full_feedforward": [
+      96,
+      128
+    ],
+    "scheduling_128_float32_local_w2": [
+      96,
+      128
+    ],
+    "scheduling_128_float32_original_full": [
+      96,
+      128
+    ],
+    "scheduling_128_float32_original_full_raw": [
+      96,
+      128
+    ],
+    "scheduling_128_float32_local_w8": [
+      96,
+      128
+    ],
+    "scheduling_128_float32_local_w32": [
+      96,
+      128
+    ],
+    "scheduling_128_float32_original_4": [
+      96,
+      128
+    ],
+    "scheduling_128_float32_original_4_raw": [
+      96,
+      128
+    ],
+    "scheduling_128_float16_full_feedforward": [
+      96,
+      128
+    ],
+    "scheduling_128_float16_local_w32": [
+      96,
+      128
+    ],
+    "scheduling_128_float16_original_1": [
+      96,
+      128
+    ],
+    "scheduling_128_float16_original_1_raw": [
+      96,
+      128
+    ],
+    "scheduling_128_float16_local_w2": [
+      96,
+      128
+    ],
+    "scheduling_128_float16_local_w8": [
+      96,
+      128
+    ],
+    "scheduling_128_float16_original_4": [
+      96,
+      128
+    ],
+    "scheduling_128_float16_original_4_raw": [
+      96,
+      128
+    ],
+    "scheduling_128_float16_original_full": [
+      96,
+      128
+    ],
+    "scheduling_128_float16_original_full_raw": [
+      96,
+      128
+    ],
+    "telemetry_8_float64_original_4": [
+      96,
+      8
+    ],
+    "telemetry_8_float64_original_4_raw": [
+      96,
+      8
+    ],
+    "telemetry_8_float64_local_w8": [
+      96,
+      8
+    ],
+    "telemetry_8_float64_local_w2": [
+      96,
+      8
+    ],
+    "telemetry_8_float64_local_w32": [
+      96,
+      8
+    ],
+    "telemetry_8_float64_original_full": [
+      96,
+      8
+    ],
+    "telemetry_8_float64_original_full_raw": [
+      96,
+      8
+    ],
+    "telemetry_8_float64_full_feedforward": [
+      96,
+      8
+    ],
+    "telemetry_8_float64_original_1": [
+      96,
+      8
+    ],
+    "telemetry_8_float64_original_1_raw": [
+      96,
+      8
+    ],
+    "telemetry_8_float32_local_w8": [
+      96,
+      8
+    ],
+    "telemetry_8_float32_original_4": [
+      96,
+      8
+    ],
+    "telemetry_8_float32_original_4_raw": [
+      96,
+      8
+    ],
+    "telemetry_8_float32_local_w32": [
+      96,
+      8
+    ],
+    "telemetry_8_float32_original_full": [
+      96,
+      8
+    ],
+    "telemetry_8_float32_original_full_raw": [
+      96,
+      8
+    ],
+    "telemetry_8_float32_original_1": [
+      96,
+      8
+    ],
+    "telemetry_8_float32_original_1_raw": [
+      96,
+      8
+    ],
+    "telemetry_8_float32_local_w2": [
+      96,
+      8
+    ],
+    "telemetry_8_float32_full_feedforward": [
+      96,
+      8
+    ],
+    "telemetry_8_float16_full_feedforward": [
+      96,
+      8
+    ],
+    "telemetry_8_float16_original_4": [
+      96,
+      8
+    ],
+    "telemetry_8_float16_original_4_raw": [
+      96,
+      8
+    ],
+    "telemetry_8_float16_original_full": [
+      96,
+      8
+    ],
+    "telemetry_8_float16_original_full_raw": [
+      96,
+      8
+    ],
+    "telemetry_8_float16_original_1": [
+      96,
+      8
+    ],
+    "telemetry_8_float16_original_1_raw": [
+      96,
+      8
+    ],
+    "telemetry_8_float16_local_w8": [
+      96,
+      8
+    ],
+    "telemetry_8_float16_local_w2": [
+      96,
+      8
+    ],
+    "telemetry_8_float16_local_w32": [
+      96,
+      8
+    ],
+    "telemetry_16_float64_original_full": [
+      96,
+      16
+    ],
+    "telemetry_16_float64_original_full_raw": [
+      96,
+      16
+    ],
+    "telemetry_16_float64_original_1": [
+      96,
+      16
+    ],
+    "telemetry_16_float64_original_1_raw": [
+      96,
+      16
+    ],
+    "telemetry_16_float64_full_feedforward": [
+      96,
+      16
+    ],
+    "telemetry_16_float64_local_w2": [
+      96,
+      16
+    ],
+    "telemetry_16_float64_local_w32": [
+      96,
+      16
+    ],
+    "telemetry_16_float64_local_w8": [
+      96,
+      16
+    ],
+    "telemetry_16_float64_original_4": [
+      96,
+      16
+    ],
+    "telemetry_16_float64_original_4_raw": [
+      96,
+      16
+    ],
+    "telemetry_16_float32_local_w32": [
+      96,
+      16
+    ],
+    "telemetry_16_float32_local_w8": [
+      96,
+      16
+    ],
+    "telemetry_16_float32_local_w2": [
+      96,
+      16
+    ],
+    "telemetry_16_float32_full_feedforward": [
+      96,
+      16
+    ],
+    "telemetry_16_float32_original_1": [
+      96,
+      16
+    ],
+    "telemetry_16_float32_original_1_raw": [
+      96,
+      16
+    ],
+    "telemetry_16_float32_original_full": [
+      96,
+      16
+    ],
+    "telemetry_16_float32_original_full_raw": [
+      96,
+      16
+    ],
+    "telemetry_16_float32_original_4": [
+      96,
+      16
+    ],
+    "telemetry_16_float32_original_4_raw": [
+      96,
+      16
+    ],
+    "telemetry_16_float16_original_full": [
+      96,
+      16
+    ],
+    "telemetry_16_float16_original_full_raw": [
+      96,
+      16
+    ],
+    "telemetry_16_float16_original_4": [
+      96,
+      16
+    ],
+    "telemetry_16_float16_original_4_raw": [
+      96,
+      16
+    ],
+    "telemetry_16_float16_local_w32": [
+      96,
+      16
+    ],
+    "telemetry_16_float16_original_1": [
+      96,
+      16
+    ],
+    "telemetry_16_float16_original_1_raw": [
+      96,
+      16
+    ],
+    "telemetry_16_float16_local_w8": [
+      96,
+      16
+    ],
+    "telemetry_16_float16_local_w2": [
+      96,
+      16
+    ],
+    "telemetry_16_float16_full_feedforward": [
+      96,
+      16
+    ],
+    "telemetry_32_float64_local_w2": [
+      96,
+      32
+    ],
+    "telemetry_32_float64_local_w8": [
+      96,
+      32
+    ],
+    "telemetry_32_float64_original_full": [
+      96,
+      32
+    ],
+    "telemetry_32_float64_original_full_raw": [
+      96,
+      32
+    ],
+    "telemetry_32_float64_original_1": [
+      96,
+      32
+    ],
+    "telemetry_32_float64_original_1_raw": [
+      96,
+      32
+    ],
+    "telemetry_32_float64_full_feedforward": [
+      96,
+      32
+    ],
+    "telemetry_32_float64_original_4": [
+      96,
+      32
+    ],
+    "telemetry_32_float64_original_4_raw": [
+      96,
+      32
+    ],
+    "telemetry_32_float64_local_w32": [
+      96,
+      32
+    ],
+    "telemetry_32_float32_original_4": [
+      96,
+      32
+    ],
+    "telemetry_32_float32_original_4_raw": [
+      96,
+      32
+    ],
+    "telemetry_32_float32_original_1": [
+      96,
+      32
+    ],
+    "telemetry_32_float32_original_1_raw": [
+      96,
+      32
+    ],
+    "telemetry_32_float32_local_w2": [
+      96,
+      32
+    ],
+    "telemetry_32_float32_local_w8": [
+      96,
+      32
+    ],
+    "telemetry_32_float32_full_feedforward": [
+      96,
+      32
+    ],
+    "telemetry_32_float32_original_full": [
+      96,
+      32
+    ],
+    "telemetry_32_float32_original_full_raw": [
+      96,
+      32
+    ],
+    "telemetry_32_float32_local_w32": [
+      96,
+      32
+    ],
+    "telemetry_32_float16_local_w2": [
+      96,
+      32
+    ],
+    "telemetry_32_float16_full_feedforward": [
+      96,
+      32
+    ],
+    "telemetry_32_float16_local_w32": [
+      96,
+      32
+    ],
+    "telemetry_32_float16_local_w8": [
+      96,
+      32
+    ],
+    "telemetry_32_float16_original_1": [
+      96,
+      32
+    ],
+    "telemetry_32_float16_original_1_raw": [
+      96,
+      32
+    ],
+    "telemetry_32_float16_original_full": [
+      96,
+      32
+    ],
+    "telemetry_32_float16_original_full_raw": [
+      96,
+      32
+    ],
+    "telemetry_32_float16_original_4": [
+      96,
+      32
+    ],
+    "telemetry_32_float16_original_4_raw": [
+      96,
+      32
+    ],
+    "telemetry_64_float64_original_4": [
+      96,
+      64
+    ],
+    "telemetry_64_float64_original_4_raw": [
+      96,
+      64
+    ],
+    "telemetry_64_float64_original_1": [
+      96,
+      64
+    ],
+    "telemetry_64_float64_original_1_raw": [
+      96,
+      64
+    ],
+    "telemetry_64_float64_local_w8": [
+      96,
+      64
+    ],
+    "telemetry_64_float64_full_feedforward": [
+      96,
+      64
+    ],
+    "telemetry_64_float64_local_w2": [
+      96,
+      64
+    ],
+    "telemetry_64_float64_local_w32": [
+      96,
+      64
+    ],
+    "telemetry_64_float64_original_full": [
+      96,
+      64
+    ],
+    "telemetry_64_float64_original_full_raw": [
+      96,
+      64
+    ],
+    "telemetry_64_float32_full_feedforward": [
+      96,
+      64
+    ],
+    "telemetry_64_float32_local_w32": [
+      96,
+      64
+    ],
+    "telemetry_64_float32_local_w2": [
+      96,
+      64
+    ],
+    "telemetry_64_float32_original_4": [
+      96,
+      64
+    ],
+    "telemetry_64_float32_original_4_raw": [
+      96,
+      64
+    ],
+    "telemetry_64_float32_original_1": [
+      96,
+      64
+    ],
+    "telemetry_64_float32_original_1_raw": [
+      96,
+      64
+    ],
+    "telemetry_64_float32_local_w8": [
+      96,
+      64
+    ],
+    "telemetry_64_float32_original_full": [
+      96,
+      64
+    ],
+    "telemetry_64_float32_original_full_raw": [
+      96,
+      64
+    ],
+    "telemetry_64_float16_original_full": [
+      96,
+      64
+    ],
+    "telemetry_64_float16_original_full_raw": [
+      96,
+      64
+    ],
+    "telemetry_64_float16_original_1": [
+      96,
+      64
+    ],
+    "telemetry_64_float16_original_1_raw": [
+      96,
+      64
+    ],
+    "telemetry_64_float16_full_feedforward": [
+      96,
+      64
+    ],
+    "telemetry_64_float16_local_w8": [
+      96,
+      64
+    ],
+    "telemetry_64_float16_original_4": [
+      96,
+      64
+    ],
+    "telemetry_64_float16_original_4_raw": [
+      96,
+      64
+    ],
+    "telemetry_64_float16_local_w2": [
+      96,
+      64
+    ],
+    "telemetry_64_float16_local_w32": [
+      96,
+      64
+    ],
+    "telemetry_128_float64_local_w32": [
+      96,
+      128
+    ],
+    "telemetry_128_float64_original_1": [
+      96,
+      128
+    ],
+    "telemetry_128_float64_original_1_raw": [
+      96,
+      128
+    ],
+    "telemetry_128_float64_full_feedforward": [
+      96,
+      128
+    ],
+    "telemetry_128_float64_local_w8": [
+      96,
+      128
+    ],
+    "telemetry_128_float64_original_4": [
+      96,
+      128
+    ],
+    "telemetry_128_float64_original_4_raw": [
+      96,
+      128
+    ],
+    "telemetry_128_float64_original_full": [
+      96,
+      128
+    ],
+    "telemetry_128_float64_original_full_raw": [
+      96,
+      128
+    ],
+    "telemetry_128_float64_local_w2": [
+      96,
+      128
+    ],
+    "telemetry_128_float32_full_feedforward": [
+      96,
+      128
+    ],
+    "telemetry_128_float32_original_1": [
+      96,
+      128
+    ],
+    "telemetry_128_float32_original_1_raw": [
+      96,
+      128
+    ],
+    "telemetry_128_float32_original_full": [
+      96,
+      128
+    ],
+    "telemetry_128_float32_original_full_raw": [
+      96,
+      128
+    ],
+    "telemetry_128_float32_original_4": [
+      96,
+      128
+    ],
+    "telemetry_128_float32_original_4_raw": [
+      96,
+      128
+    ],
+    "telemetry_128_float32_local_w32": [
+      96,
+      128
+    ],
+    "telemetry_128_float32_local_w8": [
+      96,
+      128
+    ],
+    "telemetry_128_float32_local_w2": [
+      96,
+      128
+    ],
+    "telemetry_128_float16_local_w32": [
+      96,
+      128
+    ],
+    "telemetry_128_float16_local_w8": [
+      96,
+      128
+    ],
+    "telemetry_128_float16_original_4": [
+      96,
+      128
+    ],
+    "telemetry_128_float16_original_4_raw": [
+      96,
+      128
+    ],
+    "telemetry_128_float16_original_1": [
+      96,
+      128
+    ],
+    "telemetry_128_float16_original_1_raw": [
+      96,
+      128
+    ],
+    "telemetry_128_float16_original_full": [
+      96,
+      128
+    ],
+    "telemetry_128_float16_original_full_raw": [
+      96,
+      128
+    ],
+    "telemetry_128_float16_full_feedforward": [
+      96,
+      128
+    ],
+    "telemetry_128_float16_local_w2": [
+      96,
+      128
+    ]
+  }
+}

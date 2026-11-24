@@ -1,0 +1,465 @@
+{
+  "verified": true,
+  "run": {
+    "kernel": "ajayasaithambi/loopedwsp-loop-comparisons",
+    "version": 1,
+    "device": "Tesla T4",
+    "source_verified": [
+      "main.py"
+    ],
+    "script_sha256": "f5b5928c3510c9a051710098dec999dd9c8157c6f156ec5940a5700a3a7671f3",
+    "protocol_sha256": "3019d0944a3d9dd2d8e8b9c5d8ec7b25df68326155fe3b42739ea125570b3510",
+    "inputs_verified": 16,
+    "output_sha256": {
+      "comparison-results.json": "709b5b754b3c017d1cc5fb03bbe071c257b8fb1dd8a51977695ea282fa30094d",
+      "comparison-predictions.npz": "aea6bfea843c2329a516088d32baacf80e90b49f5f209481f6571a021af1ccde"
+    },
+    "runtime_sha256": "cd0b0aa3018fa671db5f86706467f9a6b2b18923e38f11043edbdcdaa600ef8b"
+  },
+  "settings_verified": 315,
+  "prediction_arrays": 450,
+  "timings_per_setting": 3,
+  "published_records_verified": 960,
+  "challenge_pairs_verified": 240,
+  "totals_over_settings": {
+    "published": {
+      "n_records": 20160,
+      "exact": 9436,
+      "n_labels": 999936,
+      "correct": 634103,
+      "invalid": 141888,
+      "false_positives": 28180,
+      "false_negatives": 195765,
+      "final_correct": 13679,
+      "incorrect_records": 10724,
+      "incorrect_flags": 365833
+    },
+    "challenge": {
+      "n_records": 10080,
+      "exact": 5317,
+      "n_labels": 499968,
+      "correct": 347656,
+      "invalid": 70944,
+      "false_positives": 7690,
+      "false_negatives": 73678,
+      "final_correct": 6080,
+      "pairs_both_final_correct": 1744,
+      "incorrect_records": 4763,
+      "incorrect_flags": 152312
+    },
+    "raw_published": {
+      "n_records": 20160,
+      "exact": 9498,
+      "n_labels": 999936,
+      "correct": 638624,
+      "invalid": 135104,
+      "false_positives": 28540,
+      "false_negatives": 197668,
+      "final_correct": 13791,
+      "incorrect_records": 10662,
+      "incorrect_flags": 361312
+    },
+    "raw_challenge": {
+      "n_records": 10080,
+      "exact": 5350,
+      "n_labels": 499968,
+      "correct": 350177,
+      "invalid": 67552,
+      "false_positives": 7874,
+      "false_negatives": 74365,
+      "final_correct": 6136,
+      "pairs_both_final_correct": 1768,
+      "incorrect_records": 4730,
+      "incorrect_flags": 149791
+    }
+  },
+  "grading": "Finite scores > 0 give class 1 and zero ties give 0. Saved class 2 is invalid. Each incorrect flag counts once. A record passes only if every flag is correct. The archives contain class IDs. Timings are checked from the three reported values.",
+  "raw_to_strict_over_settings": {
+    "published": {
+      "different_flags": 6784,
+      "different_records": 1088,
+      "old_correct_flags_lost": 4521,
+      "new_correct_flags_gained": 0,
+      "old_exact_records_lost": 62,
+      "new_exact_records_gained": 0
+    },
+    "challenge": {
+      "different_flags": 3392,
+      "different_records": 544,
+      "old_correct_flags_lost": 2521,
+      "new_correct_flags_gained": 0,
+      "old_exact_records_lost": 33,
+      "new_exact_records_gained": 0
+    }
+  },
+  "legacy_fp64": {
+    "prediction_archive_sha256": "f8232382670e4f14cff24fe3690720cc0daec222d592ee7e54081aa0bea187d4",
+    "cohort": "published",
+    "method": "original_full",
+    "totals": {
+      "strict": {
+        "different_flags": 0,
+        "different_records": 0,
+        "old_correct_flags_lost": 0,
+        "new_correct_flags_gained": 0,
+        "old_exact_records_lost": 0,
+        "new_exact_records_gained": 0
+      },
+      "raw": {
+        "different_flags": 0,
+        "different_records": 0,
+        "old_correct_flags_lost": 0,
+        "new_correct_flags_gained": 0,
+        "old_exact_records_lost": 0,
+        "new_exact_records_gained": 0
+      }
+    },
+    "by_size": [
+      {
+        "task": "inventory",
+        "size": 8,
+        "old_sha256": "78d2b83e2576933d3c8032c894d095d77d1d689bbd16f2c9d8981b0b9d6f399f",
+        "strict_sha256": "78d2b83e2576933d3c8032c894d095d77d1d689bbd16f2c9d8981b0b9d6f399f",
+        "raw_sha256": "78d2b83e2576933d3c8032c894d095d77d1d689bbd16f2c9d8981b0b9d6f399f",
+        "strict": {
+          "different_flags": 0,
+          "different_records": 0,
+          "old_correct_flags_lost": 0,
+          "new_correct_flags_gained": 0,
+          "old_exact_records_lost": 0,
+          "new_exact_records_gained": 0
+        },
+        "raw": {
+          "different_flags": 0,
+          "different_records": 0,
+          "old_correct_flags_lost": 0,
+          "new_correct_flags_gained": 0,
+          "old_exact_records_lost": 0,
+          "new_exact_records_gained": 0
+        }
+      },
+      {
+        "task": "inventory",
+        "size": 16,
+        "old_sha256": "5dbe1db9bd6809536727c557474d182a1e46e1ed831363cc339f5dfad09c763e",
+        "strict_sha256": "5dbe1db9bd6809536727c557474d182a1e46e1ed831363cc339f5dfad09c763e",
+        "raw_sha256": "5dbe1db9bd6809536727c557474d182a1e46e1ed831363cc339f5dfad09c763e",
+        "strict": {
+          "different_flags": 0,
+          "different_records": 0,
+          "old_correct_flags_lost": 0,
+          "new_correct_flags_gained": 0,
+          "old_exact_records_lost": 0,
+          "new_exact_records_gained": 0
+        },
+        "raw": {
+          "different_flags": 0,
+          "different_records": 0,
+          "old_correct_flags_lost": 0,
+          "new_correct_flags_gained": 0,
+          "old_exact_records_lost": 0,
+          "new_exact_records_gained": 0
+        }
+      },
+      {
+        "task": "inventory",
+        "size": 32,
+        "old_sha256": "692c938158b01c55f5095e884046f7c39aa9f34b9259fd95a370dd20c10a41c7",
+        "strict_sha256": "692c938158b01c55f5095e884046f7c39aa9f34b9259fd95a370dd20c10a41c7",
+        "raw_sha256": "692c938158b01c55f5095e884046f7c39aa9f34b9259fd95a370dd20c10a41c7",
+        "strict": {
+          "different_flags": 0,
+          "different_records": 0,
+          "old_correct_flags_lost": 0,
+          "new_correct_flags_gained": 0,
+          "old_exact_records_lost": 0,
+          "new_exact_records_gained": 0
+        },
+        "raw": {
+          "different_flags": 0,
+          "different_records": 0,
+          "old_correct_flags_lost": 0,
+          "new_correct_flags_gained": 0,
+          "old_exact_records_lost": 0,
+          "new_exact_records_gained": 0
+        }
+      },
+      {
+        "task": "inventory",
+        "size": 64,
+        "old_sha256": "2dee9284b91d85dcecec767b606060bd51d494136ac20ec56fdd3cf96a86a7fd",
+        "strict_sha256": "2dee9284b91d85dcecec767b606060bd51d494136ac20ec56fdd3cf96a86a7fd",
+        "raw_sha256": "2dee9284b91d85dcecec767b606060bd51d494136ac20ec56fdd3cf96a86a7fd",
+        "strict": {
+          "different_flags": 0,
+          "different_records": 0,
+          "old_correct_flags_lost": 0,
+          "new_correct_flags_gained": 0,
+          "old_exact_records_lost": 0,
+          "new_exact_records_gained": 0
+        },
+        "raw": {
+          "different_flags": 0,
+          "different_records": 0,
+          "old_correct_flags_lost": 0,
+          "new_correct_flags_gained": 0,
+          "old_exact_records_lost": 0,
+          "new_exact_records_gained": 0
+        }
+      },
+      {
+        "task": "inventory",
+        "size": 128,
+        "old_sha256": "d3c276fc1fff73a502a829429f879b57d8347d06791debacc80b88a2b461d1fb",
+        "strict_sha256": "d3c276fc1fff73a502a829429f879b57d8347d06791debacc80b88a2b461d1fb",
+        "raw_sha256": "d3c276fc1fff73a502a829429f879b57d8347d06791debacc80b88a2b461d1fb",
+        "strict": {
+          "different_flags": 0,
+          "different_records": 0,
+          "old_correct_flags_lost": 0,
+          "new_correct_flags_gained": 0,
+          "old_exact_records_lost": 0,
+          "new_exact_records_gained": 0
+        },
+        "raw": {
+          "different_flags": 0,
+          "different_records": 0,
+          "old_correct_flags_lost": 0,
+          "new_correct_flags_gained": 0,
+          "old_exact_records_lost": 0,
+          "new_exact_records_gained": 0
+        }
+      },
+      {
+        "task": "scheduling",
+        "size": 8,
+        "old_sha256": "e94d5fbfdc07acf21baaeb2806486502ca469c9af32757d15d745d917314e33c",
+        "strict_sha256": "e94d5fbfdc07acf21baaeb2806486502ca469c9af32757d15d745d917314e33c",
+        "raw_sha256": "e94d5fbfdc07acf21baaeb2806486502ca469c9af32757d15d745d917314e33c",
+        "strict": {
+          "different_flags": 0,
+          "different_records": 0,
+          "old_correct_flags_lost": 0,
+          "new_correct_flags_gained": 0,
+          "old_exact_records_lost": 0,
+          "new_exact_records_gained": 0
+        },
+        "raw": {
+          "different_flags": 0,
+          "different_records": 0,
+          "old_correct_flags_lost": 0,
+          "new_correct_flags_gained": 0,
+          "old_exact_records_lost": 0,
+          "new_exact_records_gained": 0
+        }
+      },
+      {
+        "task": "scheduling",
+        "size": 16,
+        "old_sha256": "80646b50ad302d09c2567f4cd882859fdf4e35c20d365ac5650999ea6734b617",
+        "strict_sha256": "80646b50ad302d09c2567f4cd882859fdf4e35c20d365ac5650999ea6734b617",
+        "raw_sha256": "80646b50ad302d09c2567f4cd882859fdf4e35c20d365ac5650999ea6734b617",
+        "strict": {
+          "different_flags": 0,
+          "different_records": 0,
+          "old_correct_flags_lost": 0,
+          "new_correct_flags_gained": 0,
+          "old_exact_records_lost": 0,
+          "new_exact_records_gained": 0
+        },
+        "raw": {
+          "different_flags": 0,
+          "different_records": 0,
+          "old_correct_flags_lost": 0,
+          "new_correct_flags_gained": 0,
+          "old_exact_records_lost": 0,
+          "new_exact_records_gained": 0
+        }
+      },
+      {
+        "task": "scheduling",
+        "size": 32,
+        "old_sha256": "8cc0d06ef63115f73dcfd7b4c9c88570d82287d286e61f046af4b0b483a5e1b8",
+        "strict_sha256": "8cc0d06ef63115f73dcfd7b4c9c88570d82287d286e61f046af4b0b483a5e1b8",
+        "raw_sha256": "8cc0d06ef63115f73dcfd7b4c9c88570d82287d286e61f046af4b0b483a5e1b8",
+        "strict": {
+          "different_flags": 0,
+          "different_records": 0,
+          "old_correct_flags_lost": 0,
+          "new_correct_flags_gained": 0,
+          "old_exact_records_lost": 0,
+          "new_exact_records_gained": 0
+        },
+        "raw": {
+          "different_flags": 0,
+          "different_records": 0,
+          "old_correct_flags_lost": 0,
+          "new_correct_flags_gained": 0,
+          "old_exact_records_lost": 0,
+          "new_exact_records_gained": 0
+        }
+      },
+      {
+        "task": "scheduling",
+        "size": 64,
+        "old_sha256": "6dd6b892fea34f53b7daa79bbdcbc79e943142eb3cafdef749fe9db6cc3f26b6",
+        "strict_sha256": "6dd6b892fea34f53b7daa79bbdcbc79e943142eb3cafdef749fe9db6cc3f26b6",
+        "raw_sha256": "6dd6b892fea34f53b7daa79bbdcbc79e943142eb3cafdef749fe9db6cc3f26b6",
+        "strict": {
+          "different_flags": 0,
+          "different_records": 0,
+          "old_correct_flags_lost": 0,
+          "new_correct_flags_gained": 0,
+          "old_exact_records_lost": 0,
+          "new_exact_records_gained": 0
+        },
+        "raw": {
+          "different_flags": 0,
+          "different_records": 0,
+          "old_correct_flags_lost": 0,
+          "new_correct_flags_gained": 0,
+          "old_exact_records_lost": 0,
+          "new_exact_records_gained": 0
+        }
+      },
+      {
+        "task": "scheduling",
+        "size": 128,
+        "old_sha256": "fa4d54ac6689483db478bd9ad2cd8909f87507a2abe4c9b41a5dccf48130a129",
+        "strict_sha256": "fa4d54ac6689483db478bd9ad2cd8909f87507a2abe4c9b41a5dccf48130a129",
+        "raw_sha256": "fa4d54ac6689483db478bd9ad2cd8909f87507a2abe4c9b41a5dccf48130a129",
+        "strict": {
+          "different_flags": 0,
+          "different_records": 0,
+          "old_correct_flags_lost": 0,
+          "new_correct_flags_gained": 0,
+          "old_exact_records_lost": 0,
+          "new_exact_records_gained": 0
+        },
+        "raw": {
+          "different_flags": 0,
+          "different_records": 0,
+          "old_correct_flags_lost": 0,
+          "new_correct_flags_gained": 0,
+          "old_exact_records_lost": 0,
+          "new_exact_records_gained": 0
+        }
+      },
+      {
+        "task": "telemetry",
+        "size": 8,
+        "old_sha256": "5203a35e89333af5d1d445ba36242f47bc904b239e1501621508c82343b4a277",
+        "strict_sha256": "5203a35e89333af5d1d445ba36242f47bc904b239e1501621508c82343b4a277",
+        "raw_sha256": "5203a35e89333af5d1d445ba36242f47bc904b239e1501621508c82343b4a277",
+        "strict": {
+          "different_flags": 0,
+          "different_records": 0,
+          "old_correct_flags_lost": 0,
+          "new_correct_flags_gained": 0,
+          "old_exact_records_lost": 0,
+          "new_exact_records_gained": 0
+        },
+        "raw": {
+          "different_flags": 0,
+          "different_records": 0,
+          "old_correct_flags_lost": 0,
+          "new_correct_flags_gained": 0,
+          "old_exact_records_lost": 0,
+          "new_exact_records_gained": 0
+        }
+      },
+      {
+        "task": "telemetry",
+        "size": 16,
+        "old_sha256": "39a2e2111cc61da3813b3ed6284d7fd3af41495e08d0bf0e4a4b748353e93f78",
+        "strict_sha256": "39a2e2111cc61da3813b3ed6284d7fd3af41495e08d0bf0e4a4b748353e93f78",
+        "raw_sha256": "39a2e2111cc61da3813b3ed6284d7fd3af41495e08d0bf0e4a4b748353e93f78",
+        "strict": {
+          "different_flags": 0,
+          "different_records": 0,
+          "old_correct_flags_lost": 0,
+          "new_correct_flags_gained": 0,
+          "old_exact_records_lost": 0,
+          "new_exact_records_gained": 0
+        },
+        "raw": {
+          "different_flags": 0,
+          "different_records": 0,
+          "old_correct_flags_lost": 0,
+          "new_correct_flags_gained": 0,
+          "old_exact_records_lost": 0,
+          "new_exact_records_gained": 0
+        }
+      },
+      {
+        "task": "telemetry",
+        "size": 32,
+        "old_sha256": "7fc130ccf080fd47f23aaeba752f564cbf2aaa7ad24a5fd1e2865da7b390a0e9",
+        "strict_sha256": "7fc130ccf080fd47f23aaeba752f564cbf2aaa7ad24a5fd1e2865da7b390a0e9",
+        "raw_sha256": "7fc130ccf080fd47f23aaeba752f564cbf2aaa7ad24a5fd1e2865da7b390a0e9",
+        "strict": {
+          "different_flags": 0,
+          "different_records": 0,
+          "old_correct_flags_lost": 0,
+          "new_correct_flags_gained": 0,
+          "old_exact_records_lost": 0,
+          "new_exact_records_gained": 0
+        },
+        "raw": {
+          "different_flags": 0,
+          "different_records": 0,
+          "old_correct_flags_lost": 0,
+          "new_correct_flags_gained": 0,
+          "old_exact_records_lost": 0,
+          "new_exact_records_gained": 0
+        }
+      },
+      {
+        "task": "telemetry",
+        "size": 64,
+        "old_sha256": "564e1035930b23836b94c9ac093d74aae2085fa55608d68b8ffbb005049fd2fb",
+        "strict_sha256": "564e1035930b23836b94c9ac093d74aae2085fa55608d68b8ffbb005049fd2fb",
+        "raw_sha256": "564e1035930b23836b94c9ac093d74aae2085fa55608d68b8ffbb005049fd2fb",
+        "strict": {
+          "different_flags": 0,
+          "different_records": 0,
+          "old_correct_flags_lost": 0,
+          "new_correct_flags_gained": 0,
+          "old_exact_records_lost": 0,
+          "new_exact_records_gained": 0
+        },
+        "raw": {
+          "different_flags": 0,
+          "different_records": 0,
+          "old_correct_flags_lost": 0,
+          "new_correct_flags_gained": 0,
+          "old_exact_records_lost": 0,
+          "new_exact_records_gained": 0
+        }
+      },
+      {
+        "task": "telemetry",
+        "size": 128,
+        "old_sha256": "c3539a07d32a09c4983d20aca51caf193b90daeead5c2ad446b230e91654a6d4",
+        "strict_sha256": "c3539a07d32a09c4983d20aca51caf193b90daeead5c2ad446b230e91654a6d4",
+        "raw_sha256": "c3539a07d32a09c4983d20aca51caf193b90daeead5c2ad446b230e91654a6d4",
+        "strict": {
+          "different_flags": 0,
+          "different_records": 0,
+          "old_correct_flags_lost": 0,
+          "new_correct_flags_gained": 0,
+          "old_exact_records_lost": 0,
+          "new_exact_records_gained": 0
+        },
+        "raw": {
+          "different_flags": 0,
+          "different_records": 0,
+          "old_correct_flags_lost": 0,
+          "new_correct_flags_gained": 0,
+          "old_exact_records_lost": 0,
+          "new_exact_records_gained": 0
+        }
+      }
+    ]
+  }
+}

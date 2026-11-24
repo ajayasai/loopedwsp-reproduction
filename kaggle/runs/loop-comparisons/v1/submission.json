@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "kernel": "ajayasaithambi/loopedwsp-loop-comparisons",
+  "submitted_utc": "2026-11-24T11:46:29.609950+00:00",
+  "requested_gpu": "NvidiaTeslaT4",
+  "requested_private": true,
+  "requested_internet": false,
+  "input_sha256": {
+    "experiment.py": "8a434c8bf3ed5e85896777e153f3c16a0e1ace27c6c4bc8e3eff07dc64e1476d",
+    "baselines.py": "a6778e01d33d1d297027f3f2c412fdac7baacd37d48d0ae33d8b2da480f1622b",
+    "recurrent.py": "25f22115c55b47d6d22a0a60e5c80dcd926efc9f03e86b466ff32417fb91f856",
+    "challenge.npz": "69f00cf642ef7d1867e6b2e98e35dece1453b788479200f5882063c7b8d6fda0",
+    "protocol.json": "3019d0944a3d9dd2d8e8b9c5d8ec7b25df68326155fe3b42739ea125570b3510",
+    "applications/cases.npz": "8b95019f801afd77cf479ffbc8d52c102a1b698499530bb18aaed20022ff6568",
+    "applications/corpus-lock.json": "b434ce82775d83630c207f50d061b425004cd74f10625f60b1572c16c9c6ae05",
+    "applications/models/inventory/network.json": "efc0cddb0a1eacd7f210bf2ef884ca83457fa461aeb8e89c1d1e6548c735e39c",
+    "applications/models/inventory/weights.npz": "5ec09254e3e5dcd43874fd2e4c0dcadf49d38222d6610b916699a9795e4f7534",
+    "applications/models/inventory/freeze.json": "0510de570076a423294870b2ac97930dd2af12fc23c32e70c3b5bdb1261b5fa2",
+    "applications/models/scheduling/network.json": "711dd09e0e68caf771525b8ab95a04016980a9c5f250de170666fa06933a7987",
+    "applications/models/scheduling/weights.npz": "d1b057ad6d1329d70255b85efd565b9fb4cea0dbc3d683b5e9fee16a9a98ea04",
+    "applications/models/scheduling/freeze.json": "08506643fcf5fd821545f223f873b0209d460407fc7addbddaf75e226d8c06eb",
+    "applications/models/telemetry/network.json": "6ec9c76eef5ec405ab66d6727602a19af17cd116c233bca7c44193714e242871",
+    "applications/models/telemetry/weights.npz": "1d96a5c7313528d18254dc6cc52e57ba274aede05e1a8711e02f1993a8a1ab4c",
+    "applications/models/telemetry/freeze.json": "d8dce420951acfd5ef632bfc85071fb7d05d909f40b3d090b5fb11a775fe9ff5"
+  },
+  "script_sha256": "f5b5928c3510c9a051710098dec999dd9c8157c6f156ec5940a5700a3a7671f3",
+  "timeout_seconds": 7200,
+  "url": "https://www.kaggle.com/code/ajayasaithambi/loopedwsp-loop-comparisons/versions/1"
+}

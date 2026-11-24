@@ -1,0 +1,13 @@
+{
+  "id": "ajayasaithambi/loopedwsp-loop-comparisons",
+  "id_no": 147111896,
+  "version": 1,
+  "title": "LoopedWSP Loop Comparisons",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": false,
+  "enable_tpu": false,
+  "machine_shape": "NvidiaTeslaT4",
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:fc720c15545eb096a510e1f085b17fc118387a007599424d953a4f327b71cacf",
+  "downloaded_source_sha256": "f5b5928c3510c9a051710098dec999dd9c8157c6f156ec5940a5700a3a7671f3"
+}

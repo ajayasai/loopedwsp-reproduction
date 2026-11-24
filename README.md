@@ -28,6 +28,12 @@ Each application has its own frozen transformer. Development used records of len
 
 Across the 15 task-size settings, GPU model inference took 0.710 seconds in total. The conventional CPU scoring rules produced the same labels in 0.043 seconds on the Kaggle host. [Timing breakdown](results/applications/sizes.csv)
 
+## When does looping help?
+
+On a Kaggle Tesla T4, the same frozen weights went from **155/960** exact published records after one pass to **381/960** after four and **960/960** at full depth in both FP32 and FP64. For 240 new pairs in which changing the first item flips the final answer, one pass got both answers correct on **0/240** pairs. Full depth and task-specific global feedforward models each got **240/240**. The global baselines use a causal prefix mean for inventory, pairwise overlap checks for bookings, and attention to the latest decisive sensor reading. They also passed all 1,440 records in FP16. All three original models encountered nonfinite intermediate values in FP16 at full depth.
+
+Looping helped the original blocks carry information beyond the positions they could reach in one pass. A feedforward computation with direct access to the relevant inputs also solved these tasks, using 3, 16 and 4 stored scalar coefficients respectively. Those counts exclude the fixed operations and masks. The study covers 315 settings at lengths 8–128 with equal-parameter depth comparisons, local-window controls, and three timed repeats per setting. [Full comparison and accuracy plot](results/loop-comparison/report.md) · [All measurements](results/loop-comparison/sizes.csv) · [Parameter budgets](results/loop-comparison/parameter-budgets.csv) · [Protocol frozen before the run](https://github.com/ajayasai/loopedwsp-reproduction/tree/04111d2a806743ae4011bfb4a4310f28591cc867/comparisons)
+
 ## Run a frozen model
 
 Use Python 3.12 or later from the repository root. The local predictor uses NumPy on CPU. Install the pinned CPU and report dependencies with `python -m pip install -r requirements.txt`, then run this example in Python.
