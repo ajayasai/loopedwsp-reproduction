@@ -1,0 +1,454 @@
+{
+  "task": "graph",
+  "model_sha256": "b03c6c22d92d9af26f7fc0c1b68f5876909f202fe2126e18998cb3015bf44d40",
+  "parameters": 46624,
+  "dev_sizes": [
+    7,
+    10,
+    12
+  ],
+  "rows": [
+    {
+      "size": 7,
+      "range": "within",
+      "corpus": {
+        "seed_sequence": [
+          42,
+          0,
+          7
+        ],
+        "count": 96,
+        "sha256": "9b2f646820d34080c61b54cf7801fc10a4b36859a34d044ba22e4e90f87d8aad"
+      },
+      "count": 96,
+      "correct": 96,
+      "accuracy": 1.0,
+      "inference_seconds": 0.05071587399999089,
+      "seconds_including_extra_checkpoints": 0.0533768630000111,
+      "token_range": [
+        16,
+        17
+      ],
+      "base_loop_range": [
+        16,
+        17
+      ],
+      "batches": 7,
+      "correct_at_loop_multipliers": {
+        "1": 96,
+        "2": 96,
+        "4": 96
+      },
+      "unchanged_at_all_checkpoints": 96,
+      "by_distance": {
+        "1": {
+          "correct": 18,
+          "count": 18,
+          "inference_seconds": 0.008863233999989006
+        },
+        "2": {
+          "correct": 18,
+          "count": 18,
+          "inference_seconds": 0.011435852999994722
+        },
+        "3": {
+          "correct": 18,
+          "count": 18,
+          "inference_seconds": 0.008456282999986797
+        },
+        "unreachable": {
+          "correct": 24,
+          "count": 24,
+          "inference_seconds": 0.005214128999995182
+        },
+        "4": {
+          "correct": 18,
+          "count": 18,
+          "inference_seconds": 0.016746375000025182
+        }
+      }
+    },
+    {
+      "size": 10,
+      "range": "within",
+      "corpus": {
+        "seed_sequence": [
+          42,
+          0,
+          10
+        ],
+        "count": 96,
+        "sha256": "33e0daa05f929d3edf3b0f51b79a5f09dd70e4de88c2a01f5001a108fb3b49a9"
+      },
+      "count": 96,
+      "correct": 96,
+      "accuracy": 1.0,
+      "inference_seconds": 0.039209177000032014,
+      "seconds_including_extra_checkpoints": 0.04154368600001135,
+      "token_range": [
+        25,
+        25
+      ],
+      "base_loop_range": [
+        25,
+        25
+      ],
+      "batches": 5,
+      "correct_at_loop_multipliers": {
+        "1": 96,
+        "2": 96,
+        "4": 96
+      },
+      "unchanged_at_all_checkpoints": 96,
+      "by_distance": {
+        "1": {
+          "correct": 18,
+          "count": 18,
+          "inference_seconds": 0.008806337999999414
+        },
+        "2": {
+          "correct": 18,
+          "count": 18,
+          "inference_seconds": 0.008383154999989983
+        },
+        "3": {
+          "correct": 18,
+          "count": 18,
+          "inference_seconds": 0.008348193000017545
+        },
+        "unreachable": {
+          "correct": 24,
+          "count": 24,
+          "inference_seconds": 0.005216687000000775
+        },
+        "4": {
+          "correct": 18,
+          "count": 18,
+          "inference_seconds": 0.008454804000024296
+        }
+      }
+    },
+    {
+      "size": 12,
+      "range": "within",
+      "corpus": {
+        "seed_sequence": [
+          42,
+          0,
+          12
+        ],
+        "count": 96,
+        "sha256": "4b4d23d041870711d5193ea34938eb5b1ee37f2902685beb949b78aef6ebc8c2"
+      },
+      "count": 96,
+      "correct": 96,
+      "accuracy": 1.0,
+      "inference_seconds": 0.041341735000031576,
+      "seconds_including_extra_checkpoints": 0.0434659160000308,
+      "token_range": [
+        29,
+        29
+      ],
+      "base_loop_range": [
+        29,
+        29
+      ],
+      "batches": 5,
+      "correct_at_loop_multipliers": {
+        "1": 96,
+        "2": 96,
+        "4": 96
+      },
+      "unchanged_at_all_checkpoints": 96,
+      "by_distance": {
+        "1": {
+          "correct": 18,
+          "count": 18,
+          "inference_seconds": 0.007636968000014122
+        },
+        "2": {
+          "correct": 18,
+          "count": 18,
+          "inference_seconds": 0.007385459000005312
+        },
+        "3": {
+          "correct": 18,
+          "count": 18,
+          "inference_seconds": 0.0073013930000058735
+        },
+        "unreachable": {
+          "correct": 24,
+          "count": 24,
+          "inference_seconds": 0.011684072000008427
+        },
+        "4": {
+          "correct": 18,
+          "count": 18,
+          "inference_seconds": 0.007333842999997842
+        }
+      }
+    },
+    {
+      "size": 24,
+      "range": "beyond",
+      "corpus": {
+        "seed_sequence": [
+          42,
+          0,
+          24
+        ],
+        "count": 96,
+        "sha256": "023f093554896543a14914f8c0e855b164ad6c2a1b5e4fed87b6ab08cf23e9a3"
+      },
+      "count": 96,
+      "correct": 96,
+      "accuracy": 1.0,
+      "inference_seconds": 0.14090298199997164,
+      "seconds_including_extra_checkpoints": 0.1434650890000171,
+      "token_range": [
+        61,
+        61
+      ],
+      "base_loop_range": [
+        61,
+        61
+      ],
+      "batches": 10,
+      "correct_at_loop_multipliers": {
+        "1": 96,
+        "2": 96,
+        "4": 96
+      },
+      "unchanged_at_all_checkpoints": 96,
+      "by_distance": {
+        "8": {
+          "correct": 8,
+          "count": 8,
+          "inference_seconds": 0.010871143999992228
+        },
+        "9": {
+          "correct": 8,
+          "count": 8,
+          "inference_seconds": 0.013062141999995447
+        },
+        "10": {
+          "correct": 8,
+          "count": 8,
+          "inference_seconds": 0.013028380999998035
+        },
+        "unreachable": {
+          "correct": 24,
+          "count": 24,
+          "inference_seconds": 0.02340606199999229
+        },
+        "11": {
+          "correct": 8,
+          "count": 8,
+          "inference_seconds": 0.013031345000001693
+        },
+        "12": {
+          "correct": 8,
+          "count": 8,
+          "inference_seconds": 0.014129655999994384
+        },
+        "13": {
+          "correct": 8,
+          "count": 8,
+          "inference_seconds": 0.012411642000017764
+        },
+        "14": {
+          "correct": 8,
+          "count": 8,
+          "inference_seconds": 0.011926137999978437
+        },
+        "15": {
+          "correct": 8,
+          "count": 8,
+          "inference_seconds": 0.014535456999993812
+        },
+        "16": {
+          "correct": 8,
+          "count": 8,
+          "inference_seconds": 0.014501015000007555
+        }
+      }
+    },
+    {
+      "size": 36,
+      "range": "beyond",
+      "corpus": {
+        "seed_sequence": [
+          42,
+          0,
+          36
+        ],
+        "count": 96,
+        "sha256": "3724faa494a03bdba7f1a0362ec15301a99e85f5294aa0bfd8128c72b1308d0f"
+      },
+      "count": 96,
+      "correct": 96,
+      "accuracy": 1.0,
+      "inference_seconds": 0.14829284199998938,
+      "seconds_including_extra_checkpoints": 0.15081129299991858,
+      "token_range": [
+        92,
+        92
+      ],
+      "base_loop_range": [
+        92,
+        92
+      ],
+      "batches": 10,
+      "correct_at_loop_multipliers": {
+        "1": 96,
+        "2": 96,
+        "4": 96
+      },
+      "unchanged_at_all_checkpoints": 96,
+      "by_distance": {
+        "8": {
+          "correct": 8,
+          "count": 8,
+          "inference_seconds": 0.011285345000004554
+        },
+        "9": {
+          "correct": 8,
+          "count": 8,
+          "inference_seconds": 0.01360035000001858
+        },
+        "10": {
+          "correct": 8,
+          "count": 8,
+          "inference_seconds": 0.013742620000016359
+        },
+        "unreachable": {
+          "correct": 24,
+          "count": 24,
+          "inference_seconds": 0.018244149999986803
+        },
+        "11": {
+          "correct": 8,
+          "count": 8,
+          "inference_seconds": 0.013677437999973563
+        },
+        "12": {
+          "correct": 8,
+          "count": 8,
+          "inference_seconds": 0.013728520000000799
+        },
+        "13": {
+          "correct": 8,
+          "count": 8,
+          "inference_seconds": 0.016715443999999025
+        },
+        "14": {
+          "correct": 8,
+          "count": 8,
+          "inference_seconds": 0.01366180700000541
+        },
+        "15": {
+          "correct": 8,
+          "count": 8,
+          "inference_seconds": 0.01677920899999208
+        },
+        "16": {
+          "correct": 8,
+          "count": 8,
+          "inference_seconds": 0.016857958999992206
+        }
+      }
+    },
+    {
+      "size": 48,
+      "range": "beyond",
+      "corpus": {
+        "seed_sequence": [
+          42,
+          0,
+          48
+        ],
+        "count": 96,
+        "sha256": "2973cf8e7089d3fb5bfc767d488c53f450d06c5e1798ee68a3874d8b498b7f23"
+      },
+      "count": 96,
+      "correct": 96,
+      "accuracy": 1.0,
+      "inference_seconds": 0.1796096620000185,
+      "seconds_including_extra_checkpoints": 0.18213266099999714,
+      "token_range": [
+        122,
+        122
+      ],
+      "base_loop_range": [
+        122,
+        122
+      ],
+      "batches": 10,
+      "correct_at_loop_multipliers": {
+        "1": 96,
+        "2": 96,
+        "4": 96
+      },
+      "unchanged_at_all_checkpoints": 96,
+      "by_distance": {
+        "8": {
+          "correct": 8,
+          "count": 8,
+          "inference_seconds": 0.014482571999991478
+        },
+        "9": {
+          "correct": 8,
+          "count": 8,
+          "inference_seconds": 0.01402152000000001
+        },
+        "10": {
+          "correct": 8,
+          "count": 8,
+          "inference_seconds": 0.01401047400000266
+        },
+        "unreachable": {
+          "correct": 24,
+          "count": 24,
+          "inference_seconds": 0.04026607499997681
+        },
+        "11": {
+          "correct": 8,
+          "count": 8,
+          "inference_seconds": 0.014039738999997553
+        },
+        "12": {
+          "correct": 8,
+          "count": 8,
+          "inference_seconds": 0.01414664900002549
+        },
+        "13": {
+          "correct": 8,
+          "count": 8,
+          "inference_seconds": 0.017215757999991865
+        },
+        "14": {
+          "correct": 8,
+          "count": 8,
+          "inference_seconds": 0.01718200999999908
+        },
+        "15": {
+          "correct": 8,
+          "count": 8,
+          "inference_seconds": 0.01710793700002
+        },
+        "16": {
+          "correct": 8,
+          "count": 8,
+          "inference_seconds": 0.01713692800001354
+        }
+      }
+    }
+  ],
+  "gpu": "Tesla T4",
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "numpy": "2.1.3",
+  "dtype": "float64",
+  "batch_size_max": 32,
+  "cpu_gpu_dev_parity": true
+}

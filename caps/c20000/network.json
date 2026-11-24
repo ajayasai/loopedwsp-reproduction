@@ -1,0 +1,97 @@
+{
+  "fields": [
+    {
+      "kind": "char",
+      "vocab": " #SG\n"
+    },
+    {
+      "kind": "pos_digit",
+      "power": 1,
+      "base": 8,
+      "place": 0
+    },
+    {
+      "kind": "pos_digit",
+      "power": 1,
+      "base": 8,
+      "place": 1
+    },
+    {
+      "kind": "pos_digit",
+      "power": 1,
+      "base": 8,
+      "place": 2
+    },
+    {
+      "kind": "pos_digit",
+      "power": 1,
+      "base": 8,
+      "place": 3
+    },
+    {
+      "kind": "pos_digit",
+      "power": 2,
+      "base": 8,
+      "place": 0
+    },
+    {
+      "kind": "pos_digit",
+      "power": 2,
+      "base": 8,
+      "place": 1
+    },
+    {
+      "kind": "pos_digit",
+      "power": 2,
+      "base": 8,
+      "place": 2
+    },
+    {
+      "kind": "pos_digit",
+      "power": 2,
+      "base": 8,
+      "place": 3
+    },
+    {
+      "kind": "pos_digit",
+      "power": 2,
+      "base": 8,
+      "place": 4
+    },
+    {
+      "kind": "pos_digit",
+      "power": 2,
+      "base": 8,
+      "place": 5
+    },
+    {
+      "kind": "pos_digit",
+      "power": 2,
+      "base": 8,
+      "place": 6
+    },
+    {
+      "kind": "pos_mod",
+      "modulus": 31
+    },
+    {
+      "kind": "pos_digit",
+      "power": 1,
+      "base": 31,
+      "place": 1
+    }
+  ],
+  "alphabet": [
+    "",
+    " ",
+    "#",
+    "S",
+    "G",
+    "\n",
+    "o"
+  ],
+  "layers": [
+    4
+  ],
+  "rounds_per_token": 2
+}

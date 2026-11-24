@@ -1,0 +1,28 @@
+{
+  "kernel": "ajayasaithambi/loopedwsp-practical-applications",
+  "version": 1,
+  "requested_gpu": "NvidiaTeslaT4",
+  "requested_private": true,
+  "requested_internet": false,
+  "input_sha256": {
+    "experiment.py": "31a1aa1bccab6741b64a8748f9c689818cf58041ed979d283a455da564123ea6",
+    "corpus-lock.json": "b434ce82775d83630c207f50d061b425004cd74f10625f60b1572c16c9c6ae05",
+    "cases.npz": "8b95019f801afd77cf479ffbc8d52c102a1b698499530bb18aaed20022ff6568",
+    "inventory.py": "3d2ae4737a7fe22a297e3cda9aa50c8c13ad3104894ee0cc33cf5a1ffad5fcfd",
+    "scheduling.py": "a166d9e283813950fab7142eb0eee43b08a31537e5185bedc3ffaf34b7d681f8",
+    "telemetry.py": "90d48665b083084cb39a08422cb0f6c863c08bb20f50c1382a503fc768534de9",
+    "models/inventory/network.json": "efc0cddb0a1eacd7f210bf2ef884ca83457fa461aeb8e89c1d1e6548c735e39c",
+    "models/inventory/weights.npz": "5ec09254e3e5dcd43874fd2e4c0dcadf49d38222d6610b916699a9795e4f7534",
+    "models/inventory/freeze.json": "0510de570076a423294870b2ac97930dd2af12fc23c32e70c3b5bdb1261b5fa2",
+    "models/scheduling/network.json": "711dd09e0e68caf771525b8ab95a04016980a9c5f250de170666fa06933a7987",
+    "models/scheduling/weights.npz": "d1b057ad6d1329d70255b85efd565b9fb4cea0dbc3d683b5e9fee16a9a98ea04",
+    "models/scheduling/freeze.json": "08506643fcf5fd821545f223f873b0209d460407fc7addbddaf75e226d8c06eb",
+    "models/telemetry/network.json": "6ec9c76eef5ec405ab66d6727602a19af17cd116c233bca7c44193714e242871",
+    "models/telemetry/weights.npz": "1d96a5c7313528d18254dc6cc52e57ba274aede05e1a8711e02f1993a8a1ab4c",
+    "models/telemetry/freeze.json": "d8dce420951acfd5ef632bfc85071fb7d05d909f40b3d090b5fb11a775fe9ff5",
+    "frame.py": "45c66315723b9d7e8bcddf18879824c1b5758f74bf68e2d463797347d2fe7e65"
+  },
+  "script_sha256": "c563adaf0c574293cb677d486e22f30bff57486e8bdf04cfcd0237de853143cc",
+  "timeout_seconds": 3600,
+  "url": "https://www.kaggle.com/code/ajayasaithambi/loopedwsp-practical-applications/versions/1"
+}

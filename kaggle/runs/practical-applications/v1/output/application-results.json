@@ -1,0 +1,268 @@
+{
+  "gpu": "Tesla T4",
+  "dtype": "float64",
+  "batch_size": 16,
+  "tasks": {
+    "inventory": {
+      "model": {
+        "model_sha256": "644c2bef91e8216d5be587b8655f100a2a307ea48306535225f265b64683d38d",
+        "parameters": 1400,
+        "width": 6,
+        "nonzero_parameters": 617
+      },
+      "name": "Inventory shortfall detection",
+      "unit": "events",
+      "rows": [
+        {
+          "size": 8,
+          "records": 64,
+          "exact": 64,
+          "decisions": 512,
+          "correct": 512,
+          "stable_records": 64,
+          "positive_labels": 204,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "rounds": 4,
+          "gpu_seconds": 0.012469683999995596,
+          "oracle_seconds": 0.001030258000014328,
+          "predictions_sha256": "78d2b83e2576933d3c8032c894d095d77d1d689bbd16f2c9d8981b0b9d6f399f"
+        },
+        {
+          "size": 16,
+          "records": 64,
+          "exact": 64,
+          "decisions": 1024,
+          "correct": 1024,
+          "stable_records": 64,
+          "positive_labels": 431,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "rounds": 5,
+          "gpu_seconds": 0.01521347999999989,
+          "oracle_seconds": 0.0013285890000247491,
+          "predictions_sha256": "5dbe1db9bd6809536727c557474d182a1e46e1ed831363cc339f5dfad09c763e"
+        },
+        {
+          "size": 32,
+          "records": 64,
+          "exact": 64,
+          "decisions": 2048,
+          "correct": 2048,
+          "stable_records": 64,
+          "positive_labels": 834,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "rounds": 6,
+          "gpu_seconds": 0.018179060000022673,
+          "oracle_seconds": 0.0017054660000042077,
+          "predictions_sha256": "692c938158b01c55f5095e884046f7c39aa9f34b9259fd95a370dd20c10a41c7"
+        },
+        {
+          "size": 64,
+          "records": 64,
+          "exact": 64,
+          "decisions": 4096,
+          "correct": 4096,
+          "stable_records": 64,
+          "positive_labels": 2146,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "rounds": 7,
+          "gpu_seconds": 0.021047530000004144,
+          "oracle_seconds": 0.0026807269999835626,
+          "predictions_sha256": "2dee9284b91d85dcecec767b606060bd51d494136ac20ec56fdd3cf96a86a7fd"
+        },
+        {
+          "size": 128,
+          "records": 64,
+          "exact": 64,
+          "decisions": 8192,
+          "correct": 8192,
+          "stable_records": 64,
+          "positive_labels": 3961,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "rounds": 8,
+          "gpu_seconds": 0.024922451999970008,
+          "oracle_seconds": 0.004120284999999058,
+          "predictions_sha256": "d3c276fc1fff73a502a829429f879b57d8347d06791debacc80b88a2b461d1fb"
+        }
+      ]
+    },
+    "scheduling": {
+      "model": {
+        "model_sha256": "d7b676e60ab4645319187adf624142b3b5c29b76ff16f2e3df1cfb6914791e8d",
+        "parameters": 61830,
+        "width": 20,
+        "nonzero_parameters": 9384
+      },
+      "name": "Booking conflicts",
+      "unit": "bookings",
+      "rows": [
+        {
+          "size": 8,
+          "records": 64,
+          "exact": 64,
+          "decisions": 512,
+          "correct": 512,
+          "stable_records": 64,
+          "positive_labels": 314,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "rounds": 8,
+          "gpu_seconds": 0.029806841999970857,
+          "oracle_seconds": 0.0010402119999923798,
+          "predictions_sha256": "e94d5fbfdc07acf21baaeb2806486502ca469c9af32757d15d745d917314e33c"
+        },
+        {
+          "size": 16,
+          "records": 64,
+          "exact": 64,
+          "decisions": 1024,
+          "correct": 1024,
+          "stable_records": 64,
+          "positive_labels": 619,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "rounds": 16,
+          "gpu_seconds": 0.042991265000011936,
+          "oracle_seconds": 0.0011397200000260455,
+          "predictions_sha256": "80646b50ad302d09c2567f4cd882859fdf4e35c20d365ac5650999ea6734b617"
+        },
+        {
+          "size": 32,
+          "records": 64,
+          "exact": 64,
+          "decisions": 2048,
+          "correct": 2048,
+          "stable_records": 64,
+          "positive_labels": 1309,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "rounds": 32,
+          "gpu_seconds": 0.07735885400001052,
+          "oracle_seconds": 0.0014135830000157057,
+          "predictions_sha256": "8cc0d06ef63115f73dcfd7b4c9c88570d82287d286e61f046af4b0b483a5e1b8"
+        },
+        {
+          "size": 64,
+          "records": 64,
+          "exact": 64,
+          "decisions": 4096,
+          "correct": 4096,
+          "stable_records": 64,
+          "positive_labels": 2736,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "rounds": 64,
+          "gpu_seconds": 0.1143383889999825,
+          "oracle_seconds": 0.002300744999985227,
+          "predictions_sha256": "6dd6b892fea34f53b7daa79bbdcbc79e943142eb3cafdef749fe9db6cc3f26b6"
+        },
+        {
+          "size": 128,
+          "records": 64,
+          "exact": 64,
+          "decisions": 8192,
+          "correct": 8192,
+          "stable_records": 64,
+          "positive_labels": 5788,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "rounds": 128,
+          "gpu_seconds": 0.16968516200003592,
+          "oracle_seconds": 0.005535487000003059,
+          "predictions_sha256": "fa4d54ac6689483db478bd9ad2cd8909f87507a2abe4c9b41a5dccf48130a129"
+        }
+      ]
+    },
+    "telemetry": {
+      "model": {
+        "model_sha256": "a45e48b764281de07378ad644c606731a67b8a01b8fc0919fb37b138fd919343",
+        "parameters": 1508,
+        "width": 6,
+        "nonzero_parameters": 509
+      },
+      "name": "Hysteresis alarm",
+      "unit": "readings",
+      "rows": [
+        {
+          "size": 8,
+          "records": 64,
+          "exact": 64,
+          "decisions": 512,
+          "correct": 512,
+          "stable_records": 64,
+          "positive_labels": 238,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "rounds": 8,
+          "gpu_seconds": 0.008741463999967891,
+          "oracle_seconds": 0.0008750749999819618,
+          "predictions_sha256": "5203a35e89333af5d1d445ba36242f47bc904b239e1501621508c82343b4a277"
+        },
+        {
+          "size": 16,
+          "records": 64,
+          "exact": 64,
+          "decisions": 1024,
+          "correct": 1024,
+          "stable_records": 64,
+          "positive_labels": 465,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "rounds": 16,
+          "gpu_seconds": 0.013783958000004759,
+          "oracle_seconds": 0.001494711000020743,
+          "predictions_sha256": "39a2e2111cc61da3813b3ed6284d7fd3af41495e08d0bf0e4a4b748353e93f78"
+        },
+        {
+          "size": 32,
+          "records": 64,
+          "exact": 64,
+          "decisions": 2048,
+          "correct": 2048,
+          "stable_records": 64,
+          "positive_labels": 976,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "rounds": 32,
+          "gpu_seconds": 0.025073456999962218,
+          "oracle_seconds": 0.002807809000017869,
+          "predictions_sha256": "7fc130ccf080fd47f23aaeba752f564cbf2aaa7ad24a5fd1e2865da7b390a0e9"
+        },
+        {
+          "size": 64,
+          "records": 64,
+          "exact": 64,
+          "decisions": 4096,
+          "correct": 4096,
+          "stable_records": 64,
+          "positive_labels": 1913,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "rounds": 64,
+          "gpu_seconds": 0.04570176000001425,
+          "oracle_seconds": 0.0055160170000192466,
+          "predictions_sha256": "564e1035930b23836b94c9ac093d74aae2085fa55608d68b8ffbb005049fd2fb"
+        },
+        {
+          "size": 128,
+          "records": 64,
+          "exact": 64,
+          "decisions": 8192,
+          "correct": 8192,
+          "stable_records": 64,
+          "positive_labels": 3816,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "rounds": 128,
+          "gpu_seconds": 0.09026341300003082,
+          "oracle_seconds": 0.010292676999995365,
+          "predictions_sha256": "c3539a07d32a09c4983d20aca51caf193b90daeead5c2ad446b230e91654a6d4"
+        }
+      ]
+    }
+  }
+}

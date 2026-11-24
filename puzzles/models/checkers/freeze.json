@@ -1,0 +1,33 @@
+{
+  "model_sha256": "65a5b0a311ed9bc58b70d7511c0ad7e588d9b95eadb2d37cee5ee163a14f4916",
+  "parameters": 13233,
+  "nonzero_parameters": 1362,
+  "prompt_logit_margins": [
+    1024.0
+  ],
+  "width": 18,
+  "rounds": 2,
+  "dev": {
+    "1": {
+      "moves": 3,
+      "move_ids_sha256": "27ba271672275a32e821441a6aef1ddab312a162faf81a8891fee04fdd450923",
+      "literal_matches": true,
+      "stable": true,
+      "legal_and_optimal": true
+    },
+    "2": {
+      "moves": 8,
+      "move_ids_sha256": "f7cb21cd55581567d9ea67318b8e81cccd9583f0798caf9553847b99561a9806",
+      "literal_matches": true,
+      "stable": true,
+      "legal_and_optimal": true
+    },
+    "3": {
+      "moves": 15,
+      "move_ids_sha256": "11a65165394fb3bf54b0cd723fe966c3dacfecdd7a24ccdf23cc2b39e62294a0",
+      "literal_matches": true,
+      "stable": true,
+      "legal_and_optimal": true
+    }
+  }
+}

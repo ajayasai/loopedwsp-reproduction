@@ -1,0 +1,12 @@
+{
+  "hanoi": {
+    "sizes_replayed": 20,
+    "moves_replayed": 2097130,
+    "all_legal_goal_and_optimal": true
+  },
+  "checkers": {
+    "sizes_replayed": 40,
+    "moves_replayed": 23780,
+    "all_legal_goal_and_optimal": true
+  }
+}

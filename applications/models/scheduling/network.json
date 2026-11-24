@@ -1,0 +1,12 @@
+{
+  "fields": [
+    "start_minute",
+    "end_minute",
+    "row"
+  ],
+  "layers": [
+    2,
+    0
+  ],
+  "round_rule": "tokens"
+}

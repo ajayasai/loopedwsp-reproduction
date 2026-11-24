@@ -1,0 +1,381 @@
+{
+  "task": "parity",
+  "model_sha256": "aae83092d7dd5cb2728f8544ddb5c135efef0328b380de11f96b269e6d14d625",
+  "parameters": 20575,
+  "dev_sizes": [
+    8,
+    20
+  ],
+  "rows": [
+    {
+      "size": 8,
+      "range": "within",
+      "corpus": {
+        "seed_sequence": [
+          42,
+          1,
+          8
+        ],
+        "count": 64,
+        "sha256": "d27151c426b21851738f6abbcbb29dbf6fe9432b97ec0541d1565fdb0d064326"
+      },
+      "count": 64,
+      "correct": 64,
+      "accuracy": 1.0,
+      "inference_seconds": 0.006540203000014344,
+      "seconds_including_extra_checkpoints": 0.019748317000022553,
+      "token_range": [
+        9,
+        9
+      ],
+      "base_loop_range": [
+        5,
+        5
+      ],
+      "batches": 2,
+      "correct_at_loop_multipliers": {
+        "1": 64,
+        "2": 64,
+        "4": 64
+      },
+      "unchanged_at_all_checkpoints": 64
+    },
+    {
+      "size": 20,
+      "range": "within",
+      "corpus": {
+        "seed_sequence": [
+          42,
+          1,
+          20
+        ],
+        "count": 64,
+        "sha256": "45b62cad2410f19d5d259e7c2502d941e01b28cdb8bfc34eb089dfce43d764f5"
+      },
+      "count": 64,
+      "correct": 64,
+      "accuracy": 1.0,
+      "inference_seconds": 0.0076761759999897095,
+      "seconds_including_extra_checkpoints": 0.019482729999992898,
+      "token_range": [
+        21,
+        21
+      ],
+      "base_loop_range": [
+        6,
+        6
+      ],
+      "batches": 2,
+      "correct_at_loop_multipliers": {
+        "1": 64,
+        "2": 64,
+        "4": 64
+      },
+      "unchanged_at_all_checkpoints": 64
+    },
+    {
+      "size": 21,
+      "range": "beyond",
+      "corpus": {
+        "seed_sequence": [
+          42,
+          1,
+          21
+        ],
+        "count": 64,
+        "sha256": "2f39a5d6faa259cf7d58ab92ea1b636623317a9a20e535b1304b3ae76872c1cd"
+      },
+      "count": 64,
+      "correct": 64,
+      "accuracy": 1.0,
+      "inference_seconds": 0.007791404999977658,
+      "seconds_including_extra_checkpoints": 0.01946603099997901,
+      "token_range": [
+        22,
+        22
+      ],
+      "base_loop_range": [
+        6,
+        6
+      ],
+      "batches": 2,
+      "correct_at_loop_multipliers": {
+        "1": 64,
+        "2": 64,
+        "4": 64
+      },
+      "unchanged_at_all_checkpoints": 64
+    },
+    {
+      "size": 32,
+      "range": "beyond",
+      "corpus": {
+        "seed_sequence": [
+          42,
+          1,
+          32
+        ],
+        "count": 64,
+        "sha256": "1c8a1a9a6dcf1323b965ac9ceba662177af9061311fb0edbfb099e2ff3dc3fbe"
+      },
+      "count": 64,
+      "correct": 64,
+      "accuracy": 1.0,
+      "inference_seconds": 0.008621443000009776,
+      "seconds_including_extra_checkpoints": 0.019256471000005604,
+      "token_range": [
+        33,
+        33
+      ],
+      "base_loop_range": [
+        7,
+        7
+      ],
+      "batches": 2,
+      "correct_at_loop_multipliers": {
+        "1": 64,
+        "2": 64,
+        "4": 64
+      },
+      "unchanged_at_all_checkpoints": 64
+    },
+    {
+      "size": 64,
+      "range": "beyond",
+      "corpus": {
+        "seed_sequence": [
+          42,
+          1,
+          64
+        ],
+        "count": 64,
+        "sha256": "f436beffcfc21119bc3e12832063685e3c68646bb7181cf433588dac45123d17"
+      },
+      "count": 64,
+      "correct": 64,
+      "accuracy": 1.0,
+      "inference_seconds": 0.009831528999995953,
+      "seconds_including_extra_checkpoints": 0.019105625000008786,
+      "token_range": [
+        65,
+        65
+      ],
+      "base_loop_range": [
+        8,
+        8
+      ],
+      "batches": 2,
+      "correct_at_loop_multipliers": {
+        "1": 64,
+        "2": 64,
+        "4": 64
+      },
+      "unchanged_at_all_checkpoints": 64
+    },
+    {
+      "size": 128,
+      "range": "beyond",
+      "corpus": {
+        "seed_sequence": [
+          42,
+          1,
+          128
+        ],
+        "count": 64,
+        "sha256": "d106840eff5ed9755552b7e04a2be030d99cebd600961ca566782d87373def3f"
+      },
+      "count": 64,
+      "correct": 64,
+      "accuracy": 1.0,
+      "inference_seconds": 0.011599525999997695,
+      "seconds_including_extra_checkpoints": 0.02045901399998229,
+      "token_range": [
+        129,
+        129
+      ],
+      "base_loop_range": [
+        9,
+        9
+      ],
+      "batches": 2,
+      "correct_at_loop_multipliers": {
+        "1": 64,
+        "2": 64,
+        "4": 64
+      },
+      "unchanged_at_all_checkpoints": 64
+    },
+    {
+      "size": 255,
+      "range": "beyond",
+      "corpus": {
+        "seed_sequence": [
+          42,
+          1,
+          255
+        ],
+        "count": 64,
+        "sha256": "1713eba8d70fc1b8bbad7dae121db4112a02109d181c807ebcc969c4d0676487"
+      },
+      "count": 64,
+      "correct": 64,
+      "accuracy": 1.0,
+      "inference_seconds": 0.012930161999975098,
+      "seconds_including_extra_checkpoints": 0.02266248300000484,
+      "token_range": [
+        256,
+        256
+      ],
+      "base_loop_range": [
+        9,
+        9
+      ],
+      "batches": 2,
+      "correct_at_loop_multipliers": {
+        "1": 64,
+        "2": 64,
+        "4": 64
+      },
+      "unchanged_at_all_checkpoints": 64
+    },
+    {
+      "size": 511,
+      "range": "beyond",
+      "corpus": {
+        "seed_sequence": [
+          42,
+          1,
+          511
+        ],
+        "count": 64,
+        "sha256": "fe45328de04a3f4f9dfa0ae31a283202b3c3127aa4bee14546a89ed4cfa8e955"
+      },
+      "count": 64,
+      "correct": 64,
+      "accuracy": 1.0,
+      "inference_seconds": 0.02081163500000116,
+      "seconds_including_extra_checkpoints": 0.03256154999999694,
+      "token_range": [
+        512,
+        512
+      ],
+      "base_loop_range": [
+        10,
+        10
+      ],
+      "batches": 2,
+      "correct_at_loop_multipliers": {
+        "1": 64,
+        "2": 64,
+        "4": 64
+      },
+      "unchanged_at_all_checkpoints": 64
+    },
+    {
+      "size": 1023,
+      "range": "beyond",
+      "corpus": {
+        "seed_sequence": [
+          42,
+          1,
+          1023
+        ],
+        "count": 64,
+        "sha256": "d4faec31d17a89ea9750ddc4bbcbbef3dbded1817a0af4e04ec15a26d51f9899"
+      },
+      "count": 64,
+      "correct": 64,
+      "accuracy": 1.0,
+      "inference_seconds": 0.0452782799999909,
+      "seconds_including_extra_checkpoints": 0.06585919100001547,
+      "token_range": [
+        1024,
+        1024
+      ],
+      "base_loop_range": [
+        11,
+        11
+      ],
+      "batches": 2,
+      "correct_at_loop_multipliers": {
+        "1": 64,
+        "2": 64,
+        "4": 64
+      },
+      "unchanged_at_all_checkpoints": 64
+    },
+    {
+      "size": 2047,
+      "range": "beyond",
+      "corpus": {
+        "seed_sequence": [
+          42,
+          1,
+          2047
+        ],
+        "count": 64,
+        "sha256": "4a1a7bc1f12076d568805582b499bae568f879a1e27bfe911a99e68d16b7f3ca"
+      },
+      "count": 64,
+      "correct": 64,
+      "accuracy": 1.0,
+      "inference_seconds": 0.1790981830000078,
+      "seconds_including_extra_checkpoints": 0.23076496000001612,
+      "token_range": [
+        2048,
+        2048
+      ],
+      "base_loop_range": [
+        12,
+        12
+      ],
+      "batches": 2,
+      "correct_at_loop_multipliers": {
+        "1": 64,
+        "2": 64,
+        "4": 64
+      },
+      "unchanged_at_all_checkpoints": 64
+    },
+    {
+      "size": 4095,
+      "range": "beyond",
+      "corpus": {
+        "seed_sequence": [
+          42,
+          1,
+          4095
+        ],
+        "count": 64,
+        "sha256": "f3d59ba2c62e880ac97e3641ae931de73e9cffdcfcae448c44658d4f29941498"
+      },
+      "count": 64,
+      "correct": 64,
+      "accuracy": 1.0,
+      "inference_seconds": 0.5516405140000131,
+      "seconds_including_extra_checkpoints": 0.6787682940000082,
+      "token_range": [
+        4096,
+        4096
+      ],
+      "base_loop_range": [
+        13,
+        13
+      ],
+      "batches": 2,
+      "correct_at_loop_multipliers": {
+        "1": 64,
+        "2": 64,
+        "4": 64
+      },
+      "unchanged_at_all_checkpoints": 64
+    }
+  ],
+  "gpu": "Tesla T4",
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "numpy": "2.1.3",
+  "dtype": "float64",
+  "batch_size_max": 32,
+  "cpu_gpu_dev_parity": true
+}

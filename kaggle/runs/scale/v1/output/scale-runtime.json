@@ -1,0 +1,16 @@
+{
+  "input_sha256": {
+    "looped.py": "2bf005117aac8e0d59395a52fd4fa557d09abe46beb6074aedcee77dc4a209e1",
+    "weights.py": "4ad4d0c5559731614549aa379af0d4ae8bd53a813bd3d71790a41fd3b1132e5e",
+    "evaluate.py": "3b1bff54611a37011466a83af8155c5e1490a4b34495ff13ed9b53f8812384f2",
+    "corpus.py": "fc05425c1a03d79fac8ca0ecff7bec5a022bb95524da4521f19b3dbc6eca3ab5",
+    "run_scale.py": "b67df990c1f1aec7041cae1b3b19eaba5737226994c7c0456e76019dd11e50ab",
+    "corpus-lock.json": "c9a2346e81a0adc06189f999ac4a01eb86ebe2b87ca72767f538d22f3027e440",
+    "weights.npz": "587ea013ed0a4f9d96ec5a12d0892920f63990cee028db2738e382b91a7d8350",
+    "freeze.json": "fee044082c15ba965a40a17ef7f24bc213d115d74e69e528f3535c0ff2ac7f11"
+  },
+  "device": "Tesla T4",
+  "pytorch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "status": "complete"
+}

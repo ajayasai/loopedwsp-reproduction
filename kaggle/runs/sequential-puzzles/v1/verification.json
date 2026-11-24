@@ -1,0 +1,218 @@
+{
+  "version": 1,
+  "kernel": "ajayasaithambi/loopedwsp-sequential-puzzles",
+  "server_private": true,
+  "server_internet_enabled": false,
+  "server_machine_shape": "NvidiaTeslaT4",
+  "actual_device": "Tesla T4",
+  "script_sha256_lf": "3ac085afb7c131f3f2c673938ac90b66ade239d94061bffdfaf1dfdcfdaf9902",
+  "remote_script_sha256_as_downloaded": "48c3684115052c12be01cdd29a5e51a3d65d631f7190768bf7f633803e1c6d3e",
+  "runtime_sha256": "05002d76e6c77c062e470bcabb6e26e5fb347e71cb264d6ff26b26f6b6e12455",
+  "verified_input_files": 9,
+  "output_sha256": {
+    "puzzle-hanoi.json": "5fde57b15cd198038af040403a52312494dc8a01fb1f05fecb956887a8168390",
+    "puzzle-checkers.json": "5c4c00cc0a8e48497694563681d6f9a491a42e7ab11d1adee42b6ec0363566f4",
+    "emitted-hanoi.npz": "ad168ac408710f7273fb0b34493e0ca6d91006760ac7bbfd477b7a83309156b5",
+    "emitted-checkers.npz": "b35fc8746ca4d28cb6acc9494979994e78e03cd764b1b3022d9a1b54057574c8"
+  },
+  "scores": {
+    "hanoi": {
+      "sizes": 20,
+      "valid_optimal_sizes": 20,
+      "sizes_with_eos": 20,
+      "changed_at_extra_checkpoints": 0
+    },
+    "checkers": {
+      "sizes": 40,
+      "valid_optimal_sizes": 40,
+      "sizes_with_eos": 40,
+      "changed_at_extra_checkpoints": 0
+    }
+  },
+  "emitted_array_shapes": {
+    "hanoi": {
+      "n1": [
+        1
+      ],
+      "n2": [
+        3
+      ],
+      "n3": [
+        7
+      ],
+      "n4": [
+        15
+      ],
+      "n5": [
+        31
+      ],
+      "n6": [
+        63
+      ],
+      "n7": [
+        127
+      ],
+      "n8": [
+        255
+      ],
+      "n9": [
+        511
+      ],
+      "n10": [
+        1023
+      ],
+      "n11": [
+        2047
+      ],
+      "n12": [
+        4095
+      ],
+      "n13": [
+        8191
+      ],
+      "n14": [
+        16383
+      ],
+      "n15": [
+        32767
+      ],
+      "n16": [
+        65535
+      ],
+      "n17": [
+        131071
+      ],
+      "n18": [
+        262143
+      ],
+      "n19": [
+        524287
+      ],
+      "n20": [
+        1048575
+      ]
+    },
+    "checkers": {
+      "n1": [
+        3
+      ],
+      "n2": [
+        8
+      ],
+      "n3": [
+        15
+      ],
+      "n4": [
+        24
+      ],
+      "n5": [
+        35
+      ],
+      "n6": [
+        48
+      ],
+      "n7": [
+        63
+      ],
+      "n8": [
+        80
+      ],
+      "n9": [
+        99
+      ],
+      "n10": [
+        120
+      ],
+      "n11": [
+        143
+      ],
+      "n12": [
+        168
+      ],
+      "n13": [
+        195
+      ],
+      "n14": [
+        224
+      ],
+      "n15": [
+        255
+      ],
+      "n16": [
+        288
+      ],
+      "n17": [
+        323
+      ],
+      "n18": [
+        360
+      ],
+      "n19": [
+        399
+      ],
+      "n20": [
+        440
+      ],
+      "n21": [
+        483
+      ],
+      "n22": [
+        528
+      ],
+      "n23": [
+        575
+      ],
+      "n24": [
+        624
+      ],
+      "n25": [
+        675
+      ],
+      "n26": [
+        728
+      ],
+      "n27": [
+        783
+      ],
+      "n28": [
+        840
+      ],
+      "n29": [
+        899
+      ],
+      "n30": [
+        960
+      ],
+      "n31": [
+        1023
+      ],
+      "n32": [
+        1088
+      ],
+      "n33": [
+        1155
+      ],
+      "n34": [
+        1224
+      ],
+      "n35": [
+        1295
+      ],
+      "n36": [
+        1368
+      ],
+      "n37": [
+        1443
+      ],
+      "n38": [
+        1520
+      ],
+      "n39": [
+        1599
+      ],
+      "n40": [
+        1680
+      ]
+    }
+  }
+}

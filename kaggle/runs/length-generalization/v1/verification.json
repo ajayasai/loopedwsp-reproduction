@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "kernel": "ajayasaithambi/loopedwsp-length-generalization",
+  "server_private": true,
+  "server_internet_enabled": false,
+  "server_machine_shape": "NvidiaTeslaT4",
+  "actual_device": "Tesla T4",
+  "script_sha256_lf": "608078e58a729cb52ebfa13b1b6326e641646e01cb7d11e7c26b56ccfddab751",
+  "remote_script_sha256_as_downloaded": "f3c69683ed43610addc1f73ad3f489c5272bec1565561655e8d37e2a30d328e5",
+  "runtime_sha256": "3a8deedc925ba54d9adc3ac94c03a9cb3d354066d6e0de57a8cd33b9403fb0a5",
+  "verified_input_files": 15,
+  "output_sha256": {
+    "length-graph.json": "57c39ee01b9a28549cdd04b2efc1cac70df64f41cd77bdbd5fc8858864389144",
+    "length-parity.json": "ec644194e19a5a6ce3211fc4ae8b32b8d820dc9bde639a25b0873f9be82b8edd",
+    "length-chains.json": "a3d90c624a8a1f460a71604979ea68aea6208bb133c40fec4ecc119c4a5645cc"
+  },
+  "scores": {
+    "graph": {
+      "correct": 576,
+      "count": 576
+    },
+    "parity": {
+      "correct": 704,
+      "count": 704
+    },
+    "chains": {
+      "correct": 512,
+      "count": 512
+    }
+  }
+}

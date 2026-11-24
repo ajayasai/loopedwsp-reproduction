@@ -1,0 +1,43 @@
+{
+  "dataset": "sapientinc/maze-30x30-hard-1k",
+  "revision": "549754de3d67eebe57b6b22c7d226b9412d55b07",
+  "split": "train",
+  "source_sha256": "25f9e39b5aee16967da41ba63b2d1d75cf608c2360d8a1419d827f9859dbafa0",
+  "grids": 1000,
+  "shape": [
+    30,
+    30
+  ],
+  "input_symbols": [
+    " ",
+    "#",
+    "G",
+    "S"
+  ],
+  "output_symbols": [
+    " ",
+    "#",
+    "G",
+    "S",
+    "o"
+  ],
+  "target_convention": "Preserve walls and endpoints; mark interior path cells with o.",
+  "valid_shortest_path_labels": 1000,
+  "unique_shortest_paths": 0,
+  "multiple_shortest_paths": 1000,
+  "shortest_path_steps": {
+    "min": 109,
+    "max": 146
+  },
+  "max_shortest_path_count": 1187579232000,
+  "tie_break": {
+    "method": "At each cell choose the first neighbor in the listed order that is one step closer to the target. U,D,L,R mean up, down, left, right.",
+    "tested_orders_per_direction": 24,
+    "start_to_goal_perfect_orders": [
+      "DLRU"
+    ],
+    "goal_to_start_perfect_orders": [],
+    "start_to_goal_best_matches": 1000,
+    "goal_to_start_best_matches": 956
+  }
+}

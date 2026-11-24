@@ -1,0 +1,27 @@
+{
+  "kernel": "ajayasaithambi/loopedwsp-length-generalization",
+  "version": 1,
+  "requested_private": true,
+  "requested_internet": false,
+  "requested_gpu": "NvidiaTeslaT4",
+  "input_sha256": {
+    "graph.py": "07c62b1e40125c19f6ad7afc726c637ab48e878e875aee69b668f246bf3199eb",
+    "parity.py": "d5d6900330f2c3e205c16a9030048c7cb386fc5670b56e1bf5797e7ca7b68d48",
+    "chains.py": "afc3746b8bc6cfee49be187c152e1271f97e6c4bd5eeb2ab8ede53dd284fe887",
+    "frame.py": "f32b8913d0476c9c851a5cfee77684e156737542c5b373f2b5a0f5cf6109f56e",
+    "experiment.py": "b85ef35065ae786d1007342604625582390154f78fc18df820f63861c0c5e997",
+    "corpus-lock.json": "bc1f81cbc5b41c465fa856cbe4c34c89ccdd6154e0762d2ffe9684afddabf069",
+    "models/graph/network.json": "cdf7700a5fd9200d25b2a9d2eb8bd4b334ab72d38c02a75ea9185d3eed5b52af",
+    "models/graph/weights.npz": "16cc380a417611768b392ebada18cc212604154b40aec432f6962fa0660f03ed",
+    "models/graph/freeze.json": "e7579cbd19ec6c163cafcae525f63542f591145884bcb17f2ed43cfaab5eca9a",
+    "models/parity/network.json": "f264406ae4e307d64ab988a65f4ea7ebf73aa57f476724bc4f24e4cc57248d36",
+    "models/parity/weights.npz": "216b67e3affe9a6d23a63345c853badf488dcad1533ab5f7b91b134987487ab0",
+    "models/parity/freeze.json": "7a23d02b4afb599350787a877d7a280cc8d8f30f7a0313b6318b81b33c27cc33",
+    "models/chains/network.json": "57d38c74284d9eb9f384f83eb7447d92d11f619b9c1ec23a8561da23c0955d7e",
+    "models/chains/weights.npz": "33e0971abec1f1bb05619e5304badf3bafba614798291cba475f19530212e3f2",
+    "models/chains/freeze.json": "2363f8fa8e20d45caea822678a5d831395c3f2fc4d765d651d2306c252b9d07f"
+  },
+  "script_sha256": "608078e58a729cb52ebfa13b1b6326e641646e01cb7d11e7c26b56ccfddab751",
+  "timeout_seconds": 7200,
+  "url": "https://www.kaggle.com/code/ajayasaithambi/loopedwsp-length-generalization/versions/1"
+}

@@ -1,0 +1,54 @@
+{
+  "model_sha256": "1fb3ed0cfaff83a61a20504a78bd0d8f4a77840239bf4e06d5d8b1c7eb343df1",
+  "parameters": 11062,
+  "nonzero_parameters": 966,
+  "prompt_logit_margins": [
+    2048.0
+  ],
+  "width": 41,
+  "rounds": 2,
+  "dev": {
+    "1": {
+      "moves": 1,
+      "move_ids_sha256": "26b25d457597a7b0463f9620f666dd10aa2c4373a505967c7c8d70922a2d6ece",
+      "literal_matches": true,
+      "stable": true,
+      "legal_and_optimal": true
+    },
+    "2": {
+      "moves": 3,
+      "move_ids_sha256": "8bda4474df52fd3c51cbab182be41967d872c1c69638f253855cde40a35c4a76",
+      "literal_matches": true,
+      "stable": true,
+      "legal_and_optimal": true
+    },
+    "3": {
+      "moves": 7,
+      "move_ids_sha256": "9835b9eba12a1fe469d29071254fdd20f1a0c4d5539147ce95c2374316cfe781",
+      "literal_matches": true,
+      "stable": true,
+      "legal_and_optimal": true
+    },
+    "4": {
+      "moves": 15,
+      "move_ids_sha256": "51cd19c3176a3838bed51906db69da809db5c94116b30b6dbd9e9a776a606fed",
+      "literal_matches": true,
+      "stable": true,
+      "legal_and_optimal": true
+    },
+    "5": {
+      "moves": 31,
+      "move_ids_sha256": "3ee2fcb2bf00b6e721d2343a8dacc44034c04d50f9147037bebef6b5ca090664",
+      "literal_matches": true,
+      "stable": true,
+      "legal_and_optimal": true
+    },
+    "6": {
+      "moves": 63,
+      "move_ids_sha256": "e620e401998fe3d96a38112fb25c1c511bc998129e370baa43e543bbf18ee09b",
+      "literal_matches": true,
+      "stable": true,
+      "legal_and_optimal": true
+    }
+  }
+}

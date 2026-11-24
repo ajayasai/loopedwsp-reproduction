@@ -1,0 +1,1 @@
+{"backend_check": "passed", "synthetic_grids": 3, "dense_cpu_vs_gpu_logits_identical_at": [0, 1, 2, 4, 8, 16, 32], "device": "Tesla T4", "heads": ["exact one-hot", "exact one-hot", "exact one-hot", "exact one-hot"]}

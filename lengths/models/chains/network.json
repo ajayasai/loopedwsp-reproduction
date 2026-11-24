@@ -1,0 +1,12 @@
+{
+  "fields": [
+    "type",
+    "lhs",
+    "rhs",
+    "literal"
+  ],
+  "layers": [
+    1
+  ],
+  "round_rule": "tokens"
+}

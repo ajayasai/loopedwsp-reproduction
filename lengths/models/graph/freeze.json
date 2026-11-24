@@ -1,0 +1,191 @@
+{
+  "model_sha256": "b03c6c22d92d9af26f7fc0c1b68f5876909f202fe2126e18998cb3015bf44d40",
+  "parameters": 46624,
+  "width": 76,
+  "dev": {
+    "7": {
+      "hash": "59202cc468ff158181925a5af73297e9336921e5089688ff77070b4243ea4054",
+      "data": {
+        "seed_sequence": [
+          41,
+          0,
+          7
+        ],
+        "count": 16,
+        "sha256": "0c64225a33c9f5962fe24c3c7969b4498fafa0c3607ce9b2c4be4d80ce85dd0a"
+      },
+      "score": {
+        "count": 16,
+        "correct": 16,
+        "accuracy": 1.0,
+        "inference_seconds": 0.025571299949660897,
+        "seconds_including_extra_checkpoints": 0.0260065000038594,
+        "token_range": [
+          17,
+          17
+        ],
+        "base_loop_range": [
+          17,
+          17
+        ],
+        "batches": 5,
+        "correct_at_loop_multipliers": {
+          "1": 16,
+          "2": 16,
+          "4": 16
+        },
+        "unchanged_at_all_checkpoints": 16,
+        "by_distance": {
+          "1": {
+            "correct": 3,
+            "count": 3,
+            "inference_seconds": 0.0054145000176504254
+          },
+          "2": {
+            "correct": 3,
+            "count": 3,
+            "inference_seconds": 0.002648100024089217
+          },
+          "3": {
+            "correct": 3,
+            "count": 3,
+            "inference_seconds": 0.008382600033655763
+          },
+          "unreachable": {
+            "correct": 4,
+            "count": 4,
+            "inference_seconds": 0.0038036999758332968
+          },
+          "4": {
+            "correct": 3,
+            "count": 3,
+            "inference_seconds": 0.005322399898432195
+          }
+        }
+      }
+    },
+    "10": {
+      "hash": "59202cc468ff158181925a5af73297e9336921e5089688ff77070b4243ea4054",
+      "data": {
+        "seed_sequence": [
+          41,
+          0,
+          10
+        ],
+        "count": 16,
+        "sha256": "36e9302c1dcb8d3a87df67ae7750324f65d3d20599528d28fe3ed3682a611fa8"
+      },
+      "score": {
+        "count": 16,
+        "correct": 16,
+        "accuracy": 1.0,
+        "inference_seconds": 0.046077600098215044,
+        "seconds_including_extra_checkpoints": 0.04631910007447004,
+        "token_range": [
+          25,
+          25
+        ],
+        "base_loop_range": [
+          25,
+          25
+        ],
+        "batches": 5,
+        "correct_at_loop_multipliers": {
+          "1": 16,
+          "2": 16,
+          "4": 16
+        },
+        "unchanged_at_all_checkpoints": 16,
+        "by_distance": {
+          "1": {
+            "correct": 3,
+            "count": 3,
+            "inference_seconds": 0.00855909998062998
+          },
+          "2": {
+            "correct": 3,
+            "count": 3,
+            "inference_seconds": 0.007107800105586648
+          },
+          "3": {
+            "correct": 3,
+            "count": 3,
+            "inference_seconds": 0.012827900005504489
+          },
+          "unreachable": {
+            "correct": 4,
+            "count": 4,
+            "inference_seconds": 0.01214320003055036
+          },
+          "4": {
+            "correct": 3,
+            "count": 3,
+            "inference_seconds": 0.005439599975943565
+          }
+        }
+      }
+    },
+    "12": {
+      "hash": "59202cc468ff158181925a5af73297e9336921e5089688ff77070b4243ea4054",
+      "data": {
+        "seed_sequence": [
+          41,
+          0,
+          12
+        ],
+        "count": 16,
+        "sha256": "d1430456f9200e88b93e4e28bd516ae99e4fde0bb7ddeb4b628a5f2288da9df2"
+      },
+      "score": {
+        "count": 16,
+        "correct": 16,
+        "accuracy": 1.0,
+        "inference_seconds": 0.051419800030998886,
+        "seconds_including_extra_checkpoints": 0.051692099892534316,
+        "token_range": [
+          29,
+          29
+        ],
+        "base_loop_range": [
+          29,
+          29
+        ],
+        "batches": 5,
+        "correct_at_loop_multipliers": {
+          "1": 16,
+          "2": 16,
+          "4": 16
+        },
+        "unchanged_at_all_checkpoints": 16,
+        "by_distance": {
+          "1": {
+            "correct": 3,
+            "count": 3,
+            "inference_seconds": 0.013539300067350268
+          },
+          "2": {
+            "correct": 3,
+            "count": 3,
+            "inference_seconds": 0.01479069993365556
+          },
+          "3": {
+            "correct": 3,
+            "count": 3,
+            "inference_seconds": 0.012772600050084293
+          },
+          "unreachable": {
+            "correct": 4,
+            "count": 4,
+            "inference_seconds": 0.0043527999660000205
+          },
+          "4": {
+            "correct": 3,
+            "count": 3,
+            "inference_seconds": 0.005964400013908744
+          }
+        }
+      }
+    }
+  },
+  "generator_sha256": "07c62b1e40125c19f6ad7afc726c637ab48e878e875aee69b668f246bf3199eb"
+}

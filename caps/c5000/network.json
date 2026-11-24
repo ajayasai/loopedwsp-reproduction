@@ -1,0 +1,34 @@
+{
+  "fields": [
+    {
+      "kind": "char",
+      "vocab": " #SG\n"
+    },
+    {
+      "kind": "pos_digit",
+      "power": 1,
+      "base": 31,
+      "place": 1
+    },
+    {
+      "kind": "pos_digit",
+      "power": 1,
+      "base": 31,
+      "place": 0
+    }
+  ],
+  "alphabet": [
+    "",
+    " ",
+    "#",
+    "S",
+    "G",
+    "\n",
+    "o"
+  ],
+  "layers": [
+    4,
+    0
+  ],
+  "rounds_per_token": 2
+}

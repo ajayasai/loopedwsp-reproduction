@@ -1,0 +1,31 @@
+{
+  "cap": 10000,
+  "parameters": 4459,
+  "nonzero_parameters": 314,
+  "model_sha256": "9c6e78b0574ed9178103e2116a154ded28cefbbe321e06359c6f9144acb7f7fc",
+  "d_model": 23,
+  "dense_flops_upper_bound": 151302020701,
+  "cpu_dev_count": 8,
+  "cpu_dev_exact": 8,
+  "cpu_answers_sha256": "6bafdfd3209d6c72a84d042acbee24042f29ce8306a03b6c73a9be23259369e4",
+  "cpu_dev_calls": 1,
+  "split": "test",
+  "test_sha256": "5120d52088fb3f8036e62e90103808a79ba58847d8601f9451f40991b0903a62",
+  "dataset_revision": "549754de3d67eebe57b6b22c7d226b9412d55b07",
+  "solved": 1000,
+  "count": 1000,
+  "exact_accuracy": 1.0,
+  "test_inference_seconds": 53.01542608099999,
+  "max_actual_blocks": 320,
+  "rounds": 1858,
+  "head_types": [
+    "one-hot",
+    "one-hot",
+    "one-hot",
+    "one-hot"
+  ],
+  "device": "Tesla T4",
+  "dtype": "float64",
+  "torch": "2.11.0+cu130",
+  "cpu_gpu_dev_parity": true
+}

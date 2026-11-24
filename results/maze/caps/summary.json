@@ -1,0 +1,57 @@
+[
+  {
+    "cap": 1000,
+    "parameters": 965,
+    "nonzero_parameters": 112,
+    "solved": 1000,
+    "count": 1000,
+    "exact_accuracy": 1.0,
+    "test_inference_seconds": 352.201659887,
+    "model_sha256": "3380efcdf33f07420e7b94f15c380ce93bee38a18f0fb0e28f66e088464b5e18",
+    "kaggle_run": "https://www.kaggle.com/code/ajayasaithambi/loopedwsp-maze-caps-1/versions/1"
+  },
+  {
+    "cap": 5000,
+    "parameters": 2801,
+    "nonzero_parameters": 279,
+    "solved": 1000,
+    "count": 1000,
+    "exact_accuracy": 1.0,
+    "test_inference_seconds": 34.15419318900001,
+    "model_sha256": "21976f1fe2cfb251382e4fd1f21fc09fe3fa7f275eb8e0a3d2fbbffd1204aa96",
+    "kaggle_run": "https://www.kaggle.com/code/ajayasaithambi/loopedwsp-maze-caps-5-10-20-40/versions/1"
+  },
+  {
+    "cap": 10000,
+    "parameters": 4459,
+    "nonzero_parameters": 314,
+    "solved": 1000,
+    "count": 1000,
+    "exact_accuracy": 1.0,
+    "test_inference_seconds": 53.01542608099999,
+    "model_sha256": "9c6e78b0574ed9178103e2116a154ded28cefbbe321e06359c6f9144acb7f7fc",
+    "kaggle_run": "https://www.kaggle.com/code/ajayasaithambi/loopedwsp-maze-caps-5-10-20-40/versions/1"
+  },
+  {
+    "cap": 20000,
+    "parameters": 5770,
+    "nonzero_parameters": 261,
+    "solved": 1000,
+    "count": 1000,
+    "exact_accuracy": 1.0,
+    "test_inference_seconds": 34.197016633999965,
+    "model_sha256": "b923e80d8a29a008911be85e5d2bdca13eb2f5d1e39f277149b60582fa0e115f",
+    "kaggle_run": "https://www.kaggle.com/code/ajayasaithambi/loopedwsp-maze-caps-5-10-20-40/versions/1"
+  },
+  {
+    "cap": 40000,
+    "parameters": 30139,
+    "nonzero_parameters": 6658,
+    "solved": 1000,
+    "count": 1000,
+    "exact_accuracy": 1.0,
+    "test_inference_seconds": 56.36132374700003,
+    "model_sha256": "831a5db32cf546e23737888ffc78c3e0dc39609ec5673ab5950824318a79c947",
+    "kaggle_run": "https://www.kaggle.com/code/ajayasaithambi/loopedwsp-maze-caps-5-10-20-40/versions/1"
+  }
+]

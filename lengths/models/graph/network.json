@@ -1,0 +1,14 @@
+{
+  "fields": [
+    "type",
+    "id1",
+    "id2"
+  ],
+  "layers": [
+    1,
+    1,
+    0,
+    0
+  ],
+  "round_rule": "tokens"
+}

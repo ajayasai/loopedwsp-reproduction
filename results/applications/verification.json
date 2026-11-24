@@ -1,0 +1,339 @@
+{
+  "verified": true,
+  "all_predictions_correct": true,
+  "run": {
+    "kernel": "ajayasaithambi/loopedwsp-practical-applications",
+    "version": 1,
+    "url": "https://www.kaggle.com/code/ajayasaithambi/loopedwsp-practical-applications/versions/1",
+    "private": true,
+    "internet_enabled": false,
+    "machine_shape": "NvidiaTeslaT4",
+    "device": "Tesla T4",
+    "submitted_script_sha256": "c563adaf0c574293cb677d486e22f30bff57486e8bdf04cfcd0237de853143cc",
+    "downloaded_script_sha256": "660e8420f8313fdcb2f88d1faeca6d311319cd09c6b66138b4a494e6303efbc3",
+    "runtime_sha256": "3e660ae53a464baf1eebea6a1753079751fb46782695e94dfc4f4c430c578a07",
+    "input_sha256": {
+      "experiment.py": "31a1aa1bccab6741b64a8748f9c689818cf58041ed979d283a455da564123ea6",
+      "corpus-lock.json": "b434ce82775d83630c207f50d061b425004cd74f10625f60b1572c16c9c6ae05",
+      "cases.npz": "8b95019f801afd77cf479ffbc8d52c102a1b698499530bb18aaed20022ff6568",
+      "inventory.py": "3d2ae4737a7fe22a297e3cda9aa50c8c13ad3104894ee0cc33cf5a1ffad5fcfd",
+      "scheduling.py": "a166d9e283813950fab7142eb0eee43b08a31537e5185bedc3ffaf34b7d681f8",
+      "telemetry.py": "90d48665b083084cb39a08422cb0f6c863c08bb20f50c1382a503fc768534de9",
+      "models/inventory/network.json": "efc0cddb0a1eacd7f210bf2ef884ca83457fa461aeb8e89c1d1e6548c735e39c",
+      "models/inventory/weights.npz": "5ec09254e3e5dcd43874fd2e4c0dcadf49d38222d6610b916699a9795e4f7534",
+      "models/inventory/freeze.json": "0510de570076a423294870b2ac97930dd2af12fc23c32e70c3b5bdb1261b5fa2",
+      "models/scheduling/network.json": "711dd09e0e68caf771525b8ab95a04016980a9c5f250de170666fa06933a7987",
+      "models/scheduling/weights.npz": "d1b057ad6d1329d70255b85efd565b9fb4cea0dbc3d683b5e9fee16a9a98ea04",
+      "models/scheduling/freeze.json": "08506643fcf5fd821545f223f873b0209d460407fc7addbddaf75e226d8c06eb",
+      "models/telemetry/network.json": "6ec9c76eef5ec405ab66d6727602a19af17cd116c233bca7c44193714e242871",
+      "models/telemetry/weights.npz": "1d96a5c7313528d18254dc6cc52e57ba274aede05e1a8711e02f1993a8a1ab4c",
+      "models/telemetry/freeze.json": "d8dce420951acfd5ef632bfc85071fb7d05d909f40b3d090b5fb11a775fe9ff5",
+      "frame.py": "45c66315723b9d7e8bcddf18879824c1b5758f74bf68e2d463797347d2fe7e65"
+    },
+    "output_sha256": {
+      "application-results.json": "7e67457b6c6bd00c182807c731348b67f478658c79106ff86752b9f9dd78a154",
+      "predictions.npz": "f8232382670e4f14cff24fe3690720cc0daec222d592ee7e54081aa0bea187d4"
+    }
+  },
+  "tasks": {
+    "inventory": {
+      "model": {
+        "model_sha256": "644c2bef91e8216d5be587b8655f100a2a307ea48306535225f265b64683d38d",
+        "parameters": 1400,
+        "width": 6,
+        "nonzero_parameters": 617
+      },
+      "dev_labels_verified": [
+        {
+          "size": 8,
+          "records": 12,
+          "decisions": 96
+        },
+        {
+          "size": 16,
+          "records": 12,
+          "decisions": 192
+        }
+      ],
+      "sizes": [
+        {
+          "size": 8,
+          "records": 64,
+          "exact": 64,
+          "decisions": 512,
+          "correct": 512,
+          "positive_labels": 204,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "predictions_sha256": "78d2b83e2576933d3c8032c894d095d77d1d689bbd16f2c9d8981b0b9d6f399f",
+          "incorrect_records_zero_based": [],
+          "reported_stable_records": 64
+        },
+        {
+          "size": 16,
+          "records": 64,
+          "exact": 64,
+          "decisions": 1024,
+          "correct": 1024,
+          "positive_labels": 431,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "predictions_sha256": "5dbe1db9bd6809536727c557474d182a1e46e1ed831363cc339f5dfad09c763e",
+          "incorrect_records_zero_based": [],
+          "reported_stable_records": 64
+        },
+        {
+          "size": 32,
+          "records": 64,
+          "exact": 64,
+          "decisions": 2048,
+          "correct": 2048,
+          "positive_labels": 834,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "predictions_sha256": "692c938158b01c55f5095e884046f7c39aa9f34b9259fd95a370dd20c10a41c7",
+          "incorrect_records_zero_based": [],
+          "reported_stable_records": 64
+        },
+        {
+          "size": 64,
+          "records": 64,
+          "exact": 64,
+          "decisions": 4096,
+          "correct": 4096,
+          "positive_labels": 2146,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "predictions_sha256": "2dee9284b91d85dcecec767b606060bd51d494136ac20ec56fdd3cf96a86a7fd",
+          "incorrect_records_zero_based": [],
+          "reported_stable_records": 64
+        },
+        {
+          "size": 128,
+          "records": 64,
+          "exact": 64,
+          "decisions": 8192,
+          "correct": 8192,
+          "positive_labels": 3961,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "predictions_sha256": "d3c276fc1fff73a502a829429f879b57d8347d06791debacc80b88a2b461d1fb",
+          "incorrect_records_zero_based": [],
+          "reported_stable_records": 64
+        }
+      ],
+      "totals": {
+        "records": 320,
+        "exact": 320,
+        "decisions": 15872,
+        "correct": 15872,
+        "positive_labels": 7576,
+        "false_positives": 0,
+        "false_negatives": 0
+      }
+    },
+    "scheduling": {
+      "model": {
+        "model_sha256": "d7b676e60ab4645319187adf624142b3b5c29b76ff16f2e3df1cfb6914791e8d",
+        "parameters": 61830,
+        "width": 20,
+        "nonzero_parameters": 9384
+      },
+      "dev_labels_verified": [
+        {
+          "size": 8,
+          "records": 12,
+          "decisions": 96
+        },
+        {
+          "size": 16,
+          "records": 12,
+          "decisions": 192
+        }
+      ],
+      "sizes": [
+        {
+          "size": 8,
+          "records": 64,
+          "exact": 64,
+          "decisions": 512,
+          "correct": 512,
+          "positive_labels": 314,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "predictions_sha256": "e94d5fbfdc07acf21baaeb2806486502ca469c9af32757d15d745d917314e33c",
+          "incorrect_records_zero_based": [],
+          "reported_stable_records": 64
+        },
+        {
+          "size": 16,
+          "records": 64,
+          "exact": 64,
+          "decisions": 1024,
+          "correct": 1024,
+          "positive_labels": 619,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "predictions_sha256": "80646b50ad302d09c2567f4cd882859fdf4e35c20d365ac5650999ea6734b617",
+          "incorrect_records_zero_based": [],
+          "reported_stable_records": 64
+        },
+        {
+          "size": 32,
+          "records": 64,
+          "exact": 64,
+          "decisions": 2048,
+          "correct": 2048,
+          "positive_labels": 1309,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "predictions_sha256": "8cc0d06ef63115f73dcfd7b4c9c88570d82287d286e61f046af4b0b483a5e1b8",
+          "incorrect_records_zero_based": [],
+          "reported_stable_records": 64
+        },
+        {
+          "size": 64,
+          "records": 64,
+          "exact": 64,
+          "decisions": 4096,
+          "correct": 4096,
+          "positive_labels": 2736,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "predictions_sha256": "6dd6b892fea34f53b7daa79bbdcbc79e943142eb3cafdef749fe9db6cc3f26b6",
+          "incorrect_records_zero_based": [],
+          "reported_stable_records": 64
+        },
+        {
+          "size": 128,
+          "records": 64,
+          "exact": 64,
+          "decisions": 8192,
+          "correct": 8192,
+          "positive_labels": 5788,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "predictions_sha256": "fa4d54ac6689483db478bd9ad2cd8909f87507a2abe4c9b41a5dccf48130a129",
+          "incorrect_records_zero_based": [],
+          "reported_stable_records": 64
+        }
+      ],
+      "totals": {
+        "records": 320,
+        "exact": 320,
+        "decisions": 15872,
+        "correct": 15872,
+        "positive_labels": 10766,
+        "false_positives": 0,
+        "false_negatives": 0
+      }
+    },
+    "telemetry": {
+      "model": {
+        "model_sha256": "a45e48b764281de07378ad644c606731a67b8a01b8fc0919fb37b138fd919343",
+        "parameters": 1508,
+        "width": 6,
+        "nonzero_parameters": 509
+      },
+      "dev_labels_verified": [
+        {
+          "size": 8,
+          "records": 12,
+          "decisions": 96
+        },
+        {
+          "size": 16,
+          "records": 12,
+          "decisions": 192
+        }
+      ],
+      "sizes": [
+        {
+          "size": 8,
+          "records": 64,
+          "exact": 64,
+          "decisions": 512,
+          "correct": 512,
+          "positive_labels": 238,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "predictions_sha256": "5203a35e89333af5d1d445ba36242f47bc904b239e1501621508c82343b4a277",
+          "incorrect_records_zero_based": [],
+          "reported_stable_records": 64
+        },
+        {
+          "size": 16,
+          "records": 64,
+          "exact": 64,
+          "decisions": 1024,
+          "correct": 1024,
+          "positive_labels": 465,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "predictions_sha256": "39a2e2111cc61da3813b3ed6284d7fd3af41495e08d0bf0e4a4b748353e93f78",
+          "incorrect_records_zero_based": [],
+          "reported_stable_records": 64
+        },
+        {
+          "size": 32,
+          "records": 64,
+          "exact": 64,
+          "decisions": 2048,
+          "correct": 2048,
+          "positive_labels": 976,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "predictions_sha256": "7fc130ccf080fd47f23aaeba752f564cbf2aaa7ad24a5fd1e2865da7b390a0e9",
+          "incorrect_records_zero_based": [],
+          "reported_stable_records": 64
+        },
+        {
+          "size": 64,
+          "records": 64,
+          "exact": 64,
+          "decisions": 4096,
+          "correct": 4096,
+          "positive_labels": 1913,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "predictions_sha256": "564e1035930b23836b94c9ac093d74aae2085fa55608d68b8ffbb005049fd2fb",
+          "incorrect_records_zero_based": [],
+          "reported_stable_records": 64
+        },
+        {
+          "size": 128,
+          "records": 64,
+          "exact": 64,
+          "decisions": 8192,
+          "correct": 8192,
+          "positive_labels": 3816,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "predictions_sha256": "c3539a07d32a09c4983d20aca51caf193b90daeead5c2ad446b230e91654a6d4",
+          "incorrect_records_zero_based": [],
+          "reported_stable_records": 64
+        }
+      ],
+      "totals": {
+        "records": 320,
+        "exact": 320,
+        "decisions": 15872,
+        "correct": 15872,
+        "positive_labels": 7408,
+        "false_positives": 0,
+        "false_negatives": 0
+      }
+    }
+  },
+  "totals": {
+    "records": 960,
+    "exact": 960,
+    "decisions": 47616,
+    "correct": 47616,
+    "positive_labels": 25750,
+    "false_positives": 0,
+    "false_negatives": 0
+  },
+  "stability_evidence": "Only R predictions are archived. Stability at 2R and 4R is recorded by the GPU run.",
+  "numpy_gpu_prediction_match_all_sizes": true
+}

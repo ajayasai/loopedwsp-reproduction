@@ -1,0 +1,10 @@
+{
+  "fields": [
+    "reading",
+    "position"
+  ],
+  "layers": [
+    1
+  ],
+  "round_rule": "tokens"
+}

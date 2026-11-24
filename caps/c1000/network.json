@@ -1,0 +1,145 @@
+{
+  "fields": [
+    {
+      "kind": "char",
+      "vocab": " #SG\n"
+    },
+    {
+      "kind": "coord_digit",
+      "coordinate": "line",
+      "base": 2,
+      "place": 0
+    },
+    {
+      "kind": "coord_digit",
+      "coordinate": "line",
+      "base": 2,
+      "place": 1
+    },
+    {
+      "kind": "coord_digit",
+      "coordinate": "line",
+      "base": 2,
+      "place": 2
+    },
+    {
+      "kind": "coord_digit",
+      "coordinate": "line",
+      "base": 2,
+      "place": 3
+    },
+    {
+      "kind": "coord_digit",
+      "coordinate": "line",
+      "base": 2,
+      "place": 4
+    },
+    {
+      "kind": "coord_digit",
+      "coordinate": "column",
+      "base": 2,
+      "place": 0
+    },
+    {
+      "kind": "coord_digit",
+      "coordinate": "column",
+      "base": 2,
+      "place": 1
+    },
+    {
+      "kind": "coord_digit",
+      "coordinate": "column",
+      "base": 2,
+      "place": 2
+    },
+    {
+      "kind": "coord_digit",
+      "coordinate": "column",
+      "base": 2,
+      "place": 3
+    },
+    {
+      "kind": "coord_digit",
+      "coordinate": "column",
+      "base": 2,
+      "place": 4
+    },
+    {
+      "kind": "coord_digit",
+      "coordinate": "squared_norm",
+      "base": 2,
+      "place": 0,
+      "origin": 15
+    },
+    {
+      "kind": "coord_digit",
+      "coordinate": "squared_norm",
+      "base": 2,
+      "place": 1,
+      "origin": 15
+    },
+    {
+      "kind": "coord_digit",
+      "coordinate": "squared_norm",
+      "base": 2,
+      "place": 2,
+      "origin": 15
+    },
+    {
+      "kind": "coord_digit",
+      "coordinate": "squared_norm",
+      "base": 2,
+      "place": 3,
+      "origin": 15
+    },
+    {
+      "kind": "coord_digit",
+      "coordinate": "squared_norm",
+      "base": 2,
+      "place": 4,
+      "origin": 15
+    },
+    {
+      "kind": "coord_digit",
+      "coordinate": "squared_norm",
+      "base": 2,
+      "place": 5,
+      "origin": 15
+    },
+    {
+      "kind": "coord_digit",
+      "coordinate": "squared_norm",
+      "base": 2,
+      "place": 6,
+      "origin": 15
+    },
+    {
+      "kind": "coord_digit",
+      "coordinate": "squared_norm",
+      "base": 2,
+      "place": 7,
+      "origin": 15
+    },
+    {
+      "kind": "coord_digit",
+      "coordinate": "squared_norm",
+      "base": 2,
+      "place": 8,
+      "origin": 15
+    }
+  ],
+  "alphabet": [
+    "",
+    " ",
+    "#",
+    "S",
+    "G",
+    "\n",
+    "o"
+  ],
+  "layers": [
+    1,
+    1
+  ],
+  "rounds_per_token": 2
+}

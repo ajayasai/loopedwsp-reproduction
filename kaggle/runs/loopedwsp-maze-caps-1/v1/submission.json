@@ -1,0 +1,15 @@
+{
+  "id": "ajayasaithambi/loopedwsp-maze-caps-1",
+  "version": 1,
+  "caps": [
+    1000
+  ],
+  "hashes": {
+    "frame.py": "abb386609b7e8873eb07012fdb65b2835018fe8620aec21e0453332a8624d417",
+    "experiment.py": "34b0987a1eb26f2265d643717adc998196c1c5faaa0e1aff2ae0c9d3a03eb423",
+    "c1000/weights.npz": "e975e4822e3d6b1699739bffa7fe475766742f2cc67af93b807356b2abb55e1e",
+    "c1000/network.json": "e82b6ff19fbc2abe81e88cc98b30c9e867541778989ed4d40e3d6df21f162db4",
+    "c1000/freeze.json": "91dc080d06dcf355526464a81026c35fcdf6f8e8417aa8e0b0ad175890d13233"
+  },
+  "url": "https://www.kaggle.com/code/ajayasaithambi/loopedwsp-maze-caps-1/versions/1"
+}

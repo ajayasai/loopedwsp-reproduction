@@ -1,0 +1,13 @@
+{
+  "split": "dev",
+  "is_private_requested": true,
+  "accelerator_requested": "NvidiaTeslaT4",
+  "dataset": "sapientinc/maze-30x30-hard-1k",
+  "revision": "549754de3d67eebe57b6b22c7d226b9412d55b07",
+  "source_bundle_sha256": "d405a50d4c12ba7323427a495dc26b01162af73047a3e44d806a0adf408937b1",
+  "gpu": "Tesla T4",
+  "cuda": "13.0",
+  "pytorch": "2.11.0+cu130",
+  "dataset_sha256": "25f9e39b5aee16967da41ba63b2d1d75cf608c2360d8a1419d827f9859dbafa0",
+  "status": "complete"
+}

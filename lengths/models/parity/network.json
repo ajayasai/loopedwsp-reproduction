@@ -1,0 +1,10 @@
+{
+  "layers": [
+    1
+  ],
+  "fields": [
+    "symbol",
+    "position"
+  ],
+  "round_rule": "log2_plus_one"
+}

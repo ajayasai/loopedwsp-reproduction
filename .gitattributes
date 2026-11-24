@@ -1,0 +1,4 @@
+# Run manifests authenticate exact source bytes, including original line endings.
+* -text
+*.npz binary
+*.png binary

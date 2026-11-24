@@ -1,0 +1,14 @@
+{
+  "id": "ajayasaithambi/loopedwsp-maze-caps-5-10-20-40",
+  "title": "LoopedWSP Maze Caps 5-10-20-40",
+  "code_file": "main.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "enable_tpu": false,
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": []
+}

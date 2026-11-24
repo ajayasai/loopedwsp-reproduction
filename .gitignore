@@ -1,0 +1,20 @@
+# Official third-party Maze-Hard data is fetched by revision on each machine.
+/data/maze/
+train.csv
+test.csv
+
+# Local authentication, environments and interpreter caches
+.env
+.env.*
+.kaggle/
+kaggle.json
+access_token
+.venv/
+__pycache__/
+*.py[cod]
+
+# Recreated staging areas and console logs. The versioned run evidence is tracked.
+/kaggle/packages/
+/audit-output/
+/kaggle/runs/test/submission-attempt.json
+*.log

@@ -1,0 +1,133 @@
+{
+  "split": "dev",
+  "dataset": "sapientinc/maze-30x30-hard-1k",
+  "revision": "549754de3d67eebe57b6b22c7d226b9412d55b07",
+  "source_sha256": "25f9e39b5aee16967da41ba63b2d1d75cf608c2360d8a1419d827f9859dbafa0",
+  "model": {
+    "tensor_sha256": "8529622e7c8ab2bba41c62c28b7a852a9337ee35018068da80a918aa4ce64223",
+    "parameters": 7003,
+    "nonzero_parameters": 235
+  },
+  "loop_checkpoints": [
+    1800,
+    3600,
+    7200
+  ],
+  "dtype": "float64",
+  "allow_tf32": false,
+  "device": "Tesla T4",
+  "torch_version": "2.11.0+cu130",
+  "cuda_version": "13.0",
+  "batch_size": 64,
+  "inference_seconds": 28.428255174000014,
+  "diagnostics": {
+    "heads": [
+      "exact one-hot",
+      "exact one-hot",
+      "exact one-hot",
+      "exact one-hot"
+    ],
+    "batches": [
+      {
+        "items": 64,
+        "evaluated_blocks": 272,
+        "full_state_fixed": true
+      },
+      {
+        "items": 64,
+        "evaluated_blocks": 256,
+        "full_state_fixed": true
+      },
+      {
+        "items": 64,
+        "evaluated_blocks": 256,
+        "full_state_fixed": true
+      },
+      {
+        "items": 64,
+        "evaluated_blocks": 288,
+        "full_state_fixed": true
+      },
+      {
+        "items": 64,
+        "evaluated_blocks": 256,
+        "full_state_fixed": true
+      },
+      {
+        "items": 64,
+        "evaluated_blocks": 272,
+        "full_state_fixed": true
+      },
+      {
+        "items": 64,
+        "evaluated_blocks": 288,
+        "full_state_fixed": true
+      },
+      {
+        "items": 64,
+        "evaluated_blocks": 288,
+        "full_state_fixed": true
+      },
+      {
+        "items": 64,
+        "evaluated_blocks": 304,
+        "full_state_fixed": true
+      },
+      {
+        "items": 64,
+        "evaluated_blocks": 288,
+        "full_state_fixed": true
+      },
+      {
+        "items": 64,
+        "evaluated_blocks": 304,
+        "full_state_fixed": true
+      },
+      {
+        "items": 64,
+        "evaluated_blocks": 272,
+        "full_state_fixed": true
+      },
+      {
+        "items": 64,
+        "evaluated_blocks": 288,
+        "full_state_fixed": true
+      },
+      {
+        "items": 64,
+        "evaluated_blocks": 272,
+        "full_state_fixed": true
+      },
+      {
+        "items": 64,
+        "evaluated_blocks": 256,
+        "full_state_fixed": true
+      },
+      {
+        "items": 40,
+        "evaluated_blocks": 272,
+        "full_state_fixed": true
+      }
+    ]
+  },
+  "grids": 1000,
+  "by_checkpoint": {
+    "1800": {
+      "solved": 1000,
+      "exact_grid_accuracy": 1.0,
+      "same_grid_as_first_checkpoint": 1000
+    },
+    "3600": {
+      "solved": 1000,
+      "exact_grid_accuracy": 1.0,
+      "same_grid_as_first_checkpoint": 1000
+    },
+    "7200": {
+      "solved": 1000,
+      "exact_grid_accuracy": 1.0,
+      "same_grid_as_first_checkpoint": 1000
+    }
+  },
+  "identical_grids_across_all_checkpoints": 1000,
+  "all_readouts_fixed": true
+}

@@ -1,0 +1,19 @@
+{
+  "status": "approved for single held-out evaluation",
+  "reviewed_at_utc": "2026-11-24T03:59:29.097114+00:00",
+  "dev_kernel": "ajayasaithambi/loopedwsp-independent-maze-dev",
+  "dev_version": 1,
+  "source_bundle_sha256": "d405a50d4c12ba7323427a495dc26b01162af73047a3e44d806a0adf408937b1",
+  "tensor_sha256": "8529622e7c8ab2bba41c62c28b7a852a9337ee35018068da80a918aa4ce64223",
+  "parameters": 7003,
+  "nonzero_parameters": 235,
+  "dev_calls": 1,
+  "pre_test_gates": [
+    "Analytic weights and generic runtime reviewed independently.",
+    "DEV corpus audit passed.",
+    "Local handmade tests passed.",
+    "Dense NumPy and private Kaggle GPU logits exactly agreed on synthetic inputs.",
+    "All 1000 DEV grids matched at every prescribed checkpoint.",
+    "All 16 DEV batches reached exact one-block full-state equality."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "cap": 5000,
+  "parameters": 2801,
+  "nonzero_parameters": 279,
+  "model_sha256": "21976f1fe2cfb251382e4fd1f21fc09fe3fa7f275eb8e0a3d2fbbffd1204aa96",
+  "d_model": 17,
+  "dense_flops_upper_bound": 146746739805,
+  "cpu_dev_count": 8,
+  "cpu_dev_exact": 8,
+  "cpu_answers_sha256": "6bafdfd3209d6c72a84d042acbee24042f29ce8306a03b6c73a9be23259369e4",
+  "cpu_dev_calls": 1
+}

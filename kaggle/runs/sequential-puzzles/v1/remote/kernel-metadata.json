@@ -1,0 +1,19 @@
+{
+  "id": "ajayasaithambi/loopedwsp-sequential-puzzles",
+  "id_no": 147054477,
+  "title": "LoopedWSP Sequential Puzzles",
+  "code_file": "loopedwsp-sequential-puzzles.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "model_sources": [],
+  "docker_image": "",
+  "machine_shape": "NvidiaTeslaT4"
+}

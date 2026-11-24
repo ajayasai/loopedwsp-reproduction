@@ -1,0 +1,14 @@
+{
+  "id": "ajayasaithambi/loopedwsp-independent-maze-dev",
+  "title": "LoopedWSP Independent Maze Dev",
+  "code_file": "main.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": []
+}

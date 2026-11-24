@@ -1,0 +1,17 @@
+[
+  {
+    "call": 1,
+    "subset": "train.csv rows 1\u20138",
+    "model": {
+      "parameters": 2801,
+      "nonzero_parameters": 279,
+      "model_sha256": "21976f1fe2cfb251382e4fd1f21fc09fe3fa7f275eb8e0a3d2fbbffd1204aa96",
+      "d_model": 17,
+      "dense_flops_upper_bound": 146746739805
+    },
+    "status": "complete",
+    "solved": 8,
+    "count": 8,
+    "actual_blocks": 240
+  }
+]

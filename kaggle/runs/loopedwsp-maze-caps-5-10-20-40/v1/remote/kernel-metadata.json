@@ -1,0 +1,19 @@
+{
+  "id": "ajayasaithambi/loopedwsp-maze-caps-5-10-20-40",
+  "id_no": 147033645,
+  "title": "LoopedWSP Maze Caps 5-10-20-40",
+  "code_file": "loopedwsp-maze-caps-5-10-20-40.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:fc720c15545eb096a510e1f085b17fc118387a007599424d953a4f327b71cacf",
+  "machine_shape": "NvidiaTeslaT4"
+}

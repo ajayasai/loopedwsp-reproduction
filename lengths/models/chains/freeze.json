@@ -1,0 +1,110 @@
+{
+  "model_sha256": "9d48ae71fceb0d9960f9ac5b3058c5116c03f78cb915fe1da494bf5d0cd8757d",
+  "parameters": 3321,
+  "width": 9,
+  "dev": {
+    "1": {
+      "hash": "59b4801a75af1f5fa80b64ff25defc249420d6a2e8f4779ec77ccc8d72b4ff92",
+      "data": {
+        "seed_sequence": [
+          41,
+          2,
+          1
+        ],
+        "count": 16,
+        "sha256": "f7fb523151e7921a7775a3263e87dd983eca03b4d3fd49a322576bca0e4e2cb4"
+      },
+      "score": {
+        "count": 16,
+        "correct": 16,
+        "accuracy": 1.0,
+        "inference_seconds": 0.0005322999786585569,
+        "seconds_including_extra_checkpoints": 0.0006401999853551388,
+        "token_range": [
+          3,
+          3
+        ],
+        "base_loop_range": [
+          3,
+          3
+        ],
+        "batches": 1,
+        "correct_at_loop_multipliers": {
+          "1": 16,
+          "2": 16,
+          "4": 16
+        },
+        "unchanged_at_all_checkpoints": 16
+      }
+    },
+    "4": {
+      "hash": "a7cc113038abd0ff048b164c8a7b79866d6973cbb64b033be6567e40505bac28",
+      "data": {
+        "seed_sequence": [
+          41,
+          2,
+          4
+        ],
+        "count": 16,
+        "sha256": "c1ba3e758a8d5cb6d6cf7792db22ea05072264223a0763163efd9d8e59cdcacd"
+      },
+      "score": {
+        "count": 16,
+        "correct": 16,
+        "accuracy": 1.0,
+        "inference_seconds": 0.001395900035277009,
+        "seconds_including_extra_checkpoints": 0.0015749000012874603,
+        "token_range": [
+          6,
+          6
+        ],
+        "base_loop_range": [
+          6,
+          6
+        ],
+        "batches": 1,
+        "correct_at_loop_multipliers": {
+          "1": 16,
+          "2": 16,
+          "4": 16
+        },
+        "unchanged_at_all_checkpoints": 16
+      }
+    },
+    "8": {
+      "hash": "a8f6996dd68c6e7bae99a6ab5cf0d6cef7e9995567741b9bb730e99be9ed23fe",
+      "data": {
+        "seed_sequence": [
+          41,
+          2,
+          8
+        ],
+        "count": 16,
+        "sha256": "2499fe98952241bca78c5e51bf35826372737a7770f6ef24fd45203d70f9c1d6"
+      },
+      "score": {
+        "count": 16,
+        "correct": 16,
+        "accuracy": 1.0,
+        "inference_seconds": 0.0017761000199243426,
+        "seconds_including_extra_checkpoints": 0.0021600000327453017,
+        "token_range": [
+          10,
+          10
+        ],
+        "base_loop_range": [
+          10,
+          10
+        ],
+        "batches": 1,
+        "correct_at_loop_multipliers": {
+          "1": 16,
+          "2": 16,
+          "4": 16
+        },
+        "unchanged_at_all_checkpoints": 16
+      }
+    }
+  },
+  "generator_sha256": "afc3746b8bc6cfee49be187c152e1271f97e6c4bd5eeb2ab8ede53dd284fe887"
+}

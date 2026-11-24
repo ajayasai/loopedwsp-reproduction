@@ -1,0 +1,11 @@
+{
+  "fields": [
+    "event_position",
+    "signed_quantity",
+    "opening_balance"
+  ],
+  "layers": [
+    1
+  ],
+  "round_rule": "log2_plus_one"
+}

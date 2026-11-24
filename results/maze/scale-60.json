@@ -1,0 +1,147 @@
+{
+  "side": 60,
+  "count": 50,
+  "exact_grid_matches": 50,
+  "exact_grid_accuracy": 1.0,
+  "inference_seconds": 13.719585181999975,
+  "amortized_seconds_per_maze": 0.2743917036399995,
+  "device": "Tesla T4",
+  "dtype": "float64",
+  "batch_size": 8,
+  "loop_budget": 7200,
+  "diagnostics": {
+    "heads": [
+      "exact one-hot",
+      "exact one-hot",
+      "exact one-hot",
+      "exact one-hot"
+    ],
+    "batches": [
+      {
+        "items": 8,
+        "evaluated_blocks": 560,
+        "full_state_fixed": true
+      },
+      {
+        "items": 8,
+        "evaluated_blocks": 688,
+        "full_state_fixed": true
+      },
+      {
+        "items": 8,
+        "evaluated_blocks": 528,
+        "full_state_fixed": true
+      },
+      {
+        "items": 8,
+        "evaluated_blocks": 816,
+        "full_state_fixed": true
+      },
+      {
+        "items": 8,
+        "evaluated_blocks": 672,
+        "full_state_fixed": true
+      },
+      {
+        "items": 8,
+        "evaluated_blocks": 448,
+        "full_state_fixed": true
+      },
+      {
+        "items": 2,
+        "evaluated_blocks": 656,
+        "full_state_fixed": true
+      }
+    ]
+  },
+  "peak_allocated_bytes": 334068224,
+  "peak_reserved_bytes": 356515840,
+  "cuda": "13.0",
+  "torch": "2.11.0+cu130",
+  "frozen_model_sha256": "8529622e7c8ab2bba41c62c28b7a852a9337ee35018068da80a918aa4ce64223",
+  "expanded_model": {
+    "tensor_sha256": "fe671cb67611c9fa1bbf2789b315398ff0bfe8274cd8949cecc813761ee9695f",
+    "parameters": 8443,
+    "nonzero_parameters": 355
+  },
+  "extended_arrays": [
+    "row",
+    "col"
+  ],
+  "corpus": {
+    "side": 60,
+    "count": 50,
+    "seed": 2026112460,
+    "study_url": "https://mbzuai-oryx.github.io/LoopedWSP/",
+    "generator_url": "https://github.com/mbzuai-oryx/LoopedWSP/blob/2752cd9f2d2e1e3e30e6686b3dbc23d8bcab875c/weights/run.py",
+    "provenance": "Fresh seeded instances from the authors' public demo generator. The study reports these sizes and counts; its individual inputs and seeds were unavailable.",
+    "sampling": "One CPython random.Random stream per size. DFS carve with extra openings, uniformly sampled distinct open endpoints. Keep the first reachable pairs; no difficulty or tie filter.",
+    "discarded_unreachable": 0,
+    "label_oracle": "Forward BFS from S with first-discovery parents in down, left, right, up order. Interior path cells are marked o. Endpoints and all other cells are preserved.",
+    "hash_format": "SHA-256 of ordered, row-major ASCII grids with one trailing LF per grid.",
+    "questions_sha256": "942a47edea95caca0ecb4ca9c7e5df26eb4f1fe3a03648a484bb481ae3cd6e4a",
+    "targets_sha256": "f303ce80162671360f026f9774303c5e5a3d71f634ddf84e347799bd98909427",
+    "path_steps": {
+      "min": 1,
+      "median": 138.5,
+      "max": 400
+    },
+    "path_steps_per_maze": [
+      58,
+      154,
+      278,
+      71,
+      165,
+      193,
+      126,
+      46,
+      263,
+      183,
+      343,
+      7,
+      144,
+      121,
+      218,
+      284,
+      119,
+      138,
+      200,
+      263,
+      69,
+      93,
+      125,
+      34,
+      400,
+      103,
+      45,
+      221,
+      139,
+      369,
+      191,
+      166,
+      193,
+      117,
+      9,
+      108,
+      187,
+      331,
+      76,
+      198,
+      116,
+      32,
+      40,
+      68,
+      192,
+      182,
+      107,
+      118,
+      1,
+      321
+    ],
+    "grids_with_multiple_shortest_paths": 28
+  },
+  "locked_hashes": {
+    "questions_sha256": "942a47edea95caca0ecb4ca9c7e5df26eb4f1fe3a03648a484bb481ae3cd6e4a",
+    "targets_sha256": "f303ce80162671360f026f9774303c5e5a3d71f634ddf84e347799bd98909427"
+  }
+}

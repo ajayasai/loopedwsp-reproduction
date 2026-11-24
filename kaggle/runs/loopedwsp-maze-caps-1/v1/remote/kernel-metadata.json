@@ -1,0 +1,19 @@
+{
+  "id": "ajayasaithambi/loopedwsp-maze-caps-1",
+  "id_no": 147035123,
+  "title": "LoopedWSP Maze Caps 1",
+  "code_file": "loopedwsp-maze-caps-1.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "model_sources": [],
+  "docker_image": "",
+  "machine_shape": "NvidiaTeslaT4"
+}

@@ -1,0 +1,21 @@
+{
+  "kernel": "ajayasaithambi/loopedwsp-sequential-puzzles",
+  "version": 1,
+  "requested_private": true,
+  "requested_internet": false,
+  "requested_gpu": "NvidiaTeslaT4",
+  "input_sha256": {
+    "frame.py": "24dc34882a430364ab1c967aa48e7c7becb56a8fc1c02f20b89a2a9c3b36e0a8",
+    "experiment.py": "4bdac31fd4cf3f502ef0fdf9fce353d85b8c4a81ad62445a83454839b0706b4d",
+    "verify.py": "9dcf33116d3c708f53b53a255531824b270c4d202eee643daef08cc5ce725bf8",
+    "models/hanoi/network.json": "7c79be9ea39ce2a25f82f36c265522056cad7ae4a1ad630cedacd97b8e72deae",
+    "models/hanoi/weights.npz": "e45330648f9b5860035b0a0b615ddd5b59a775e03d907a466bd87e9638c9b1b4",
+    "models/hanoi/freeze.json": "a79d44fbe5ccee9d1383829e909c980cb8cd41e7791637928fa16bf74e4d240f",
+    "models/checkers/network.json": "b6f87ba3e87cb86b8b08aabf7724857540942a02e5b5f78089115499ec394013",
+    "models/checkers/weights.npz": "42454a0bcd57756a21111f77b1ce9693aa21276b5d1c250335383c4357e60e0f",
+    "models/checkers/freeze.json": "85130878e01a2fd26794d7278b79f06d9e17d57d9435d69f2b5645cbd497414b"
+  },
+  "script_sha256": "3ac085afb7c131f3f2c673938ac90b66ade239d94061bffdfaf1dfdcfdaf9902",
+  "timeout_seconds": 7200,
+  "url": "https://www.kaggle.com/code/ajayasaithambi/loopedwsp-sequential-puzzles/versions/1"
+}

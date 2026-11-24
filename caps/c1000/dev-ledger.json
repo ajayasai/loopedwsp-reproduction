@@ -1,0 +1,31 @@
+[
+  {
+    "call": 1,
+    "subset": "train.csv rows 1\u20138",
+    "model": {
+      "parameters": 965,
+      "nonzero_parameters": 112,
+      "model_sha256": "de60a083b79614d1bf000024c696501b8ac4e4ac1e3da2ecf3adb9def7d99de9",
+      "d_model": 10,
+      "dense_flops_upper_bound": 81875382348
+    },
+    "status": "abandoned",
+    "reason": "Superseded before completion by wider FP64 attention margin after independently generated synthetic checks.",
+    "model_scored_on_test": false
+  },
+  {
+    "call": 2,
+    "subset": "train.csv rows 1\u20138",
+    "model": {
+      "parameters": 965,
+      "nonzero_parameters": 112,
+      "model_sha256": "3380efcdf33f07420e7b94f15c380ce93bee38a18f0fb0e28f66e088464b5e18",
+      "d_model": 10,
+      "dense_flops_upper_bound": 81875382348
+    },
+    "status": "complete",
+    "solved": 8,
+    "count": 8,
+    "actual_blocks": 240
+  }
+]

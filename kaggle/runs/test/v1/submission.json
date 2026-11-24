@@ -1,0 +1,10 @@
+{
+  "kernel": "ajayasaithambi/loopedwsp-independent-maze-test",
+  "version": 1,
+  "url": "https://www.kaggle.com/code/ajayasaithambi/loopedwsp-independent-maze-test/versions/1",
+  "requested_private": true,
+  "accelerator": "NvidiaTeslaT4",
+  "timeout_seconds": 3600,
+  "source_bundle_sha256": "d405a50d4c12ba7323427a495dc26b01162af73047a3e44d806a0adf408937b1",
+  "script_sha256": "aaa81014bd22145559cd962b0230c4616f5bc83517f2509da5a56de4e8d8635b"
+}

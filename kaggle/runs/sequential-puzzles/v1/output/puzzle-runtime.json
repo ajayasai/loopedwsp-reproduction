@@ -1,0 +1,24 @@
+{
+  "input_sha256": {
+    "frame.py": "24dc34882a430364ab1c967aa48e7c7becb56a8fc1c02f20b89a2a9c3b36e0a8",
+    "experiment.py": "4bdac31fd4cf3f502ef0fdf9fce353d85b8c4a81ad62445a83454839b0706b4d",
+    "verify.py": "9dcf33116d3c708f53b53a255531824b270c4d202eee643daef08cc5ce725bf8",
+    "models/hanoi/network.json": "7c79be9ea39ce2a25f82f36c265522056cad7ae4a1ad630cedacd97b8e72deae",
+    "models/hanoi/weights.npz": "e45330648f9b5860035b0a0b615ddd5b59a775e03d907a466bd87e9638c9b1b4",
+    "models/hanoi/freeze.json": "a79d44fbe5ccee9d1383829e909c980cb8cd41e7791637928fa16bf74e4d240f",
+    "models/checkers/network.json": "b6f87ba3e87cb86b8b08aabf7724857540942a02e5b5f78089115499ec394013",
+    "models/checkers/weights.npz": "42454a0bcd57756a21111f77b1ce9693aa21276b5d1c250335383c4357e60e0f",
+    "models/checkers/freeze.json": "85130878e01a2fd26794d7278b79f06d9e17d57d9435d69f2b5645cbd497414b"
+  },
+  "status": "complete",
+  "device": "Tesla T4",
+  "available_devices": 2,
+  "pytorch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "output_sha256": {
+    "puzzle-hanoi.json": "5fde57b15cd198038af040403a52312494dc8a01fb1f05fecb956887a8168390",
+    "puzzle-checkers.json": "5c4c00cc0a8e48497694563681d6f9a491a42e7ab11d1adee42b6ec0363566f4",
+    "emitted-hanoi.npz": "ad168ac408710f7273fb0b34493e0ca6d91006760ac7bbfd477b7a83309156b5",
+    "emitted-checkers.npz": "b35fc8746ca4d28cb6acc9494979994e78e03cd764b1b3022d9a1b54057574c8"
+  }
+}

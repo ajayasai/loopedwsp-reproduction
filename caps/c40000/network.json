@@ -1,0 +1,28 @@
+{
+  "fields": [
+    {
+      "kind": "char",
+      "vocab": " #SG\n"
+    },
+    {
+      "kind": "pos_mod",
+      "modulus": 929
+    }
+  ],
+  "alphabet": [
+    "",
+    " ",
+    "#",
+    "S",
+    "G",
+    "\n",
+    "o"
+  ],
+  "layers": [
+    4,
+    0,
+    0,
+    0
+  ],
+  "rounds_per_token": 2
+}
