@@ -1,0 +1,22 @@
+{
+  "title": "When does looping help on the three synthetic applications?",
+  "original_release": "135e178eed9e20c6addb630590c9ebec41b1c911",
+  "tasks": ["inventory", "scheduling", "telemetry"],
+  "sizes": [8, 16, 32, 64, 128],
+  "precisions": ["float64", "float32", "float16"],
+  "methods": ["original_1", "original_4", "original_full", "full_feedforward", "local_w2", "local_w8", "local_w32"],
+  "parameter_budgets": [16, 64, 256, 2048, 65536],
+  "batch_size": 16,
+  "timed_repeats": 3,
+  "method_order_seed": 58137,
+  "cases_sha256": "8b95019f801afd77cf479ffbc8d52c102a1b698499530bb18aaed20022ff6568",
+  "challenge_sha256": "69f00cf642ef7d1867e6b2e98e35dece1453b788479200f5882063c7b8d6fda0",
+  "corpus_lock_sha256": "b434ce82775d83630c207f50d061b425004cd74f10625f60b1572c16c9c6ae05",
+  "corpora": "For every task and size reuse all 64 released test records, and add 16 newly generated pairs. Both members of a pair have identical rows 2 through N and opposite final reference labels. Cohorts are scored separately. These are synthetic, deliberately constructed challenges.",
+  "primary_comparison": "Paired whole-record accuracy of the same frozen original weights, at one and full depth, compared with a task-specific non-recurrent global construction. Four-pass and finite-window controls characterize depth and capacity. No optimization or model selection on these results.",
+  "counts": "Report every dense scalar in model parameters, including zeros, and nonzero scalars before dtype conversion. Tied parameters count once. Task-specific operators and structural masks are described alongside counts. Budget summaries are descriptive maxima among evaluated models, not fitted baselines or performance bounds.",
+  "precision": "Cast model parameters and floating point forward tensors to the named dtype. Keep categorical indices and structural masks integer/bool. Standard PyTorch CUDA operator internals may accumulate at higher precision. Autocast and TF32 are disabled. Count a nonfinite prediction as incorrect, and report invalid flags separately.",
+  "timing": "Preload integer inputs and parameters on the GPU. Warm one batch per configuration. Report all three synchronized wall times and their median for the same 96-record workload, in batches of 16. Include Python dispatch and tensor operations; exclude setup, host transfers, grading and queueing.",
+  "scoring_sensitivity": "For the originals, the primary screen invalidates a token if a checked attention score, update, feedforward preactivation, state, output logit or score is nonfinite. Also archive and score the raw final margin when both final logits and their difference are finite. The baselines are graded on their final scores; intentional negative-infinity structural masks represent excluded positions. Original timings include dense attention and finite checks at each pass with no fixed-point stopping or routing cache.",
+  "scope": "Input sizes above 128 fall outside the frozen original models' positional tables. Each original application uses one fixed parameterization. Equal-count depth ablations isolate the effect of iteration; parameter counts across different algorithms are descriptive, and no training is performed."
+}
