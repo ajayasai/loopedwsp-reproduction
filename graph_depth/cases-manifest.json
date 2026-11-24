@@ -1,0 +1,733 @@
+{
+  "vertices": 64,
+  "seed": 20261124,
+  "bit_generator": "PCG64",
+  "seed_coordinates": [
+    "seed",
+    "split_index",
+    "task_index",
+    "hops"
+  ],
+  "split_order": [
+    "dev",
+    "test"
+  ],
+  "task_order": [
+    "pointer",
+    "reachability"
+  ],
+  "pairs_per_bin": {
+    "dev": 8,
+    "test": 64
+  },
+  "hops": {
+    "dev": [
+      1,
+      2,
+      4
+    ],
+    "test": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      8,
+      9,
+      16,
+      17,
+      32
+    ]
+  },
+  "arrays": {
+    "pointer_dev_1_label": {
+      "shape": [
+        16
+      ],
+      "dtype": "uint8",
+      "sha256": "248282eca59420ff206366e9ead818a124da3bf2aaaf13285686f4fdccef3d94"
+    },
+    "pointer_dev_1_source": {
+      "shape": [
+        16
+      ],
+      "dtype": "uint8",
+      "sha256": "fa10249b4a89a08e2c3ed8e048c071f109f313247485c46176ece0e3722b37e9"
+    },
+    "pointer_dev_1_table": {
+      "shape": [
+        16,
+        64,
+        2
+      ],
+      "dtype": "uint8",
+      "sha256": "978986cd2aa828e3db092db37d2674bc36fff67cd1d94140f7d174e1992bffee"
+    },
+    "pointer_dev_2_label": {
+      "shape": [
+        16
+      ],
+      "dtype": "uint8",
+      "sha256": "7965963e6cb3c0e975d402281c01888c1d7ff18575df5259d85af1fb9e8a852c"
+    },
+    "pointer_dev_2_source": {
+      "shape": [
+        16
+      ],
+      "dtype": "uint8",
+      "sha256": "8401ca2af6491623665371dee0882c4878704a33ecc035050352a274d42ecb69"
+    },
+    "pointer_dev_2_table": {
+      "shape": [
+        16,
+        64,
+        2
+      ],
+      "dtype": "uint8",
+      "sha256": "4b4bc467a93e8c81a45763b2918facc8f9be5704fc15d7cdd50074069c5186bb"
+    },
+    "pointer_dev_4_label": {
+      "shape": [
+        16
+      ],
+      "dtype": "uint8",
+      "sha256": "8b0dacf6346fe0b20690196b8f532670ac459cf66c5e19d5615c5e4e49b9a97a"
+    },
+    "pointer_dev_4_source": {
+      "shape": [
+        16
+      ],
+      "dtype": "uint8",
+      "sha256": "04e523fd9bad9488f19deb563f32475c4267ac361a162e7ffacb549c7c1f1a61"
+    },
+    "pointer_dev_4_table": {
+      "shape": [
+        16,
+        64,
+        2
+      ],
+      "dtype": "uint8",
+      "sha256": "cd970ae729cb194292eca0eb9dd93df0bdf1d97cbba60a2ca85bac4b4ca041ce"
+    },
+    "pointer_test_16_label": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "ce18dbb8dde39b0557ea1e4deeb4c008f4ace93997e2487f6342cc6e034126e2"
+    },
+    "pointer_test_16_source": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "ff8f102a91f7a5d997de2d44ea2a8a1d968ffc9d00720d8c64a255883446f732"
+    },
+    "pointer_test_16_table": {
+      "shape": [
+        128,
+        64,
+        2
+      ],
+      "dtype": "uint8",
+      "sha256": "2b2716ab6ce1485b29497fa073d9ecda880b87f76507fe3a50bc296923081a7b"
+    },
+    "pointer_test_17_label": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "b413bb12b46835615827e2a1ed6cdd10903fe3a2de56dcb91af89e9b553c6b91"
+    },
+    "pointer_test_17_source": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "658efca5052706c40ca35b9f7ccba0a9a4aadb6953d2e7cc6f63382a97ea0c14"
+    },
+    "pointer_test_17_table": {
+      "shape": [
+        128,
+        64,
+        2
+      ],
+      "dtype": "uint8",
+      "sha256": "c08942cbba44703aeb1213f3a8aefcd7f8693a2a7c0643d4fe7c71327aff6ea3"
+    },
+    "pointer_test_1_label": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "620a5664df97af1db62e5843627d7c544d700c9f48441e8d1a5eac1e3fab13f3"
+    },
+    "pointer_test_1_source": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "e8c7959115f80b74d6ec4238c64e8e5d4c115c0f60a308aa9d71a703df1c4460"
+    },
+    "pointer_test_1_table": {
+      "shape": [
+        128,
+        64,
+        2
+      ],
+      "dtype": "uint8",
+      "sha256": "e8fb95f7bb007f39afc920fa94996adb596efb2699a5a722b7568e43ceb92d19"
+    },
+    "pointer_test_2_label": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "a9de8fe9875eb8910a008cdafb51f3e072ab3098cbb75c0362ea70be4d2821c7"
+    },
+    "pointer_test_2_source": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "af83c62fb9c0f37c3037031de30ee24d791068415ecfea0d0804d1726d4bc813"
+    },
+    "pointer_test_2_table": {
+      "shape": [
+        128,
+        64,
+        2
+      ],
+      "dtype": "uint8",
+      "sha256": "d8f02cfc141dd25dcdfb81621d465d55ecc31d6f38b12435866fa698a130fa83"
+    },
+    "pointer_test_32_label": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "7c210cb99dd9cdcb43b93c8e2319868fee20a4e64b5010a4b023a7398f8caeb9"
+    },
+    "pointer_test_32_source": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "091dbfde8bd1fcc54bf3c0660f42f93c93b861eddff2e39f6ef4e9ea6f32493d"
+    },
+    "pointer_test_32_table": {
+      "shape": [
+        128,
+        64,
+        2
+      ],
+      "dtype": "uint8",
+      "sha256": "09a71814b55577bbd984aaa97ef1f98eaf03ae61ee7d88739222f10e70c7fe42"
+    },
+    "pointer_test_3_label": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "09224bfbbb7e1d2423917a1b5f2cbddebe5337bf8b2febb6d39e5e51d10d10aa"
+    },
+    "pointer_test_3_source": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "27077e756a657b57dbee4eaea10e8965c7d6aeb8c903365fb26440d70c7e93e3"
+    },
+    "pointer_test_3_table": {
+      "shape": [
+        128,
+        64,
+        2
+      ],
+      "dtype": "uint8",
+      "sha256": "630594994d96474d5acfa5a03e5aa89e5c80dbb0f70645a19e12b94677701274"
+    },
+    "pointer_test_4_label": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "e2cf105234e1dd6fba18ac8fd96da360d1ebbabc8dae3f086ff358072271fee2"
+    },
+    "pointer_test_4_source": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "9d7771d476936a2f9555a8ad460d4d30094bce2b57aa0277ffa49db7b79e2a57"
+    },
+    "pointer_test_4_table": {
+      "shape": [
+        128,
+        64,
+        2
+      ],
+      "dtype": "uint8",
+      "sha256": "b111a1f48ecdaeac3d2f3efdceac17637e12fc7c0497c88dd8ae11c3c89d105f"
+    },
+    "pointer_test_5_label": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "694db65f5397e207b6ec4dcbaf735e5f535bdf77fa40425a979280a872946748"
+    },
+    "pointer_test_5_source": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "5545a0808b1057e7438d1bcea33639292d63ccce511b905250fa819ab0c1a814"
+    },
+    "pointer_test_5_table": {
+      "shape": [
+        128,
+        64,
+        2
+      ],
+      "dtype": "uint8",
+      "sha256": "8f5875c1e5b054e8c21b74ec469b3534b84a281fcf3641f0961f9d5df57eba7a"
+    },
+    "pointer_test_8_label": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "53fe7f3981cd596e388eda856f2708e61c820106861a49931945f41d6aa91d59"
+    },
+    "pointer_test_8_source": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "14a4bf9af95b31c1d601f05dec7022fcd8a7c95a934b4a76072d7d920e9754c1"
+    },
+    "pointer_test_8_table": {
+      "shape": [
+        128,
+        64,
+        2
+      ],
+      "dtype": "uint8",
+      "sha256": "4775cf6d686548295f0e4f03893432fb420032b04236f192780f48346386d50c"
+    },
+    "pointer_test_9_label": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "dbb10438e2957de8a17bf59039f1ede3557661d6f5a7152199a274445b2a8160"
+    },
+    "pointer_test_9_source": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "65a994ef8307b13c5a39b447be3998913efc7345c3586efb4273f073387d72b5"
+    },
+    "pointer_test_9_table": {
+      "shape": [
+        128,
+        64,
+        2
+      ],
+      "dtype": "uint8",
+      "sha256": "5b006fda4fa8ecd5ddf1c119daf3526198d98eccfcdd6efd3618d9c9d9f24d9f"
+    },
+    "reachability_dev_1_adj": {
+      "shape": [
+        16,
+        64,
+        64
+      ],
+      "dtype": "bool",
+      "sha256": "b38bb180b86d07b8db5101874a3517ca3f513ca3e55e8e2913d89950baf28078"
+    },
+    "reachability_dev_1_label": {
+      "shape": [
+        16
+      ],
+      "dtype": "uint8",
+      "sha256": "03fafb98fec142890f763fc533b2f491b09842878201ad9074ed9f28402e53ac"
+    },
+    "reachability_dev_1_source": {
+      "shape": [
+        16
+      ],
+      "dtype": "uint8",
+      "sha256": "48cea615f36ca18cd90f9d43a835c67c0f6287a881e72b34682e379d5f0db8de"
+    },
+    "reachability_dev_1_target": {
+      "shape": [
+        16
+      ],
+      "dtype": "uint8",
+      "sha256": "15f94a9636f0eb67eba3c2563fe7c49189829a332073120e1bbadab7faf9f97d"
+    },
+    "reachability_dev_2_adj": {
+      "shape": [
+        16,
+        64,
+        64
+      ],
+      "dtype": "bool",
+      "sha256": "75a17024917fead7426474d2f7213755c38fa5cc76c4752f9f7d8f9ea0ba10da"
+    },
+    "reachability_dev_2_label": {
+      "shape": [
+        16
+      ],
+      "dtype": "uint8",
+      "sha256": "3ee45b6f4c4818a4b547d3209f24d1109a8a02dada4e3b5f5494e662f06f5827"
+    },
+    "reachability_dev_2_source": {
+      "shape": [
+        16
+      ],
+      "dtype": "uint8",
+      "sha256": "fbc65b8136902b31340ad31403216376df13428c610b44fa6f7eedf08cd58ad2"
+    },
+    "reachability_dev_2_target": {
+      "shape": [
+        16
+      ],
+      "dtype": "uint8",
+      "sha256": "06f90cac8acb2d61ed37fd744e05e1130ef3f35b68e5f1c3bb5facafd0a74d93"
+    },
+    "reachability_dev_4_adj": {
+      "shape": [
+        16,
+        64,
+        64
+      ],
+      "dtype": "bool",
+      "sha256": "ea7a94b94942da224ae750d4f8ab202536e9f185cc7b1b841050676acbb9a6f6"
+    },
+    "reachability_dev_4_label": {
+      "shape": [
+        16
+      ],
+      "dtype": "uint8",
+      "sha256": "bdeff70dac40e3ceaff2b2e8c2a9eac1cf51aa30753e4fb499515cc6f5a87e35"
+    },
+    "reachability_dev_4_source": {
+      "shape": [
+        16
+      ],
+      "dtype": "uint8",
+      "sha256": "0ea2efda51f6bbbe6ea9f3a15b46817dc1ed08d8f9184bdbbfe1440dbf1c0310"
+    },
+    "reachability_dev_4_target": {
+      "shape": [
+        16
+      ],
+      "dtype": "uint8",
+      "sha256": "94640bc07fb4dbeccf776aca8c35ee29015283022f50ace02164c3c385d68a81"
+    },
+    "reachability_test_16_adj": {
+      "shape": [
+        128,
+        64,
+        64
+      ],
+      "dtype": "bool",
+      "sha256": "63bdd2aef1f0888a6142d95e0a24bcfc8c90c2a3249e957bb6330f517fec9ad8"
+    },
+    "reachability_test_16_label": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "4d3991500279b018caf86c269466b4bf06b31941fee7e0d19f60dcd6163dabaf"
+    },
+    "reachability_test_16_source": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "ff92c5d7ac228f26e292e166864f7eeb9a6db5203ba4c2c2f4a9e66f35f8157b"
+    },
+    "reachability_test_16_target": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "35f36b174e7c0b988d7b023345629f32b9e3cd5ed732cad8e355bc1446437468"
+    },
+    "reachability_test_17_adj": {
+      "shape": [
+        128,
+        64,
+        64
+      ],
+      "dtype": "bool",
+      "sha256": "47137eb8f8ef4f27a4124bddd865cec1c97e8ba5b62be219f1177d95dced20d8"
+    },
+    "reachability_test_17_label": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "36c12cd7a2183fbd6fa11328b1684547faf3641954508e3f9daf3d9459ba9b98"
+    },
+    "reachability_test_17_source": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "1e9b3fc2d6281d7761fecb0401e9de62ff9f2873e0c20a0d2765dc00e1525b13"
+    },
+    "reachability_test_17_target": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "4d95ee98be3bc2699f5dd3056dece3e14cd587131ba0aa9051dae85168a2b511"
+    },
+    "reachability_test_1_adj": {
+      "shape": [
+        128,
+        64,
+        64
+      ],
+      "dtype": "bool",
+      "sha256": "00e827cd38d7578d9f9e682b535ee28bc0030bd42166c30cd01e47e7268c4d90"
+    },
+    "reachability_test_1_label": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "2cc7bab4b9527808188c5f3f73ded23fe1cb80fa64ab5dcfed380174649a255e"
+    },
+    "reachability_test_1_source": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "821c61d3798e7a2b5fcce07f90579979c15eb17553e78319a80c3cf8e5b15e30"
+    },
+    "reachability_test_1_target": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "c95a525f00ebba75d5209f1704cbcdc13900399888bb0a0b20d3258f4c36f7dc"
+    },
+    "reachability_test_2_adj": {
+      "shape": [
+        128,
+        64,
+        64
+      ],
+      "dtype": "bool",
+      "sha256": "23f3f503776b22da2da6b2389057f649817d7e8629df6bb25556a7bdd96f0a98"
+    },
+    "reachability_test_2_label": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "89e4640c566a1637f5ac9db872de76fc57a31ecfb36ebb1305cc31badd1118c2"
+    },
+    "reachability_test_2_source": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "e648bd6cb6406a6dae929e4592ba0261714fef1cca4e4ad94a82bc67fefe4193"
+    },
+    "reachability_test_2_target": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "a7b6474557d32f0733da3b30d14a533ecd6b69fd724dfed94bf77746ee8d9257"
+    },
+    "reachability_test_32_adj": {
+      "shape": [
+        128,
+        64,
+        64
+      ],
+      "dtype": "bool",
+      "sha256": "ef7c7c9ee3dc8e2a4a309e6d6aad91b1fea3d1d2b4bab202a2e8f96e82f61a45"
+    },
+    "reachability_test_32_label": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "a54d408e87cde03cb4b9415d92c34268a2a5b04d0a75c50905964a03b01ada31"
+    },
+    "reachability_test_32_source": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "1054aafd831175b25193b939392610149a4647226b4fb4a386ab53a272ee9419"
+    },
+    "reachability_test_32_target": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "25975d502f1c1d07640ddd5b495d3959a6dbd865ed4571c448d71cf4b3d31622"
+    },
+    "reachability_test_3_adj": {
+      "shape": [
+        128,
+        64,
+        64
+      ],
+      "dtype": "bool",
+      "sha256": "4a4bffcfd89c6deb08a3284649a979d67fd2070b7ad9c3fb60eedf6eedc184b2"
+    },
+    "reachability_test_3_label": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "5460212d53fb058dbf1c3c7209bbcdec8a702383816891f6ccbadf33d2ce756c"
+    },
+    "reachability_test_3_source": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "3a1c8c453209cfd6c9ccab0fba4a8fae484355c9d18d294bd95455e6637fb4b5"
+    },
+    "reachability_test_3_target": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "5b29b9577a0e6d1031dc80610291715fc9048ca58ff8e1fb8a9d8e3f99b7c5cc"
+    },
+    "reachability_test_4_adj": {
+      "shape": [
+        128,
+        64,
+        64
+      ],
+      "dtype": "bool",
+      "sha256": "89eac0b9f79e16a84acb3a0bd18cb6fa193267032cd8bdc9d09d4bcef6fb0383"
+    },
+    "reachability_test_4_label": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "e674946785178b5f14af46f4b42467a175174ad501ce0e9ac8bb821761d0129d"
+    },
+    "reachability_test_4_source": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "1172c55d90515db21da4c7f58137b64f7a875550bea79fa8f6ebc3141ac90cd7"
+    },
+    "reachability_test_4_target": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "ba14a69d6478dd4a0a2cd45900f4450ebd7deeddac05497ab8b2341284e0a66c"
+    },
+    "reachability_test_5_adj": {
+      "shape": [
+        128,
+        64,
+        64
+      ],
+      "dtype": "bool",
+      "sha256": "4020f7e6784c9d0ea5f26c72f38961114df32a955589648f45f1e959279704df"
+    },
+    "reachability_test_5_label": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "11a2185f792677088c1cac359db5ba776e1dff3dc1904030a601b01c3a2ce148"
+    },
+    "reachability_test_5_source": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "8ba4d1ea884c9d35782c280b49cbb060042d0da71beea23286cc152ee93321fa"
+    },
+    "reachability_test_5_target": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "25282f17621636d16d835861fba1f22cadd72b167bab2450b93ab3d61fe58478"
+    },
+    "reachability_test_8_adj": {
+      "shape": [
+        128,
+        64,
+        64
+      ],
+      "dtype": "bool",
+      "sha256": "ddc116080d14157f46bd00635e0d25e5521640c7d1ff920421a30d00ac713013"
+    },
+    "reachability_test_8_label": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "79594679c01239a05197e7ef1d1dd45215fbe563b3b0796185eb030aeeb86871"
+    },
+    "reachability_test_8_source": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "3748e5300f393b34b9745ce5d1922319eb340cf6738159e954a31dd2224afcad"
+    },
+    "reachability_test_8_target": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "d19f827676a5faaa7a35f84a267478f83f9b6685265d7bf57692cb3ddb9bdead"
+    },
+    "reachability_test_9_adj": {
+      "shape": [
+        128,
+        64,
+        64
+      ],
+      "dtype": "bool",
+      "sha256": "59cd12128cd4b9348fb51797e269e157de0a345421cfc3310c819e981779fba4"
+    },
+    "reachability_test_9_label": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "eda066e69232943ab5bb1d990139e0a7acc76b1ef52ede5465c351a1bc90e1af"
+    },
+    "reachability_test_9_source": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "3a1db4fdcb401d4316c16c0e806707b1cb4a170d0418273d3ae4c2d941afb645"
+    },
+    "reachability_test_9_target": {
+      "shape": [
+        128
+      ],
+      "dtype": "uint8",
+      "sha256": "b44fc59884d8ee2060c83f9b0396b031f24c69aa818b0547f9f9a43694653e99"
+    }
+  }
+}

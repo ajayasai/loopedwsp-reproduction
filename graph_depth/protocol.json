@@ -1,0 +1,31 @@
+{
+  "title": "Tied and untied transformer depth on pointer chasing and directed reachability",
+  "nodes": 64,
+  "development": {"hops": [1,2,4], "pairs_per_bin": 8},
+  "test": {"hops": [1,2,3,4,5,8,9,16,17,32], "pairs_per_bin": 64},
+  "precision": "float32",
+  "timing": {"batch_size": 16, "warmup_batches": 1, "full_cohort_repeats": 3, "order_seed": 803472},
+  "tasks": {
+    "pointer": {
+      "budgets": [3072,6144],
+      "matched": ["loop_shared","fixed_2","fixed_4","fixed_6"],
+      "unrolled": "untied_full",
+      "reference": "loop_shared",
+      "depths": {"loop_shared":6,"fixed_2":2,"fixed_4":4,"fixed_6":6,"untied_full":6},
+      "unrolled_parameters": [18432,36864]
+    },
+    "reachability": {
+      "budgets": [52,100],
+      "matched": ["local_tied","local_untied_1","local_untied_2","local_untied_4","global_untied_4","global_untied_6"],
+      "unrolled": "local_unrolled",
+      "reference": "local_tied",
+      "depths": {"local_tied":63,"local_untied_1":1,"local_untied_2":2,"local_untied_4":4,"global_untied_4":4,"global_untied_6":6,"local_unrolled":63},
+      "unrolled_parameters": [3028,6052]
+    }
+  },
+  "primary_measure": "Exact endpoint ID or binary reachability accuracy on the same 128 queries per distance. Report both-members-correct per 64 counterfactual pairs, and reachability positives and negatives separately. A negative has no finite distance and is binned by its positive partner.",
+  "comparison": "For each task and budget compare the tied model to every other model on identical examples. Record both correct, tied-only, comparator-only and neither. Higher-budget unrolled copies are a separate equal-depth/width control.",
+  "construction": "Weights are analytically specified before test inference. Budgets count all stored nn.Parameter scalar entries including zeros, counting each reused parameter once. Also record buffers, nonzero values, model source and parameter digests. Fixed feature encodings, wiring, masks, query bits and workspace are described separately.",
+  "timing_scope": "Report median synchronized host wall time and individual repeats for all 128 GPU-resident queries at each setting. Include model input encoding, forward, and launches. Exclude corpus construction, movement from CPU, scoring, warm-up and disk I/O. All models use the same batch size and FP32 with TF32 disabled.",
+  "prediction": "For local reachability, additional propagation depth should improve positive sensitivity on long paths. Pointer composition and relation squaring give strong untied alternatives. A same-budget tie with a deep feedforward alternative limits any advantage claim to the indicated comparator. This is a construction study on fixed-size graphs, without optimization over weights."
+}
