@@ -1,0 +1,68 @@
+{
+  "kernel": "ajayasaithambi/loopedwsp-field-experiments",
+  "version": 1,
+  "status": "COMPLETE",
+  "device": "Tesla T4",
+  "cuda": "13.0",
+  "pytorch": "2.11.0+cu130",
+  "server_private": true,
+  "server_internet_enabled": false,
+  "script_sha256": "a2346f98ffe7a80c37ca2c12298ff68a1c85b9fbdd9f75ba430232dc108410d9",
+  "remote_script_sha256": "a2346f98ffe7a80c37ca2c12298ff68a1c85b9fbdd9f75ba430232dc108410d9",
+  "source_match": "exact",
+  "input_files_verified": 8,
+  "output_sha256": {
+    "fieldlab-results.json": "0711424bf618f0994a563bd2c1c251a5cdf11870b850febb485966b88d315b39",
+    "fieldlab-predictions.npz": "9761ed8dd3b716b90e518411fb7576d1178e9587d625b89c0456e74b9e6d888f"
+  },
+  "prediction_arrays": {
+    "basin_4": [
+      64,
+      16
+    ],
+    "basin_6": [
+      64,
+      36
+    ],
+    "basin_8": [
+      64,
+      64
+    ],
+    "basin_12": [
+      64,
+      144
+    ],
+    "transit_24": [
+      64,
+      1
+    ],
+    "transit_48": [
+      64,
+      1
+    ],
+    "transit_96": [
+      64,
+      1
+    ],
+    "transit_192": [
+      64,
+      1
+    ],
+    "bowling_3": [
+      64,
+      3
+    ],
+    "bowling_5": [
+      64,
+      5
+    ],
+    "bowling_8": [
+      64,
+      8
+    ],
+    "bowling_10": [
+      64,
+      10
+    ]
+  }
+}

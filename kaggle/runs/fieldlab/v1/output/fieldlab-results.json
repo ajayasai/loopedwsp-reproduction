@@ -1,0 +1,202 @@
+{
+  "split": "test",
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "device": "Tesla T4",
+  "conditions": [
+    {
+      "task": "basin",
+      "size": 4,
+      "parameters": 6,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 1024,
+      "correct_labels": 1024,
+      "nonfinite": 0,
+      "seconds": [
+        0.00990899700002501,
+        0.008968399000082172,
+        0.009122181999941859
+      ],
+      "median_seconds": 0.009122181999941859
+    },
+    {
+      "task": "basin",
+      "size": 6,
+      "parameters": 6,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 2304,
+      "correct_labels": 2304,
+      "nonfinite": 0,
+      "seconds": [
+        0.022981625999932476,
+        0.023008419000007052,
+        0.022358170999950744
+      ],
+      "median_seconds": 0.022981625999932476
+    },
+    {
+      "task": "basin",
+      "size": 8,
+      "parameters": 6,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 4096,
+      "correct_labels": 4096,
+      "nonfinite": 0,
+      "seconds": [
+        0.047130219999985457,
+        0.04861024499996347,
+        0.048899666000011166
+      ],
+      "median_seconds": 0.04861024499996347
+    },
+    {
+      "task": "basin",
+      "size": 12,
+      "parameters": 6,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 9216,
+      "correct_labels": 9216,
+      "nonfinite": 0,
+      "seconds": [
+        0.11224536499992155,
+        0.12184475100002601,
+        0.11266611299993201
+      ],
+      "median_seconds": 0.11266611299993201
+    },
+    {
+      "task": "transit",
+      "size": 24,
+      "parameters": 12,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 64,
+      "correct_labels": 64,
+      "nonfinite": 0,
+      "seconds": [
+        0.005628793000028054,
+        0.005336668000040845,
+        0.005709630999945148
+      ],
+      "median_seconds": 0.005628793000028054
+    },
+    {
+      "task": "transit",
+      "size": 48,
+      "parameters": 12,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 64,
+      "correct_labels": 64,
+      "nonfinite": 0,
+      "seconds": [
+        0.005414115000007769,
+        0.005781165000030342,
+        0.0054345429999784756
+      ],
+      "median_seconds": 0.0054345429999784756
+    },
+    {
+      "task": "transit",
+      "size": 96,
+      "parameters": 12,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 64,
+      "correct_labels": 64,
+      "nonfinite": 0,
+      "seconds": [
+        0.005853436999927908,
+        0.006091962000027706,
+        0.006163042000025598
+      ],
+      "median_seconds": 0.006091962000027706
+    },
+    {
+      "task": "transit",
+      "size": 192,
+      "parameters": 12,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 64,
+      "correct_labels": 64,
+      "nonfinite": 0,
+      "seconds": [
+        0.005464462999952957,
+        0.005632610000020577,
+        0.0059247670000104335
+      ],
+      "median_seconds": 0.005632610000020577
+    },
+    {
+      "task": "bowling",
+      "size": 3,
+      "parameters": 7,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 192,
+      "correct_labels": 192,
+      "nonfinite": 0,
+      "seconds": [
+        0.014374614999951518,
+        0.013269233000073655,
+        0.014589450000016768
+      ],
+      "median_seconds": 0.014374614999951518
+    },
+    {
+      "task": "bowling",
+      "size": 5,
+      "parameters": 7,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 320,
+      "correct_labels": 320,
+      "nonfinite": 0,
+      "seconds": [
+        0.0160434480000049,
+        0.019087420000005295,
+        0.016955274999986614
+      ],
+      "median_seconds": 0.016955274999986614
+    },
+    {
+      "task": "bowling",
+      "size": 8,
+      "parameters": 7,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 512,
+      "correct_labels": 512,
+      "nonfinite": 0,
+      "seconds": [
+        0.016652705999945283,
+        0.01660463799998979,
+        0.016890248999970936
+      ],
+      "median_seconds": 0.016652705999945283
+    },
+    {
+      "task": "bowling",
+      "size": 10,
+      "parameters": 7,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 640,
+      "correct_labels": 640,
+      "nonfinite": 0,
+      "seconds": [
+        0.01871566600004826,
+        0.01850032300001203,
+        0.018893320999950447
+      ],
+      "median_seconds": 0.01871566600004826
+    }
+  ],
+  "cases_sha256": "5b4a1dac396cd43a8dc0db8c48156af5a0b395a738f34440e67f455d680a0f38",
+  "weights_sha256": "bd37947a412972ac3f43590adbbfff6f0a32c73ecb88737d2e36963d4a113736"
+}

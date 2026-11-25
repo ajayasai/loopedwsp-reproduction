@@ -1,0 +1,384 @@
+{
+  "verified": true,
+  "run": {
+    "kernel": "ajayasaithambi/loopedwsp-field-experiments",
+    "version": 1,
+    "url": "https://www.kaggle.com/code/ajayasaithambi/loopedwsp-field-experiments/versions/1",
+    "device": "Tesla T4",
+    "pytorch": "2.11.0+cu130",
+    "cuda": "13.0",
+    "status": "COMPLETE",
+    "source_match": "exact",
+    "submitted_sha256": "a2346f98ffe7a80c37ca2c12298ff68a1c85b9fbdd9f75ba430232dc108410d9",
+    "server_sha256": "a2346f98ffe7a80c37ca2c12298ff68a1c85b9fbdd9f75ba430232dc108410d9",
+    "input_sha256": {
+      "experiment.py": "3541c14c3a9c361160bffa595e2de29872cac3f0fb5cb2cccc58ee56ea2f76d2",
+      "protocol.json": "ada8930c76aa83bc9f4b8af534f388ae086bc50d351d89b2809a806163ebe9d3",
+      "basin.py": "2f8d4c4df0c0f3e33965c095c7318e05af5ed74b02a3bc57da5a30938772c946",
+      "transit.py": "42f2f6b765ea4c92fda48426abe17a9af38dae164915016edd59261c3a95d3d5",
+      "bowling.py": "0a4e72857a1c1cd7b8a125cc41b35d859490666ce23a5d8e3d87091bb84c77ef",
+      "cases.json.gz": "5b4a1dac396cd43a8dc0db8c48156af5a0b395a738f34440e67f455d680a0f38",
+      "weights.npz": "bd37947a412972ac3f43590adbbfff6f0a32c73ecb88737d2e36963d4a113736",
+      "freeze.json": "d5ad1e83bc9e3efd8e2708c5964ef248bbe2b79654805cbdecc41718de4d16c4"
+    },
+    "output_sha256": {
+      "fieldlab-results.json": "0711424bf618f0994a563bd2c1c251a5cdf11870b850febb485966b88d315b39",
+      "fieldlab-predictions.npz": "9761ed8dd3b716b90e518411fb7576d1178e9587d625b89c0456e74b9e6d888f"
+    }
+  },
+  "model_ledgers": {
+    "basin": {
+      "parameters": 6,
+      "nonzero": 6,
+      "tensors": 4
+    },
+    "transit": {
+      "parameters": 12,
+      "nonzero": 8,
+      "tensors": 3
+    },
+    "bowling": {
+      "parameters": 7,
+      "nonzero": 7,
+      "tensors": 3
+    }
+  },
+  "frozen_cohorts_checked": 18,
+  "development_records_checked": 48,
+  "test_records_checked": 768,
+  "labels_regraded": 18560,
+  "conditions": [
+    {
+      "task": "basin",
+      "size": 4,
+      "parameters": 6,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 1024,
+      "correct_labels": 1024,
+      "nonfinite": 0,
+      "seconds": [
+        0.00990899700002501,
+        0.008968399000082172,
+        0.009122181999941859
+      ],
+      "median_seconds": 0.009122181999941859,
+      "categories": {
+        "wet": 58,
+        "wet_correct": 58,
+        "dry": 6,
+        "dry_correct": 6,
+        "local_heuristic_wrong": 38,
+        "local_heuristic_wrong_correct": 38
+      }
+    },
+    {
+      "task": "basin",
+      "size": 6,
+      "parameters": 6,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 2304,
+      "correct_labels": 2304,
+      "nonfinite": 0,
+      "seconds": [
+        0.022981625999932476,
+        0.023008419000007052,
+        0.022358170999950744
+      ],
+      "median_seconds": 0.022981625999932476,
+      "categories": {
+        "wet": 64,
+        "wet_correct": 64,
+        "dry": 0,
+        "dry_correct": 0,
+        "local_heuristic_wrong": 57,
+        "local_heuristic_wrong_correct": 57
+      }
+    },
+    {
+      "task": "basin",
+      "size": 8,
+      "parameters": 6,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 4096,
+      "correct_labels": 4096,
+      "nonfinite": 0,
+      "seconds": [
+        0.047130219999985457,
+        0.04861024499996347,
+        0.048899666000011166
+      ],
+      "median_seconds": 0.04861024499996347,
+      "categories": {
+        "wet": 64,
+        "wet_correct": 64,
+        "dry": 0,
+        "dry_correct": 0,
+        "local_heuristic_wrong": 64,
+        "local_heuristic_wrong_correct": 64
+      }
+    },
+    {
+      "task": "basin",
+      "size": 12,
+      "parameters": 6,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 9216,
+      "correct_labels": 9216,
+      "nonfinite": 0,
+      "seconds": [
+        0.11224536499992155,
+        0.12184475100002601,
+        0.11266611299993201
+      ],
+      "median_seconds": 0.11266611299993201,
+      "categories": {
+        "wet": 64,
+        "wet_correct": 64,
+        "dry": 0,
+        "dry_correct": 0,
+        "local_heuristic_wrong": 64,
+        "local_heuristic_wrong_correct": 64
+      }
+    },
+    {
+      "task": "transit",
+      "size": 24,
+      "parameters": 12,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 64,
+      "correct_labels": 64,
+      "nonfinite": 0,
+      "seconds": [
+        0.005628793000028054,
+        0.005336668000040845,
+        0.005709630999945148
+      ],
+      "median_seconds": 0.005628793000028054,
+      "categories": {}
+    },
+    {
+      "task": "transit",
+      "size": 48,
+      "parameters": 12,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 64,
+      "correct_labels": 64,
+      "nonfinite": 0,
+      "seconds": [
+        0.005414115000007769,
+        0.005781165000030342,
+        0.0054345429999784756
+      ],
+      "median_seconds": 0.0054345429999784756,
+      "categories": {}
+    },
+    {
+      "task": "transit",
+      "size": 96,
+      "parameters": 12,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 64,
+      "correct_labels": 64,
+      "nonfinite": 0,
+      "seconds": [
+        0.005853436999927908,
+        0.006091962000027706,
+        0.006163042000025598
+      ],
+      "median_seconds": 0.006091962000027706,
+      "categories": {}
+    },
+    {
+      "task": "transit",
+      "size": 192,
+      "parameters": 12,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 64,
+      "correct_labels": 64,
+      "nonfinite": 0,
+      "seconds": [
+        0.005464462999952957,
+        0.005632610000020577,
+        0.0059247670000104335
+      ],
+      "median_seconds": 0.005632610000020577,
+      "categories": {}
+    },
+    {
+      "task": "bowling",
+      "size": 3,
+      "parameters": 7,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 192,
+      "correct_labels": 192,
+      "nonfinite": 0,
+      "seconds": [
+        0.014374614999951518,
+        0.013269233000073655,
+        0.014589450000016768
+      ],
+      "median_seconds": 0.014374614999951518,
+      "categories": {
+        "pending": 35,
+        "pending_correct": 35,
+        "fully_posted": 29,
+        "fully_posted_correct": 29,
+        "complete_ten_frame_games": 0,
+        "complete_ten_frame_games_correct": 0
+      }
+    },
+    {
+      "task": "bowling",
+      "size": 5,
+      "parameters": 7,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 320,
+      "correct_labels": 320,
+      "nonfinite": 0,
+      "seconds": [
+        0.0160434480000049,
+        0.019087420000005295,
+        0.016955274999986614
+      ],
+      "median_seconds": 0.016955274999986614,
+      "categories": {
+        "pending": 40,
+        "pending_correct": 40,
+        "fully_posted": 24,
+        "fully_posted_correct": 24,
+        "complete_ten_frame_games": 0,
+        "complete_ten_frame_games_correct": 0
+      }
+    },
+    {
+      "task": "bowling",
+      "size": 8,
+      "parameters": 7,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 512,
+      "correct_labels": 512,
+      "nonfinite": 0,
+      "seconds": [
+        0.016652705999945283,
+        0.01660463799998979,
+        0.016890248999970936
+      ],
+      "median_seconds": 0.016652705999945283,
+      "categories": {
+        "pending": 40,
+        "pending_correct": 40,
+        "fully_posted": 24,
+        "fully_posted_correct": 24,
+        "complete_ten_frame_games": 0,
+        "complete_ten_frame_games_correct": 0
+      }
+    },
+    {
+      "task": "bowling",
+      "size": 10,
+      "parameters": 7,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 640,
+      "correct_labels": 640,
+      "nonfinite": 0,
+      "seconds": [
+        0.01871566600004826,
+        0.01850032300001203,
+        0.018893320999950447
+      ],
+      "median_seconds": 0.01871566600004826,
+      "categories": {
+        "pending": 32,
+        "pending_correct": 32,
+        "fully_posted": 32,
+        "fully_posted_correct": 32,
+        "complete_ten_frame_games": 32,
+        "complete_ten_frame_games_correct": 32
+      }
+    }
+  ],
+  "test_categories": {
+    "basin": {
+      "wet": 250,
+      "wet_correct": 250,
+      "dry": 6,
+      "dry_correct": 6,
+      "local_heuristic_wrong": 223,
+      "local_heuristic_wrong_correct": 223
+    },
+    "bowling": {
+      "pending": 147,
+      "pending_correct": 147,
+      "fully_posted": 109,
+      "fully_posted_correct": 109,
+      "complete_ten_frame_games": 32,
+      "complete_ten_frame_games_correct": 32
+    }
+  },
+  "science": [
+    {
+      "size": 24,
+      "injected": 32,
+      "recovered": 13,
+      "missed": 16,
+      "wrong_template": 3,
+      "indistinguishable_wrong_template": 3,
+      "uninjected": 32,
+      "false_alarms": 0,
+      "invalid": 0,
+      "invalid_injected": 0,
+      "invalid_uninjected": 0
+    },
+    {
+      "size": 48,
+      "injected": 32,
+      "recovered": 22,
+      "missed": 2,
+      "wrong_template": 8,
+      "indistinguishable_wrong_template": 8,
+      "uninjected": 32,
+      "false_alarms": 0,
+      "invalid": 0,
+      "invalid_injected": 0,
+      "invalid_uninjected": 0
+    },
+    {
+      "size": 96,
+      "injected": 32,
+      "recovered": 24,
+      "missed": 0,
+      "wrong_template": 8,
+      "indistinguishable_wrong_template": 8,
+      "uninjected": 32,
+      "false_alarms": 0,
+      "invalid": 0,
+      "invalid_injected": 0,
+      "invalid_uninjected": 0
+    },
+    {
+      "size": 192,
+      "injected": 32,
+      "recovered": 24,
+      "missed": 0,
+      "wrong_template": 8,
+      "indistinguishable_wrong_template": 8,
+      "uninjected": 32,
+      "false_alarms": 0,
+      "invalid": 0,
+      "invalid_injected": 0,
+      "invalid_uninjected": 0
+    }
+  ]
+}

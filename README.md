@@ -1,6 +1,6 @@
 # Looped weight-space programming on Kaggle
 
-A hand-written transformer matched **1,000 of 1,000 official Maze-Hard test grids**, including the benchmark’s choice between equally short paths. This repository contains the analytic weights, scoring code and GPU results for a Codex-assisted reproduction of selected LoopedWSP experiments. You can also run nine application models locally, from detecting booking conflicts to restoring a damaged melody. [Maze test result](results/maze/test.json) · [Operational applications](results/applications/report.md) · [Creative applications](creative/README.md) · [Workshop applications](workshop/README.md)
+A hand-written transformer matched **1,000 of 1,000 official Maze-Hard test grids**, including the benchmark’s choice between equally short paths. This repository contains the analytic weights, scoring code and GPU results for a Codex-assisted reproduction of selected LoopedWSP experiments. You can also run twelve application models locally, from detecting booking conflicts to estimating water storage in small terrain maps. [Maze test result](results/maze/test.json) · [Operational applications](results/applications/report.md) · [Creative applications](creative/README.md) · [Workshop applications](workshop/README.md) · [Field studies](fieldlab/README.md)
 
 The original LoopedWSP study asked Claude to write the weights of a transformer that solves a task by repeatedly applying the same block. For this reproduction, Codex had access to the published method and task briefs. We constructed fresh tensors from the rules and ran frozen models on Kaggle Tesla T4 hardware. These experiments measure the resulting models’ accuracy. Measuring unaided discovery, authoring cost, or performance relative to training would require separate experiments. [Original study](https://mbzuai-oryx.github.io/LoopedWSP/) · [Authors’ repository](https://github.com/mbzuai-oryx/LoopedWSP)
 
@@ -51,6 +51,16 @@ Three more programmed transformers matched **768/768 complete records** on a Kag
 | Punched music-roll recovery | 1,342 | On 256 synthetic rolls, recovered the note and track for all 1,466 single-hole errors and marked all 870 double-hole errors as unreadable. |
 
 Run `python workshop/experiment.py predict mobile --example` to try a mobile. The compositor exports a PNG and the music-roll decoder exports a playable WAV with unreadable beats preserved as silence. [Run your own input](workshop/README.md) · [Example frame](results/workshop/composite.png) · [Example melody](results/workshop/recovered.wav) · [Independent audit](results/workshop/audit.json)
+
+## Hydrology, astronomy and sports
+
+| Model | Stored parameters | Held-out result on a Kaggle Tesla T4 |
+| --- | ---: | --- |
+| Terrain depression filling | 6 | Reconstructed the full retained-water depth map on 256/256 terrains, including 223 where inspecting immediate neighbors alone gives the wrong map. |
+| Transit search | 12 | Matched an independent template search on 256/256 synthetic light curves. It recovered the injected period and phase for 83/128 signals and produced 0 false alarms on 128 controls. Observation gaps made a shorter period indistinguishable in 27 cases, and 18 injections fell below the detection rule. |
+| Live ten-pin scorekeeping | 7 | Matched every entry on 256/256 scorecards, including 147 with unresolved frame scores and 32 finished ten-frame games. |
+
+Run `python fieldlab/experiment.py predict bowling --example` to see a scorecard with an unresolved strike bonus. Substitute `basin` to get a water-depth map or `transit` for a period and phase. [Runnable JSON examples](fieldlab/examples) · [Input formats and commands](fieldlab/README.md) · [GPU results and figure](results/fieldlab/report.md) · [Independent audit](results/fieldlab/audit.json) · [Protocol frozen before submission](https://github.com/ajayasai/loopedwsp-reproduction/tree/ffb4367/fieldlab)
 
 ## When does looping help?
 

@@ -1,0 +1,14 @@
+{
+  "id": "ajayasaithambi/loopedwsp-field-experiments",
+  "id_no": 147264516,
+  "version": 1,
+  "title": "LoopedWSP Field Experiments",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "machine_shape": "NvidiaTeslaT4",
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:fc720c15545eb096a510e1f085b17fc118387a007599424d953a4f327b71cacf",
+  "downloaded_source_sha256": "a2346f98ffe7a80c37ca2c12298ff68a1c85b9fbdd9f75ba430232dc108410d9",
+  "source_match": "exact"
+}
