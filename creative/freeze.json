@@ -1,0 +1,155 @@
+{
+  "plan": {
+    "seed": 2026112501,
+    "dev": {
+      "sizes": [
+        4,
+        8
+      ],
+      "records": 8
+    },
+    "test": {
+      "sizes": [
+        4,
+        8,
+        16,
+        32
+      ],
+      "records": 64
+    },
+    "batch_size": 8,
+    "repeats": 3
+  },
+  "models": {
+    "folds": {
+      "tensors": {
+        "visible": {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "sha256": "434b26042aff3fb844a4c4c6be0d81a079b0ce84cfb8190679024404e5dc4822",
+          "parameter": true,
+          "count": 2,
+          "nonzero": 1
+        },
+        "block.query": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "float32",
+          "sha256": "9de3b5c90633b4a7849d828e496b98ec911664f8c5fbae7f03250f4da9361e44",
+          "parameter": true,
+          "count": 4,
+          "nonzero": 2
+        },
+        "block.key": {
+          "shape": [
+            2,
+            2
+          ],
+          "dtype": "float32",
+          "sha256": "2afb5db0446fd2125c75f52bac65325765205655f3657819180b40c57a9d2801",
+          "parameter": true,
+          "count": 4,
+          "nonzero": 2
+        },
+        "block.surface_routes": {
+          "shape": [
+            4,
+            4
+          ],
+          "dtype": "float32",
+          "sha256": "66b1dabec77ee763d0eda517162c15cb8058de38aa08c5f17828942bb380bc9a",
+          "parameter": true,
+          "count": 16,
+          "nonzero": 4
+        }
+      },
+      "parameters": 26
+    },
+    "typeset": {
+      "tensors": {
+        "block.address": {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "sha256": "9f4d0eed2519060cf8b420055cc808101b9db4c79c6d7266372cc971f492f49b",
+          "parameter": true,
+          "count": 2,
+          "nonzero": 2
+        },
+        "block.threshold": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32",
+          "sha256": "7336c940aadac7af483e298a2d01b356fa1902b2ce77a662c14454d3ed180279",
+          "parameter": true,
+          "count": 32,
+          "nonzero": 31
+        },
+        "block.spline": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32",
+          "sha256": "a093348d30c7cb8b56744c240fd26c2ca8f1e2ff228e049cf31f33df3032ce75",
+          "parameter": true,
+          "count": 32,
+          "nonzero": 32
+        }
+      },
+      "parameters": 66
+    },
+    "ballots": {
+      "tensors": {
+        "preference_query": {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "sha256": "867978db08001415f1548a52fe6ab7d5f928a533f8c5eda47a8a7445dff5574d",
+          "parameter": true,
+          "count": 2,
+          "nonzero": 2
+        },
+        "elimination_query": {
+          "shape": [
+            3
+          ],
+          "dtype": "float32",
+          "sha256": "a11e297d50110fb63596fb089b08f50b8b2dcfc23ab12057cc883897df28fc6c",
+          "parameter": true,
+          "count": 3,
+          "nonzero": 3
+        }
+      },
+      "parameters": 5
+    }
+  },
+  "cases_sha256": "fe17d1158d7706280895aae87d5e807413386ae829f2d9bcf41269562e6d76e9",
+  "weights_sha256": "19a1895678a63b76f786b5eb3c3bcec9f453ef49dffb311b4d8e12428e1752e3",
+  "cohorts": {
+    "dev/folds/4": "7f9df1c6985b23f314fe336226d7609b785a5cb31a80ba7facf59bdd1e9aead0",
+    "dev/folds/8": "3b0e613a1022aacd9bc7e609daac711f128749caa3719b2500501d4e7ce79194",
+    "test/folds/4": "dc618d7037a755e28c381fcb98ed6d2429c13d43c8d30fa062104f6cc951ae39",
+    "test/folds/8": "a4ba686a4c2569bf9fcdc13bf2847121ed93823eb01701b837af28bf02ee8dfd",
+    "test/folds/16": "e4e84a0f0ab4d369efe97a31e41e602f55c1c8629ed91e4762887decfc30d8c4",
+    "test/folds/32": "df6986c230e161373fbf4bb14c2391835b2af088040cd67e1ef2ff55a5e79a9b",
+    "dev/typeset/4": "8c75d1797e0eb7ba0acd3c774069806a86c1b1712310bc2469df3db2227244d9",
+    "dev/typeset/8": "de5f3eb5c19c22bd22429913d04046fed45f380e596ac48f80e0c328dcc2d4c2",
+    "test/typeset/4": "e13d246618f734e7bc622e9d039cc4cfefb93eed0ae9f97cb3fad9a7097d646b",
+    "test/typeset/8": "d970f5c981ec447b4dbb459ad5f5fa37226fd922d307817a7daa041691ccd419",
+    "test/typeset/16": "745197ce61d1564e618eab5706a3ded8df26907fe16922fcd875a943dbf34858",
+    "test/typeset/32": "54f5dec90cb6548c97922e6cac3849dbadfb4164db270a1d9314122e3ad325c7",
+    "dev/ballots/4": "5f0a37bb234d4057110520add0c6ae0f9c704dbbb507646083e029c0cf433362",
+    "dev/ballots/8": "365a5d9b11f583e87371edfa484951f9174a215575674f4053ad3e137ff816b9",
+    "test/ballots/4": "3b2862486f9425eec2bd3a80ae647290c4dc5fadb2835d450047187d5e609da1",
+    "test/ballots/8": "ff424844739f4ade46dbdb345ba3aec9f86b0515b51044422d0b60930ced48e3",
+    "test/ballots/16": "6f259d925575256f4b5024f98b323ad7cc0ca5a29cc01e7aaee4d91c7c96ad54",
+    "test/ballots/32": "7e4b5d4452cffe1aaf17302b734a80a6ec4569424ca2ec0b8bb59f0c65e6a322"
+  }
+}
