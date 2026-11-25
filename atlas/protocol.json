@@ -1,0 +1,16 @@
+{
+  "study": "atlas",
+  "seed": 2026112505,
+  "tasks": {
+    "rings": {"classes": 3, "size_unit": "rings in the reference series", "dev": [12,16], "test": [12,16,24,40]},
+    "loom": {"classes": 2, "size_unit": "warp ends and weft picks per side", "dev": [4,8], "test": [4,8,16,32]},
+    "braid": {"classes": 28, "size_unit": "crossings in the braid word", "dev": [4,8], "test": [4,8,16,32]}
+  },
+  "per_size": {"dev": 8, "test": 64},
+  "batch": 8,
+  "repeats": 3,
+  "precision": "FP32 with TF32 disabled",
+  "accuracy": "An exact record matches every candidate-start class for the eight-ring sample, every visible warp/weft crossing in the drawdown, or the total number of Fox 3-colorings of the closed three-strand braid, including constant colorings.",
+  "additional_checks": "Named worked examples are frozen before the GPU run, scored separately and excluded from accuracy totals and timing.",
+  "timing": "Median of three synchronized FP32 forward sweeps over all 64 device-resident records in batches of eight after a warm-up batch. Host encoding, transfers, decoding, verification and I/O occur outside the timer."
+}

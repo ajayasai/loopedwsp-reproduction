@@ -1,0 +1,405 @@
+[
+  {
+    "name": "scaled_ring_extract",
+    "task": "rings",
+    "input": {
+      "reference": [
+        60,
+        70,
+        65,
+        50,
+        58,
+        55,
+        62,
+        66,
+        61,
+        63,
+        50,
+        43
+      ],
+      "sample": [
+        133,
+        103,
+        119,
+        113,
+        127,
+        135,
+        125,
+        129
+      ]
+    },
+    "labels": [
+      1,
+      1,
+      2,
+      1,
+      1
+    ]
+  },
+  {
+    "name": "missing_years_tie",
+    "task": "rings",
+    "input": {
+      "reference": [
+        null,
+        null,
+        null,
+        null,
+        10,
+        20,
+        18,
+        22,
+        16,
+        24,
+        15,
+        26
+      ],
+      "sample": [
+        10,
+        20,
+        18,
+        22,
+        16,
+        24,
+        15,
+        26
+      ]
+    },
+    "labels": [
+      0,
+      1,
+      2,
+      1,
+      2
+    ]
+  },
+  {
+    "name": "weak_ring_winner",
+    "task": "rings",
+    "input": {
+      "reference": [
+        20,
+        19,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "sample": [
+        80,
+        70,
+        60,
+        50,
+        40,
+        30,
+        20,
+        10
+      ]
+    },
+    "labels": [
+      2,
+      1,
+      1
+    ]
+  },
+  {
+    "name": "unmeasured_ring_intervals",
+    "task": "rings",
+    "input": {
+      "reference": [
+        22,
+        34,
+        21,
+        20,
+        29,
+        27,
+        33,
+        23,
+        14,
+        41
+      ],
+      "sample": [
+        11,
+        null,
+        14,
+        null,
+        9,
+        null,
+        13,
+        null
+      ]
+    },
+    "labels": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "task": "loom",
+    "name": "loom_plain_weave",
+    "input": {
+      "threading": [
+        1,
+        2,
+        1,
+        2
+      ],
+      "tie_up": [
+        [
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "treadling": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ]
+      ]
+    },
+    "labels": [
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0
+    ]
+  },
+  {
+    "task": "loom",
+    "name": "loom_two_two_twill",
+    "input": {
+      "threading": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "tie_up": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "treadling": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ]
+    },
+    "labels": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1
+    ]
+  },
+  {
+    "task": "loom",
+    "name": "loom_compound_and_idle",
+    "input": {
+      "threading": [
+        2,
+        1,
+        3,
+        4,
+        2,
+        4
+      ],
+      "tie_up": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        []
+      ],
+      "treadling": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [],
+        [
+          3
+        ]
+      ]
+    },
+    "labels": [
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "task": "braid",
+    "name": "three_component_unlink",
+    "input": {
+      "word": []
+    },
+    "labels": [
+      27
+    ]
+  },
+  {
+    "task": "braid",
+    "name": "closed_unknot",
+    "input": {
+      "word": [
+        1,
+        2
+      ]
+    },
+    "labels": [
+      3
+    ]
+  },
+  {
+    "task": "braid",
+    "name": "stabilized_trefoil",
+    "input": {
+      "word": [
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    "labels": [
+      9
+    ]
+  },
+  {
+    "task": "braid",
+    "name": "figure_eight_knot",
+    "input": {
+      "word": [
+        1,
+        -2,
+        1,
+        -2
+      ]
+    },
+    "labels": [
+      3
+    ]
+  },
+  {
+    "task": "braid",
+    "name": "grouped_crossings",
+    "input": {
+      "word": [
+        1,
+        1,
+        2,
+        2
+      ]
+    },
+    "labels": [
+      3
+    ]
+  },
+  {
+    "task": "braid",
+    "name": "alternating_generators",
+    "input": {
+      "word": [
+        1,
+        2,
+        1,
+        2
+      ]
+    },
+    "labels": [
+      9
+    ]
+  }
+]

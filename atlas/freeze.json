@@ -1,0 +1,148 @@
+{
+  "models": {
+    "rings": {
+      "parameters": 11,
+      "tensors": {
+        "address": {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 2,
+          "sha256": "4d46585fa6e2add5241cf1fedd4507338492b39e44c0f7c61608a0ab0dc9266f"
+        },
+        "scale": {
+          "shape": [
+            8
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 4,
+          "sha256": "dad366567b2aeea0d009d619401711db5743b8e552fefff5b66a89272d97d2d9"
+        },
+        "rank_gain": {
+          "shape": [],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 1,
+          "sha256": "ad286c64373644140ff927b256b8415467b5d27645ff997010b15519d022631b"
+        }
+      }
+    },
+    "loom": {
+      "parameters": 4,
+      "tensors": {
+        "shaft_gain": {
+          "shape": [],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 1,
+          "sha256": "825ac1bb838d399fb1ba55a6247e2c8c7a0c3ec25898f3c94dbfb51fa6e73951"
+        },
+        "active_gain": {
+          "shape": [],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 1,
+          "sha256": "8568e5a1fe347c4aa003af9f44d1f42d104b5e40ea0502e869357877af7fb537"
+        },
+        "lift_gain": {
+          "shape": [],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 1,
+          "sha256": "140efb356462f70dd1c7f1dfb10bcc07d0f14d439043fb9e9d50f4d7be71ea96"
+        },
+        "threshold": {
+          "shape": [],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 1,
+          "sha256": "d99e58435243d9fef9c88273b8d553b4fba4d0baf8009d29eae74fa99e0d9f57"
+        }
+      }
+    },
+    "braid": {
+      "parameters": 50,
+      "tensors": {
+        "symbols": {
+          "shape": [
+            4
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 4,
+          "sha256": "b5937925684b86e18b1fd893484c3ac72d09f271bf9191658c715ba8c5e0836f"
+        },
+        "sharpness": {
+          "shape": [],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 1,
+          "sha256": "ad286c64373644140ff927b256b8415467b5d27645ff997010b15519d022631b"
+        },
+        "crossing_values": {
+          "shape": [
+            4,
+            3,
+            3
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 16,
+          "sha256": "9c561eb5a23ff3000671e0627386966982e4988800377522a1ce1f42d127137f"
+        },
+        "wrap_offsets": {
+          "shape": [
+            4
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 3,
+          "sha256": "331b4ff2938be1858b2e73c703360b234ea8d91311f4f5985be3693b6db1c482"
+        },
+        "wrap_weights": {
+          "shape": [
+            4
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 4,
+          "sha256": "0040152f1bbdaa6db7aef5e3b95f484c7bc642f8fd489145e384368e8824dd34"
+        },
+        "wrap_bias": {
+          "shape": [],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 1,
+          "sha256": "ea2845900b5856c9bf354b1aa9761b5aa6888e5ed61738fe9579ca42bc0f6054"
+        }
+      }
+    }
+  },
+  "cases_sha256": "5d897036dcf277017134b31915361ee4918fc09639c17a72b25c9132a9708e5a",
+  "weights_sha256": "b5486f183675d5c177b8797221bff617bd904b85d0798269f1fc641f1a2f896a",
+  "protocol_sha256": "371c281c7dada24180b0a57572025c77e762a45591a648e49412c0f5f4a21444",
+  "checks_sha256": "126b76478d0ae22776aa4f96a51a65c70dbc61551e59462d4e5edd11ef197fa5",
+  "cohorts": {
+    "dev/rings/12": "100e460747225a7be18a56f2c8757eff4844689a32e5143268ce15c09ff825d0",
+    "dev/rings/16": "0c752ce1f305b1fa88e988d64ec9e4c676d27588dba251e4563766b44eb8c2e7",
+    "test/rings/12": "b0538c28dc51ac756523ca8901415a5de153a4bc8388dbd9030b887ae978ce72",
+    "test/rings/16": "83fa4c6f2a7fd7b752dc8933659c0148a7d0b513547729a7cc481fcb4d778486",
+    "test/rings/24": "9d957554659979490da23acb3cc3bd8f9b76fc89a0fb9c0aae049faeba98eb3b",
+    "test/rings/40": "76c0444f4fb550630fa33e858203ef62a0b979c148bfc3d9ce00f0966544a4cf",
+    "dev/loom/4": "ac6d34e56709d7ffc2da3d015921f096a03ea5b4e06d25e04eb5449309b9ccac",
+    "dev/loom/8": "35602e488eeddd103b87ccd266877ad55bfe8dc5a5ac3f0260c457fda14c607a",
+    "test/loom/4": "7f145797eed474db30c9f5fe2fc495ebfdf043a98f5f68af7dcb431f384457cc",
+    "test/loom/8": "0b677e89f33731471060e4808c1d17b7c6c57a4bd6b1257812c53b86ea540336",
+    "test/loom/16": "9a5ac53d0d9f80282bfe980cce1bc6607367d93355eadac2420f137a896eb43f",
+    "test/loom/32": "feae820ce82078ed641d63607b2dac0a04f1ed594375d75eb88fc06e61768d48",
+    "dev/braid/4": "8e4d4cfee97ac44b859127eabbe423b225dea76925344015c436d75ab3858168",
+    "dev/braid/8": "2877430c6249f3029e9b392f137088534097c4c56238f7e87f555dc2e728008a",
+    "test/braid/4": "e927f4ade39804050918fdd4be285aaaf9d567c0bdebb46ce5587518fef1bb2c",
+    "test/braid/8": "4cbe8a0ab75b6ad3c99cec066f4c6505b90ee63ce7ee7337771bc52cc116daae",
+    "test/braid/16": "2995f722fcb86ff01eea618ff195a975a83bf9340f6a5ebf823febe19d4d0905",
+    "test/braid/32": "55b400681b4b71911eca411cc503c86acfd6139a3ed69eebf12c8e829f75c071"
+  }
+}
