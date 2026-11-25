@@ -1,0 +1,15 @@
+{
+  "study": "crossfield",
+  "seed": 2026112504,
+  "tasks": {
+    "inflection": {"classes": 27, "size_unit": "noun requests", "dev": [2,4], "test": [2,4,8,16]},
+    "diffraction": {"classes": 257, "size_unit": "reflections", "dev": [4,8], "test": [4,8,16,32]},
+    "auction": {"classes": 22, "size_unit": "bidders", "dev": [2,4], "test": [2,4,6,8]}
+  },
+  "per_size": {"dev": 8, "test": 64},
+  "batch": 8, "repeats": 3,
+  "precision": "FP32, TF32 disabled",
+  "accuracy": "Count a record only when all number and case suffixes, reflection intensities, or bidder allocations and VCG payments agree with an independent rule. Also report exact individual labels. Input stems are copied for display. A winning bidder paying zero has its own output class.",
+  "additional_checks": "Frozen worked examples with predeclared answers are evaluated separately on the GPU; they are excluded from held-out accuracy and timing.",
+  "timing": "Three synchronized forward passes over all 64 GPU-resident records per setting after one warm-up batch. Exclude host encoding, transfers, decoding, validation and disk I/O."
+}

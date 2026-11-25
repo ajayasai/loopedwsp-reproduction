@@ -1,0 +1,143 @@
+{
+  "models": {
+    "inflection": {
+      "parameters": 449,
+      "tensors": {
+        "orthography": {
+          "shape": [
+            30,
+            5
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 53,
+          "sha256": "b1362f156830bd4a8b07f735a20d57df5db989b8aa9e136a194518df8ec472e7"
+        },
+        "address": {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 2,
+          "sha256": "ad5023c766cfd57d08a6b5a39b913a2895e13e24fe97c47ccc7a098a956b3e18"
+        },
+        "classifier": {
+          "shape": [
+            27,
+            10
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 93,
+          "sha256": "51979aec1b9b813dd033ec5bb44eea1178bb40d9e12d5d213625e64b1f5f7c75"
+        },
+        "bias": {
+          "shape": [
+            27
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 21,
+          "sha256": "d1167d42541f9f0d828f0f310b9e3d5a4dea5270262b2360882ef6847d7cd15c"
+        }
+      }
+    },
+    "diffraction": {
+      "parameters": 43,
+      "tensors": {
+        "address": {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 2,
+          "sha256": "4d46585fa6e2add5241cf1fedd4507338492b39e44c0f7c61608a0ab0dc9266f"
+        },
+        "roots": {
+          "shape": [
+            4,
+            2
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 4,
+          "sha256": "7fbcd6edece2eacafbe7927f8a17247bd7796dfb45c2f492b06df1af6a57cb11"
+        },
+        "pool_gain": {
+          "shape": [],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 1,
+          "sha256": "03e3c2420f5066a5fa6e36735ed8cc4f6a251046263e1a6024f009deeee3b952"
+        },
+        "knots": {
+          "shape": [
+            16
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 15,
+          "sha256": "58dda328598e2f7fe472621bfc54935aaa354d1a6ebcaf9562cd743fd575eb19"
+        },
+        "slopes": {
+          "shape": [
+            16
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 16,
+          "sha256": "742b7fac7110f19e1737af632d6620a1a059a7c10df9abb9beaa686581c311d8"
+        }
+      }
+    },
+    "auction": {
+      "parameters": 6,
+      "tensors": {
+        "query": {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 2,
+          "sha256": "d42997f89feb152aca5a40089469492444e3aaf84a16acf3086de8cdc3d5ffef"
+        },
+        "readout": {
+          "shape": [
+            4
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 4,
+          "sha256": "a416fff845c77f5467c037c96e18453dd9a307d0af8be8aa4d3aac93ee821b03"
+        }
+      }
+    }
+  },
+  "cases_sha256": "47ee511765f63eb8eea2b795f1c5c5c3b9b32788cb177024ef19a23bee009342",
+  "weights_sha256": "d00d6387f78ff249e24de272393df5e685d2534cfb9cc2151a976eae35b0bb62",
+  "protocol_sha256": "805469055a6e5c2eda473dabae0be55d4143bc06400018bf451483183c9d8f6d",
+  "checks_sha256": "af0db5402a540ec564c1bbc4746dfa77a1e7ae2d28f7ee2d4f1eedaa6b393313",
+  "cohorts": {
+    "dev/inflection/2": "117b53a62978881c5a163468810921beaa63c49371e914db5c9953d93768f2ea",
+    "dev/inflection/4": "4389308b32ff1345bb21aa8d6b1071284976ca17dff3a2c9af5a02179870baa6",
+    "test/inflection/2": "5e6896abd005f5758c31183b908b1d9f95874d832afa873f1d3b8ed3a671fbbb",
+    "test/inflection/4": "aefa469df12d8e409ddbf14e93884d7b12464f2567cb3a532d24684b42b26c6d",
+    "test/inflection/8": "92acb13fdecfe35bff8b3a252c631a591ee908725a3f1df6db1c7ba29bc5be20",
+    "test/inflection/16": "bf9b0acc702f938c0aaf6ebe2da553be8b8680cb8bb998ea8ac059ec1cc0f942",
+    "dev/diffraction/4": "b92db390220cc66bc73354d27d7a0b3cf88b65251f686bf31fdc26f3e04fc50f",
+    "dev/diffraction/8": "b408916e605e874413b6050cc8b252290f9df4b04c8cc451385b04c05adc6e4b",
+    "test/diffraction/4": "ee7779d62ed21075a22cc642e32f11cb3b1962781d79b6903b69f23784608413",
+    "test/diffraction/8": "b5ed019d53ab2eec4b3c9b8479c18ce8a91febcf1d787bff46b72e52d71aea5c",
+    "test/diffraction/16": "8217fb7f3c7b36d596e97ed47d47f1d639c1fe4d9e3a43fa7fe49e1def879c9d",
+    "test/diffraction/32": "22374a6ccc3d230c5fe90b4677940c529f40d76346637b71d80ea7cd84900f83",
+    "dev/auction/2": "420617e664d0fe719d981e43e2eb40e26ad50d0da66db4c65e91661553cb11e0",
+    "dev/auction/4": "dad42f5dd146229000c1444403cec415b092c20a8669cc39c962dfa8badf263c",
+    "test/auction/2": "4209fe06642ccce48593eced0801285da7fd87f46107f4db1cfdd7d05572131c",
+    "test/auction/4": "00c9a1b966544593500da87815e89dcbdc75d0bdf5a133a1b75b7e1ba217ce80",
+    "test/auction/6": "06f132611edec858cb7ef286f983745ae0ab6cff9506898a662c4b8c87fedad7",
+    "test/auction/8": "388ae438ca81d8fc08a9c374f1f83b87f9b44b3d185e52234866e3298144b737"
+  }
+}

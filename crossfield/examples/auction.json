@@ -1,0 +1,20 @@
+{
+  "bids": [
+    {
+      "bundle": "AB",
+      "value": 17
+    },
+    {
+      "bundle": "A",
+      "value": 10
+    },
+    {
+      "bundle": "B",
+      "value": 9
+    },
+    {
+      "bundle": "C",
+      "value": 5
+    }
+  ]
+}

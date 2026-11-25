@@ -1,0 +1,34 @@
+{
+  "requests": [
+    {
+      "stem": "göl",
+      "number": "singular",
+      "case": "accusative"
+    },
+    {
+      "stem": "göl",
+      "number": "plural",
+      "case": "accusative"
+    },
+    {
+      "stem": "kuş",
+      "number": "singular",
+      "case": "locative"
+    },
+    {
+      "stem": "kuş",
+      "number": "plural",
+      "case": "locative"
+    },
+    {
+      "stem": "köprü",
+      "number": "singular",
+      "case": "accusative"
+    },
+    {
+      "stem": "kapı",
+      "number": "singular",
+      "case": "genitive"
+    }
+  ]
+}

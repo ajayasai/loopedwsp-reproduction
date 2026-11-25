@@ -1,0 +1,55 @@
+[
+  {
+    "name": "real_regular_nouns", "task": "inflection",
+    "input": {"requests":[
+      {"stem":"kapı","number":"singular","case":"genitive"},
+      {"stem":"kedi","number":"singular","case":"accusative"},
+      {"stem":"göl","number":"plural","case":"accusative"},
+      {"stem":"gül","number":"plural","case":"locative"},
+      {"stem":"kuş","number":"singular","case":"ablative"},
+      {"stem":"otobüs","number":"singular","case":"locative"},
+      {"stem":"ev","number":"singular","case":"ablative"},
+      {"stem":"yol","number":"plural","case":"genitive"},
+      {"stem":"ev","number":"singular","case":"accusative"},
+      {"stem":"at","number":"plural","case":"nominative"},
+      {"stem":"masa","number":"singular","case":"accusative"},
+      {"stem":"göl","number":"singular","case":"genitive"}
+    ]},
+    "forms": ["kapının","kediyi","gölleri","güllerde","kuştan","otobüste","evden","yolların","evi","atlar","masayı","gölün"]
+  },
+  {
+    "name":"equal_body_centered", "task":"diffraction",
+    "input":{"sites":[[0,0,0,1],[2,2,2,1]],"reflections":[[1,0,0],[1,1,0],[1,1,1],[2,0,0]]},
+    "labels":[0,4,0,4]
+  },
+  {
+    "name":"equal_face_centered", "task":"diffraction",
+    "input":{"sites":[[0,0,0,1],[0,2,2,1],[2,0,2,1],[2,2,0,1]],"reflections":[[1,0,0],[1,1,0],[1,1,1],[2,0,0]]},
+    "labels":[0,0,16,16]
+  },
+  {
+    "name":"unequal_body_center", "task":"diffraction",
+    "input":{"sites":[[0,0,0,1],[2,2,2,2]],"reflections":[[1,0,0],[1,1,0],[1,1,1],[2,0,0]]},
+    "labels":[1,9,1,9]
+  },
+  {
+    "name":"quarter_cell_phase", "task":"diffraction",
+    "input":{"sites":[[0,0,0,2],[1,0,0,1]],"reflections":[[1,0,0],[-1,0,0],[2,0,0],[4,0,0]]},
+    "labels":[5,5,1,9]
+  },
+  {
+    "name":"specialists_beat_bundle", "task":"auction",
+    "input":{"bids":[{"bundle":"AB","value":10},{"bundle":"A","value":7},{"bundle":"B","value":6}]},
+    "labels":[0,5,4]
+  },
+  {
+    "name":"disjoint_zero_price_winners", "task":"auction",
+    "input":{"bids":[{"bundle":"A","value":12},{"bundle":"BCD","value":4}]},
+    "labels":[1,1]
+  },
+  {
+    "name":"tied_item", "task":"auction",
+    "input":{"bids":[{"bundle":"C","value":6},{"bundle":"C","value":6}]},
+    "labels":[7,0]
+  }
+]
