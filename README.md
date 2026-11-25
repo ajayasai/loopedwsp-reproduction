@@ -1,6 +1,6 @@
 # Looped weight-space programming on Kaggle
 
-A hand-written transformer matched **1,000 of 1,000 official Maze-Hard test grids**, including the benchmark’s choice between equally short paths. This repository contains the analytic weights, scoring code and GPU results for a Codex-assisted reproduction of selected LoopedWSP experiments. You can also run twelve application models locally, from detecting booking conflicts to estimating water storage in small terrain maps. [Maze test result](results/maze/test.json) · [Operational applications](results/applications/report.md) · [Creative applications](creative/README.md) · [Workshop applications](workshop/README.md) · [Field studies](fieldlab/README.md)
+A hand-written transformer matched **1,000 of 1,000 official Maze-Hard test grids**, including the benchmark’s choice between equally short paths. This repository contains the analytic weights, scoring code and GPU results for a Codex-assisted reproduction of selected LoopedWSP experiments. We also built fifteen application models that you can run locally, from detecting booking conflicts to predicting which reflections disappear in a crystal. [Maze test result](results/maze/test.json) · [Operational applications](results/applications/report.md) · [Creative applications](creative/README.md) · [Workshop applications](workshop/README.md) · [Field studies](fieldlab/README.md) · [Linguistics, crystallography and auctions](crossfield/README.md)
 
 The original LoopedWSP study asked Claude to write the weights of a transformer that solves a task by repeatedly applying the same block. For this reproduction, Codex had access to the published method and task briefs. We constructed fresh tensors from the rules and ran frozen models on Kaggle Tesla T4 hardware. These experiments measure the resulting models’ accuracy. Measuring unaided discovery, authoring cost, or performance relative to training would require separate experiments. [Original study](https://mbzuai-oryx.github.io/LoopedWSP/) · [Authors’ repository](https://github.com/mbzuai-oryx/LoopedWSP)
 
@@ -61,6 +61,16 @@ Run `python workshop/experiment.py predict mobile --example` to try a mobile. Th
 | Live ten-pin scorekeeping | 7 | Matched every entry on 256/256 scorecards, including 147 with unresolved frame scores and 32 finished ten-frame games. |
 
 Run `python fieldlab/experiment.py predict bowling --example` to see a scorecard with an unresolved strike bonus. Substitute `basin` to get a water-depth map or `transit` for a period and phase. [Runnable JSON examples](fieldlab/examples) · [Input formats and commands](fieldlab/README.md) · [GPU results and figure](results/fieldlab/report.md) · [Independent audit](results/fieldlab/audit.json) · [Protocol frozen before submission](https://github.com/ajayasai/loopedwsp-reproduction/tree/ffb4367/fieldlab)
+
+## Turkish nouns, crystal diffraction and bundle auctions
+
+| Application | Stored FP32 coefficients | Exact held-out records | What the model did |
+| --- | ---: | ---: | --- |
+| Regular Turkish noun inflection | 449 | 256/256 | Chose both endings in all 1,920 generated noun requests. A separate check matched 12 real-word forms, including *göl* → *gölleri* (plural accusative). |
+| Crystal diffraction | 43 | 256/256 | Predicted all 3,840 reflection intensities for idealized quarter-cell motifs, including the 1,102 reflections where the scattering contributions canceled. |
+| Combinatorial auction pricing | 6 | 256/256 | Found the winning bundles and each bidder’s payment. Taking the highest bids first would have lost value in 52 of these auctions. |
+
+We froze the weights and cases before the Kaggle Tesla T4 run. All 384 records at input sizes above the development range matched the independent scoring rules. The auction model enumerates up to 256 bidder subsets. The parameter counts exclude this memory and each model’s fixed operations. [Inputs and runnable commands](crossfield/README.md) · [Per-size GPU timings and examples](results/crossfield/report.md) · [Independent audit](results/crossfield/audit.json) · [Pre-run snapshot](https://github.com/ajayasai/loopedwsp-reproduction/tree/1d1419b/crossfield)
 
 ## When does looping help?
 

@@ -1,0 +1,22 @@
+{
+  "input_sha256": {
+    "experiment.py": "fcf9a0f0a101f88523d9feabc2647a5206ec8174900fa6327777d22c059c313e",
+    "protocol.json": "805469055a6e5c2eda473dabae0be55d4143bc06400018bf451483183c9d8f6d",
+    "checks.json": "af0db5402a540ec564c1bbc4746dfa77a1e7ae2d28f7ee2d4f1eedaa6b393313",
+    "inflection.py": "d31ddc313efe7d6ae1395192a9029bff84be59fb1422e6a8f21a20d8c79d2f18",
+    "diffraction.py": "73e716b020b32214a9a8aa60919aede10ce2c5b49c021f46ef427b749fbaedc5",
+    "auction.py": "b094e4b0559ec24cb419f303056a6d9e0bc4b80734d12b140e24fd831e0f75e0",
+    "cases.json.gz": "47ee511765f63eb8eea2b795f1c5c5c3b9b32788cb177024ef19a23bee009342",
+    "weights.npz": "d00d6387f78ff249e24de272393df5e685d2534cfb9cc2151a976eae35b0bb62",
+    "freeze.json": "7e067a5d469b610e5d26b03ea07b8bf0d4553c26ede37882c6db5f6b2e06c174"
+  },
+  "status": "complete",
+  "device": "Tesla T4",
+  "available_devices": 2,
+  "pytorch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "output_sha256": {
+    "crossfield-results.json": "df991f8de222e14490f331b343523614e320c776d987712a8d23a7215ee2c2bb",
+    "crossfield-predictions.npz": "dce88784900e1abc523ea7002316dee9b40e038e0bc4a3c785a18c39b66cdf7b"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "kernel": "ajayasaithambi/loopedwsp-crossfield-applications",
+  "version": 1,
+  "status": "COMPLETE",
+  "device": "Tesla T4",
+  "cuda": "13.0",
+  "pytorch": "2.11.0+cu130",
+  "server_private": true,
+  "server_internet_enabled": false,
+  "script_sha256": "31b4eba5433cbb71fc7da3054aca377dbe069dc52bd968968595e241773ef6b1",
+  "remote_script_sha256": "31b4eba5433cbb71fc7da3054aca377dbe069dc52bd968968595e241773ef6b1",
+  "source_match": "exact",
+  "input_files_verified": 9,
+  "output_sha256": {
+    "crossfield-results.json": "df991f8de222e14490f331b343523614e320c776d987712a8d23a7215ee2c2bb",
+    "crossfield-predictions.npz": "dce88784900e1abc523ea7002316dee9b40e038e0bc4a3c785a18c39b66cdf7b"
+  },
+  "prediction_arrays": {
+    "check_real_regular_nouns": [
+      24
+    ],
+    "inflection_2": [
+      64,
+      4
+    ],
+    "inflection_4": [
+      64,
+      8
+    ],
+    "inflection_8": [
+      64,
+      16
+    ],
+    "inflection_16": [
+      64,
+      32
+    ],
+    "check_equal_body_centered": [
+      4
+    ],
+    "check_equal_face_centered": [
+      4
+    ],
+    "check_unequal_body_center": [
+      4
+    ],
+    "check_quarter_cell_phase": [
+      4
+    ],
+    "diffraction_4": [
+      64,
+      4
+    ],
+    "diffraction_8": [
+      64,
+      8
+    ],
+    "diffraction_16": [
+      64,
+      16
+    ],
+    "diffraction_32": [
+      64,
+      32
+    ],
+    "check_specialists_beat_bundle": [
+      3
+    ],
+    "check_disjoint_zero_price_winners": [
+      2
+    ],
+    "check_tied_item": [
+      2
+    ],
+    "auction_2": [
+      64,
+      2
+    ],
+    "auction_4": [
+      64,
+      4
+    ],
+    "auction_6": [
+      64,
+      6
+    ],
+    "auction_8": [
+      64,
+      8
+    ]
+  }
+}

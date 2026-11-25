@@ -1,0 +1,14 @@
+{
+  "id": "ajayasaithambi/loopedwsp-crossfield-applications",
+  "id_no": 147266421,
+  "version": 1,
+  "title": "LoopedWSP Crossfield Applications",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "machine_shape": "NvidiaTeslaT4",
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:fc720c15545eb096a510e1f085b17fc118387a007599424d953a4f327b71cacf",
+  "downloaded_source_sha256": "31b4eba5433cbb71fc7da3054aca377dbe069dc52bd968968595e241773ef6b1",
+  "source_match": "exact"
+}

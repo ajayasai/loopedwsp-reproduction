@@ -1,0 +1,359 @@
+{
+  "verified": true,
+  "run": {
+    "kernel": "ajayasaithambi/loopedwsp-crossfield-applications",
+    "version": 1,
+    "url": "https://www.kaggle.com/code/ajayasaithambi/loopedwsp-crossfield-applications/versions/1",
+    "device": "Tesla T4",
+    "pytorch": "2.11.0+cu130",
+    "cuda": "13.0",
+    "status": "COMPLETE",
+    "source_match": "exact",
+    "submitted_sha256": "31b4eba5433cbb71fc7da3054aca377dbe069dc52bd968968595e241773ef6b1",
+    "server_sha256": "31b4eba5433cbb71fc7da3054aca377dbe069dc52bd968968595e241773ef6b1",
+    "input_sha256": {
+      "experiment.py": "fcf9a0f0a101f88523d9feabc2647a5206ec8174900fa6327777d22c059c313e",
+      "protocol.json": "805469055a6e5c2eda473dabae0be55d4143bc06400018bf451483183c9d8f6d",
+      "checks.json": "af0db5402a540ec564c1bbc4746dfa77a1e7ae2d28f7ee2d4f1eedaa6b393313",
+      "inflection.py": "d31ddc313efe7d6ae1395192a9029bff84be59fb1422e6a8f21a20d8c79d2f18",
+      "diffraction.py": "73e716b020b32214a9a8aa60919aede10ce2c5b49c021f46ef427b749fbaedc5",
+      "auction.py": "b094e4b0559ec24cb419f303056a6d9e0bc4b80734d12b140e24fd831e0f75e0",
+      "cases.json.gz": "47ee511765f63eb8eea2b795f1c5c5c3b9b32788cb177024ef19a23bee009342",
+      "weights.npz": "d00d6387f78ff249e24de272393df5e685d2534cfb9cc2151a976eae35b0bb62",
+      "freeze.json": "7e067a5d469b610e5d26b03ea07b8bf0d4553c26ede37882c6db5f6b2e06c174"
+    },
+    "output_sha256": {
+      "crossfield-results.json": "df991f8de222e14490f331b343523614e320c776d987712a8d23a7215ee2c2bb",
+      "crossfield-predictions.npz": "dce88784900e1abc523ea7002316dee9b40e038e0bc4a3c785a18c39b66cdf7b"
+    }
+  },
+  "model_ledgers": {
+    "inflection": {
+      "parameters": 449,
+      "nonzero": 169,
+      "tensors": 4
+    },
+    "diffraction": {
+      "parameters": 43,
+      "nonzero": 38,
+      "tensors": 5
+    },
+    "auction": {
+      "parameters": 6,
+      "nonzero": 6,
+      "tensors": 2
+    }
+  },
+  "frozen_cohorts_checked": 18,
+  "development_records_checked": 48,
+  "test_records_checked": 768,
+  "labels_regraded": 8960,
+  "exact_test_records": 768,
+  "correct_test_labels": 8960,
+  "task_totals": {
+    "inflection": {
+      "records": 256,
+      "exact_records": 256,
+      "labels": 3840,
+      "correct_labels": 3840,
+      "nonfinite": 0
+    },
+    "diffraction": {
+      "records": 256,
+      "exact_records": 256,
+      "labels": 3840,
+      "correct_labels": 3840,
+      "nonfinite": 0
+    },
+    "auction": {
+      "records": 256,
+      "exact_records": 256,
+      "labels": 1280,
+      "correct_labels": 1280,
+      "nonfinite": 0
+    }
+  },
+  "checks": {
+    "real_regular_nouns": {
+      "task": "inflection",
+      "correct": true,
+      "forms": [
+        "kapının",
+        "kediyi",
+        "gölleri",
+        "güllerde",
+        "kuştan",
+        "otobüste",
+        "evden",
+        "yolların",
+        "evi",
+        "atlar",
+        "masayı",
+        "gölün"
+      ],
+      "labels": 24,
+      "correct_labels": 24
+    },
+    "equal_body_centered": {
+      "task": "diffraction",
+      "correct": true,
+      "labels": 4,
+      "correct_labels": 4
+    },
+    "equal_face_centered": {
+      "task": "diffraction",
+      "correct": true,
+      "labels": 4,
+      "correct_labels": 4
+    },
+    "unequal_body_center": {
+      "task": "diffraction",
+      "correct": true,
+      "labels": 4,
+      "correct_labels": 4
+    },
+    "quarter_cell_phase": {
+      "task": "diffraction",
+      "correct": true,
+      "labels": 4,
+      "correct_labels": 4
+    },
+    "specialists_beat_bundle": {
+      "task": "auction",
+      "correct": true,
+      "labels": 3,
+      "correct_labels": 3
+    },
+    "disjoint_zero_price_winners": {
+      "task": "auction",
+      "correct": true,
+      "labels": 2,
+      "correct_labels": 2
+    },
+    "tied_item": {
+      "task": "auction",
+      "correct": true,
+      "labels": 2,
+      "correct_labels": 2
+    }
+  },
+  "test_categories": {
+    "inflection": {
+      "requests": 1920,
+      "forms_correct": 1920,
+      "distinct_stems": 1850,
+      "distinct_surface_forms": 1910
+    },
+    "diffraction": {
+      "reflections": 3840,
+      "zero": 1102,
+      "zero_correct": 1102,
+      "nonzero": 2738,
+      "nonzero_correct": 2738,
+      "friedel_pairs": 305,
+      "friedel_pairs_correct": 305
+    },
+    "auction": {
+      "greedy_suboptimal": 52,
+      "greedy_suboptimal_correct": 52,
+      "tied_optima": 101,
+      "tied_optima_correct": 101,
+      "zero_price_winners": 149,
+      "zero_price_winners_correct": 149
+    }
+  },
+  "conditions": [
+    {
+      "task": "inflection",
+      "size": 2,
+      "parameters": 449,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 256,
+      "correct_labels": 256,
+      "nonfinite": 0,
+      "seconds": [
+        0.006573644999974704,
+        0.006249263999990262,
+        0.007055761000003713
+      ],
+      "median_seconds": 0.006573644999974704
+    },
+    {
+      "task": "inflection",
+      "size": 4,
+      "parameters": 449,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 512,
+      "correct_labels": 512,
+      "nonfinite": 0,
+      "seconds": [
+        0.007833516999994572,
+        0.0069249200000172095,
+        0.006862546999997221
+      ],
+      "median_seconds": 0.0069249200000172095
+    },
+    {
+      "task": "inflection",
+      "size": 8,
+      "parameters": 449,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 1024,
+      "correct_labels": 1024,
+      "nonfinite": 0,
+      "seconds": [
+        0.0070994820000009895,
+        0.006581376999974964,
+        0.006941405999981498
+      ],
+      "median_seconds": 0.006941405999981498
+    },
+    {
+      "task": "inflection",
+      "size": 16,
+      "parameters": 449,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 2048,
+      "correct_labels": 2048,
+      "nonfinite": 0,
+      "seconds": [
+        0.00702934999998206,
+        0.0069392780000043786,
+        0.006543314999987615
+      ],
+      "median_seconds": 0.0069392780000043786
+    },
+    {
+      "task": "diffraction",
+      "size": 4,
+      "parameters": 43,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 256,
+      "correct_labels": 256,
+      "nonfinite": 0,
+      "seconds": [
+        0.005138409000011279,
+        0.00542283100000418,
+        0.005535699999995813
+      ],
+      "median_seconds": 0.00542283100000418
+    },
+    {
+      "task": "diffraction",
+      "size": 8,
+      "parameters": 43,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 512,
+      "correct_labels": 512,
+      "nonfinite": 0,
+      "seconds": [
+        0.0056379339999921285,
+        0.006033187000014095,
+        0.0055637830000137
+      ],
+      "median_seconds": 0.0056379339999921285
+    },
+    {
+      "task": "diffraction",
+      "size": 16,
+      "parameters": 43,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 1024,
+      "correct_labels": 1024,
+      "nonfinite": 0,
+      "seconds": [
+        0.0056104680000146345,
+        0.005524015999981202,
+        0.006191145999991932
+      ],
+      "median_seconds": 0.0056104680000146345
+    },
+    {
+      "task": "diffraction",
+      "size": 32,
+      "parameters": 43,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 2048,
+      "correct_labels": 2048,
+      "nonfinite": 0,
+      "seconds": [
+        0.005974369999989904,
+        0.0060331180000048334,
+        0.006135870000008481
+      ],
+      "median_seconds": 0.0060331180000048334
+    },
+    {
+      "task": "auction",
+      "size": 2,
+      "parameters": 6,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 128,
+      "correct_labels": 128,
+      "nonfinite": 0,
+      "seconds": [
+        0.005015794999991385,
+        0.0049294119999956365,
+        0.005247623000002477
+      ],
+      "median_seconds": 0.005015794999991385
+    },
+    {
+      "task": "auction",
+      "size": 4,
+      "parameters": 6,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 256,
+      "correct_labels": 256,
+      "nonfinite": 0,
+      "seconds": [
+        0.00538385400000152,
+        0.005991872000009835,
+        0.005197754999983317
+      ],
+      "median_seconds": 0.00538385400000152
+    },
+    {
+      "task": "auction",
+      "size": 6,
+      "parameters": 6,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 384,
+      "correct_labels": 384,
+      "nonfinite": 0,
+      "seconds": [
+        0.005257493999977214,
+        0.005471110999991424,
+        0.00526163799997903
+      ],
+      "median_seconds": 0.00526163799997903
+    },
+    {
+      "task": "auction",
+      "size": 8,
+      "parameters": 6,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 512,
+      "correct_labels": 512,
+      "nonfinite": 0,
+      "seconds": [
+        0.005327018999992106,
+        0.005243981999996095,
+        0.0054199780000203646
+      ],
+      "median_seconds": 0.005327018999992106
+    }
+  ]
+}
