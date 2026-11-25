@@ -1,0 +1,14 @@
+{
+  "id": "ajayasaithambi/loopedwsp-pointer-reachability",
+  "id_no": 147164905,
+  "version": 1,
+  "title": "LoopedWSP Pointer Reachability",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "machine_shape": "NvidiaTeslaT4",
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:fc720c15545eb096a510e1f085b17fc118387a007599424d953a4f327b71cacf",
+  "downloaded_source_sha256": "160b3e645998c111d3ad27a4c9991d39981fda288ecd3bdd269e04a0da3cfdd7",
+  "source_match": "exact"
+}

@@ -1,0 +1,20 @@
+{
+  "kernel": "ajayasaithambi/loopedwsp-pointer-reachability",
+  "version": 1,
+  "submitted_utc": "2026-11-24T16:31:54.622421+00:00",
+  "requested_gpu": "NvidiaTeslaT4",
+  "requested_private": true,
+  "requested_internet": false,
+  "input_sha256": {
+    "experiment.py": "caba89ec096525863caec83280b86dd2453c55bc97a9d75a5e1cb2ff3a1639c3",
+    "pointer.py": "bf54f91ad53fde62af3c0540d4c13a69315624a28edcbaee06f8195f95c84ba7",
+    "reachability.py": "2f15adeb8ebd4c6689d1760ba005d7c647d1db2e0b4f8ab50b1dabaabda36068",
+    "corpus.py": "86b76d507af0c6a465141e03b3841b60bbc552c912c16941385df4c6d94d6725",
+    "protocol.json": "59cfb116abf60730a58e9d943aef45f56bd1ef565b3d6bc9b3e08ac351b565b2",
+    "cases-manifest.json": "eeab22741d94aafc12fa5d2898f044c8830a28cd679685b0197e37f962cf9f6f"
+  },
+  "script_sha256": "160b3e645998c111d3ad27a4c9991d39981fda288ecd3bdd269e04a0da3cfdd7",
+  "script_bytes": 27434,
+  "timeout_seconds": 7200,
+  "url": "https://www.kaggle.com/code/ajayasaithambi/loopedwsp-pointer-reachability/versions/1"
+}

@@ -34,6 +34,17 @@ On a Kaggle Tesla T4, the same frozen weights went from **155/960** exact publis
 
 Looping helped the original blocks carry information beyond the positions they could reach in one pass. A feedforward computation with direct access to the relevant inputs also solved these tasks, using 3, 16 and 4 stored scalar coefficients respectively. Those counts exclude the fixed operations and masks. The study covers 315 settings at lengths 8–128 with equal-parameter depth comparisons, local-window controls, and three timed repeats per setting. [Full comparison and accuracy plot](results/loop-comparison/report.md) · [All measurements](results/loop-comparison/sizes.csv) · [Parameter budgets](results/loop-comparison/parameter-budgets.csv) · [Protocol frozen before the run](https://github.com/ajayasai/loopedwsp-reproduction/tree/04111d2a806743ae4011bfb4a4310f28591cc867/comparisons)
 
+### Pointer chasing and directed reachability
+
+On 64-vertex graphs, a six-stage non-looped transformer matched the looped model on **1,280/1,280 queries per task** at both parameter budgets. We varied path length from 1 to 32 hops and held graph size fixed. Each pair of test cases swaps two edges, preserves all vertex degrees and changes the answer. We published the models, cases and scoring protocol before submitting the Tesla T4 run. [Frozen study](https://github.com/ajayasai/loopedwsp-reproduction/tree/4983e21fcac0b524c15eea7a5f9bb0df8d162750/graph_depth)
+
+| Task | Matched parameter budgets | What changed with depth |
+| --- | ---: | --- |
+| Pointer chasing | 3,072 and 6,144 | Six applications of one block and six independently stored narrower blocks each found every endpoint. The two- and four-stage controls explicitly cap the requested distance at 3 and 15 hops. Both missed all 128 endpoints at 32 hops. |
+| Directed reachability | 52 and 100 | One local pass solved 704/1,280. Reusing that block for 63 passes solved 1,280/1,280. A six-stage non-looped model that doubles its path coverage at each stage also solved 1,280/1,280. |
+
+At 32 hops and 52 parameters, the global non-looped model took **30.40 ms** for 128 reachability queries, compared with **197.47 ms** for the looped local model. The global model maintains 4,096 evolving relation entries per graph, while the local model maintains 64 vertex flags. The measured advantage of looping was access to more rounds of local propagation at fixed parameter storage. These are hand-programmed models evaluated on synthetic graphs. [Exact scores by length and timing protocol](results/graph-depth/report.md) · [All 240 measurements](results/graph-depth/sizes.csv) · [Independent audit](results/graph-depth/audit.json)
+
 ## Run a frozen model
 
 Use Python 3.12 or later from the repository root. The local predictor uses NumPy on CPU. Install the pinned CPU and report dependencies with `python -m pip install -r requirements.txt`, then run this example in Python.

@@ -2,6 +2,8 @@
 
 This experiment compares analytically specified transformers at equal stored parameter counts. Each task has two budgets, ten path lengths and an independent development split. The test set contains 64 counterfactual pairs per task at each length, or 2,560 queries in all. Every model within a task sees the same examples. The experiment holds the graph at 64 vertices while varying the number of links needed to answer. [Frozen design](protocol.json) · [Corpus generator](corpus.py) · [Exact inputs](cases.npz)
 
+“Looped” means the forward pass reuses one block's tensors at successive stages. Each stage of an untied transformer owns a separate set of tensors. Some of those tensors have identical analytic values. The parameter count measures the scalar entries stored by the model, including zeros. It excludes the program that generates the tensors.
+
 ## Pointer chasing
 
 Given a successor for each vertex, source ID and hop count k, return the ID reached after exactly k successor lookups. Each pair changes the last edge of the common path and swaps a second edge to preserve every vertex's indegree. Its two answers differ. Half the pairs use permutations, the others use many-to-one functions. Graph labels and input table row order are randomized. The evaluator indexes rows by their supplied IDs once before timing.

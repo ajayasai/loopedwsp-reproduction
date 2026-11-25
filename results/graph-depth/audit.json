@@ -1,0 +1,217 @@
+{
+  "verified": true,
+  "run": {
+    "kernel": "ajayasaithambi/loopedwsp-pointer-reachability",
+    "version": 1,
+    "url": "https://www.kaggle.com/code/ajayasaithambi/loopedwsp-pointer-reachability/versions/1",
+    "device": "Tesla T4",
+    "private": true,
+    "internet_enabled": false,
+    "submitted_script_sha256": "160b3e645998c111d3ad27a4c9991d39981fda288ecd3bdd269e04a0da3cfdd7",
+    "server_script_sha256": "160b3e645998c111d3ad27a4c9991d39981fda288ecd3bdd269e04a0da3cfdd7",
+    "source_match": "exact",
+    "input_sha256": {
+      "experiment.py": "caba89ec096525863caec83280b86dd2453c55bc97a9d75a5e1cb2ff3a1639c3",
+      "pointer.py": "bf54f91ad53fde62af3c0540d4c13a69315624a28edcbaee06f8195f95c84ba7",
+      "reachability.py": "2f15adeb8ebd4c6689d1760ba005d7c647d1db2e0b4f8ab50b1dabaabda36068",
+      "corpus.py": "86b76d507af0c6a465141e03b3841b60bbc552c912c16941385df4c6d94d6725",
+      "protocol.json": "59cfb116abf60730a58e9d943aef45f56bd1ef565b3d6bc9b3e08ac351b565b2",
+      "cases-manifest.json": "eeab22741d94aafc12fa5d2898f044c8830a28cd679685b0197e37f962cf9f6f"
+    },
+    "output_sha256": {
+      "graph-depth-results.json": "e96a7ec823a40cf7f7bd9852fd5c4015bdc6ce954d05753a08fd418712bdeb08",
+      "graph-depth-predictions.npz": "2499b95c51a65a1410c1fd7e87e199f04eab21c45fbea59cfc0c3271c2ead53b"
+    },
+    "runtime_sha256": "5f0577eb60cd184250357cb1aceb50b72d8d1f6567f33566e2f057d6426fd9a0"
+  },
+  "case_arrays_verified": 91,
+  "test_hops": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    9,
+    16,
+    17,
+    32
+  ],
+  "test_queries_per_task": 1280,
+  "test_pairs_per_task": 640,
+  "conditions_verified": 240,
+  "timings_per_condition": 3,
+  "paired_comparisons": 200,
+  "model_ledgers": {
+    "pointer/3072/loop_shared": {
+      "stored": 3072,
+      "nonzero": 3072,
+      "buffer_scalars": 0,
+      "tensors": 2,
+      "tensor_manifest_sha256": "e5bc6267dfe3f1be2181c0c61f310ffdd1332e63a8b3cdded6118cbbe6a214b8"
+    },
+    "pointer/3072/fixed_2": {
+      "stored": 3072,
+      "nonzero": 3072,
+      "buffer_scalars": 0,
+      "tensors": 4,
+      "tensor_manifest_sha256": "b5ed7cb2bff80bda32bd91c3d1772708f87108d239aebaa5e32123690b3cdc6f"
+    },
+    "pointer/3072/fixed_4": {
+      "stored": 3072,
+      "nonzero": 3072,
+      "buffer_scalars": 0,
+      "tensors": 8,
+      "tensor_manifest_sha256": "9889d6d861283edc52026a9c5aca909b5e2ec1fd1825a28decd9234d876f889d"
+    },
+    "pointer/3072/fixed_6": {
+      "stored": 3072,
+      "nonzero": 3072,
+      "buffer_scalars": 0,
+      "tensors": 12,
+      "tensor_manifest_sha256": "0a90a494c829efe7b42c6da072e706572651636ddb0539f8764b786543c5d745"
+    },
+    "pointer/3072/untied_full": {
+      "stored": 18432,
+      "nonzero": 18432,
+      "buffer_scalars": 0,
+      "tensors": 12,
+      "tensor_manifest_sha256": "a67960cd5091940d8510e28551a8be0a97f578f813a868c252db1e654c9ca86a"
+    },
+    "pointer/6144/loop_shared": {
+      "stored": 6144,
+      "nonzero": 6144,
+      "buffer_scalars": 0,
+      "tensors": 2,
+      "tensor_manifest_sha256": "39ca450aad5622868586c25baf9ce006cf96c48d2546efbf496e7809867489fa"
+    },
+    "pointer/6144/fixed_2": {
+      "stored": 6144,
+      "nonzero": 6144,
+      "buffer_scalars": 0,
+      "tensors": 4,
+      "tensor_manifest_sha256": "23d609cb9f3a23c821742bca2425e6e09faabbc6fff72e935811c8bbe9c335fa"
+    },
+    "pointer/6144/fixed_4": {
+      "stored": 6144,
+      "nonzero": 6144,
+      "buffer_scalars": 0,
+      "tensors": 8,
+      "tensor_manifest_sha256": "7cd61c645f67d5a3ebbbc76cacc74ae974241e19b7fee2f9fb8ff26b22d7389d"
+    },
+    "pointer/6144/fixed_6": {
+      "stored": 6144,
+      "nonzero": 6144,
+      "buffer_scalars": 0,
+      "tensors": 12,
+      "tensor_manifest_sha256": "a773ac96e2a5d3527184b1b31bd624cea4d610f25838b3ea2980937aa5d96cc3"
+    },
+    "pointer/6144/untied_full": {
+      "stored": 36864,
+      "nonzero": 36864,
+      "buffer_scalars": 0,
+      "tensors": 12,
+      "tensor_manifest_sha256": "6d2bd1b9585329a0e2fccd7fd00d1c772c5a1fd59a957d642fa7123a392bc316"
+    },
+    "reachability/52/local_tied": {
+      "stored": 52,
+      "nonzero": 51,
+      "buffer_scalars": 132,
+      "tensors": 12,
+      "tensor_manifest_sha256": "379aaa30bd2dc910b07313fc8aa13cc0d5cfbc15e54e1b6745fac4167fc06ca8"
+    },
+    "reachability/52/local_untied_1": {
+      "stored": 52,
+      "nonzero": 51,
+      "buffer_scalars": 132,
+      "tensors": 12,
+      "tensor_manifest_sha256": "379aaa30bd2dc910b07313fc8aa13cc0d5cfbc15e54e1b6745fac4167fc06ca8"
+    },
+    "reachability/52/local_untied_2": {
+      "stored": 52,
+      "nonzero": 50,
+      "buffer_scalars": 260,
+      "tensors": 22,
+      "tensor_manifest_sha256": "65474813a0dce9a338cd504fe9eaeb813bf965efd97f0e982bfce7920a0ff3e9"
+    },
+    "reachability/52/local_untied_4": {
+      "stored": 52,
+      "nonzero": 48,
+      "buffer_scalars": 512,
+      "tensors": 42,
+      "tensor_manifest_sha256": "acd33b47101bfaec0b65f4161a968a882730876419849626367da9bb3230f578"
+    },
+    "reachability/52/global_untied_4": {
+      "stored": 52,
+      "nonzero": 48,
+      "buffer_scalars": 512,
+      "tensors": 42,
+      "tensor_manifest_sha256": "5c37781ea1784dd9a8ad3c51dbfdd6a97be3afaf4f50cc9847e7d9d1656acb10"
+    },
+    "reachability/52/global_untied_6": {
+      "stored": 52,
+      "nonzero": 46,
+      "buffer_scalars": 768,
+      "tensors": 62,
+      "tensor_manifest_sha256": "048171286d93a07461bee045a6fa28f7a4a0346bcd410016f0055406371cfd2d"
+    },
+    "reachability/52/local_unrolled": {
+      "stored": 3028,
+      "nonzero": 2965,
+      "buffer_scalars": 8316,
+      "tensors": 632,
+      "tensor_manifest_sha256": "bae31857ae44b056fd6f85088b1b97a43f93ac4f99b03ab23c010ec19d920e44"
+    },
+    "reachability/100/local_tied": {
+      "stored": 100,
+      "nonzero": 99,
+      "buffer_scalars": 138,
+      "tensors": 12,
+      "tensor_manifest_sha256": "63f6bc7fa1e065513b928ec60004bc1e12f3a35836737e04cc0bdd2a05d0f18f"
+    },
+    "reachability/100/local_untied_1": {
+      "stored": 100,
+      "nonzero": 99,
+      "buffer_scalars": 138,
+      "tensors": 12,
+      "tensor_manifest_sha256": "63f6bc7fa1e065513b928ec60004bc1e12f3a35836737e04cc0bdd2a05d0f18f"
+    },
+    "reachability/100/local_untied_2": {
+      "stored": 100,
+      "nonzero": 98,
+      "buffer_scalars": 264,
+      "tensors": 22,
+      "tensor_manifest_sha256": "ac066f5479a89125261ba5a07968bc72706efa36c337c7dcc210d60b56cf56dc"
+    },
+    "reachability/100/local_untied_4": {
+      "stored": 100,
+      "nonzero": 96,
+      "buffer_scalars": 520,
+      "tensors": 42,
+      "tensor_manifest_sha256": "c20ab1b1562870c7216afa81318c0fb5d3c86b4eb9e1b5b63f8533832bc70b07"
+    },
+    "reachability/100/global_untied_4": {
+      "stored": 100,
+      "nonzero": 96,
+      "buffer_scalars": 520,
+      "tensors": 42,
+      "tensor_manifest_sha256": "2995291ecd27b9345ecc76aa39d3e595be721b03f9085c41352bf567a5e25f38"
+    },
+    "reachability/100/global_untied_6": {
+      "stored": 100,
+      "nonzero": 94,
+      "buffer_scalars": 792,
+      "tensors": 62,
+      "tensor_manifest_sha256": "63265c355ce00df7c5b6661e2d6f6170fef9cd5ce6ec482556d7ecf024bebef8"
+    },
+    "reachability/100/local_unrolled": {
+      "stored": 6052,
+      "nonzero": 5989,
+      "buffer_scalars": 8694,
+      "tensors": 632,
+      "tensor_manifest_sha256": "7a3e02ff7c22362924b2ae9744b0fb018cc07c42a3fda3658d5c49a0d433e0b1"
+    }
+  },
+  "method": "Independent successor traversal and directed Boolean-frontier distances. Input pair edits preserve degrees. Tensor values and named buffers independently rebuilt in NumPy. A nonfinite output has saved class -1, which is incorrect. Kaggle saved one class vector per condition after checking repeat agreement.",
+  "comparisons_csv_sha256": "bcb581f65dccb34569ba9c8eb887d066d9a8e38bd3e587b8c4f2ef7ac4f77806"
+}
