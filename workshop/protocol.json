@@ -1,0 +1,17 @@
+{
+  "seed": 2026112502,
+  "tasks": {
+    "mobile": {"size_unit": "ornaments", "classes": 17},
+    "cels": {"size_unit": "layers", "classes": 16},
+    "roll": {"size_unit": "frames", "classes": 145}
+  },
+  "splits": {
+    "dev": {"sizes": [4, 8], "per_size": 8},
+    "test": {"sizes": [4, 8, 16, 32], "per_size": 64}
+  },
+  "batch": 8,
+  "repeats": 3,
+  "primary_measure": "The entire counterweight answer, rendered RGB frame, or decoded roll including every correction status must match the frozen oracle.",
+  "timing": "One warm batch, then three synchronized wall-clock measurements of model forward passes over all 64 GPU-resident records. Report each time and the median. Input encoding, host transfers and scoring occur outside timing.",
+  "precision": "FP32 with TF32 disabled"
+}

@@ -1,0 +1,148 @@
+{
+  "models": {
+    "mobile": {
+      "parameters": 7,
+      "tensors": {
+        "impossible_score": {
+          "shape": [],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 1,
+          "sha256": "c34fde18c1b8ec18aa9dd952cdbbcce00cf0505358e6cfcce5a6fe795e1d019b"
+        },
+        "block.queries": {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 2,
+          "sha256": "4868360412bc9595ebb5b0c559753e18b56dae47ef1114114012f331f46eade9"
+        },
+        "block.torque_sign": {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 2,
+          "sha256": "dee9bee38d8ce139ee23552fc0ca83067114ae903518d7711ba7937b72c0d697"
+        },
+        "block.merge": {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 2,
+          "sha256": "80b8fd6d60fa85fd14a38b5295cb92abd80dfec5ca406c9f969609a79d36809d"
+        }
+      }
+    },
+    "cels": {
+      "parameters": 64,
+      "tensors": {
+        "block.address": {
+          "shape": [
+            3
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 3,
+          "sha256": "176027f334ea3e0b82cd008f0a45e21ca2442bda63440c3729c27620394ad5a4"
+        },
+        "block.bias": {
+          "shape": [
+            30
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 29,
+          "sha256": "d22e35d8c226b8ed6678daea5b6ae407c5e1381f5d865b6822dc6ddf608a77f3"
+        },
+        "block.slope": {
+          "shape": [
+            30
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 30,
+          "sha256": "e9da88a781e0ca436a591ae2060c00ac232f2fab2de87f8ee64e8ebd71ca2a10"
+        },
+        "block.gate_margin": {
+          "shape": [],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 1,
+          "sha256": "140efb356462f70dd1c7f1dfb10bcc07d0f14d439043fb9e9d50f4d7be71ea96"
+        }
+      }
+    },
+    "roll": {
+      "parameters": 1342,
+      "tensors": {
+        "membership": {
+          "shape": [
+            8,
+            4
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 20,
+          "sha256": "dc0b0d08f202c3135a843df12de16784fda68d14f3cd5f96a760230b1b33eb26"
+        },
+        "readout": {
+          "shape": [
+            145,
+            9
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 1296,
+          "sha256": "c967bc9a199490291c188dc9f5310220362c5ec1aea71d3c5113c2f751772c43"
+        },
+        "block.position_query": {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 2,
+          "sha256": "80ba982e11204b9bb86d371f7c66f7b5592bb903097da4e20e278d336ab45ae7"
+        },
+        "block.parity_response": {
+          "shape": [
+            3
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 3,
+          "sha256": "8d8712985e90c27e66de97eb2aee2f984e4a03b2dadb95d3ca86d90eee6065ce"
+        }
+      }
+    }
+  },
+  "cases_sha256": "d43cefda904890316337678fa52d8f37680b0e897cb73f17e07483d98bcc214f",
+  "weights_sha256": "1627c14cec40396ac611aa9e3161ee1893eea2b6a0302c9b16dc85ab017c77f8",
+  "protocol_sha256": "88646668cbb6d0b21d7292581234d23421da0e4c8508612e90353a43f1051762",
+  "cohorts": {
+    "dev/mobile/4": "56079d6c2473fc17adbe494899fe1f34a0895760595665127a11475eb066fc38",
+    "dev/mobile/8": "57c93bcbc5ef75203b7d0c0ad3042bebab9a6f8f90c1696e6d48c1f75d267982",
+    "test/mobile/4": "90578aad874df61f59cbcd7a205389c259bc50bc642589ea32ff69616168bdd1",
+    "test/mobile/8": "486bec9c0e45ea8f27c0ae35ca568c1f9ae7869fc07980f46e3213ccb2fb41ed",
+    "test/mobile/16": "324b2c3ad28e32a90ec06e0c4efbbd8356412169525f08034f142ec31c581f4f",
+    "test/mobile/32": "447acceb290330f844dd7ca66befe4a0dda1598cedeb3032e49708a7a7637780",
+    "dev/cels/4": "60d60ddd7837ed32143ca69f73c630cdbda0cfcb79453d016f47ec3f0bb95fa2",
+    "dev/cels/8": "2b466359d7ce7a5b3382489b75c036095862343f164ae763a94279408926804f",
+    "test/cels/4": "8541661cc7b10ab22cd21b4dd8eacf0888a7332d6dbaedec9d2daab2a77ed85b",
+    "test/cels/8": "1fec6b96b165a1dd4a004ee470c000403518521ded27b3cfecf4f441efcb38be",
+    "test/cels/16": "92a03728af9296720818a10fcd366a71bb77a7dbc883d71d196b6e2d12f33f86",
+    "test/cels/32": "691ffbc3251b643535a286bf2ec9ebc19a6dbf7dd25e8a7d1a1bf1bedd50f7ee",
+    "dev/roll/4": "2d7dac1a5f2af3b40ffd520457e1d77e3c3bd590d881009e9de200d2a8866e08",
+    "dev/roll/8": "23462c7cd9db23659c8ba07dde726f487bb920aaf3bea0c6eae8fd29b45179f0",
+    "test/roll/4": "ec11dcb1257d17db55e42917c725e3bb4f0a45976bcf5307ba991466d87df35b",
+    "test/roll/8": "e2490f6c6db660bac8f79cc1ab9398343ebb506d15c86d1162cf910c07107813",
+    "test/roll/16": "c668e7bbf47d7f5fcbfd4c1c31a07277ec92bca53e62dcb608e0126707e89cfc",
+    "test/roll/32": "884434871db0e3083aa56201f5e534343297b6c9336713ee4201ac0518ba9406"
+  }
+}
