@@ -1,0 +1,287 @@
+{
+  "split": "test",
+  "device": "Tesla T4",
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "weights_sha256": "19a1895678a63b76f786b5eb3c3bcec9f453ef49dffb311b4d8e12428e1752e3",
+  "cases_sha256": "fe17d1158d7706280895aae87d5e807413386ae829f2d9bcf41269562e6d76e9",
+  "batch_size": 8,
+  "conditions": [
+    {
+      "task": "folds",
+      "size": 4,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 256,
+      "correct_labels": 256,
+      "nonfinite": 0,
+      "parameters": 26,
+      "median_seconds": 0.01511665800001083,
+      "seconds": [
+        0.01511665800001083,
+        0.014555124999986901,
+        0.015334687999995822
+      ],
+      "class_counts": {
+        "0": 40,
+        "1": 34,
+        "2": 28,
+        "3": 28,
+        "4": 26,
+        "5": 36,
+        "6": 32,
+        "7": 32
+      }
+    },
+    {
+      "task": "folds",
+      "size": 8,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 1024,
+      "correct_labels": 1024,
+      "nonfinite": 0,
+      "parameters": 26,
+      "median_seconds": 0.01569245400000341,
+      "seconds": [
+        0.016209633000016765,
+        0.01569245400000341,
+        0.015497683000006646
+      ],
+      "class_counts": {
+        "0": 98,
+        "1": 118,
+        "2": 134,
+        "3": 144,
+        "4": 124,
+        "5": 143,
+        "6": 121,
+        "7": 142
+      }
+    },
+    {
+      "task": "folds",
+      "size": 16,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 1024,
+      "correct_labels": 1024,
+      "nonfinite": 0,
+      "parameters": 26,
+      "median_seconds": 0.02943706299998894,
+      "seconds": [
+        0.02943706299998894,
+        0.030020109000020057,
+        0.02925976000000219
+      ],
+      "class_counts": {
+        "0": 135,
+        "1": 133,
+        "2": 106,
+        "3": 130,
+        "4": 154,
+        "5": 141,
+        "6": 108,
+        "7": 117
+      }
+    },
+    {
+      "task": "folds",
+      "size": 32,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 1024,
+      "correct_labels": 1024,
+      "nonfinite": 0,
+      "parameters": 26,
+      "median_seconds": 0.04496980700000108,
+      "seconds": [
+        0.04511903800002415,
+        0.044781688000000486,
+        0.04496980700000108
+      ],
+      "class_counts": {
+        "0": 132,
+        "1": 135,
+        "2": 141,
+        "3": 124,
+        "4": 116,
+        "5": 127,
+        "6": 115,
+        "7": 134
+      }
+    },
+    {
+      "task": "typeset",
+      "size": 4,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 256,
+      "correct_labels": 256,
+      "nonfinite": 0,
+      "parameters": 66,
+      "median_seconds": 0.014625630000011824,
+      "seconds": [
+        0.01467263800000751,
+        0.01377924400000552,
+        0.014625630000011824
+      ],
+      "class_counts": {
+        "0": 94,
+        "1": 162
+      }
+    },
+    {
+      "task": "typeset",
+      "size": 8,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 512,
+      "correct_labels": 512,
+      "nonfinite": 0,
+      "parameters": 66,
+      "median_seconds": 0.024995386999989933,
+      "seconds": [
+        0.025155812000008382,
+        0.02478340999999773,
+        0.024995386999989933
+      ],
+      "class_counts": {
+        "0": 180,
+        "1": 332
+      }
+    },
+    {
+      "task": "typeset",
+      "size": 16,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 1024,
+      "correct_labels": 1024,
+      "nonfinite": 0,
+      "parameters": 66,
+      "median_seconds": 0.04671184099998982,
+      "seconds": [
+        0.04671184099998982,
+        0.04579225300000189,
+        0.04979846899999529
+      ],
+      "class_counts": {
+        "0": 358,
+        "1": 666
+      }
+    },
+    {
+      "task": "typeset",
+      "size": 32,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 2048,
+      "correct_labels": 2048,
+      "nonfinite": 0,
+      "parameters": 66,
+      "median_seconds": 0.08048546599999895,
+      "seconds": [
+        0.08048546599999895,
+        0.07955334199999697,
+        0.08651557400000343
+      ],
+      "class_counts": {
+        "0": 738,
+        "1": 1310
+      }
+    },
+    {
+      "task": "ballots",
+      "size": 4,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 320,
+      "correct_labels": 320,
+      "nonfinite": 0,
+      "parameters": 5,
+      "median_seconds": 0.00938040299999443,
+      "seconds": [
+        0.0100152489999914,
+        0.00938040299999443,
+        0.009374479999991081
+      ],
+      "class_counts": {
+        "0": 64,
+        "1": 64,
+        "2": 64,
+        "3": 64,
+        "4": 64
+      }
+    },
+    {
+      "task": "ballots",
+      "size": 8,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 320,
+      "correct_labels": 320,
+      "nonfinite": 0,
+      "parameters": 5,
+      "median_seconds": 0.009857761999995773,
+      "seconds": [
+        0.009644289999982902,
+        0.009857761999995773,
+        0.010189233000005515
+      ],
+      "class_counts": {
+        "0": 64,
+        "1": 64,
+        "2": 64,
+        "3": 64,
+        "4": 64
+      }
+    },
+    {
+      "task": "ballots",
+      "size": 16,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 320,
+      "correct_labels": 320,
+      "nonfinite": 0,
+      "parameters": 5,
+      "median_seconds": 0.010126567000014575,
+      "seconds": [
+        0.010676058000001376,
+        0.009290260999989641,
+        0.010126567000014575
+      ],
+      "class_counts": {
+        "0": 64,
+        "1": 64,
+        "2": 64,
+        "3": 64,
+        "4": 64
+      }
+    },
+    {
+      "task": "ballots",
+      "size": 32,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 320,
+      "correct_labels": 320,
+      "nonfinite": 0,
+      "parameters": 5,
+      "median_seconds": 0.010040073999988408,
+      "seconds": [
+        0.010057140000014897,
+        0.010040073999988408,
+        0.009557580999995707
+      ],
+      "class_counts": {
+        "0": 64,
+        "1": 64,
+        "2": 64,
+        "3": 64,
+        "4": 64
+      }
+    }
+  ]
+}

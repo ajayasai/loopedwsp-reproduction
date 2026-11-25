@@ -1,0 +1,20 @@
+{
+  "input_sha256": {
+    "experiment.py": "0026419aae75ce902e069eef93e68753db9d316434f81f580f6cbd3f3d3e5b59",
+    "folds.py": "60c2aeecafa4d7db794eb8bc114b4c32316123a0a09f9702e2d53d22c40ad144",
+    "typeset.py": "5daeb7f14ac875d7e9470463161f694b174710cbe4dc1f4e215f66f1b9db735e",
+    "ballots.py": "accd3408d9bb454f16491b33716b0789a7e0722a0e890b797116e74301de0f0c",
+    "cases.json.gz": "fe17d1158d7706280895aae87d5e807413386ae829f2d9bcf41269562e6d76e9",
+    "weights.npz": "19a1895678a63b76f786b5eb3c3bcec9f453ef49dffb311b4d8e12428e1752e3",
+    "freeze.json": "c34c7e7aa6f75b5eff3cd8fb982e3e2bc508ca91c829a6ec7115f40574319e31"
+  },
+  "status": "complete",
+  "device": "Tesla T4",
+  "available_devices": 2,
+  "pytorch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "output_sha256": {
+    "creative-results.json": "cded65aa6f310b5498526aa67ff76e0cd7eef92e4e4580ff5a6e7bd7db1c3b4d",
+    "creative-predictions.npz": "ccacef3c049d8fe27fd789591934a0cb55eb4d1c8cc70387dba2301485c0b155"
+  }
+}

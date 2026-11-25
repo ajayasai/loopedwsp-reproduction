@@ -1,6 +1,6 @@
 # Looped weight-space programming on Kaggle
 
-A hand-written transformer matched **1,000 of 1,000 official Maze-Hard test grids**, including the benchmark’s choice between equally short paths. This repository contains the analytic weights, scoring code and GPU results for a Codex-assisted reproduction of selected LoopedWSP experiments. It also includes three new synthetic applications that you can run locally. [Maze test result](results/maze/test.json) · [Application examples](results/applications/report.md)
+A hand-written transformer matched **1,000 of 1,000 official Maze-Hard test grids**, including the benchmark’s choice between equally short paths. This repository contains the analytic weights, scoring code and GPU results for a Codex-assisted reproduction of selected LoopedWSP experiments. You can also run six original applications locally, from detecting booking conflicts to previewing a folded paper mosaic. [Maze test result](results/maze/test.json) · [Operational applications](results/applications/report.md) · [Creative applications](creative/README.md)
 
 The original LoopedWSP study asked Claude to write the weights of a transformer that solves a task by repeatedly applying the same block. For this reproduction, Codex had access to the published method and task briefs. We constructed fresh tensors from the rules and ran frozen models on Kaggle Tesla T4 hardware. These experiments measure the resulting models’ accuracy. Measuring unaided discovery, authoring cost, or performance relative to training would require separate experiments. [Original study](https://mbzuai-oryx.github.io/LoopedWSP/) · [Authors’ repository](https://github.com/mbzuai-oryx/LoopedWSP)
 
@@ -16,7 +16,7 @@ The original LoopedWSP study asked Claude to write the weights of a transformer 
 
 The larger-maze and length-generalization evaluations use seeded replacement corpora. The puzzle models use the move index, which permits several positions to be decoded together. The checker size embedding includes the known optimal length. Those choices matter when comparing results or timings with the original study. The historical plan identifies broader work such as Sudoku, GraphWalks, training baselines and blind interpretability experiments. [Data provenance](DATA.md) · [Historical study plan](STUDY-PLAN.md)
 
-## Three new applications
+## Inventory, scheduling and sensor alarms
 
 Each application has its own frozen transformer. Development used records of length 8 and 16. A single held-out GPU evaluation covered 64 records per task at each of five lengths, from 8 through 128. All **960/960 complete records** and **47,616/47,616 individual labels** matched independent scoring rules. Every prediction remained stable at the three loop budgets. These tests cover the specified synthetic rules and input ranges. [Examples and scores by size](results/applications/report.md) · [Independent verification](results/applications/verification.json)
 
@@ -27,6 +27,18 @@ Each application has its own frozen transformer. Development used records of len
 | [Sensor alarms](applications/telemetry.py) | Switch on at 70 or above, switch off at 30 or below, and keep the previous alarm state in between. | 320/320 |
 
 Across the 15 task-size settings, GPU model inference took 0.710 seconds in total. The conventional CPU scoring rules produced the same labels in 0.043 seconds on the Kaggle host. [Timing breakdown](results/applications/sizes.csv)
+
+## Paper folding, typesetting and film-club ballots
+
+| Application | What you give it | What it produces |
+| --- | --- | --- |
+| Paper-fold preview | Both colored faces of a sheet and a sequence of center folds, including which flap goes over or under | The visible color of every remaining cell |
+| Paragraph typesetter | Words and a line width in monospaced columns | Line breaks that minimize squared unused space, with a free final line |
+| Film-club ballot counter | Five titles and each voter's complete ranking | All four eliminations and the winning film, including vote transfers and deterministic tie-breaking |
+
+Each model scored **256/256 complete outputs** on a Kaggle Tesla T4, including all 384 records across the three tasks at input sizes larger than development. The typesetter found the optimal layout in all 78 cases where greedy wrapping cost more. The ballot counter reproduced all rounds in the 85 elections where the unique first-choice leader ultimately lost. [Measured results and illustrated examples](results/creative/report.md) · [Per-size timings](results/creative/sizes.csv) · [Independent audit](results/creative/audit.json)
+
+For a runnable example, use `python creative/experiment.py predict folds --example` from the repository root with NumPy and PyTorch installed. Replace `folds` with `typeset` or `ballots` to try the other models. Use `--input FILE` to supply a JSON record of your own. [Input formats and examples](creative/README.md) · [Study frozen before the GPU run](https://github.com/ajayasai/loopedwsp-reproduction/tree/09024da/creative)
 
 ## When does looping help?
 

@@ -1,0 +1,68 @@
+{
+  "kernel": "ajayasaithambi/loopedwsp-creative-applications",
+  "version": 1,
+  "status": "COMPLETE",
+  "device": "Tesla T4",
+  "cuda": "13.0",
+  "pytorch": "2.11.0+cu130",
+  "server_private": true,
+  "server_internet_enabled": false,
+  "script_sha256": "7d9d4081628b7f2c31f849f7f6ffe93f6233cc93a90b47b0ca804f31d5e7aa80",
+  "remote_script_sha256": "7d9d4081628b7f2c31f849f7f6ffe93f6233cc93a90b47b0ca804f31d5e7aa80",
+  "source_match": "exact",
+  "input_files_verified": 7,
+  "output_sha256": {
+    "creative-results.json": "cded65aa6f310b5498526aa67ff76e0cd7eef92e4e4580ff5a6e7bd7db1c3b4d",
+    "creative-predictions.npz": "ccacef3c049d8fe27fd789591934a0cb55eb4d1c8cc70387dba2301485c0b155"
+  },
+  "prediction_arrays": {
+    "folds_4": [
+      64,
+      4
+    ],
+    "folds_8": [
+      64,
+      16
+    ],
+    "folds_16": [
+      64,
+      16
+    ],
+    "folds_32": [
+      64,
+      16
+    ],
+    "typeset_4": [
+      64,
+      4
+    ],
+    "typeset_8": [
+      64,
+      8
+    ],
+    "typeset_16": [
+      64,
+      16
+    ],
+    "typeset_32": [
+      64,
+      32
+    ],
+    "ballots_4": [
+      64,
+      5
+    ],
+    "ballots_8": [
+      64,
+      5
+    ],
+    "ballots_16": [
+      64,
+      5
+    ],
+    "ballots_32": [
+      64,
+      5
+    ]
+  }
+}

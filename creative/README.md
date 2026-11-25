@@ -1,6 +1,8 @@
 # Three creative applications of programmed transformer weights
 
-Each application has a different input and produces a complete artifact: a folded color grid, a paragraph layout or the result of a film-club vote. All three use hand-set coefficients and reuse an attention block across steps. The test cases are synthetic. The model's stored weights, its fixed operations and the size of its working state all contribute to what it can compute.
+These applications produce a folded color grid, a paragraph layout or the result of a film-club vote. All three use hand-set coefficients and reuse an attention block across steps. The test cases are synthetic. The model's stored weights, its fixed operations and the size of its working state all contribute to what it can compute.
+
+On a Tesla T4, the frozen models matched **768/768 complete outputs**, including all 8,448 visible cells, line-break flags and film IDs. The report shows a folded mosaic, two layouts for the same text and a film vote recounted after each elimination. [Held-out examples and results](../results/creative/report.md)
 
 ## Paper-fold preview
 
@@ -46,3 +48,9 @@ python creative/experiment.py gpu --output audit-output/creative-gpu
 ```
 
 To submit to Kaggle, authenticate the Kaggle CLI, set `LOOPEDWSP_KAGGLE_OWNER` to your account, and run `python creative/submit_study.py --push`. Collect a completed run with `python creative/submit_study.py --collect VERSION`. The launcher requests a private Tesla T4 with internet access disabled and verifies the returned source and output hashes. [Kaggle launcher](submit_study.py)
+
+To independently grade the published outputs on CPU, run the following from the repository root with NumPy installed. The audit checks the submission and weight fingerprints, recomputes answers from the original records and regrades the downloaded predictions.
+
+```sh
+python creative/audit.py kaggle/runs/creative/v1 audit-output/creative-audit.json
+```
