@@ -1,0 +1,202 @@
+{
+  "split": "test",
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "device": "Tesla T4",
+  "conditions": [
+    {
+      "task": "mobile",
+      "size": 4,
+      "parameters": 7,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 64,
+      "correct_labels": 64,
+      "nonfinite": 0,
+      "seconds": [
+        0.008722329999983458,
+        0.009131735000011076,
+        0.009181054999999105
+      ],
+      "median_seconds": 0.009131735000011076
+    },
+    {
+      "task": "mobile",
+      "size": 8,
+      "parameters": 7,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 64,
+      "correct_labels": 64,
+      "nonfinite": 0,
+      "seconds": [
+        0.012610034000005044,
+        0.01167403499999864,
+        0.012944430000004559
+      ],
+      "median_seconds": 0.012610034000005044
+    },
+    {
+      "task": "mobile",
+      "size": 16,
+      "parameters": 7,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 64,
+      "correct_labels": 64,
+      "nonfinite": 0,
+      "seconds": [
+        0.016304980000001024,
+        0.01693446599998083,
+        0.016040318999984038
+      ],
+      "median_seconds": 0.016304980000001024
+    },
+    {
+      "task": "mobile",
+      "size": 32,
+      "parameters": 7,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 64,
+      "correct_labels": 64,
+      "nonfinite": 0,
+      "seconds": [
+        0.019236438999996608,
+        0.020590859000009232,
+        0.01958473199999844
+      ],
+      "median_seconds": 0.01958473199999844
+    },
+    {
+      "task": "cels",
+      "size": 4,
+      "parameters": 64,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 12288,
+      "correct_labels": 12288,
+      "nonfinite": 0,
+      "seconds": [
+        0.016630831999975726,
+        0.016634515999982113,
+        0.018606216000023323
+      ],
+      "median_seconds": 0.016634515999982113
+    },
+    {
+      "task": "cels",
+      "size": 8,
+      "parameters": 64,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 12288,
+      "correct_labels": 12288,
+      "nonfinite": 0,
+      "seconds": [
+        0.03087873699999477,
+        0.030153541000004225,
+        0.028792394999982207
+      ],
+      "median_seconds": 0.030153541000004225
+    },
+    {
+      "task": "cels",
+      "size": 16,
+      "parameters": 64,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 12288,
+      "correct_labels": 12288,
+      "nonfinite": 0,
+      "seconds": [
+        0.04856756199998813,
+        0.04955986300001314,
+        0.053717280000000756
+      ],
+      "median_seconds": 0.04955986300001314
+    },
+    {
+      "task": "cels",
+      "size": 32,
+      "parameters": 64,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 12288,
+      "correct_labels": 12288,
+      "nonfinite": 0,
+      "seconds": [
+        0.09052003200000058,
+        0.09049699699997404,
+        0.09888584899999842
+      ],
+      "median_seconds": 0.09052003200000058
+    },
+    {
+      "task": "roll",
+      "size": 4,
+      "parameters": 1342,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 256,
+      "correct_labels": 256,
+      "nonfinite": 0,
+      "seconds": [
+        0.009443223000005219,
+        0.009064410000007683,
+        0.009883508000001484
+      ],
+      "median_seconds": 0.009443223000005219
+    },
+    {
+      "task": "roll",
+      "size": 8,
+      "parameters": 1342,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 512,
+      "correct_labels": 512,
+      "nonfinite": 0,
+      "seconds": [
+        0.009508436000004394,
+        0.009705002000004015,
+        0.009668268000012858
+      ],
+      "median_seconds": 0.009668268000012858
+    },
+    {
+      "task": "roll",
+      "size": 16,
+      "parameters": 1342,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 1024,
+      "correct_labels": 1024,
+      "nonfinite": 0,
+      "seconds": [
+        0.008596621999998888,
+        0.008674840999987055,
+        0.010190060999974548
+      ],
+      "median_seconds": 0.008674840999987055
+    },
+    {
+      "task": "roll",
+      "size": 32,
+      "parameters": 1342,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 2048,
+      "correct_labels": 2048,
+      "nonfinite": 0,
+      "seconds": [
+        0.009684131000000207,
+        0.009726599999993368,
+        0.010184686999991754
+      ],
+      "median_seconds": 0.009726599999993368
+    }
+  ],
+  "cases_sha256": "d43cefda904890316337678fa52d8f37680b0e897cb73f17e07483d98bcc214f",
+  "weights_sha256": "1627c14cec40396ac611aa9e3161ee1893eea2b6a0302c9b16dc85ab017c77f8"
+}

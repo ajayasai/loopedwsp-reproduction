@@ -1,0 +1,14 @@
+{
+  "id": "ajayasaithambi/loopedwsp-workshop-applications",
+  "id_no": 147259734,
+  "version": 1,
+  "title": "LoopedWSP Workshop Applications",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "machine_shape": "NvidiaTeslaT4",
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:fc720c15545eb096a510e1f085b17fc118387a007599424d953a4f327b71cacf",
+  "downloaded_source_sha256": "e8f1f96cff217349f24bca9647888287b1abe26cfcdb06057ecc0c93a3552991",
+  "source_match": "exact"
+}

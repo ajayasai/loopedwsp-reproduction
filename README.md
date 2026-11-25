@@ -1,6 +1,6 @@
 # Looped weight-space programming on Kaggle
 
-A hand-written transformer matched **1,000 of 1,000 official Maze-Hard test grids**, including the benchmark’s choice between equally short paths. This repository contains the analytic weights, scoring code and GPU results for a Codex-assisted reproduction of selected LoopedWSP experiments. You can also run six original applications locally, from detecting booking conflicts to previewing a folded paper mosaic. [Maze test result](results/maze/test.json) · [Operational applications](results/applications/report.md) · [Creative applications](creative/README.md)
+A hand-written transformer matched **1,000 of 1,000 official Maze-Hard test grids**, including the benchmark’s choice between equally short paths. This repository contains the analytic weights, scoring code and GPU results for a Codex-assisted reproduction of selected LoopedWSP experiments. You can also run nine application models locally, from detecting booking conflicts to restoring a damaged melody. [Maze test result](results/maze/test.json) · [Operational applications](results/applications/report.md) · [Creative applications](creative/README.md) · [Workshop applications](workshop/README.md)
 
 The original LoopedWSP study asked Claude to write the weights of a transformer that solves a task by repeatedly applying the same block. For this reproduction, Codex had access to the published method and task briefs. We constructed fresh tensors from the rules and ran frozen models on Kaggle Tesla T4 hardware. These experiments measure the resulting models’ accuracy. Measuring unaided discovery, authoring cost, or performance relative to training would require separate experiments. [Original study](https://mbzuai-oryx.github.io/LoopedWSP/) · [Authors’ repository](https://github.com/mbzuai-oryx/LoopedWSP)
 
@@ -39,6 +39,18 @@ Across the 15 task-size settings, GPU model inference took 0.710 seconds in tota
 Each model scored **256/256 complete outputs** on a Kaggle Tesla T4, including all 384 records across the three tasks at input sizes larger than development. The typesetter found the optimal layout in all 78 cases where greedy wrapping cost more. The ballot counter reproduced all rounds in the 85 elections where the unique first-choice leader ultimately lost. [Measured results and illustrated examples](results/creative/report.md) · [Per-size timings](results/creative/sizes.csv) · [Independent audit](results/creative/audit.json)
 
 For a runnable example, use `python creative/experiment.py predict folds --example` from the repository root with NumPy and PyTorch installed. Replace `folds` with `typeset` or `ballots` to try the other models. Use `--input FILE` to supply a JSON record of your own. [Input formats and examples](creative/README.md) · [Study frozen before the GPU run](https://github.com/ajayasai/loopedwsp-reproduction/tree/09024da/creative)
+
+## Kinetic sculpture, animation and music recovery
+
+Three more programmed transformers matched **768/768 complete records** on a Kaggle Tesla T4. Development used sizes 4 and 8. The same weights also solved all 384 held-out records of sizes 16 and 32. [Frozen study](https://github.com/ajayasai/loopedwsp-reproduction/tree/acad7ea/workshop) · [Full results and timings](results/workshop/report.md)
+
+| Application | Stored parameters | What the held-out run verified |
+| --- | ---: | --- |
+| Kinetic mobile | 7 | Found the missing 1–16 g counterweight on all 128 solvable designs and rejected all 128 impossible ones. Checking only the top rod would have accepted 71 impossible designs. |
+| Animation cel compositor | 64 | Rendered every RGB channel in 256 layered 8×8 scenes, including 240 whose image changes when the layer order reverses. |
+| Punched music-roll recovery | 1,342 | On 256 synthetic rolls, recovered the note and track for all 1,466 single-hole errors and marked all 870 double-hole errors as unreadable. |
+
+Run `python workshop/experiment.py predict mobile --example` to try a mobile. The compositor exports a PNG and the music-roll decoder exports a playable WAV with unreadable beats preserved as silence. [Run your own input](workshop/README.md) · [Example frame](results/workshop/composite.png) · [Example melody](results/workshop/recovered.wav) · [Independent audit](results/workshop/audit.json)
 
 ## When does looping help?
 

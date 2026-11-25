@@ -1,0 +1,22 @@
+{
+  "kernel": "ajayasaithambi/loopedwsp-workshop-applications",
+  "version": 1,
+  "submitted_utc": "2026-11-25T02:34:59.638756+00:00",
+  "requested_gpu": "NvidiaTeslaT4",
+  "requested_private": true,
+  "requested_internet": false,
+  "input_sha256": {
+    "experiment.py": "0ae605a66853aeb1763e0d7d81f0eedbdc439a90ef04709e8b73748f3a821d48",
+    "protocol.json": "88646668cbb6d0b21d7292581234d23421da0e4c8508612e90353a43f1051762",
+    "mobile.py": "b451ab7ebffd929559924d149c9501e50ac72330b0b61dfb6885f2c39bf57a81",
+    "cels.py": "59479db0de4758f532c3e4087d179179e235547894fad2e8c729ed7c6ef2243d",
+    "roll.py": "6b75bf2842e5e353a7f47a6832675576a21f45120f96a8de17bfce8164ed3efa",
+    "cases.json.gz": "d43cefda904890316337678fa52d8f37680b0e897cb73f17e07483d98bcc214f",
+    "weights.npz": "1627c14cec40396ac611aa9e3161ee1893eea2b6a0302c9b16dc85ab017c77f8",
+    "freeze.json": "5ae214343c71cab8a6cc27e253f1efd92fb17c972dce5004c9d107944733c8b1"
+  },
+  "script_sha256": "e8f1f96cff217349f24bca9647888287b1abe26cfcdb06057ecc0c93a3552991",
+  "script_bytes": 120187,
+  "timeout_seconds": 7200,
+  "url": "https://www.kaggle.com/code/ajayasaithambi/loopedwsp-workshop-applications/versions/1"
+}

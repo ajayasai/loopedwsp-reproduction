@@ -1,0 +1,68 @@
+{
+  "kernel": "ajayasaithambi/loopedwsp-workshop-applications",
+  "version": 1,
+  "status": "COMPLETE",
+  "device": "Tesla T4",
+  "cuda": "13.0",
+  "pytorch": "2.11.0+cu130",
+  "server_private": true,
+  "server_internet_enabled": false,
+  "script_sha256": "e8f1f96cff217349f24bca9647888287b1abe26cfcdb06057ecc0c93a3552991",
+  "remote_script_sha256": "e8f1f96cff217349f24bca9647888287b1abe26cfcdb06057ecc0c93a3552991",
+  "source_match": "exact",
+  "input_files_verified": 8,
+  "output_sha256": {
+    "workshop-results.json": "4acc8c21a00e0e86eec9857899ae46c6ef5acbcd079a25a736e97bcb4ad25734",
+    "workshop-predictions.npz": "1196ab43b867f3df8115549d650f28498fa3fb969c092b4eb9637c0f649c5725"
+  },
+  "prediction_arrays": {
+    "mobile_4": [
+      64,
+      1
+    ],
+    "mobile_8": [
+      64,
+      1
+    ],
+    "mobile_16": [
+      64,
+      1
+    ],
+    "mobile_32": [
+      64,
+      1
+    ],
+    "cels_4": [
+      64,
+      192
+    ],
+    "cels_8": [
+      64,
+      192
+    ],
+    "cels_16": [
+      64,
+      192
+    ],
+    "cels_32": [
+      64,
+      192
+    ],
+    "roll_4": [
+      64,
+      4
+    ],
+    "roll_8": [
+      64,
+      8
+    ],
+    "roll_16": [
+      64,
+      16
+    ],
+    "roll_32": [
+      64,
+      32
+    ]
+  }
+}
