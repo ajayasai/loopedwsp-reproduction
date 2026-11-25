@@ -1,0 +1,129 @@
+{
+  "models": {
+    "basin": {
+      "parameters": 6,
+      "tensors": {
+        "readout": {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 2,
+          "sha256": "dee9bee38d8ce139ee23552fc0ca83067114ae903518d7711ba7937b72c0d697"
+        },
+        "block.query": {
+          "shape": [],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 1,
+          "sha256": "ab845e4cab8b003fccd7f71a35f9c1e6b200104ca9bcf2f3943fe10326d5228e"
+        },
+        "block.value": {
+          "shape": [],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 1,
+          "sha256": "e00e5eb9444182f352323374ef4e08ebcb784725fdd4fd612d7730540b3e0c8c"
+        },
+        "block.residual": {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 2,
+          "sha256": "dee9bee38d8ce139ee23552fc0ca83067114ae903518d7711ba7937b72c0d697"
+        }
+      }
+    },
+    "transit": {
+      "parameters": 12,
+      "tensors": {
+        "address": {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 2,
+          "sha256": "4d46585fa6e2add5241cf1fedd4507338492b39e44c0f7c61608a0ab0dc9266f"
+        },
+        "thresholds": {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 2,
+          "sha256": "84c4426d4f7c3fb46daf2e28151e2adbdb53091cd52dfbc76c7edf418b1ff65d"
+        },
+        "value": {
+          "shape": [
+            4,
+            2
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 4,
+          "sha256": "e685c32323f062c9ed951fe954421b7173c6909243883bb298e470f1d4d32991"
+        }
+      }
+    },
+    "bowling": {
+      "parameters": 7,
+      "tensors": {
+        "own_pin_weights": {
+          "shape": [
+            3
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 3,
+          "sha256": "8a31a40ecac0ceb4d87b30bd156ca7a547e8e33dc071454b765fbc777d1c34a1"
+        },
+        "status_weight": {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 2,
+          "sha256": "29f16f743de29d3d29fb51bb15c62b3592bdfcf27c18836a90e16e2b1063b01b"
+        },
+        "position.projection": {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 2,
+          "sha256": "f7f53b59b48f56b4509c43df7ab74ae7ce28e78bd911d476320d9cfa858be97e"
+        }
+      }
+    }
+  },
+  "cases_sha256": "5b4a1dac396cd43a8dc0db8c48156af5a0b395a738f34440e67f455d680a0f38",
+  "weights_sha256": "bd37947a412972ac3f43590adbbfff6f0a32c73ecb88737d2e36963d4a113736",
+  "protocol_sha256": "ada8930c76aa83bc9f4b8af534f388ae086bc50d351d89b2809a806163ebe9d3",
+  "cohorts": {
+    "dev/basin/4": "e3ce0b25718cc92758035df88b2db49443dde88d0d9a31a780c3cc8461c627ec",
+    "dev/basin/6": "d79ba247116ca196ec10c43365a6bc3cd0a6dfa433faeab33ac0626f447caf69",
+    "test/basin/4": "a8259fcd8571c1cc19fb52f628c683f7a06b807b2758dcda2fac966c387467e6",
+    "test/basin/6": "f71c011c3cf6bc161847e132ed2208da535c10f46d57b3b54738d0f5c191b75e",
+    "test/basin/8": "6ea43e47f4163dcc0e4415ece2b4cc6a61c7dd825723001befe628bb793ffc71",
+    "test/basin/12": "c3551f721ab3a3a14288c221ac1e8eeebcd7e861bc64eb9b0ce3d6e36df91225",
+    "dev/transit/24": "3a2bbf7b50a04d0a5f2337d2b58163f5b83977ecfefae958adcfbcb13f3239bc",
+    "dev/transit/48": "3e2d658c02ad0f095648c0a93bebe4fe6729e01d6550d0f8c69a49d6c5aae4b9",
+    "test/transit/24": "6b48067719057ee0f6d70966836eeb606740f69da1f318c7307f2d105fe04ff1",
+    "test/transit/48": "1efa45807c66303c970615c84ea439c0f8278869dd86109ee21ac831d6f19c2a",
+    "test/transit/96": "edbd91ec67d4c5f2b225eda1d43bf22c7cf0159d13dd7a7a73a662bd896da05b",
+    "test/transit/192": "19615a00895cb0873e73f6be37c5252fac0ce69ff655fd55480d79d942d080cd",
+    "dev/bowling/3": "93d2e5502b4d4febf6405a65ebaafe20221e630f19cb3f9aad4d5f97753571a0",
+    "dev/bowling/5": "54724351384924a2f81b81a4cbe90ec6adef2580ec6903a9ef2ee94883af0b28",
+    "test/bowling/3": "12e6a25c032a665d1d55cd4292cd6902be10b4bbcf8171539f6fd5e35c7cab3f",
+    "test/bowling/5": "03064bdeb4ada11a7af2ada7c050abf91956b0df32d7351507eb294d00baf485",
+    "test/bowling/8": "4c369666bc66f79a24a7366c8fe2dddebcb6eb1291c4f09b0b3a88b2f3d536ec",
+    "test/bowling/10": "9548734fb3fbf24084a0d62b83290b5371bb5c2c3a5fa6cab93165ed315f73f2"
+  }
+}

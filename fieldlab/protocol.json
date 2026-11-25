@@ -1,0 +1,15 @@
+{
+  "seed": 2026112503,
+  "tasks": {
+    "basin": {"size_unit":"grid side", "classes":10, "dev":[4,6], "test":[4,6,8,12]},
+    "transit": {"size_unit":"cadences", "classes":29, "dev":[24,48], "test":[24,48,96,192]},
+    "bowling": {"size_unit":"started frames", "classes":302, "dev":[3,5], "test":[3,5,8,10]}
+  },
+  "per_size": {"dev":8, "test":64},
+  "batch": 8,
+  "repeats": 3,
+  "precision": "FP32, TF32 disabled",
+  "accuracy": "One record is correct only when every water depth, the period and phase (or no candidate), or every cumulative bowling score and pending marker matches the reference.",
+  "astronomy": "Measure exact recovery of the injected period and phase separately from exact agreement with the declared detector. Report detections on uninjected series and misses or period/phase mismatches on injected series. Generator metadata is withheld from both model input and scoring oracle.",
+  "timing": "Report median synchronized forward time and all three repeats over 64 pre-encoded GPU-resident records in batches of eight, after a warm-up. Encoding, transfers, scoring and disk I/O are outside the timer."
+}
