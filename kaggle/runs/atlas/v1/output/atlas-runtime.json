@@ -1,0 +1,22 @@
+{
+  "input_sha256": {
+    "experiment.py": "fcf9a0f0a101f88523d9feabc2647a5206ec8174900fa6327777d22c059c313e",
+    "protocol.json": "371c281c7dada24180b0a57572025c77e762a45591a648e49412c0f5f4a21444",
+    "checks.json": "126b76478d0ae22776aa4f96a51a65c70dbc61551e59462d4e5edd11ef197fa5",
+    "rings.py": "368e991c0464352c95619e95569d0a4973aaaa0939ab1bf07a69dd12319c93c9",
+    "loom.py": "a5af5da3d41722ad40d9a2638968bbcc7b507ee8a223381558192262c176e8ff",
+    "braid.py": "8bf3775de5f2d20fa6d10882c64c203f54bbdf3b04719b33ea464a9226b80590",
+    "cases.json.gz": "5d897036dcf277017134b31915361ee4918fc09639c17a72b25c9132a9708e5a",
+    "weights.npz": "b5486f183675d5c177b8797221bff617bd904b85d0798269f1fc641f1a2f896a",
+    "freeze.json": "963d78c1bbdd1024f6f5a2b0ee981757b1dea56333a31572dc4860f0be1b492d"
+  },
+  "status": "complete",
+  "device": "Tesla T4",
+  "available_devices": 2,
+  "pytorch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "output_sha256": {
+    "atlas-results.json": "efce59d3351f265aed8b58442e093e0aef8ca4ec126e7c7bfdb7918930642d95",
+    "atlas-predictions.npz": "e003c5fcd5019f1e6405026cd651a36843609e88bd1c3c4bae2251606fc823b7"
+  }
+}

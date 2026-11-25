@@ -1,0 +1,107 @@
+{
+  "kernel": "ajayasaithambi/loopedwsp-rings-loom-and-braids",
+  "version": 1,
+  "status": "COMPLETE",
+  "device": "Tesla T4",
+  "cuda": "13.0",
+  "pytorch": "2.11.0+cu130",
+  "server_private": true,
+  "server_internet_enabled": false,
+  "script_sha256": "7010e72447950dafc6529236a313d830578caff9ff90f5d6cbc3a551ef56495b",
+  "remote_script_sha256": "7010e72447950dafc6529236a313d830578caff9ff90f5d6cbc3a551ef56495b",
+  "source_match": "exact",
+  "input_files_verified": 9,
+  "output_sha256": {
+    "atlas-results.json": "efce59d3351f265aed8b58442e093e0aef8ca4ec126e7c7bfdb7918930642d95",
+    "atlas-predictions.npz": "e003c5fcd5019f1e6405026cd651a36843609e88bd1c3c4bae2251606fc823b7"
+  },
+  "prediction_arrays": {
+    "check_scaled_ring_extract": [
+      5
+    ],
+    "check_missing_years_tie": [
+      5
+    ],
+    "check_weak_ring_winner": [
+      3
+    ],
+    "check_unmeasured_ring_intervals": [
+      3
+    ],
+    "rings_12": [
+      64,
+      5
+    ],
+    "rings_16": [
+      64,
+      9
+    ],
+    "rings_24": [
+      64,
+      17
+    ],
+    "rings_40": [
+      64,
+      33
+    ],
+    "check_loom_plain_weave": [
+      12
+    ],
+    "check_loom_two_two_twill": [
+      16
+    ],
+    "check_loom_compound_and_idle": [
+      30
+    ],
+    "loom_4": [
+      64,
+      16
+    ],
+    "loom_8": [
+      64,
+      64
+    ],
+    "loom_16": [
+      64,
+      256
+    ],
+    "loom_32": [
+      64,
+      1024
+    ],
+    "check_three_component_unlink": [
+      1
+    ],
+    "check_closed_unknot": [
+      1
+    ],
+    "check_stabilized_trefoil": [
+      1
+    ],
+    "check_figure_eight_knot": [
+      1
+    ],
+    "check_grouped_crossings": [
+      1
+    ],
+    "check_alternating_generators": [
+      1
+    ],
+    "braid_4": [
+      64,
+      1
+    ],
+    "braid_8": [
+      64,
+      1
+    ],
+    "braid_16": [
+      64,
+      1
+    ],
+    "braid_32": [
+      64,
+      1
+    ]
+  }
+}

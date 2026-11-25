@@ -1,6 +1,6 @@
 # Looped weight-space programming on Kaggle
 
-A hand-written transformer matched **1,000 of 1,000 official Maze-Hard test grids**, including the benchmark’s choice between equally short paths. This repository contains the analytic weights, scoring code and GPU results for a Codex-assisted reproduction of selected LoopedWSP experiments. We also built fifteen application models that you can run locally, from detecting booking conflicts to predicting which reflections disappear in a crystal. [Maze test result](results/maze/test.json) · [Operational applications](results/applications/report.md) · [Creative applications](creative/README.md) · [Workshop applications](workshop/README.md) · [Field studies](fieldlab/README.md) · [Linguistics, crystallography and auctions](crossfield/README.md)
+A hand-written transformer matched **1,000 of 1,000 official Maze-Hard test grids**, including the benchmark’s choice between equally short paths. This repository contains the analytic weights, scoring code and GPU results for a Codex-assisted reproduction of selected LoopedWSP experiments. We also built eighteen application models that run locally, from detecting booking conflicts to drawing cloth from a loom draft. [Maze test result](results/maze/test.json) · [Operational applications](results/applications/report.md) · [Creative applications](creative/README.md) · [Workshop applications](workshop/README.md) · [Field studies](fieldlab/README.md) · [Linguistics, crystallography and auctions](crossfield/README.md) · [Tree rings, weaving and knots](atlas/README.md)
 
 The original LoopedWSP study asked Claude to write the weights of a transformer that solves a task by repeatedly applying the same block. For this reproduction, Codex had access to the published method and task briefs. We constructed fresh tensors from the rules and ran frozen models on Kaggle Tesla T4 hardware. These experiments measure the resulting models’ accuracy. Measuring unaided discovery, authoring cost, or performance relative to training would require separate experiments. [Original study](https://mbzuai-oryx.github.io/LoopedWSP/) · [Authors’ repository](https://github.com/mbzuai-oryx/LoopedWSP)
 
@@ -71,6 +71,16 @@ Run `python fieldlab/experiment.py predict bowling --example` to see a scorecard
 | Combinatorial auction pricing | 6 | 256/256 | Found the winning bundles and each bidder’s payment. Taking the highest bids first would have lost value in 52 of these auctions. |
 
 We froze the weights and cases before the Kaggle Tesla T4 run. All 384 records at input sizes above the development range matched the independent scoring rules. The auction model enumerates up to 256 bidder subsets. The parameter counts exclude this memory and each model’s fixed operations. [Inputs and runnable commands](crossfield/README.md) · [Per-size GPU timings and examples](results/crossfield/report.md) · [Independent audit](results/crossfield/audit.json) · [Pre-run snapshot](https://github.com/ajayasai/loopedwsp-reproduction/tree/1d1419b/crossfield)
+
+## Tree-ring alignment, loom drafting and knot theory
+
+| Application | Stored FP32 coefficients | Exact held-out records | What the experiment showed |
+| --- | ---: | ---: | --- |
+| Match an eight-ring sample to a reference series | 11 | 256/256 | Of 56 samples with a single window that reproduced every width after rescaling and shifting, all 56 had that offset among the best direction matches. Only 45 gave it the sole best score. |
+| Draw cloth from a rising-shed loom draft | 4 | 256/256 | Predicted which yarn was on top at all 87,040 crossings. In 114 drafts, keeping only the first treadle pressed on each pick would have changed the cloth. |
+| Count Fox 3-colorings of a closed three-strand braid | 50 | 256/256 | Counted all valid colorings through 32 crossings. The worked examples give 9 for the trefoil, 3 for the figure-eight knot and 27 for three unlinked circles. |
+
+The three frozen models matched all 384 records at sizes above their development ranges on a Kaggle Tesla T4. The tree-ring scores rank synthetic alignments, the loom predicts ideal interlacements, and the braid count can be shared by different knots. [Runnable examples and guides](atlas/README.md) · [GPU measurements and loom drawdowns](results/atlas/report.md) · [Independent audit](results/atlas/audit.json) · [Pre-run snapshot](https://github.com/ajayasai/loopedwsp-reproduction/tree/2480f9e/atlas)
 
 ## When does looping help?
 

@@ -1,0 +1,23 @@
+{
+  "kernel": "ajayasaithambi/loopedwsp-rings-loom-and-braids",
+  "version": 1,
+  "submitted_utc": "2026-11-25T03:33:51.073887+00:00",
+  "requested_gpu": "NvidiaTeslaT4",
+  "requested_private": true,
+  "requested_internet": false,
+  "input_sha256": {
+    "experiment.py": "fcf9a0f0a101f88523d9feabc2647a5206ec8174900fa6327777d22c059c313e",
+    "protocol.json": "371c281c7dada24180b0a57572025c77e762a45591a648e49412c0f5f4a21444",
+    "checks.json": "126b76478d0ae22776aa4f96a51a65c70dbc61551e59462d4e5edd11ef197fa5",
+    "rings.py": "368e991c0464352c95619e95569d0a4973aaaa0939ab1bf07a69dd12319c93c9",
+    "loom.py": "a5af5da3d41722ad40d9a2638968bbcc7b507ee8a223381558192262c176e8ff",
+    "braid.py": "8bf3775de5f2d20fa6d10882c64c203f54bbdf3b04719b33ea464a9226b80590",
+    "cases.json.gz": "5d897036dcf277017134b31915361ee4918fc09639c17a72b25c9132a9708e5a",
+    "weights.npz": "b5486f183675d5c177b8797221bff617bd904b85d0798269f1fc641f1a2f896a",
+    "freeze.json": "963d78c1bbdd1024f6f5a2b0ee981757b1dea56333a31572dc4860f0be1b492d"
+  },
+  "script_sha256": "7010e72447950dafc6529236a313d830578caff9ff90f5d6cbc3a551ef56495b",
+  "script_bytes": 63168,
+  "timeout_seconds": 7200,
+  "url": "https://www.kaggle.com/code/ajayasaithambi/loopedwsp-rings-loom-and-braids/versions/1"
+}

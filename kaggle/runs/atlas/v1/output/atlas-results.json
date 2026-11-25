@@ -1,0 +1,256 @@
+{
+  "split": "test",
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "device": "Tesla T4",
+  "conditions": [
+    {
+      "task": "rings",
+      "size": 12,
+      "parameters": 11,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 320,
+      "correct_labels": 320,
+      "nonfinite": 0,
+      "seconds": [
+        0.006772894999983237,
+        0.006210686999963855,
+        0.006644092999977147
+      ],
+      "median_seconds": 0.006644092999977147
+    },
+    {
+      "task": "rings",
+      "size": 16,
+      "parameters": 11,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 576,
+      "correct_labels": 576,
+      "nonfinite": 0,
+      "seconds": [
+        0.006475820000048316,
+        0.00686427900001263,
+        0.006318346000000474
+      ],
+      "median_seconds": 0.006475820000048316
+    },
+    {
+      "task": "rings",
+      "size": 24,
+      "parameters": 11,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 1088,
+      "correct_labels": 1088,
+      "nonfinite": 0,
+      "seconds": [
+        0.00640789900000982,
+        0.006282157000043753,
+        0.006414317999997365
+      ],
+      "median_seconds": 0.00640789900000982
+    },
+    {
+      "task": "rings",
+      "size": 40,
+      "parameters": 11,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 2112,
+      "correct_labels": 2112,
+      "nonfinite": 0,
+      "seconds": [
+        0.006376344999978301,
+        0.006303838999997424,
+        0.006323622000024898
+      ],
+      "median_seconds": 0.006323622000024898
+    },
+    {
+      "task": "loom",
+      "size": 4,
+      "parameters": 4,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 1024,
+      "correct_labels": 1024,
+      "nonfinite": 0,
+      "seconds": [
+        0.0032990180000069813,
+        0.003096783999978925,
+        0.0035429300000373587
+      ],
+      "median_seconds": 0.0032990180000069813
+    },
+    {
+      "task": "loom",
+      "size": 8,
+      "parameters": 4,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 4096,
+      "correct_labels": 4096,
+      "nonfinite": 0,
+      "seconds": [
+        0.0034434689999898183,
+        0.0033353130000364217,
+        0.003540693999980249
+      ],
+      "median_seconds": 0.0034434689999898183
+    },
+    {
+      "task": "loom",
+      "size": 16,
+      "parameters": 4,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 16384,
+      "correct_labels": 16384,
+      "nonfinite": 0,
+      "seconds": [
+        0.0041160100000183775,
+        0.0034606220000341636,
+        0.0034403770000039913
+      ],
+      "median_seconds": 0.0034606220000341636
+    },
+    {
+      "task": "loom",
+      "size": 32,
+      "parameters": 4,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 65536,
+      "correct_labels": 65536,
+      "nonfinite": 0,
+      "seconds": [
+        0.003900832999988779,
+        0.0040355659999704585,
+        0.0035132840000073884
+      ],
+      "median_seconds": 0.003900832999988779
+    },
+    {
+      "task": "braid",
+      "size": 4,
+      "parameters": 50,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 64,
+      "correct_labels": 64,
+      "nonfinite": 0,
+      "seconds": [
+        0.007214512000018658,
+        0.006981047000010676,
+        0.007996760000025915
+      ],
+      "median_seconds": 0.007214512000018658
+    },
+    {
+      "task": "braid",
+      "size": 8,
+      "parameters": 50,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 64,
+      "correct_labels": 64,
+      "nonfinite": 0,
+      "seconds": [
+        0.011164624999992157,
+        0.011020974000018668,
+        0.010963289000017085
+      ],
+      "median_seconds": 0.011020974000018668
+    },
+    {
+      "task": "braid",
+      "size": 16,
+      "parameters": 50,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 64,
+      "correct_labels": 64,
+      "nonfinite": 0,
+      "seconds": [
+        0.017235330999994858,
+        0.017329652000000806,
+        0.01784330600003159
+      ],
+      "median_seconds": 0.017329652000000806
+    },
+    {
+      "task": "braid",
+      "size": 32,
+      "parameters": 50,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 64,
+      "correct_labels": 64,
+      "nonfinite": 0,
+      "seconds": [
+        0.029427975000032802,
+        0.029843268999968586,
+        0.030491846999950667
+      ],
+      "median_seconds": 0.029843268999968586
+    }
+  ],
+  "checks": {
+    "scaled_ring_extract": {
+      "task": "rings",
+      "correct": true
+    },
+    "missing_years_tie": {
+      "task": "rings",
+      "correct": true
+    },
+    "weak_ring_winner": {
+      "task": "rings",
+      "correct": true
+    },
+    "unmeasured_ring_intervals": {
+      "task": "rings",
+      "correct": true
+    },
+    "loom_plain_weave": {
+      "task": "loom",
+      "correct": true
+    },
+    "loom_two_two_twill": {
+      "task": "loom",
+      "correct": true
+    },
+    "loom_compound_and_idle": {
+      "task": "loom",
+      "correct": true
+    },
+    "three_component_unlink": {
+      "task": "braid",
+      "correct": true
+    },
+    "closed_unknot": {
+      "task": "braid",
+      "correct": true
+    },
+    "stabilized_trefoil": {
+      "task": "braid",
+      "correct": true
+    },
+    "figure_eight_knot": {
+      "task": "braid",
+      "correct": true
+    },
+    "grouped_crossings": {
+      "task": "braid",
+      "correct": true
+    },
+    "alternating_generators": {
+      "task": "braid",
+      "correct": true
+    }
+  },
+  "cases_sha256": "5d897036dcf277017134b31915361ee4918fc09639c17a72b25c9132a9708e5a",
+  "weights_sha256": "b5486f183675d5c177b8797221bff617bd904b85d0798269f1fc641f1a2f896a"
+}
