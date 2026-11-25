@@ -1,0 +1,364 @@
+[
+  {
+    "task": "contours",
+    "name": "three_adjacent_saddles",
+    "input": {
+      "level": 100,
+      "heights": [
+        [
+          104,
+          99,
+          101,
+          98
+        ],
+        [
+          99,
+          101,
+          99,
+          101
+        ]
+      ]
+    },
+    "labels": [
+      7,
+      9,
+      8
+    ]
+  },
+  {
+    "task": "contours",
+    "name": "hilltop_loop",
+    "input": {
+      "level": 10,
+      "heights": [
+        [
+          7,
+          7,
+          7
+        ],
+        [
+          7,
+          14,
+          7
+        ],
+        [
+          7,
+          7,
+          7
+        ]
+      ]
+    },
+    "labels": [
+      2,
+      3,
+      1,
+      4
+    ]
+  },
+  {
+    "task": "contours",
+    "name": "mean_misroutes_saddle",
+    "input": {
+      "level": 0,
+      "heights": [
+        [
+          8,
+          -4
+        ],
+        [
+          -4,
+          1
+        ]
+      ]
+    },
+    "labels": [
+      8
+    ]
+  },
+  {
+    "task": "contours",
+    "name": "straight_across",
+    "input": {
+      "level": -5,
+      "heights": [
+        [
+          -3,
+          -4,
+          -2
+        ],
+        [
+          -6,
+          -8,
+          -7
+        ]
+      ]
+    },
+    "labels": [
+      6,
+      6
+    ]
+  },
+  {
+    "task": "plumage",
+    "name": "plumage_outgroup_resolves",
+    "input": {
+      "tips": [
+        "plain",
+        "barred",
+        "plain",
+        "plain"
+      ],
+      "joins": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    "labels": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "task": "plumage",
+    "name": "plumage_three_way_tie",
+    "input": {
+      "tips": [
+        "plain",
+        "barred",
+        "spotted"
+      ],
+      "joins": [
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ]
+    },
+    "labels": [
+      7,
+      7
+    ]
+  },
+  {
+    "task": "plumage",
+    "name": "plumage_root_tie",
+    "input": {
+      "tips": [
+        "plain",
+        "plain",
+        "barred",
+        "barred"
+      ],
+      "joins": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    "labels": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "task": "plumage",
+    "name": "plumage_unchanged",
+    "input": {
+      "tips": [
+        "spotted",
+        "spotted"
+      ],
+      "joins": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "labels": [
+      4
+    ]
+  },
+  {
+    "task": "clifford",
+    "name": "bell_correlations",
+    "input": {
+      "gates": [
+        [
+          "H",
+          0
+        ],
+        [
+          "CX",
+          0,
+          1
+        ]
+      ],
+      "observables": [
+        "XXI",
+        "YYI",
+        "ZZI",
+        "ZII",
+        "IZI",
+        "IIZ"
+      ]
+    },
+    "labels": [
+      2,
+      0,
+      2,
+      1,
+      1,
+      2
+    ]
+  },
+  {
+    "task": "clifford",
+    "name": "bell_gates_reversed",
+    "input": {
+      "gates": [
+        [
+          "CX",
+          0,
+          1
+        ],
+        [
+          "H",
+          0
+        ]
+      ],
+      "observables": [
+        "XXI",
+        "YYI",
+        "ZZI",
+        "ZII",
+        "IZI",
+        "IIZ"
+      ]
+    },
+    "labels": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2
+    ]
+  },
+  {
+    "task": "clifford",
+    "name": "phase_ghz",
+    "input": {
+      "gates": [
+        [
+          "H",
+          0
+        ],
+        [
+          "CX",
+          0,
+          1
+        ],
+        [
+          "CX",
+          1,
+          2
+        ],
+        [
+          "S",
+          0
+        ]
+      ],
+      "observables": [
+        "YXX",
+        "XYY",
+        "XXX",
+        "YYY",
+        "ZZI",
+        "IIZ"
+      ]
+    },
+    "labels": [
+      2,
+      1,
+      1,
+      0,
+      2,
+      1
+    ]
+  },
+  {
+    "task": "clifford",
+    "name": "inverse_phase",
+    "input": {
+      "gates": [
+        [
+          "H",
+          2
+        ],
+        [
+          "Sdg",
+          2
+        ]
+      ],
+      "observables": [
+        "IIY",
+        "IIX",
+        "IIZ",
+        "ZIY"
+      ]
+    },
+    "labels": [
+      0,
+      1,
+      1,
+      0
+    ]
+  },
+  {
+    "task": "clifford",
+    "name": "vacuum_expectations",
+    "input": {
+      "gates": [],
+      "observables": [
+        "III",
+        "IZZ",
+        "ZZZ",
+        "IXI",
+        "YZY"
+      ]
+    },
+    "labels": [
+      2,
+      2,
+      2,
+      1,
+      1
+    ]
+  }
+]

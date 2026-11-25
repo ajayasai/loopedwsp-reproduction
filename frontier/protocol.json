@@ -1,0 +1,16 @@
+{
+  "study": "frontier",
+  "seed": 2026112506,
+  "tasks": {
+    "contours": {"classes": 10, "size_unit": "map cells per side", "dev": [3,6], "test": [3,6,12,24]},
+    "plumage": {"classes": 8, "size_unit": "observed tips on a rooted tree", "dev": [4,8], "test": [4,8,12,16]},
+    "clifford": {"classes": 3, "size_unit": "gates in a three-qubit circuit", "dev": [4,8], "test": [4,8,16,32]}
+  },
+  "per_size": {"dev": 8, "test": 64},
+  "batch": 8,
+  "repeats": 3,
+  "precision": "FP32 with TF32 disabled",
+  "accuracy": "Count a map only if every contour cell matches, a tree only if every internal node's full set of globally optimal states matches, and a circuit only if every requested Pauli expectation matches. Each held-out circuit has eight queries.",
+  "additional_checks": "Named worked cases are frozen before the GPU submission and excluded from held-out scores and timing.",
+  "timing": "Three synchronized FP32 forward sweeps over all 64 GPU-resident records of each size in batches of eight, following one warm-up batch. Excludes encoding, transfers, decoding, validation and disk I/O."
+}

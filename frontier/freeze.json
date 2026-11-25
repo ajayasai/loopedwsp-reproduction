@@ -1,0 +1,137 @@
+{
+  "models": {
+    "contours": {
+      "parameters": 54,
+      "tensors": {
+        "address": {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 2,
+          "sha256": "4d46585fa6e2add5241cf1fedd4507338492b39e44c0f7c61608a0ab0dc9266f"
+        },
+        "bits": {
+          "shape": [
+            4
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 4,
+          "sha256": "646ab408f65a08da65f119ea26823d5fd9410b48e5621f6d122b5cef43a562c7"
+        },
+        "cases": {
+          "shape": [
+            16
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 14,
+          "sha256": "7eabdb22260c0e88f05ff5a4aa77824f7460e00baa05d036d94a3d7091edc5e3"
+        },
+        "knots": {
+          "shape": [
+            16
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 15,
+          "sha256": "58dda328598e2f7fe472621bfc54935aaa354d1a6ebcaf9562cd743fd575eb19"
+        },
+        "slopes": {
+          "shape": [
+            16
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 16,
+          "sha256": "742b7fac7110f19e1737af632d6620a1a059a7c10df9abb9beaa686581c311d8"
+        }
+      }
+    },
+    "plumage": {
+      "parameters": 5,
+      "tensors": {
+        "address_scale": {
+          "shape": [],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 1,
+          "sha256": "ad286c64373644140ff927b256b8415467b5d27645ff997010b15519d022631b"
+        },
+        "change_cost": {
+          "shape": [],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 1,
+          "sha256": "e00e5eb9444182f352323374ef4e08ebcb784725fdd4fd612d7730540b3e0c8c"
+        },
+        "state_bits": {
+          "shape": [
+            3
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 3,
+          "sha256": "719c6d77c034f4e8aa55aedda26c008a71db80064247c12e0ff2ae5376aad834"
+        }
+      }
+    },
+    "clifford": {
+      "parameters": 1025,
+      "tensors": {
+        "transitions": {
+          "shape": [
+            15,
+            64
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 960,
+          "sha256": "bf4d827d75977a2a28f4b52de57ad13f7ed524c3bcb78d0dbea1da7daace8bd7"
+        },
+        "sharpness": {
+          "shape": [],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 1,
+          "sha256": "ad286c64373644140ff927b256b8415467b5d27645ff997010b15519d022631b"
+        },
+        "vacuum": {
+          "shape": [
+            64
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 8,
+          "sha256": "57e5dc4e84a03ee0cdf1edf8b29a01edf0a5108baaf2e55385799120d7b95d19"
+        }
+      }
+    }
+  },
+  "cases_sha256": "8ad024eb6a8ad7d37eb8f7314782e2eff83d3e7d4501592bcf93f1256adbaddc",
+  "weights_sha256": "b5fcc19f896e532dbe65d7d996059314d796498e661c1809fdf73162eb1852db",
+  "protocol_sha256": "e64b181fe3303de4011aca1551fbf26456c48f7430b191372d6b9a4f00df3010",
+  "checks_sha256": "e4b5970881bddd33ac126da2a20cb1ac7cbcef47f8896e7626149f4a41331c76",
+  "cohorts": {
+    "dev/contours/3": "97662d094f133311e976db0dfd17a545aa94ed3e05ae9b72cf6295abd0f3ea9f",
+    "dev/contours/6": "38a9eeabcb5d370f8181822da3f28c0e2322e1c8f29300dde9d1c19dcdff64a1",
+    "test/contours/3": "d7ecae44ae74266eade908b8e85e25c0fd52f06dbb0545ee018dedba08ad8648",
+    "test/contours/6": "9a37816bcb0204d5afb778f6bef587c60ee174fbb779bc7496c8b7e5794125c1",
+    "test/contours/12": "5990eac1bd47d5f1be2fcae748eb76f486702c51559a78fda5a36316234e3271",
+    "test/contours/24": "8c3f8b399d18e1662117d98de174a955870c549eed563e03478f3e89dd3575b9",
+    "dev/plumage/4": "fcf7e32952bb0c62c60e84011080356992ac99b43adb5a91bdfaf9919c3871bd",
+    "dev/plumage/8": "eb44125d4908025c55512bf51e3d7af70605abbfbab7e2f6256ab927d91e7403",
+    "test/plumage/4": "55c5dae3681ba334601e351db1940fc98395853f0a30ef65ba8c298372488cc9",
+    "test/plumage/8": "0561b3565feeb53fd476cc6f970a732f8958f64fadc03cca0fa05ce2ab1a1720",
+    "test/plumage/12": "052300b3a779e31ca0d07796d5eeae7f61747b57b4539c493e1fe5f49fb4b0c6",
+    "test/plumage/16": "a0ccfea4a50a98465c5b72d87a457db8979eb791591a112e89ccf511677c22b2",
+    "dev/clifford/4": "b9b5d5747d2cc0c34ded9e7a428ded904e41908b46c44aaa5cd7c9f4fead2247",
+    "dev/clifford/8": "b181b9421ac3bd920905f9a62ce201075df66651e7599024a23a752b978b10e4",
+    "test/clifford/4": "925825ee818b7f1437fbc316e8f81fb5b893758c1206761a5233423fa1a44019",
+    "test/clifford/8": "7e2576bbb71825fa29b0de0781b11866a7a98e874a2621f2329f8dc9cb12b2f0",
+    "test/clifford/16": "857a2327f4f27281ea34912f8aa89dc92c1ccaaa0b03bb1ffdf5379a197b24ca",
+    "test/clifford/32": "dba873f292b1af7d5cb991598c420466d4e98e6195b821924b87e323a92cc996"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "gates": [
+    [
+      "H",
+      0
+    ],
+    [
+      "CX",
+      0,
+      1
+    ]
+  ],
+  "observables": [
+    "XXI",
+    "YYI",
+    "ZZI",
+    "ZII",
+    "IZI",
+    "IIZ"
+  ]
+}
