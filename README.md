@@ -1,6 +1,6 @@
 # Looped weight-space programming on Kaggle
 
-A hand-written transformer matched **1,000 of 1,000 official Maze-Hard test grids**, including the benchmark’s choice between equally short paths. This repository contains the analytic weights, scoring code and GPU results for a Codex-assisted reproduction of selected LoopedWSP experiments. We also built eighteen application models that run locally, from detecting booking conflicts to drawing cloth from a loom draft. [Maze test result](results/maze/test.json) · [Operational applications](results/applications/report.md) · [Creative applications](creative/README.md) · [Workshop applications](workshop/README.md) · [Field studies](fieldlab/README.md) · [Linguistics, crystallography and auctions](crossfield/README.md) · [Tree rings, weaving and knots](atlas/README.md)
+A hand-written transformer matched **1,000 of 1,000 official Maze-Hard test grids**, including the benchmark’s choice between equally short paths. This repository contains the analytic weights, scoring code and GPU results for a Codex-assisted reproduction of selected LoopedWSP experiments. We also built 21 application models that run locally, from detecting booking conflicts to predicting correlations in an ideal quantum circuit. [Maze test result](results/maze/test.json) · [Operational applications](results/applications/report.md) · [Creative applications](creative/README.md) · [Workshop applications](workshop/README.md) · [Field studies](fieldlab/README.md) · [Linguistics, crystallography and auctions](crossfield/README.md) · [Tree rings, weaving and knots](atlas/README.md) · [Maps, plumage and quantum circuits](frontier/README.md)
 
 The original LoopedWSP study asked Claude to write the weights of a transformer that solves a task by repeatedly applying the same block. For this reproduction, Codex had access to the published method and task briefs. We constructed fresh tensors from the rules and ran frozen models on Kaggle Tesla T4 hardware. These experiments measure the resulting models’ accuracy. Measuring unaided discovery, authoring cost, or performance relative to training would require separate experiments. [Original study](https://mbzuai-oryx.github.io/LoopedWSP/) · [Authors’ repository](https://github.com/mbzuai-oryx/LoopedWSP)
 
@@ -81,6 +81,16 @@ We froze the weights and cases before the Kaggle Tesla T4 run. All 384 records a
 | Count Fox 3-colorings of a closed three-strand braid | 50 | 256/256 | Counted all valid colorings through 32 crossings. The worked examples give 9 for the trefoil, 3 for the figure-eight knot and 27 for three unlinked circles. |
 
 The three frozen models matched all 384 records at sizes above their development ranges on a Kaggle Tesla T4. The tree-ring scores rank synthetic alignments, the loom predicts ideal interlacements, and the braid count can be shared by different knots. [Runnable examples and guides](atlas/README.md) · [GPU measurements and loom drawdowns](results/atlas/report.md) · [Independent audit](results/atlas/audit.json) · [Pre-run snapshot](https://github.com/ajayasai/loopedwsp-reproduction/tree/2480f9e/atlas)
+
+## Contour maps, ancestral plumage and quantum circuits
+
+| Application | Stored FP32 coefficients | Exact held-out records | What the model recovered |
+| --- | ---: | ---: | --- |
+| Cartography | 54 | 256/256 | Traced the contour through all 48,960 cells. It identified 648 four-way saddles and chose the correct pairing in all 374 cells where a center-height shortcut picked the wrong one. |
+| Evolutionary biology | 5 | 256/256 | Found every plumage state compatible with a minimum-change history at 2,304 ancestors. For 959 of them, including the rest of the tree changed the optimal set. |
+| Quantum information | 1,025 | 256/256 | Predicted all 2,048 measurement expectations for ideal three-qubit circuits, including 654 joint outcomes with a definite sign and at least one individually random factor. |
+
+All 384 records at sizes above development matched on a Kaggle Tesla T4. The examples let you change a map elevation, a bird’s observed plumage, or the order of two quantum gates and see the resulting predictions. [Run the three examples](frontier/README.md) · [Per-size GPU results and contour figure](results/frontier/report.md) · [Independent audit](results/frontier/audit.json) · [Pre-run snapshot](https://github.com/ajayasai/loopedwsp-reproduction/tree/c2d04db/frontier)
 
 ## When does looping help?
 

@@ -1,0 +1,14 @@
+{
+  "id": "ajayasaithambi/loopedwsp-maps-plumage-and-qubits",
+  "id_no": 147271047,
+  "version": 1,
+  "title": "LoopedWSP Maps Plumage and Qubits",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "machine_shape": "NvidiaTeslaT4",
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:fc720c15545eb096a510e1f085b17fc118387a007599424d953a4f327b71cacf",
+  "downloaded_source_sha256": "c3dd1948d949083a9d90e0001fd10d91cfdb4c66ef22b285aa880d10e51d7853",
+  "source_match": "exact"
+}

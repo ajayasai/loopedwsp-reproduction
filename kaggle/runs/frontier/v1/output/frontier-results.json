@@ -1,0 +1,256 @@
+{
+  "split": "test",
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "device": "Tesla T4",
+  "conditions": [
+    {
+      "task": "contours",
+      "size": 3,
+      "parameters": 54,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 576,
+      "correct_labels": 576,
+      "nonfinite": 0,
+      "seconds": [
+        0.007762710999998035,
+        0.007619024000007357,
+        0.008105395999962184
+      ],
+      "median_seconds": 0.007762710999998035
+    },
+    {
+      "task": "contours",
+      "size": 6,
+      "parameters": 54,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 2304,
+      "correct_labels": 2304,
+      "nonfinite": 0,
+      "seconds": [
+        0.007849824000004446,
+        0.008218639999995503,
+        0.008272488999978123
+      ],
+      "median_seconds": 0.008218639999995503
+    },
+    {
+      "task": "contours",
+      "size": 12,
+      "parameters": 54,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 9216,
+      "correct_labels": 9216,
+      "nonfinite": 0,
+      "seconds": [
+        0.008004545000005692,
+        0.010331192000023748,
+        0.00859146300001612
+      ],
+      "median_seconds": 0.00859146300001612
+    },
+    {
+      "task": "contours",
+      "size": 24,
+      "parameters": 54,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 36864,
+      "correct_labels": 36864,
+      "nonfinite": 0,
+      "seconds": [
+        0.008153154000012819,
+        0.007909387999973205,
+        0.007966798000040853
+      ],
+      "median_seconds": 0.007966798000040853
+    },
+    {
+      "task": "plumage",
+      "size": 4,
+      "parameters": 5,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 192,
+      "correct_labels": 192,
+      "nonfinite": 0,
+      "seconds": [
+        0.014331207999987328,
+        0.013709130999984609,
+        0.013716595999994752
+      ],
+      "median_seconds": 0.013716595999994752
+    },
+    {
+      "task": "plumage",
+      "size": 8,
+      "parameters": 5,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 448,
+      "correct_labels": 448,
+      "nonfinite": 0,
+      "seconds": [
+        0.02385713400002487,
+        0.022905646999959117,
+        0.022662483000033262
+      ],
+      "median_seconds": 0.022905646999959117
+    },
+    {
+      "task": "plumage",
+      "size": 12,
+      "parameters": 5,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 704,
+      "correct_labels": 704,
+      "nonfinite": 0,
+      "seconds": [
+        0.03241288899999972,
+        0.032735870000010436,
+        0.03227900900003533
+      ],
+      "median_seconds": 0.03241288899999972
+    },
+    {
+      "task": "plumage",
+      "size": 16,
+      "parameters": 5,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 960,
+      "correct_labels": 960,
+      "nonfinite": 0,
+      "seconds": [
+        0.04111447700000781,
+        0.039719291999972484,
+        0.041505996000012146
+      ],
+      "median_seconds": 0.04111447700000781
+    },
+    {
+      "task": "clifford",
+      "size": 4,
+      "parameters": 1025,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 512,
+      "correct_labels": 512,
+      "nonfinite": 0,
+      "seconds": [
+        0.011726836000036656,
+        0.011552610000023833,
+        0.0125136969999744
+      ],
+      "median_seconds": 0.011726836000036656
+    },
+    {
+      "task": "clifford",
+      "size": 8,
+      "parameters": 1025,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 512,
+      "correct_labels": 512,
+      "nonfinite": 0,
+      "seconds": [
+        0.019935350999958246,
+        0.01983724799998754,
+        0.020066890999999032
+      ],
+      "median_seconds": 0.019935350999958246
+    },
+    {
+      "task": "clifford",
+      "size": 16,
+      "parameters": 1025,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 512,
+      "correct_labels": 512,
+      "nonfinite": 0,
+      "seconds": [
+        0.033071200999984285,
+        0.032496036999987155,
+        0.03413900999998987
+      ],
+      "median_seconds": 0.033071200999984285
+    },
+    {
+      "task": "clifford",
+      "size": 32,
+      "parameters": 1025,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 512,
+      "correct_labels": 512,
+      "nonfinite": 0,
+      "seconds": [
+        0.08696466100002453,
+        0.0796650680000539,
+        0.06687643899999784
+      ],
+      "median_seconds": 0.0796650680000539
+    }
+  ],
+  "checks": {
+    "three_adjacent_saddles": {
+      "task": "contours",
+      "correct": true
+    },
+    "hilltop_loop": {
+      "task": "contours",
+      "correct": true
+    },
+    "mean_misroutes_saddle": {
+      "task": "contours",
+      "correct": true
+    },
+    "straight_across": {
+      "task": "contours",
+      "correct": true
+    },
+    "plumage_outgroup_resolves": {
+      "task": "plumage",
+      "correct": true
+    },
+    "plumage_three_way_tie": {
+      "task": "plumage",
+      "correct": true
+    },
+    "plumage_root_tie": {
+      "task": "plumage",
+      "correct": true
+    },
+    "plumage_unchanged": {
+      "task": "plumage",
+      "correct": true
+    },
+    "bell_correlations": {
+      "task": "clifford",
+      "correct": true
+    },
+    "bell_gates_reversed": {
+      "task": "clifford",
+      "correct": true
+    },
+    "phase_ghz": {
+      "task": "clifford",
+      "correct": true
+    },
+    "inverse_phase": {
+      "task": "clifford",
+      "correct": true
+    },
+    "vacuum_expectations": {
+      "task": "clifford",
+      "correct": true
+    }
+  },
+  "cases_sha256": "8ad024eb6a8ad7d37eb8f7314782e2eff83d3e7d4501592bcf93f1256adbaddc",
+  "weights_sha256": "b5fcc19f896e532dbe65d7d996059314d796498e661c1809fdf73162eb1852db"
+}

@@ -1,0 +1,23 @@
+{
+  "kernel": "ajayasaithambi/loopedwsp-maps-plumage-and-qubits",
+  "version": 1,
+  "submitted_utc": "2026-11-25T03:44:19.327043+00:00",
+  "requested_gpu": "NvidiaTeslaT4",
+  "requested_private": true,
+  "requested_internet": false,
+  "input_sha256": {
+    "experiment.py": "fcf9a0f0a101f88523d9feabc2647a5206ec8174900fa6327777d22c059c313e",
+    "protocol.json": "e64b181fe3303de4011aca1551fbf26456c48f7430b191372d6b9a4f00df3010",
+    "checks.json": "e4b5970881bddd33ac126da2a20cb1ac7cbcef47f8896e7626149f4a41331c76",
+    "contours.py": "13deafb2a2548b9cf6b0987b681459ddaabe64241080f891c6c510350f2c62e8",
+    "plumage.py": "531947ce537e26421e82d0ac963fd6a52dad7d24329ee65932e1b66f84bea709",
+    "clifford.py": "232dba05bfa5572f366c64a4bacc1ba6cf405c85631c0caa6fef7df9c405eadc",
+    "cases.json.gz": "8ad024eb6a8ad7d37eb8f7314782e2eff83d3e7d4501592bcf93f1256adbaddc",
+    "weights.npz": "b5fcc19f896e532dbe65d7d996059314d796498e661c1809fdf73162eb1852db",
+    "freeze.json": "09d031b42e909bf1c031a25715e871909a26e90612b8be5cc023aaf9b58fa55d"
+  },
+  "script_sha256": "c3dd1948d949083a9d90e0001fd10d91cfdb4c66ef22b285aa880d10e51d7853",
+  "script_bytes": 115447,
+  "timeout_seconds": 7200,
+  "url": "https://www.kaggle.com/code/ajayasaithambi/loopedwsp-maps-plumage-and-qubits/versions/1"
+}

@@ -1,0 +1,107 @@
+{
+  "kernel": "ajayasaithambi/loopedwsp-maps-plumage-and-qubits",
+  "version": 1,
+  "status": "COMPLETE",
+  "device": "Tesla T4",
+  "cuda": "13.0",
+  "pytorch": "2.11.0+cu130",
+  "server_private": true,
+  "server_internet_enabled": false,
+  "script_sha256": "c3dd1948d949083a9d90e0001fd10d91cfdb4c66ef22b285aa880d10e51d7853",
+  "remote_script_sha256": "c3dd1948d949083a9d90e0001fd10d91cfdb4c66ef22b285aa880d10e51d7853",
+  "source_match": "exact",
+  "input_files_verified": 9,
+  "output_sha256": {
+    "frontier-results.json": "0b067a3adaf407853bf9440f8388205d23dacda9e1651df213de4cc4037ce859",
+    "frontier-predictions.npz": "004ce361344ff87020296b6598e65e2b5a8c3ce6027d71afbe83b53b41ef229a"
+  },
+  "prediction_arrays": {
+    "check_three_adjacent_saddles": [
+      3
+    ],
+    "check_hilltop_loop": [
+      4
+    ],
+    "check_mean_misroutes_saddle": [
+      1
+    ],
+    "check_straight_across": [
+      2
+    ],
+    "contours_3": [
+      64,
+      9
+    ],
+    "contours_6": [
+      64,
+      36
+    ],
+    "contours_12": [
+      64,
+      144
+    ],
+    "contours_24": [
+      64,
+      576
+    ],
+    "check_plumage_outgroup_resolves": [
+      3
+    ],
+    "check_plumage_three_way_tie": [
+      2
+    ],
+    "check_plumage_root_tie": [
+      3
+    ],
+    "check_plumage_unchanged": [
+      1
+    ],
+    "plumage_4": [
+      64,
+      3
+    ],
+    "plumage_8": [
+      64,
+      7
+    ],
+    "plumage_12": [
+      64,
+      11
+    ],
+    "plumage_16": [
+      64,
+      15
+    ],
+    "check_bell_correlations": [
+      6
+    ],
+    "check_bell_gates_reversed": [
+      6
+    ],
+    "check_phase_ghz": [
+      6
+    ],
+    "check_inverse_phase": [
+      4
+    ],
+    "check_vacuum_expectations": [
+      5
+    ],
+    "clifford_4": [
+      64,
+      8
+    ],
+    "clifford_8": [
+      64,
+      8
+    ],
+    "clifford_16": [
+      64,
+      8
+    ],
+    "clifford_32": [
+      64,
+      8
+    ]
+  }
+}

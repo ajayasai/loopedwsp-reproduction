@@ -1,0 +1,355 @@
+{
+  "run": {
+    "kernel": "ajayasaithambi/loopedwsp-maps-plumage-and-qubits",
+    "version": 1,
+    "url": "https://www.kaggle.com/code/ajayasaithambi/loopedwsp-maps-plumage-and-qubits/versions/1",
+    "device": "Tesla T4",
+    "pytorch": "2.11.0+cu130",
+    "cuda": "13.0",
+    "status": "COMPLETE",
+    "source_match": "exact",
+    "submitted_sha256": "c3dd1948d949083a9d90e0001fd10d91cfdb4c66ef22b285aa880d10e51d7853",
+    "server_sha256": "c3dd1948d949083a9d90e0001fd10d91cfdb4c66ef22b285aa880d10e51d7853",
+    "input_sha256": {
+      "experiment.py": "fcf9a0f0a101f88523d9feabc2647a5206ec8174900fa6327777d22c059c313e",
+      "protocol.json": "e64b181fe3303de4011aca1551fbf26456c48f7430b191372d6b9a4f00df3010",
+      "checks.json": "e4b5970881bddd33ac126da2a20cb1ac7cbcef47f8896e7626149f4a41331c76",
+      "contours.py": "13deafb2a2548b9cf6b0987b681459ddaabe64241080f891c6c510350f2c62e8",
+      "plumage.py": "531947ce537e26421e82d0ac963fd6a52dad7d24329ee65932e1b66f84bea709",
+      "clifford.py": "232dba05bfa5572f366c64a4bacc1ba6cf405c85631c0caa6fef7df9c405eadc",
+      "cases.json.gz": "8ad024eb6a8ad7d37eb8f7314782e2eff83d3e7d4501592bcf93f1256adbaddc",
+      "weights.npz": "b5fcc19f896e532dbe65d7d996059314d796498e661c1809fdf73162eb1852db",
+      "freeze.json": "09d031b42e909bf1c031a25715e871909a26e90612b8be5cc023aaf9b58fa55d"
+    },
+    "output_sha256": {
+      "frontier-results.json": "0b067a3adaf407853bf9440f8388205d23dacda9e1651df213de4cc4037ce859",
+      "frontier-predictions.npz": "004ce361344ff87020296b6598e65e2b5a8c3ce6027d71afbe83b53b41ef229a"
+    }
+  },
+  "models": {
+    "contours": {
+      "parameters": 54,
+      "nonzero": 51
+    },
+    "plumage": {
+      "parameters": 5,
+      "nonzero": 5
+    },
+    "clifford": {
+      "parameters": 1025,
+      "nonzero": 969
+    }
+  },
+  "conditions": [
+    {
+      "task": "contours",
+      "size": 3,
+      "parameters": 54,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 576,
+      "correct_labels": 576,
+      "nonfinite": 0,
+      "seconds": [
+        0.007762710999998035,
+        0.007619024000007357,
+        0.008105395999962184
+      ],
+      "median_seconds": 0.007762710999998035
+    },
+    {
+      "task": "contours",
+      "size": 6,
+      "parameters": 54,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 2304,
+      "correct_labels": 2304,
+      "nonfinite": 0,
+      "seconds": [
+        0.007849824000004446,
+        0.008218639999995503,
+        0.008272488999978123
+      ],
+      "median_seconds": 0.008218639999995503
+    },
+    {
+      "task": "contours",
+      "size": 12,
+      "parameters": 54,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 9216,
+      "correct_labels": 9216,
+      "nonfinite": 0,
+      "seconds": [
+        0.008004545000005692,
+        0.010331192000023748,
+        0.00859146300001612
+      ],
+      "median_seconds": 0.00859146300001612
+    },
+    {
+      "task": "contours",
+      "size": 24,
+      "parameters": 54,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 36864,
+      "correct_labels": 36864,
+      "nonfinite": 0,
+      "seconds": [
+        0.008153154000012819,
+        0.007909387999973205,
+        0.007966798000040853
+      ],
+      "median_seconds": 0.007966798000040853
+    },
+    {
+      "task": "plumage",
+      "size": 4,
+      "parameters": 5,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 192,
+      "correct_labels": 192,
+      "nonfinite": 0,
+      "seconds": [
+        0.014331207999987328,
+        0.013709130999984609,
+        0.013716595999994752
+      ],
+      "median_seconds": 0.013716595999994752
+    },
+    {
+      "task": "plumage",
+      "size": 8,
+      "parameters": 5,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 448,
+      "correct_labels": 448,
+      "nonfinite": 0,
+      "seconds": [
+        0.02385713400002487,
+        0.022905646999959117,
+        0.022662483000033262
+      ],
+      "median_seconds": 0.022905646999959117
+    },
+    {
+      "task": "plumage",
+      "size": 12,
+      "parameters": 5,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 704,
+      "correct_labels": 704,
+      "nonfinite": 0,
+      "seconds": [
+        0.03241288899999972,
+        0.032735870000010436,
+        0.03227900900003533
+      ],
+      "median_seconds": 0.03241288899999972
+    },
+    {
+      "task": "plumage",
+      "size": 16,
+      "parameters": 5,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 960,
+      "correct_labels": 960,
+      "nonfinite": 0,
+      "seconds": [
+        0.04111447700000781,
+        0.039719291999972484,
+        0.041505996000012146
+      ],
+      "median_seconds": 0.04111447700000781
+    },
+    {
+      "task": "clifford",
+      "size": 4,
+      "parameters": 1025,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 512,
+      "correct_labels": 512,
+      "nonfinite": 0,
+      "seconds": [
+        0.011726836000036656,
+        0.011552610000023833,
+        0.0125136969999744
+      ],
+      "median_seconds": 0.011726836000036656
+    },
+    {
+      "task": "clifford",
+      "size": 8,
+      "parameters": 1025,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 512,
+      "correct_labels": 512,
+      "nonfinite": 0,
+      "seconds": [
+        0.019935350999958246,
+        0.01983724799998754,
+        0.020066890999999032
+      ],
+      "median_seconds": 0.019935350999958246
+    },
+    {
+      "task": "clifford",
+      "size": 16,
+      "parameters": 1025,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 512,
+      "correct_labels": 512,
+      "nonfinite": 0,
+      "seconds": [
+        0.033071200999984285,
+        0.032496036999987155,
+        0.03413900999998987
+      ],
+      "median_seconds": 0.033071200999984285
+    },
+    {
+      "task": "clifford",
+      "size": 32,
+      "parameters": 1025,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 512,
+      "correct_labels": 512,
+      "nonfinite": 0,
+      "seconds": [
+        0.08696466100002453,
+        0.0796650680000539,
+        0.06687643899999784
+      ],
+      "median_seconds": 0.0796650680000539
+    }
+  ],
+  "worked_checks": {
+    "three_adjacent_saddles": {
+      "task": "contours",
+      "correct": true,
+      "correct_labels": 3,
+      "labels": 3
+    },
+    "hilltop_loop": {
+      "task": "contours",
+      "correct": true,
+      "correct_labels": 4,
+      "labels": 4
+    },
+    "mean_misroutes_saddle": {
+      "task": "contours",
+      "correct": true,
+      "correct_labels": 1,
+      "labels": 1
+    },
+    "straight_across": {
+      "task": "contours",
+      "correct": true,
+      "correct_labels": 2,
+      "labels": 2
+    },
+    "plumage_outgroup_resolves": {
+      "task": "plumage",
+      "correct": true,
+      "correct_labels": 3,
+      "labels": 3
+    },
+    "plumage_three_way_tie": {
+      "task": "plumage",
+      "correct": true,
+      "correct_labels": 2,
+      "labels": 2
+    },
+    "plumage_root_tie": {
+      "task": "plumage",
+      "correct": true,
+      "correct_labels": 3,
+      "labels": 3
+    },
+    "plumage_unchanged": {
+      "task": "plumage",
+      "correct": true,
+      "correct_labels": 1,
+      "labels": 1
+    },
+    "bell_correlations": {
+      "task": "clifford",
+      "correct": true,
+      "correct_labels": 6,
+      "labels": 6
+    },
+    "bell_gates_reversed": {
+      "task": "clifford",
+      "correct": true,
+      "correct_labels": 6,
+      "labels": 6
+    },
+    "phase_ghz": {
+      "task": "clifford",
+      "correct": true,
+      "correct_labels": 6,
+      "labels": 6
+    },
+    "inverse_phase": {
+      "task": "clifford",
+      "correct": true,
+      "correct_labels": 4,
+      "labels": 4
+    },
+    "vacuum_expectations": {
+      "task": "clifford",
+      "correct": true,
+      "correct_labels": 5,
+      "labels": 5
+    }
+  },
+  "labels_by_category": {
+    "contours": {
+      "four_edge_cells": 13620,
+      "center_comparable": 12247,
+      "exact_saddles": 648,
+      "center_wrong": 374
+    },
+    "plumage": {
+      "outside_changes_set": 959,
+      "ambiguous_ancestors": 683,
+      "all_three_states": 209
+    },
+    "clifford": {
+      "random": 1024,
+      "positive": 757,
+      "definite_joint_random_marginal": 654,
+      "negative": 267
+    }
+  },
+  "correct_labels_by_category": {
+    "contours": {
+      "four_edge_cells": 13620,
+      "center_comparable": 12247,
+      "exact_saddles": 648,
+      "center_wrong": 374
+    },
+    "plumage": {
+      "outside_changes_set": 959,
+      "ambiguous_ancestors": 683,
+      "all_three_states": 209
+    },
+    "clifford": {
+      "random": 1024,
+      "positive": 757,
+      "definite_joint_random_marginal": 654,
+      "negative": 267
+    }
+  }
+}
