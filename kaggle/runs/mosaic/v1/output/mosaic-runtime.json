@@ -1,0 +1,23 @@
+{
+  "input_sha256": {
+    "experiment.py": "fa6d7ae4e33d5463d6753df63c33ab8f4ffc2b46d1892f62ebab42894f1d7d59",
+    "protocol.json": "17ab18235daf3ccf4e9a081c64231c6fe6e070ae425481effb853add834da748",
+    "checks.json": "bc9b4f418311adfe5b4fab3632f9b572e1467164859b61780e0b30243c145e67",
+    "quake.py": "81d6668e4685faffc1bd294d17aa6cd6e2695863366165b554006aee70b296b8",
+    "braille.py": "35ba8ec4aacea992d60d3bfd2b97f7922ee1729a03117ca89eaca62c01325ac3",
+    "bridge.py": "19d81e802a208a692116039b2a1cdf9507cacdbd79f2ac30622a1423a8dc6724",
+    "cases.json.gz": "3370d33736bc7b4ff3daf66f83b0d04ee3e4eb44d71563c7f7775659149564d3",
+    "context_pairs.json.gz": "327ec4f68b9b58d395cb3605a2197d5c38665208a5cbecc2042e2cb85b65d739",
+    "weights.npz": "541e3f24ace1ebd15a1133a554a2f95747f02ff15e61c83f2074234b88bc0d73",
+    "freeze.json": "05875660c276d4c4e9c73d28b9a95ce85a20725c9228aa729e9702cf8aa9b1c4"
+  },
+  "status": "complete",
+  "device": "Tesla T4",
+  "available_devices": 2,
+  "pytorch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "output_sha256": {
+    "mosaic-results.json": "5c868bfafb2f86782dfb3613a2a1e17191254fdd22cbae533fe51d30557ea19f",
+    "mosaic-predictions.npz": "a256dbe84b87b97c8628cdacd51eff2f50cb88ffe54e187ee2b25f6e575efb03"
+  }
+}

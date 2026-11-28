@@ -1,0 +1,121 @@
+{
+  "kernel": "ajayasaithambi/loopedwsp-quakes-braille-and-bridge",
+  "version": 1,
+  "status": "COMPLETE",
+  "device": "Tesla T4",
+  "cuda": "13.0",
+  "pytorch": "2.11.0+cu130",
+  "server_private": true,
+  "server_internet_enabled": false,
+  "script_sha256": "adabb163227d6b834d8c433ff75fa7115a1f39e6a3e26efd8c1712feeb039a34",
+  "remote_script_sha256": "adabb163227d6b834d8c433ff75fa7115a1f39e6a3e26efd8c1712feeb039a34",
+  "source_match": "exact",
+  "input_files_verified": 10,
+  "output_sha256": {
+    "mosaic-results.json": "5c868bfafb2f86782dfb3613a2a1e17191254fdd22cbae533fe51d30557ea19f",
+    "mosaic-predictions.npz": "a256dbe84b87b97c8628cdacd51eff2f50cb88ffe54e187ee2b25f6e575efb03"
+  },
+  "prediction_arrays": {
+    "check_third_station_resolves_source": [
+      49
+    ],
+    "check_third_station_missing": [
+      49
+    ],
+    "check_adjacent_station_conflict": [
+      49
+    ],
+    "check_diagonal_first_tick": [
+      49
+    ],
+    "quake_2": [
+      64,
+      49
+    ],
+    "quake_4": [
+      64,
+      49
+    ],
+    "quake_8": [
+      64,
+      49
+    ],
+    "quake_16": [
+      64,
+      49
+    ],
+    "check_room_label": [
+      12
+    ],
+    "check_three_readings": [
+      13
+    ],
+    "check_letters_end_number": [
+      10
+    ],
+    "check_long_numeric_span": [
+      15
+    ],
+    "braille_8": [
+      64,
+      8
+    ],
+    "braille_16": [
+      64,
+      16
+    ],
+    "braille_32": [
+      64,
+      32
+    ],
+    "braille_64": [
+      64,
+      64
+    ],
+    "check_low_spade_and_heart_trump": [
+      2
+    ],
+    "check_east_chooses_against_ns": [
+      1
+    ],
+    "check_follow_suit_before_ruffing": [
+      2
+    ],
+    "bridge_2": [
+      64,
+      2
+    ],
+    "bridge_4": [
+      64,
+      4
+    ],
+    "bridge_8": [
+      64,
+      8
+    ],
+    "bridge_16": [
+      64,
+      16
+    ],
+    "context_16": [
+      80,
+      2,
+      16
+    ],
+    "context_32": [
+      80,
+      2,
+      32
+    ],
+    "context_64": [
+      80,
+      2,
+      64
+    ],
+    "context_8": [
+      80,
+      2,
+      8
+    ]
+  }
+}

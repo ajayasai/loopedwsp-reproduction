@@ -102,6 +102,16 @@ All 384 records at sizes above development matched on a Kaggle Tesla T4. The exa
 
 The frozen models ran on a Kaggle Tesla T4. The worked examples let you separate the contributions to an overlapping mass peak, try a designation at the end of the calendar cycle, or see how one obstacle cuts the number of arm poses at a target from six to three. [Examples and input formats](prism/README.md) · [Per-size timings and isotope spectrum](results/prism/report.md) · [Independent audit](results/prism/audit.json) · [Pre-run snapshot](https://github.com/ajayasai/loopedwsp-reproduction/tree/a4ff7d6/prism)
 
+## Earthquake location, Braille reading and bridge endgames
+
+| Application | Stored FP32 coefficients | Exact held-out records | What the GPU test showed |
+| --- | ---: | ---: | --- |
+| Locate an earthquake on a synthetic 7×7 grid | 74 | 256/256 | Recovered every compatible location and origin tick in 107/107 ambiguous events, and identified 84/84 events for which no source fit the readings. |
+| Read an uncontracted English Braille label | 127 | 256/256 | Decoded lines up to 64 cells long. In a separate test, changing only the first indicator changed how the final dots should read. Both lines were exact in 320/320 pairs. |
+| Choose a lead in a two-trick contract bridge ending | 3 | 256/256 | Recovered the North–South trick count and all optimal opening cards in 1,920/1,920 deals, including 95/95 where leading the higher-ranked card would cost a trick. |
+
+The same weights matched 384/384 records at sizes beyond development on a Kaggle Tesla T4. The seismic model uses constant-speed travel times, the Braille model reads supplied dot patterns, and the bridge model sees all four hands. Larger bridge inputs add deals while keeping each ending at two tricks. [Try the three examples](mosaic/README.md) · [Measurements and seismic maps](results/mosaic/report.md) · [Independent audit](results/mosaic/audit.json) · [CPU/GPU comparison](results/mosaic/cpu-parity.json) · [Pre-run snapshot](https://github.com/ajayasai/loopedwsp-reproduction/tree/920767e/mosaic)
+
 ## When does looping help?
 
 On a Kaggle Tesla T4, the same frozen weights went from **155/960** exact published records after one pass to **381/960** after four and **960/960** at full depth in both FP32 and FP64. For 240 new pairs in which changing the first item flips the final answer, one pass got both answers correct on **0/240** pairs. Full depth and task-specific global feedforward models each got **240/240**. The global baselines use a causal prefix mean for inventory, pairwise overlap checks for bookings, and attention to the latest decisive sensor reading. They also passed all 1,440 records in FP16. All three original models encountered nonfinite intermediate values in FP16 at full depth.

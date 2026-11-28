@@ -1,0 +1,14 @@
+{
+  "id": "ajayasaithambi/loopedwsp-quakes-braille-and-bridge",
+  "id_no": 147989070,
+  "version": 1,
+  "title": "LoopedWSP Quakes Braille and Bridge",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "machine_shape": "NvidiaTeslaT4",
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:fc720c15545eb096a510e1f085b17fc118387a007599424d953a4f327b71cacf",
+  "downloaded_source_sha256": "adabb163227d6b834d8c433ff75fa7115a1f39e6a3e26efd8c1712feeb039a34",
+  "source_match": "exact"
+}

@@ -32,8 +32,16 @@ The seismic simulator uses rounded travel times at a constant wave speed on a fl
 
 Each held-out size has 64 seeded records per task. A separate test changes only the first cell in 320 pairs of Braille lines. Each pair ends with identical dots that should print as a digit in one line and a lowercase letter in the other. A reader with access only to the shared suffix receives identical evidence for both answers. [Pre-run public snapshot](https://github.com/ajayasai/loopedwsp-reproduction/tree/920767e/mosaic) · [Protocol and seeds](protocol.json) · [Model weights and corpus hashes](freeze.json)
 
-The frozen models matched 768/768 held-out records and 22,144/22,144 individual labels in a local CPU run. All 11 worked examples and 320/320 matched Braille pairs passed. [Per-size CPU results](../results/mosaic/cpu-results.json)
+The local CPU run matched the Kaggle Tesla T4 on all 27 prediction arrays. Together these cover 22,144 held-out labels, 251 labels across 11 worked examples and 19,200 labels in the 320 matched Braille pairs. [Per-size CPU results](../results/mosaic/cpu-results.json) · [CPU/GPU comparison and reproducible commands](../results/mosaic/cpu-parity.json)
 
-## Repeat the experiment
+## Inspect or reproduce the measurements
 
-Run `python mosaic/experiment.py dev` for the local development checks or `python mosaic/experiment.py gpu --output audit-output/mosaic-gpu` to evaluate the frozen test on a CUDA GPU. The original private Kaggle job requests a Tesla T4. [Kaggle submission](https://www.kaggle.com/code/ajayasaithambi/loopedwsp-quakes-braille-and-bridge/versions/1)
+The measured results include exact record and label counts, all 12 per-size GPU timings, the matched-pair scores and a plot showing which locations fit two and three station readings. The audit reconstructs target labels from the raw observations, dot strings and hands. It also checks the frozen files against the script Kaggle ran. [Results and figure](../results/mosaic/report.md) · [GPU predictions](../kaggle/runs/mosaic/v1/output/mosaic-predictions.npz) · [Independent audit](../results/mosaic/audit.json)
+
+```sh
+python mosaic/experiment.py dev
+python mosaic/audit.py kaggle/runs/mosaic/v1 audit-output/mosaic-audit.json
+python mosaic/report.py kaggle/runs/mosaic/v1 results/mosaic
+```
+
+The audit needs NumPy. The figure also needs Matplotlib. You can rerun the frozen test locally on a CUDA GPU with `python mosaic/experiment.py gpu --output audit-output/mosaic-gpu`. To repeat it on your own Kaggle account, use a fresh checkout, authenticate the Kaggle CLI and set `LOOPEDWSP_KAGGLE_OWNER` to your username. Run `python mosaic/submit_study.py --push`, then `python mosaic/submit_study.py --collect VERSION` after completion. The launcher writes into the numbered run directory in that checkout.

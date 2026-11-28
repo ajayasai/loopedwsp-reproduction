@@ -1,0 +1,260 @@
+{
+  "freeze_commit": "920767e09fb05036ab3d5b44e167ec046ce267b9",
+  "comparison": "Decoded predictions compared by array name, shape, dtype and every value. Each SHA-256 describes the identical C-order bytes on both devices.",
+  "cpu": {
+    "device": "Intel(R) Core(TM) Ultra 7 155U",
+    "backend": "CPU",
+    "environment": "Ubuntu on WSL 2",
+    "pytorch": "2.8.0+cu128",
+    "torch_threads": 4,
+    "archive": "audit-output/mosaic-cpu/mosaic-predictions.npz",
+    "archive_sha256": "a256dbe84b87b97c8628cdacd51eff2f50cb88ffe54e187ee2b25f6e575efb03"
+  },
+  "gpu": {
+    "device": "Tesla T4",
+    "pytorch": "2.11.0+cu130",
+    "cuda": "13.0",
+    "run": "https://www.kaggle.com/code/ajayasaithambi/loopedwsp-quakes-braille-and-bridge/versions/1",
+    "archive": "kaggle/runs/mosaic/v1/output/mosaic-predictions.npz",
+    "archive_sha256": "a256dbe84b87b97c8628cdacd51eff2f50cb88ffe54e187ee2b25f6e575efb03"
+  },
+  "counts": {
+    "arrays": 27,
+    "values": 41595,
+    "mismatches": 0,
+    "groups": {
+      "braille_context_pairs": {
+        "arrays": 4,
+        "values": 19200
+      },
+      "held_out": {
+        "arrays": 12,
+        "values": 22144
+      },
+      "worked_checks": {
+        "arrays": 11,
+        "values": 251
+      }
+    },
+    "held_out_exact_records": 768,
+    "held_out_records": 768,
+    "correct_worked_checks": 11,
+    "exact_context_pairs": 320,
+    "context_pairs": 320
+  },
+  "reproduce_from_repository_root": {
+    "evaluate_cpu": "python -c \"from pathlib import Path; import sys, torch; sys.path.insert(0, 'mosaic'); import experiment; torch.set_num_threads(4); torch.backends.cuda.matmul.allow_tf32 = False; torch.backends.cudnn.allow_tf32 = False; experiment.evaluate('test', Path('audit-output/mosaic-cpu'), torch.device('cpu'))\"",
+    "compare_archives": "python -c \"from pathlib import Path; import json, hashlib, numpy as np; r=json.loads(Path('results/mosaic/cpu-parity.json').read_bytes()); c=np.load(r['cpu']['archive'], allow_pickle=False); g=np.load(r['gpu']['archive'], allow_pickle=False); assert set(c.files)==set(g.files)==set(r['arrays']); assert all(c[k].dtype==g[k].dtype and c[k].dtype.str==r['arrays'][k]['dtype'] and list(c[k].shape)==r['arrays'][k]['shape'] and np.array_equal(c[k], g[k]) and hashlib.sha256(c[k].tobytes(order='C')).hexdigest()==r['arrays'][k]['sha256'] for k in c.files); print(len(c.files), 'matching arrays')\""
+  },
+  "arrays": {
+    "braille_16": {
+      "shape": [
+        64,
+        16
+      ],
+      "dtype": "<i2",
+      "sha256": "02616f3e94880e19ade6fba2be32820b0f1c3b2201409ad05877f5dca6fe4cfe"
+    },
+    "braille_32": {
+      "shape": [
+        64,
+        32
+      ],
+      "dtype": "<i2",
+      "sha256": "2fb649a845072895232bc5ccfea7aab3df21cf2dee3d082b9fe40a5156a9689f"
+    },
+    "braille_64": {
+      "shape": [
+        64,
+        64
+      ],
+      "dtype": "<i2",
+      "sha256": "ba2ac59ec55517473f4701df66f50fc0f723e4afe324380d2b234a8a3bb48d51"
+    },
+    "braille_8": {
+      "shape": [
+        64,
+        8
+      ],
+      "dtype": "<i2",
+      "sha256": "ab4e2162bce32423498c9d8180cd28836bc080e32b044f0325172dd2fe451af8"
+    },
+    "bridge_16": {
+      "shape": [
+        64,
+        16
+      ],
+      "dtype": "<i2",
+      "sha256": "a7f44235404c6d072c19a66e6af6ecfc567b08ae81a75de9e683b554e8682aa9"
+    },
+    "bridge_2": {
+      "shape": [
+        64,
+        2
+      ],
+      "dtype": "<i2",
+      "sha256": "5a5ba73e8ba49eed7ea9fabfb309775b4f97fce93306b5cca0af00e8f221363c"
+    },
+    "bridge_4": {
+      "shape": [
+        64,
+        4
+      ],
+      "dtype": "<i2",
+      "sha256": "da14e5bd59884eac2efb6a85ca37e5ae843e973e50fc902066c6e2874bac312f"
+    },
+    "bridge_8": {
+      "shape": [
+        64,
+        8
+      ],
+      "dtype": "<i2",
+      "sha256": "ab56d1be871028ce1344c25ed8df4a3c80fdb9e98c4a2ba90437710d9bdfec50"
+    },
+    "check_adjacent_station_conflict": {
+      "shape": [
+        49
+      ],
+      "dtype": "<i2",
+      "sha256": "30274f1a3e86d58c63c688e25ae4e34231a6f0cc07d6fc55c8b1ab154aff2fdf"
+    },
+    "check_diagonal_first_tick": {
+      "shape": [
+        49
+      ],
+      "dtype": "<i2",
+      "sha256": "816c274f74eadcb829a94d5b91d9c49fbede03f4defde62a841a8d11f1045e89"
+    },
+    "check_east_chooses_against_ns": {
+      "shape": [
+        1
+      ],
+      "dtype": "<i2",
+      "sha256": "ceb827ad3d3884fd4d50ae6099d6d50c09a21e72ebd309708e8b69d93df19e55"
+    },
+    "check_follow_suit_before_ruffing": {
+      "shape": [
+        2
+      ],
+      "dtype": "<i2",
+      "sha256": "45c1ba79a37a815631d2a94bffebd94733f5d1b2470fb4fa7298f98699470fdc"
+    },
+    "check_letters_end_number": {
+      "shape": [
+        10
+      ],
+      "dtype": "<i2",
+      "sha256": "cd71e5e09627c47aa0b8f8d1b3bb6c9dc2606e4b416be818e6f0243258630209"
+    },
+    "check_long_numeric_span": {
+      "shape": [
+        15
+      ],
+      "dtype": "<i2",
+      "sha256": "87e2e9e9044c09a1e5858c3f9678b5a892da54ee225811a37c551e897b0f2bea"
+    },
+    "check_low_spade_and_heart_trump": {
+      "shape": [
+        2
+      ],
+      "dtype": "<i2",
+      "sha256": "f534bf493d4884d79d11619895b8005fa670dbecf9bf8ee5106b46c6199d10be"
+    },
+    "check_room_label": {
+      "shape": [
+        12
+      ],
+      "dtype": "<i2",
+      "sha256": "fd9c37f300faf3d211714beedd10fd96cc8a10c0942b19c7f45ac48882cf7208"
+    },
+    "check_third_station_missing": {
+      "shape": [
+        49
+      ],
+      "dtype": "<i2",
+      "sha256": "aa14df238af41351d5e6893facabd05e407cf6552e33db610ed92c4a5e8f9531"
+    },
+    "check_third_station_resolves_source": {
+      "shape": [
+        49
+      ],
+      "dtype": "<i2",
+      "sha256": "0e35bbc40c361bfc672767d8dbfabb121d0558eea5a1b43c147a6c0d3ab6dd18"
+    },
+    "check_three_readings": {
+      "shape": [
+        13
+      ],
+      "dtype": "<i2",
+      "sha256": "55c4e59d3a857fa045c5f95c8b0ec6779f5ae9cfa0dc648ab0608e3984e88c24"
+    },
+    "context_16": {
+      "shape": [
+        80,
+        2,
+        16
+      ],
+      "dtype": "<i2",
+      "sha256": "794161719605891409956c03498f326f039d0b6b1a2a774a3e26cf9438658084"
+    },
+    "context_32": {
+      "shape": [
+        80,
+        2,
+        32
+      ],
+      "dtype": "<i2",
+      "sha256": "b9a6e8be3b566de977f36b7f11fd605dd90074d193533c2e3f8f32a23f419267"
+    },
+    "context_64": {
+      "shape": [
+        80,
+        2,
+        64
+      ],
+      "dtype": "<i2",
+      "sha256": "726f403585d3af9c19c19839cf17c49d6f23827d733681b920955ba9a6721685"
+    },
+    "context_8": {
+      "shape": [
+        80,
+        2,
+        8
+      ],
+      "dtype": "<i2",
+      "sha256": "71253b87d4850b33cb8ffbbbec8fd3e45769f8a8442268f8f136696b1d2517d0"
+    },
+    "quake_16": {
+      "shape": [
+        64,
+        49
+      ],
+      "dtype": "<i2",
+      "sha256": "b04b89ee221dd19f73b151a8c1969e7f6339d36257e4fe6c33f4cc764304e7a7"
+    },
+    "quake_2": {
+      "shape": [
+        64,
+        49
+      ],
+      "dtype": "<i2",
+      "sha256": "de213b299bb168597ae0cf4e2dd2ac3f356393bfe2933afebfe1f64fc7f56168"
+    },
+    "quake_4": {
+      "shape": [
+        64,
+        49
+      ],
+      "dtype": "<i2",
+      "sha256": "f65293c51adf39181aaf7ca13bcf8e581a506902ed6e0db4afcf2bdcc9db95ac"
+    },
+    "quake_8": {
+      "shape": [
+        64,
+        49
+      ],
+      "dtype": "<i2",
+      "sha256": "2027353909ccbcd924735ea38bbb1dd9670c6fd3ee3f7acb128b666f566dbc77"
+    }
+  }
+}
