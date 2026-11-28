@@ -1,0 +1,393 @@
+[
+  {
+    "task": "isotopes",
+    "name": "chlorine_doublet",
+    "input": {
+      "ions": [
+        {
+          "mz": 400,
+          "cl": 1,
+          "br": 0,
+          "abundance": 1
+        }
+      ]
+    },
+    "labels": [
+      48,
+      0,
+      16,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "task": "isotopes",
+    "name": "bromine_doublet",
+    "input": {
+      "ions": [
+        {
+          "mz": 401,
+          "cl": 0,
+          "br": 1,
+          "abundance": 1
+        }
+      ]
+    },
+    "labels": [
+      0,
+      32,
+      0,
+      32,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "task": "isotopes",
+    "name": "overlapping_envelopes",
+    "input": {
+      "ions": [
+        {
+          "mz": 400,
+          "cl": 2,
+          "br": 0,
+          "abundance": 1
+        },
+        {
+          "mz": 401,
+          "cl": 0,
+          "br": 0,
+          "abundance": 1
+        },
+        {
+          "mz": 402,
+          "cl": 0,
+          "br": 1,
+          "abundance": 2
+        }
+      ]
+    },
+    "labels": [
+      36,
+      64,
+      88,
+      0,
+      68,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "task": "isotopes",
+    "name": "mixed_halogen_upper_edge",
+    "input": {
+      "ions": [
+        {
+          "mz": 409,
+          "cl": 2,
+          "br": 1,
+          "abundance": 1
+        }
+      ]
+    },
+    "labels": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      18,
+      0,
+      30,
+      0,
+      14,
+      0,
+      2
+    ]
+  },
+  {
+    "task": "calendar_round",
+    "name": "origin_mismatch_and_last_day",
+    "input": {
+      "dates": [
+        {
+          "number": 4,
+          "name": "Ajaw",
+          "day": 8,
+          "month": "Kumk'u"
+        },
+        {
+          "number": 4,
+          "name": "Ajaw",
+          "day": 9,
+          "month": "Kumk'u"
+        },
+        {
+          "number": 3,
+          "name": "Kawak",
+          "day": 7,
+          "month": "Kumk'u"
+        }
+      ]
+    },
+    "labels": [
+      0,
+      0,
+      365,
+      365,
+      51,
+      364
+    ]
+  },
+  {
+    "task": "calendar_round",
+    "name": "short_month_and_new_year",
+    "input": {
+      "dates": [
+        {
+          "number": 2,
+          "name": "Chuwen",
+          "day": 19,
+          "month": "Kumk'u"
+        },
+        {
+          "number": 3,
+          "name": "Eb'",
+          "day": 0,
+          "month": "Wayeb'"
+        },
+        {
+          "number": 7,
+          "name": "Kib'",
+          "day": 4,
+          "month": "Wayeb'"
+        },
+        {
+          "number": 8,
+          "name": "Kab'an",
+          "day": 0,
+          "month": "Pop"
+        }
+      ]
+    },
+    "labels": [
+      0,
+      11,
+      0,
+      12,
+      0,
+      16,
+      0,
+      17
+    ]
+  },
+  {
+    "task": "calendar_round",
+    "name": "individual_cycle_returns",
+    "input": {
+      "dates": [
+        {
+          "number": 4,
+          "name": "Ajaw",
+          "day": 3,
+          "month": "Mak"
+        },
+        {
+          "number": 5,
+          "name": "Chicchan",
+          "day": 8,
+          "month": "Kumk'u"
+        }
+      ]
+    },
+    "labels": [
+      0,
+      260,
+      1,
+      0
+    ]
+  },
+  {
+    "task": "arm",
+    "name": "arm_open_board",
+    "input": {
+      "lengths": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "obstacles": [],
+      "targets": [
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    "labels": [
+      6,
+      16,
+      1,
+      40,
+      0,
+      81
+    ]
+  },
+  {
+    "task": "arm",
+    "name": "arm_block_east",
+    "input": {
+      "lengths": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "obstacles": [
+        [
+          1,
+          0
+        ]
+      ],
+      "targets": [
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    "labels": [
+      3,
+      16,
+      0,
+      81,
+      0,
+      81
+    ]
+  },
+  {
+    "task": "arm",
+    "name": "arm_segment_interior",
+    "input": {
+      "lengths": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "obstacles": [
+        [
+          1,
+          0
+        ]
+      ],
+      "targets": [
+        [
+          8,
+          0
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          -2,
+          4
+        ]
+      ]
+    },
+    "labels": [
+      0,
+      81,
+      3,
+      16,
+      0,
+      81
+    ]
+  },
+  {
+    "task": "arm",
+    "name": "arm_blocked_base",
+    "input": {
+      "lengths": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "obstacles": [
+        [
+          0,
+          0
+        ]
+      ],
+      "targets": [
+        [
+          4,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    "labels": [
+      0,
+      81,
+      0,
+      81
+    ]
+  }
+]

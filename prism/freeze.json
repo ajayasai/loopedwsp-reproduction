@@ -1,0 +1,105 @@
+{
+  "models": {
+    "isotopes": {
+      "parameters": 3,
+      "tensors": {
+        "heavy_keys": {
+          "shape": [
+            3
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 2,
+          "sha256": "34a8294d001afe4f80d3efd1d78d64ea2757bbf72bd333ab0e887df4e0879427"
+        }
+      }
+    },
+    "calendar_round": {
+      "parameters": 1292,
+      "tensors": {
+        "tzolkin": {
+          "shape": [
+            260,
+            4
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 1026,
+          "sha256": "d37d832d1510145da0f3f09bf7df91480cf5d7bb65db6a3aa0582e8c7e1a405f"
+        },
+        "haab": {
+          "shape": [
+            3
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 3,
+          "sha256": "3b5b4a0e066533dc4b7362c7b2a1a1b068775870bdf8452d1b370566b5931c13"
+        },
+        "sharpness": {
+          "shape": [],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 1,
+          "sha256": "8568e5a1fe347c4aa003af9f44d1f42d104b5e40ea0502e869357877af7fb537"
+        },
+        "year_memory": {
+          "shape": [
+            124,
+            2
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 245,
+          "sha256": "538ad73771254f559d4cd7d2a6d9145893d9162be3be8fc925c01aba3feac8b7"
+        }
+      }
+    },
+    "arm": {
+      "parameters": 9,
+      "tensors": {
+        "directions": {
+          "shape": [
+            4,
+            2
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 4,
+          "sha256": "7fbcd6edece2eacafbe7927f8a17247bd7796dfb45c2f492b06df1af6a57cb11"
+        },
+        "sharpness": {
+          "shape": [],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 1,
+          "sha256": "ad286c64373644140ff927b256b8415467b5d27645ff997010b15519d022631b"
+        }
+      }
+    }
+  },
+  "cases_sha256": "e8e4e40b126e320737a182837337f5fda231cc607d73c95d44e6343b6cfd50a9",
+  "weights_sha256": "d55e60b699f92944d294d31c74c9c829a671dfb73c819e7d5a09a473ede3b1a1",
+  "protocol_sha256": "cb6ec26f6395ea4783ae666f19b0c457886e4e2ec66fd94e7ddcf63d1b717736",
+  "checks_sha256": "3401d6052a62d11bcad0a2c7e12933d013c96078f87cdcea7d79340c1182a3e4",
+  "cohorts": {
+    "dev/isotopes/2": "e32c8d6a97c70f3c112b0c841afd03d6caf907a3db7e6cbbbab6346af77eb277",
+    "dev/isotopes/4": "b04f560d8052102a53261805b97c7c27946d999835b21acb0bdfdf8ef51a510f",
+    "test/isotopes/2": "aba41af9ebfbf734f48fed5d88523e91f52510faefb90392ac5f358dc619fe30",
+    "test/isotopes/4": "aed97cd1ab46773a53565092f16ea93628cc6bfb9bd7cdf232aa3633d14f763f",
+    "test/isotopes/8": "1b3104de82d313bbc0f3539f03f47bf02772167382febb865b04d669fc3ddd4d",
+    "test/isotopes/16": "20798391da41eb2d0c5aec58d9c3358f419f931729af0a6b2ca88ea7ea88bed4",
+    "dev/calendar_round/2": "c2f2e54af2ca5e13b50fe95d3cb78fd73a1748b05a50d68382eadec55c028624",
+    "dev/calendar_round/4": "46b856663f888249241520db7fa66e02c63d19b224cbfb925a88eb758abb0b42",
+    "test/calendar_round/2": "5ea415243ded309bac8b4b8b0326c5cc8b194ae72d47b2b09b7cd23d030d8224",
+    "test/calendar_round/4": "be1a8f3f0b4a6c2df6ef9e13a7ea0abb68409f778614a80403fe1007e756c68a",
+    "test/calendar_round/8": "20db2fd75d99337d7b1ebf97f965717c5b133a43a3fc1a95d2cf8d35a444365e",
+    "test/calendar_round/16": "32cf73779675f5116747cf14a89d0b5bec20dd80ac937e84b4488481482934c0",
+    "dev/arm/2": "8904d811351aab44e6125eb07d3b2f1424c79870b304428d2e4b5143fd20e35b",
+    "dev/arm/4": "13c7ca92f77b52046ef5a3e479ea00c7fea126038d35ccaf5c5897e9e8f9c948",
+    "test/arm/2": "8ea8621ce7cf30483f8c5c93a57503459e44501fe9c198a501bdc3a8923db03c",
+    "test/arm/4": "1da0977fbfe970ffaf2950604cb43e2fa41969d8b0ae2975580b4899275c311b",
+    "test/arm/8": "dceb20191a225579630b393d7855eb445efb3d2c9b17f34c58cd78568d88f722",
+    "test/arm/16": "83c366fc47e74a2e0ef4d71d51b7def1e3fa1759cb1d460c26e4ce65004b79f4"
+  }
+}

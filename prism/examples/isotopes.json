@@ -1,0 +1,22 @@
+{
+  "ions": [
+    {
+      "mz": 400,
+      "cl": 2,
+      "br": 0,
+      "abundance": 1
+    },
+    {
+      "mz": 401,
+      "cl": 0,
+      "br": 0,
+      "abundance": 1
+    },
+    {
+      "mz": 402,
+      "cl": 0,
+      "br": 1,
+      "abundance": 2
+    }
+  ]
+}

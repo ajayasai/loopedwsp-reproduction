@@ -1,0 +1,17 @@
+{
+  "study": "prism",
+  "seed": 2026112801,
+  "tasks": {
+    "isotopes": {"classes": 3073, "size_unit": "ion components per mixture", "dev": [2,4], "test": [2,4,8,16]},
+    "calendar_round": {"classes": 366, "size_unit": "date pairs per record", "dev": [2,4], "test": [2,4,8,16]},
+    "arm": {"classes": 82, "size_unit": "target positions per scene", "dev": [2,4], "test": [2,4,8,16]}
+  },
+  "per_size": {"dev": 8, "test": 64},
+  "batch": 8,
+  "repeats": 3,
+  "precision": "FP32 with TF32 disabled",
+  "accuracy": "Count a record only if all 16 intensity bins, all full Calendar Round offsets or incompatibility decisions, or all pose counts and first witnesses match. Score each date or target as one answer requiring both stored labels.",
+  "additional_checks": "Named examples are frozen before GPU submission, evaluated separately and excluded from test accuracy and timing.",
+  "exhaustive_calendar": "After the sampled test, evaluate all 13 x 20 x 365 individually well-formed Tzolk'in and Haab' pairs. Iterate by Tzolk'in number, day name, Haab' month, then day within the month. Group 25 queries per record. Save both output labels for every pair as calendar_all. Report this sweep separately from all sampled totals and timings.",
+  "timing": "Median of three synchronized forward sweeps over 64 GPU-resident records in batches of eight after a warm-up batch. Encoding, transfers, decoding and scoring occur outside the timer."
+}
