@@ -1,0 +1,256 @@
+{
+  "split": "test",
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "device": "Tesla T4",
+  "conditions": [
+    {
+      "task": "isotopes",
+      "size": 2,
+      "parameters": 3,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 1024,
+      "correct_labels": 1024,
+      "nonfinite": 0,
+      "seconds": [
+        0.008817765000003419,
+        0.0092824409999821,
+        0.00940076999998496
+      ],
+      "median_seconds": 0.0092824409999821
+    },
+    {
+      "task": "isotopes",
+      "size": 4,
+      "parameters": 3,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 1024,
+      "correct_labels": 1024,
+      "nonfinite": 0,
+      "seconds": [
+        0.009250119000000723,
+        0.009452124999995704,
+        0.009828583999990315
+      ],
+      "median_seconds": 0.009452124999995704
+    },
+    {
+      "task": "isotopes",
+      "size": 8,
+      "parameters": 3,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 1024,
+      "correct_labels": 1024,
+      "nonfinite": 0,
+      "seconds": [
+        0.009214809999974705,
+        0.009737491000009868,
+        0.009078853999994863
+      ],
+      "median_seconds": 0.009214809999974705
+    },
+    {
+      "task": "isotopes",
+      "size": 16,
+      "parameters": 3,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 1024,
+      "correct_labels": 1024,
+      "nonfinite": 0,
+      "seconds": [
+        0.008294637999995302,
+        0.00877322400000935,
+        0.008832767999990665
+      ],
+      "median_seconds": 0.00877322400000935
+    },
+    {
+      "task": "calendar_round",
+      "size": 2,
+      "parameters": 1292,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 256,
+      "correct_labels": 256,
+      "nonfinite": 0,
+      "seconds": [
+        0.005885148999993817,
+        0.005777338000001464,
+        0.006157512999976689
+      ],
+      "median_seconds": 0.005885148999993817
+    },
+    {
+      "task": "calendar_round",
+      "size": 4,
+      "parameters": 1292,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 512,
+      "correct_labels": 512,
+      "nonfinite": 0,
+      "seconds": [
+        0.006747647999986839,
+        0.007293258999993668,
+        0.007687140000001591
+      ],
+      "median_seconds": 0.007293258999993668
+    },
+    {
+      "task": "calendar_round",
+      "size": 8,
+      "parameters": 1292,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 1024,
+      "correct_labels": 1024,
+      "nonfinite": 0,
+      "seconds": [
+        0.0059666029999903,
+        0.006225542000009909,
+        0.006365321000004087
+      ],
+      "median_seconds": 0.006225542000009909
+    },
+    {
+      "task": "calendar_round",
+      "size": 16,
+      "parameters": 1292,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 2048,
+      "correct_labels": 2048,
+      "nonfinite": 0,
+      "seconds": [
+        0.006705902000021524,
+        0.006231982000002745,
+        0.0062796219999938785
+      ],
+      "median_seconds": 0.0062796219999938785
+    },
+    {
+      "task": "arm",
+      "size": 2,
+      "parameters": 9,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 256,
+      "correct_labels": 256,
+      "nonfinite": 0,
+      "seconds": [
+        0.009979495999999699,
+        0.009878211999989617,
+        0.010608085999990635
+      ],
+      "median_seconds": 0.009979495999999699
+    },
+    {
+      "task": "arm",
+      "size": 4,
+      "parameters": 9,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 512,
+      "correct_labels": 512,
+      "nonfinite": 0,
+      "seconds": [
+        0.010086395999991282,
+        0.011517012000012983,
+        0.010344786000018757
+      ],
+      "median_seconds": 0.010344786000018757
+    },
+    {
+      "task": "arm",
+      "size": 8,
+      "parameters": 9,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 1024,
+      "correct_labels": 1024,
+      "nonfinite": 0,
+      "seconds": [
+        0.010836422000011225,
+        0.010296887999999171,
+        0.010441477000000532
+      ],
+      "median_seconds": 0.010441477000000532
+    },
+    {
+      "task": "arm",
+      "size": 16,
+      "parameters": 9,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 2048,
+      "correct_labels": 2048,
+      "nonfinite": 0,
+      "seconds": [
+        0.010502322999997205,
+        0.01042740100001538,
+        0.010350325000018756
+      ],
+      "median_seconds": 0.01042740100001538
+    }
+  ],
+  "checks": {
+    "chlorine_doublet": {
+      "task": "isotopes",
+      "correct": true
+    },
+    "bromine_doublet": {
+      "task": "isotopes",
+      "correct": true
+    },
+    "overlapping_envelopes": {
+      "task": "isotopes",
+      "correct": true
+    },
+    "mixed_halogen_upper_edge": {
+      "task": "isotopes",
+      "correct": true
+    },
+    "origin_mismatch_and_last_day": {
+      "task": "calendar_round",
+      "correct": true
+    },
+    "short_month_and_new_year": {
+      "task": "calendar_round",
+      "correct": true
+    },
+    "individual_cycle_returns": {
+      "task": "calendar_round",
+      "correct": true
+    },
+    "arm_open_board": {
+      "task": "arm",
+      "correct": true
+    },
+    "arm_block_east": {
+      "task": "arm",
+      "correct": true
+    },
+    "arm_segment_interior": {
+      "task": "arm",
+      "correct": true
+    },
+    "arm_blocked_base": {
+      "task": "arm",
+      "correct": true
+    }
+  },
+  "cases_sha256": "e8e4e40b126e320737a182837337f5fda231cc607d73c95d44e6343b6cfd50a9",
+  "weights_sha256": "d55e60b699f92944d294d31c74c9c829a671dfb73c819e7d5a09a473ede3b1a1",
+  "exhaustive_calendar": {
+    "pairs": 94900,
+    "exact": 94900,
+    "compatible": 18980,
+    "compatible_exact": 18980,
+    "incompatible": 75920,
+    "incompatible_exact": 75920
+  }
+}

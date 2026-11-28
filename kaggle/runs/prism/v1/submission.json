@@ -1,0 +1,23 @@
+{
+  "kernel": "ajayasaithambi/loopedwsp-isotopes-calendars-and-arms",
+  "version": 1,
+  "submitted_utc": "2026-11-28T04:13:27.497497+00:00",
+  "requested_gpu": "NvidiaTeslaT4",
+  "requested_private": true,
+  "requested_internet": false,
+  "input_sha256": {
+    "experiment.py": "cbb8669d0586f2806a418a113a7bd3d602f7af6b6636d757928afd156d971bf6",
+    "protocol.json": "cb6ec26f6395ea4783ae666f19b0c457886e4e2ec66fd94e7ddcf63d1b717736",
+    "checks.json": "3401d6052a62d11bcad0a2c7e12933d013c96078f87cdcea7d79340c1182a3e4",
+    "isotopes.py": "105497332369e0ff7a643aef821a8f9fbf1f2735c4a8725a0cb10ac50d687a80",
+    "calendar_round.py": "c11a5515aeeb97af238fb6597e4618b1dcf377a33e4485a895e461a3ccec1694",
+    "arm.py": "aca1c922c164bf961c524a267090005c5805e8424fc075e3b61e20da639c4a07",
+    "cases.json.gz": "e8e4e40b126e320737a182837337f5fda231cc607d73c95d44e6343b6cfd50a9",
+    "weights.npz": "d55e60b699f92944d294d31c74c9c829a671dfb73c819e7d5a09a473ede3b1a1",
+    "freeze.json": "b75f971bd684f368f3d55da6ef45303b77154e7731120e4aadd3220c709690f4"
+  },
+  "script_sha256": "a0f4530e4d143591505b6a7367091d14d23afb8b75047c040dc2e09cf108e407",
+  "script_bytes": 70002,
+  "timeout_seconds": 7200,
+  "url": "https://www.kaggle.com/code/ajayasaithambi/loopedwsp-isotopes-calendars-and-arms/versions/1"
+}

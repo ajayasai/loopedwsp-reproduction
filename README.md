@@ -1,6 +1,6 @@
 # Looped weight-space programming on Kaggle
 
-A hand-written transformer matched **1,000 of 1,000 official Maze-Hard test grids**, including the benchmark’s choice between equally short paths. This repository contains the analytic weights, scoring code and GPU results for a Codex-assisted reproduction of selected LoopedWSP experiments. We also built 21 application models that run locally, from detecting booking conflicts to predicting correlations in an ideal quantum circuit. [Maze test result](results/maze/test.json) · [Operational applications](results/applications/report.md) · [Creative applications](creative/README.md) · [Workshop applications](workshop/README.md) · [Field studies](fieldlab/README.md) · [Linguistics, crystallography and auctions](crossfield/README.md) · [Tree rings, weaving and knots](atlas/README.md) · [Maps, plumage and quantum circuits](frontier/README.md)
+A hand-written transformer matched **1,000 of 1,000 official Maze-Hard test grids**, including the benchmark’s choice between equally short paths. This repository contains the analytic weights, scoring code and GPU results for a Codex-assisted reproduction of selected LoopedWSP experiments. We also built 24 application models that run locally, from detecting booking conflicts to counting the ways a robot arm can reach a target. [Maze test result](results/maze/test.json) · [Operational applications](results/applications/report.md) · [Creative applications](creative/README.md) · [Workshop applications](workshop/README.md) · [Field studies](fieldlab/README.md) · [Linguistics, crystallography and auctions](crossfield/README.md) · [Tree rings, weaving and knots](atlas/README.md) · [Maps, plumage and quantum circuits](frontier/README.md) · [Isotopes, calendrics and robotics](prism/README.md)
 
 The original LoopedWSP study asked Claude to write the weights of a transformer that solves a task by repeatedly applying the same block. For this reproduction, Codex had access to the published method and task briefs. We constructed fresh tensors from the rules and ran frozen models on Kaggle Tesla T4 hardware. These experiments measure the resulting models’ accuracy. Measuring unaided discovery, authoring cost, or performance relative to training would require separate experiments. [Original study](https://mbzuai-oryx.github.io/LoopedWSP/) · [Authors’ repository](https://github.com/mbzuai-oryx/LoopedWSP)
 
@@ -91,6 +91,16 @@ The three frozen models matched all 384 records at sizes above their development
 | Quantum information | 1,025 | 256/256 | Predicted all 2,048 measurement expectations for ideal three-qubit circuits, including 654 joint outcomes with a definite sign and at least one individually random factor. |
 
 All 384 records at sizes above development matched on a Kaggle Tesla T4. The examples let you change a map elevation, a bird’s observed plumage, or the order of two quantum gates and see the resulting predictions. [Run the three examples](frontier/README.md) · [Per-size GPU results and contour figure](results/frontier/report.md) · [Independent audit](results/frontier/audit.json) · [Pre-run snapshot](https://github.com/ajayasai/loopedwsp-reproduction/tree/c2d04db/frontier)
+
+## Isotope spectra, Maya calendrics and tabletop robotics
+
+| Application | Stored FP32 coefficients | Exact held-out records | What the model recovered |
+| --- | ---: | ---: | --- |
+| Analytical chemistry | 3 | 256/256 | Predicted all 4,096 mass-bin intensities for idealized chlorine and bromine mixtures, including 771 peaks with contributions from different parent masses. |
+| Maya Calendar Round | 1,292 | 256/256 | Returned the full offset or identified an impossible pairing for 1,920 date requests. In a separate exhaustive sweep it resolved all 18,980 compatible pairs and rejected all 75,920 incompatible pairs. |
+| Discrete robot-arm poses | 9 | 256/256 | Gave both the number of collision-free poses and the first valid joint configuration for 1,920 targets. For 339 targets, placing obstacles removed every pose that worked on an empty board. |
+
+The frozen models ran on a Kaggle Tesla T4. The worked examples let you separate the contributions to an overlapping mass peak, try a designation at the end of the calendar cycle, or see how one obstacle cuts the number of arm poses at a target from six to three. [Examples and input formats](prism/README.md) · [Per-size timings and isotope spectrum](results/prism/report.md) · [Independent audit](results/prism/audit.json) · [Pre-run snapshot](https://github.com/ajayasai/loopedwsp-reproduction/tree/a4ff7d6/prism)
 
 ## When does looping help?
 

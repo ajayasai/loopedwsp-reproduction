@@ -1,0 +1,105 @@
+{
+  "kernel": "ajayasaithambi/loopedwsp-isotopes-calendars-and-arms",
+  "version": 1,
+  "status": "COMPLETE",
+  "device": "Tesla T4",
+  "cuda": "13.0",
+  "pytorch": "2.11.0+cu130",
+  "server_private": true,
+  "server_internet_enabled": false,
+  "script_sha256": "a0f4530e4d143591505b6a7367091d14d23afb8b75047c040dc2e09cf108e407",
+  "remote_script_sha256": "a0f4530e4d143591505b6a7367091d14d23afb8b75047c040dc2e09cf108e407",
+  "source_match": "exact",
+  "input_files_verified": 9,
+  "output_sha256": {
+    "prism-results.json": "2a4678cc4ecb245bbff8787ef2f1e067d3756c59552937b14f2e3fe848e44c3c",
+    "prism-predictions.npz": "6632b9a7a95730bfe9a8916f636bd7a850ede0d677ff7b30fdfe55984e680862"
+  },
+  "prediction_arrays": {
+    "check_chlorine_doublet": [
+      16
+    ],
+    "check_bromine_doublet": [
+      16
+    ],
+    "check_overlapping_envelopes": [
+      16
+    ],
+    "check_mixed_halogen_upper_edge": [
+      16
+    ],
+    "isotopes_2": [
+      64,
+      16
+    ],
+    "isotopes_4": [
+      64,
+      16
+    ],
+    "isotopes_8": [
+      64,
+      16
+    ],
+    "isotopes_16": [
+      64,
+      16
+    ],
+    "check_origin_mismatch_and_last_day": [
+      6
+    ],
+    "check_short_month_and_new_year": [
+      8
+    ],
+    "check_individual_cycle_returns": [
+      4
+    ],
+    "calendar_round_2": [
+      64,
+      4
+    ],
+    "calendar_round_4": [
+      64,
+      8
+    ],
+    "calendar_round_8": [
+      64,
+      16
+    ],
+    "calendar_round_16": [
+      64,
+      32
+    ],
+    "check_arm_open_board": [
+      6
+    ],
+    "check_arm_block_east": [
+      6
+    ],
+    "check_arm_segment_interior": [
+      6
+    ],
+    "check_arm_blocked_base": [
+      4
+    ],
+    "arm_2": [
+      64,
+      4
+    ],
+    "arm_4": [
+      64,
+      8
+    ],
+    "arm_8": [
+      64,
+      16
+    ],
+    "arm_16": [
+      64,
+      32
+    ],
+    "calendar_all": [
+      94900,
+      2
+    ]
+  }
+}

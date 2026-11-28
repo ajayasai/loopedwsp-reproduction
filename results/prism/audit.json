@@ -1,0 +1,375 @@
+{
+  "run": {
+    "kernel": "ajayasaithambi/loopedwsp-isotopes-calendars-and-arms",
+    "version": 1,
+    "url": "https://www.kaggle.com/code/ajayasaithambi/loopedwsp-isotopes-calendars-and-arms/versions/1",
+    "device": "Tesla T4",
+    "pytorch": "2.11.0+cu130",
+    "cuda": "13.0",
+    "status": "COMPLETE",
+    "source_match": "exact",
+    "submitted_sha256": "a0f4530e4d143591505b6a7367091d14d23afb8b75047c040dc2e09cf108e407",
+    "server_sha256": "a0f4530e4d143591505b6a7367091d14d23afb8b75047c040dc2e09cf108e407",
+    "input_sha256": {
+      "experiment.py": "cbb8669d0586f2806a418a113a7bd3d602f7af6b6636d757928afd156d971bf6",
+      "protocol.json": "cb6ec26f6395ea4783ae666f19b0c457886e4e2ec66fd94e7ddcf63d1b717736",
+      "checks.json": "3401d6052a62d11bcad0a2c7e12933d013c96078f87cdcea7d79340c1182a3e4",
+      "isotopes.py": "105497332369e0ff7a643aef821a8f9fbf1f2735c4a8725a0cb10ac50d687a80",
+      "calendar_round.py": "c11a5515aeeb97af238fb6597e4618b1dcf377a33e4485a895e461a3ccec1694",
+      "arm.py": "aca1c922c164bf961c524a267090005c5805e8424fc075e3b61e20da639c4a07",
+      "cases.json.gz": "e8e4e40b126e320737a182837337f5fda231cc607d73c95d44e6343b6cfd50a9",
+      "weights.npz": "d55e60b699f92944d294d31c74c9c829a671dfb73c819e7d5a09a473ede3b1a1",
+      "freeze.json": "b75f971bd684f368f3d55da6ef45303b77154e7731120e4aadd3220c709690f4"
+    },
+    "output_sha256": {
+      "prism-results.json": "2a4678cc4ecb245bbff8787ef2f1e067d3756c59552937b14f2e3fe848e44c3c",
+      "prism-predictions.npz": "6632b9a7a95730bfe9a8916f636bd7a850ede0d677ff7b30fdfe55984e680862"
+    }
+  },
+  "exhaustive_calendar": {
+    "pairs": 94900,
+    "exact": 94900,
+    "compatible": 18980,
+    "compatible_exact": 18980,
+    "incompatible": 75920,
+    "incompatible_exact": 75920
+  },
+  "models": {
+    "isotopes": {
+      "parameters": 3,
+      "nonzero": 2
+    },
+    "calendar_round": {
+      "parameters": 1292,
+      "nonzero": 1275
+    },
+    "arm": {
+      "parameters": 9,
+      "nonzero": 5
+    }
+  },
+  "conditions": [
+    {
+      "task": "isotopes",
+      "size": 2,
+      "parameters": 3,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 1024,
+      "correct_labels": 1024,
+      "nonfinite": 0,
+      "seconds": [
+        0.008817765000003419,
+        0.0092824409999821,
+        0.00940076999998496
+      ],
+      "median_seconds": 0.0092824409999821,
+      "answers": 1024,
+      "correct_answers": 1024
+    },
+    {
+      "task": "isotopes",
+      "size": 4,
+      "parameters": 3,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 1024,
+      "correct_labels": 1024,
+      "nonfinite": 0,
+      "seconds": [
+        0.009250119000000723,
+        0.009452124999995704,
+        0.009828583999990315
+      ],
+      "median_seconds": 0.009452124999995704,
+      "answers": 1024,
+      "correct_answers": 1024
+    },
+    {
+      "task": "isotopes",
+      "size": 8,
+      "parameters": 3,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 1024,
+      "correct_labels": 1024,
+      "nonfinite": 0,
+      "seconds": [
+        0.009214809999974705,
+        0.009737491000009868,
+        0.009078853999994863
+      ],
+      "median_seconds": 0.009214809999974705,
+      "answers": 1024,
+      "correct_answers": 1024
+    },
+    {
+      "task": "isotopes",
+      "size": 16,
+      "parameters": 3,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 1024,
+      "correct_labels": 1024,
+      "nonfinite": 0,
+      "seconds": [
+        0.008294637999995302,
+        0.00877322400000935,
+        0.008832767999990665
+      ],
+      "median_seconds": 0.00877322400000935,
+      "answers": 1024,
+      "correct_answers": 1024
+    },
+    {
+      "task": "calendar_round",
+      "size": 2,
+      "parameters": 1292,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 256,
+      "correct_labels": 256,
+      "nonfinite": 0,
+      "seconds": [
+        0.005885148999993817,
+        0.005777338000001464,
+        0.006157512999976689
+      ],
+      "median_seconds": 0.005885148999993817,
+      "answers": 128,
+      "correct_answers": 128
+    },
+    {
+      "task": "calendar_round",
+      "size": 4,
+      "parameters": 1292,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 512,
+      "correct_labels": 512,
+      "nonfinite": 0,
+      "seconds": [
+        0.006747647999986839,
+        0.007293258999993668,
+        0.007687140000001591
+      ],
+      "median_seconds": 0.007293258999993668,
+      "answers": 256,
+      "correct_answers": 256
+    },
+    {
+      "task": "calendar_round",
+      "size": 8,
+      "parameters": 1292,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 1024,
+      "correct_labels": 1024,
+      "nonfinite": 0,
+      "seconds": [
+        0.0059666029999903,
+        0.006225542000009909,
+        0.006365321000004087
+      ],
+      "median_seconds": 0.006225542000009909,
+      "answers": 512,
+      "correct_answers": 512
+    },
+    {
+      "task": "calendar_round",
+      "size": 16,
+      "parameters": 1292,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 2048,
+      "correct_labels": 2048,
+      "nonfinite": 0,
+      "seconds": [
+        0.006705902000021524,
+        0.006231982000002745,
+        0.0062796219999938785
+      ],
+      "median_seconds": 0.0062796219999938785,
+      "answers": 1024,
+      "correct_answers": 1024
+    },
+    {
+      "task": "arm",
+      "size": 2,
+      "parameters": 9,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 256,
+      "correct_labels": 256,
+      "nonfinite": 0,
+      "seconds": [
+        0.009979495999999699,
+        0.009878211999989617,
+        0.010608085999990635
+      ],
+      "median_seconds": 0.009979495999999699,
+      "answers": 128,
+      "correct_answers": 128
+    },
+    {
+      "task": "arm",
+      "size": 4,
+      "parameters": 9,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 512,
+      "correct_labels": 512,
+      "nonfinite": 0,
+      "seconds": [
+        0.010086395999991282,
+        0.011517012000012983,
+        0.010344786000018757
+      ],
+      "median_seconds": 0.010344786000018757,
+      "answers": 256,
+      "correct_answers": 256
+    },
+    {
+      "task": "arm",
+      "size": 8,
+      "parameters": 9,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 1024,
+      "correct_labels": 1024,
+      "nonfinite": 0,
+      "seconds": [
+        0.010836422000011225,
+        0.010296887999999171,
+        0.010441477000000532
+      ],
+      "median_seconds": 0.010441477000000532,
+      "answers": 512,
+      "correct_answers": 512
+    },
+    {
+      "task": "arm",
+      "size": 16,
+      "parameters": 9,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 2048,
+      "correct_labels": 2048,
+      "nonfinite": 0,
+      "seconds": [
+        0.010502322999997205,
+        0.01042740100001538,
+        0.010350325000018756
+      ],
+      "median_seconds": 0.01042740100001538,
+      "answers": 1024,
+      "correct_answers": 1024
+    }
+  ],
+  "worked_checks": {
+    "chlorine_doublet": {
+      "task": "isotopes",
+      "correct": true,
+      "correct_labels": 16,
+      "labels": 16
+    },
+    "bromine_doublet": {
+      "task": "isotopes",
+      "correct": true,
+      "correct_labels": 16,
+      "labels": 16
+    },
+    "overlapping_envelopes": {
+      "task": "isotopes",
+      "correct": true,
+      "correct_labels": 16,
+      "labels": 16
+    },
+    "mixed_halogen_upper_edge": {
+      "task": "isotopes",
+      "correct": true,
+      "correct_labels": 16,
+      "labels": 16
+    },
+    "origin_mismatch_and_last_day": {
+      "task": "calendar_round",
+      "correct": true,
+      "correct_labels": 6,
+      "labels": 6
+    },
+    "short_month_and_new_year": {
+      "task": "calendar_round",
+      "correct": true,
+      "correct_labels": 8,
+      "labels": 8
+    },
+    "individual_cycle_returns": {
+      "task": "calendar_round",
+      "correct": true,
+      "correct_labels": 4,
+      "labels": 4
+    },
+    "arm_open_board": {
+      "task": "arm",
+      "correct": true,
+      "correct_labels": 6,
+      "labels": 6
+    },
+    "arm_block_east": {
+      "task": "arm",
+      "correct": true,
+      "correct_labels": 6,
+      "labels": 6
+    },
+    "arm_segment_interior": {
+      "task": "arm",
+      "correct": true,
+      "correct_labels": 6,
+      "labels": 6
+    },
+    "arm_blocked_base": {
+      "task": "arm",
+      "correct": true,
+      "correct_labels": 4,
+      "labels": 4
+    }
+  },
+  "answers_by_category": {
+    "isotopes": {
+      "empty_bins": 2090,
+      "occupied_bins": 2006,
+      "overlap_from_distinct_masses": 771
+    },
+    "calendar_round": {
+      "incompatible": 960,
+      "short_month": 504,
+      "compatible": 960
+    },
+    "arm": {
+      "unique": 498,
+      "multiple": 513,
+      "unreachable": 909,
+      "all_poses_blocked": 339,
+      "some_poses_blocked": 215
+    }
+  },
+  "correct_answers_by_category": {
+    "isotopes": {
+      "empty_bins": 2090,
+      "occupied_bins": 2006,
+      "overlap_from_distinct_masses": 771
+    },
+    "calendar_round": {
+      "incompatible": 960,
+      "short_month": 504,
+      "compatible": 960
+    },
+    "arm": {
+      "unique": 498,
+      "multiple": 513,
+      "unreachable": 909,
+      "all_poses_blocked": 339,
+      "some_poses_blocked": 215
+    }
+  }
+}

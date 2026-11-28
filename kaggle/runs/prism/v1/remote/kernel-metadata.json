@@ -1,0 +1,14 @@
+{
+  "id": "ajayasaithambi/loopedwsp-isotopes-calendars-and-arms",
+  "id_no": 147986946,
+  "version": 1,
+  "title": "LoopedWSP Isotopes Calendars and Arms",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "machine_shape": "NvidiaTeslaT4",
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:fc720c15545eb096a510e1f085b17fc118387a007599424d953a4f327b71cacf",
+  "downloaded_source_sha256": "a0f4530e4d143591505b6a7367091d14d23afb8b75047c040dc2e09cf108e407",
+  "source_match": "exact"
+}
