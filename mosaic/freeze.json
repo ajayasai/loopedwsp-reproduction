@@ -1,0 +1,111 @@
+{
+  "models": {
+    "quake": {
+      "parameters": 74,
+      "tensors": {
+        "times": {
+          "shape": [
+            73
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 72,
+          "sha256": "959d92935bb00862c744e97f1ae000f099f066748ce1912ca81b07da6ad37b4e"
+        },
+        "sharpness": {
+          "shape": [],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 1,
+          "sha256": "8568e5a1fe347c4aa003af9f44d1f42d104b5e40ea0502e869357877af7fb537"
+        }
+      }
+    },
+    "braille": {
+      "parameters": 127,
+      "tensors": {
+        "dot_weights": {
+          "shape": [
+            6
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 6,
+          "sha256": "bd3c010b6d93d76ea09cb2528c4504bda63593dbaf71fb2663e0eae94bd250c6"
+        },
+        "glyph_keys": {
+          "shape": [
+            30
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 29,
+          "sha256": "4557207807d7744c7213e1ba2d11770e73ece1112d022f7778dc29d95e738d5f"
+        },
+        "readings": {
+          "shape": [
+            30,
+            3
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 81,
+          "sha256": "8ccb15b736f4ff495a6f0582b2e7ceecd713386d90e766e6c9ba8fc18cb7ed3c"
+        },
+        "gain": {
+          "shape": [],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 1,
+          "sha256": "8568e5a1fe347c4aa003af9f44d1f42d104b5e40ea0502e869357877af7fb537"
+        }
+      }
+    },
+    "bridge": {
+      "parameters": 3,
+      "tensors": {
+        "suit_bonuses": {
+          "shape": [
+            2
+          ],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 2,
+          "sha256": "b96bc12183bc99118797d5dab6a676a8aba9db118a5a1768735714f771e54557"
+        },
+        "sharpness": {
+          "shape": [],
+          "dtype": "float32",
+          "parameter": true,
+          "nonzero": 1,
+          "sha256": "ad286c64373644140ff927b256b8415467b5d27645ff997010b15519d022631b"
+        }
+      }
+    }
+  },
+  "cases_sha256": "3370d33736bc7b4ff3daf66f83b0d04ee3e4eb44d71563c7f7775659149564d3",
+  "context_pairs_sha256": "327ec4f68b9b58d395cb3605a2197d5c38665208a5cbecc2042e2cb85b65d739",
+  "weights_sha256": "541e3f24ace1ebd15a1133a554a2f95747f02ff15e61c83f2074234b88bc0d73",
+  "protocol_sha256": "17ab18235daf3ccf4e9a081c64231c6fe6e070ae425481effb853add834da748",
+  "checks_sha256": "bc9b4f418311adfe5b4fab3632f9b572e1467164859b61780e0b30243c145e67",
+  "cohorts": {
+    "dev/quake/2": "bb2e12c300f28ff79a5829d7ad63c10b9f44d7f8a75c7fb8f061f6e9d5617df4",
+    "dev/quake/4": "35b37c8e72b6836cb543091a231c984b34d8608ee386671cf017d6fe4a476913",
+    "test/quake/2": "26e2ee9932dfeca18a72e2669a0884de95c8ab29da3e124de3646d9f6063002f",
+    "test/quake/4": "fe9c194ac15d712336cc2981858a7896f990ac31c4139d7f2e7760cc6efbffee",
+    "test/quake/8": "97be90e1b486aa686b37a822d09ab518f0d4b52427924bb599ba12fdddd53a89",
+    "test/quake/16": "bd385bb821ba32d520906113a7d9ca68e4738e354a0a4522ebc95316a5f7cd43",
+    "dev/braille/8": "bff078f95868daf705a0a97564f6012430569caba1edc308d47726196f4b2237",
+    "dev/braille/16": "17ff623800918cd6fe1c1c61fb4937a9a532b978999151e70e70003ff19a42d3",
+    "test/braille/8": "fb8b9a8fc162b01d96f7b560dc9e057f916816017169f2d53e079180311df39a",
+    "test/braille/16": "d22a81ada4e5bac217fa60fbf8eb0a64261a7d55071f446bd7ea040c8e3bea83",
+    "test/braille/32": "a6cd2aeb6e925cf149b7fb175426425d08957de6b501177380ffc9c3c1e77e0c",
+    "test/braille/64": "d33dc28b8e9a50bd432c69dc22d9b894ee7d6b14e71f6fc880a3c63970a1036e",
+    "dev/bridge/2": "e3eb10b21312cf7a357295da47adbae3556ff687c38ea69ce24cea7ceee55e9f",
+    "dev/bridge/4": "bbbdd1b129be3440e3a72a54d6fb2fa57a2e72918988e817403be798b9f193d8",
+    "test/bridge/2": "29a1e0a337e081c3fce16b0b14f68f6dafd365992a0274926bfc3732662b1f1c",
+    "test/bridge/4": "b08bebcbe75d82c631c346549d17f2d2d4c7153e1f4a07983f6d22a04bf23762",
+    "test/bridge/8": "838439aaf9077c2b841d7459a910bfab39f31de33b0ef97c72d55a6f2856e819",
+    "test/bridge/16": "b0ab24bfc9b61dc18a4507444f7c4342cde3dd20b6b54248df06811ef216969a"
+  }
+}

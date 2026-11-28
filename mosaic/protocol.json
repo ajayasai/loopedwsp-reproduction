@@ -1,0 +1,16 @@
+{
+  "study": "mosaic",
+  "seed": 2026112802,
+  "tasks": {
+    "quake": {"classes": 17, "size_unit": "station rows per event", "dev": [2,4], "test": [2,4,8,16]},
+    "braille": {"classes": 64, "size_unit": "six-dot cells per line", "dev": [8,16], "test": [8,16,32,64]},
+    "bridge": {"classes": 12, "size_unit": "two-trick deals per record", "dev": [2,4], "test": [2,4,8,16]}
+  },
+  "per_size": {"dev": 8, "test": 64},
+  "batch": 8,
+  "repeats": 3,
+  "precision": "FP32 with TF32 disabled",
+  "accuracy": "A quake record requires the full map of compatible locations and origin ticks. A Braille line requires every aligned character, blank and indicator label. A bridge record requires the forced NS trick count and the complete set of optimal opening cards on every deal.",
+  "context_pairs": {"sizes":[8,16,32,64], "pairs_per_size":80, "seed":2026112803, "description":"Each pair has identical physical cells after its first cell. One line opens with a numeric indicator, the other with a single capital indicator. Use eight distinct prefixes per final a-j pattern per size. Test both complete lines and both final characters jointly. Score separately from the sampled benchmark and timings."},
+  "timing": "Median of three synchronized FP32 model forward sweeps over 64 GPU-resident records in batches of eight after a warm-up; excludes encoding, transfers, decoding and scoring."
+}
