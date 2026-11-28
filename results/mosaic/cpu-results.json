@@ -1,0 +1,274 @@
+{
+  "split": "test",
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "device": "CPU",
+  "conditions": [
+    {
+      "task": "quake",
+      "size": 2,
+      "parameters": 74,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 3136,
+      "correct_labels": 3136,
+      "nonfinite": 0,
+      "seconds": [
+        0.016656675000007226,
+        0.019405046000002812,
+        0.02299328899999864
+      ],
+      "median_seconds": 0.019405046000002812
+    },
+    {
+      "task": "quake",
+      "size": 4,
+      "parameters": 74,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 3136,
+      "correct_labels": 3136,
+      "nonfinite": 0,
+      "seconds": [
+        0.026716391999997313,
+        0.01921902500001238,
+        0.021629162000010638
+      ],
+      "median_seconds": 0.021629162000010638
+    },
+    {
+      "task": "quake",
+      "size": 8,
+      "parameters": 74,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 3136,
+      "correct_labels": 3136,
+      "nonfinite": 0,
+      "seconds": [
+        0.04491069499999867,
+        0.03838077899999348,
+        0.03758499599999254
+      ],
+      "median_seconds": 0.03838077899999348
+    },
+    {
+      "task": "quake",
+      "size": 16,
+      "parameters": 74,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 3136,
+      "correct_labels": 3136,
+      "nonfinite": 0,
+      "seconds": [
+        0.07999802199998385,
+        0.07448399699998731,
+        0.06490507200001616
+      ],
+      "median_seconds": 0.07448399699998731
+    },
+    {
+      "task": "braille",
+      "size": 8,
+      "parameters": 127,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 512,
+      "correct_labels": 512,
+      "nonfinite": 0,
+      "seconds": [
+        0.012014020000009396,
+        0.008545398999984855,
+        0.006687783000018044
+      ],
+      "median_seconds": 0.008545398999984855
+    },
+    {
+      "task": "braille",
+      "size": 16,
+      "parameters": 127,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 1024,
+      "correct_labels": 1024,
+      "nonfinite": 0,
+      "seconds": [
+        0.010846990000004553,
+        0.006064288000004581,
+        0.006144559000006211
+      ],
+      "median_seconds": 0.006144559000006211
+    },
+    {
+      "task": "braille",
+      "size": 32,
+      "parameters": 127,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 2048,
+      "correct_labels": 2048,
+      "nonfinite": 0,
+      "seconds": [
+        0.005921139000008679,
+        0.007035772000023144,
+        0.005392350999983364
+      ],
+      "median_seconds": 0.005921139000008679
+    },
+    {
+      "task": "braille",
+      "size": 64,
+      "parameters": 127,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 4096,
+      "correct_labels": 4096,
+      "nonfinite": 0,
+      "seconds": [
+        0.011113214999994625,
+        0.007208506000011994,
+        0.011654139000000896
+      ],
+      "median_seconds": 0.011113214999994625
+    },
+    {
+      "task": "bridge",
+      "size": 2,
+      "parameters": 3,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 128,
+      "correct_labels": 128,
+      "nonfinite": 0,
+      "seconds": [
+        0.011640846000005922,
+        0.03341525400000478,
+        0.05393983599998364
+      ],
+      "median_seconds": 0.03341525400000478
+    },
+    {
+      "task": "bridge",
+      "size": 4,
+      "parameters": 3,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 256,
+      "correct_labels": 256,
+      "nonfinite": 0,
+      "seconds": [
+        0.0490567189999922,
+        0.052509514000007584,
+        0.05050880199999597
+      ],
+      "median_seconds": 0.05050880199999597
+    },
+    {
+      "task": "bridge",
+      "size": 8,
+      "parameters": 3,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 512,
+      "correct_labels": 512,
+      "nonfinite": 0,
+      "seconds": [
+        0.02157212200000913,
+        0.012166282999999112,
+        0.013170434999977942
+      ],
+      "median_seconds": 0.013170434999977942
+    },
+    {
+      "task": "bridge",
+      "size": 16,
+      "parameters": 3,
+      "records": 64,
+      "exact_records": 64,
+      "labels": 1024,
+      "correct_labels": 1024,
+      "nonfinite": 0,
+      "seconds": [
+        0.045370483999988664,
+        0.044203530999993745,
+        0.020867592999991302
+      ],
+      "median_seconds": 0.044203530999993745
+    }
+  ],
+  "checks": {
+    "third_station_resolves_source": {
+      "task": "quake",
+      "correct": true
+    },
+    "third_station_missing": {
+      "task": "quake",
+      "correct": true
+    },
+    "adjacent_station_conflict": {
+      "task": "quake",
+      "correct": true
+    },
+    "diagonal_first_tick": {
+      "task": "quake",
+      "correct": true
+    },
+    "room_label": {
+      "task": "braille",
+      "correct": true
+    },
+    "three_readings": {
+      "task": "braille",
+      "correct": true
+    },
+    "letters_end_number": {
+      "task": "braille",
+      "correct": true
+    },
+    "long_numeric_span": {
+      "task": "braille",
+      "correct": true
+    },
+    "low_spade_and_heart_trump": {
+      "task": "bridge",
+      "correct": true
+    },
+    "east_chooses_against_ns": {
+      "task": "bridge",
+      "correct": true
+    },
+    "follow_suit_before_ruffing": {
+      "task": "bridge",
+      "correct": true
+    }
+  },
+  "cases_sha256": "3370d33736bc7b4ff3daf66f83b0d04ee3e4eb44d71563c7f7775659149564d3",
+  "weights_sha256": "541e3f24ace1ebd15a1133a554a2f95747f02ff15e61c83f2074234b88bc0d73",
+  "context_pairs": [
+    {
+      "size": 8,
+      "pairs": 80,
+      "exact_pairs": 80,
+      "both_final_correct": 80
+    },
+    {
+      "size": 16,
+      "pairs": 80,
+      "exact_pairs": 80,
+      "both_final_correct": 80
+    },
+    {
+      "size": 32,
+      "pairs": 80,
+      "exact_pairs": 80,
+      "both_final_correct": 80
+    },
+    {
+      "size": 64,
+      "pairs": 80,
+      "exact_pairs": 80,
+      "both_final_correct": 80
+    }
+  ]
+}
